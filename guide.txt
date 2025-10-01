@@ -21,6 +21,8 @@ Sweden = swe
 Israel = isr
 
 rank: rk(x)
+if 1 box contain 2
+then (box number-x)
 
-ex: id = "usa
+ex: id = "usa_pl_rkI_1"
 
