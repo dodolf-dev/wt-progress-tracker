@@ -1,0 +1,26 @@
+id box:
+class:
+
+tank = ta
+plane = pl
+helicopter = he
+bluewater ship = bs
+coastal fleet = cf
+
+nation:
+
+usa = usa
+Germany = ger
+ussr= uss 
+great Britain = gbr
+japan = jap
+china = chi
+Italy = ita
+France = fra
+Sweden = swe
+Israel = isr
+
+rank: rk(x)
+
+ex: id = "usa
+
