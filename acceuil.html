@@ -41,39 +41,74 @@
     left: 0;
     top: 0;
   }
+  .rank-I, .rank-II, .rank-III, .rank-IV, .rank-V, .rank-VI, .rank-VII, .rank-VIII {
+    margin-bottom: 30px;
+  }
+  .arrow-vertical {
+  position: absolute;
+  width: 40px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.arrow-vertical::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 10px;
+  background: #2d89ef;
+}
+.arrow-vertical::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 20px solid #2d89ef;
+  margin: 0 auto;
+}
 </style>
   <div class="rank-I">
     <div class="rect-row">
       <div class="rectangle" id="usa_pl_rkI_1_box"></div>
+      <div class="arrow-vertical" id="arrow_rkI_1_8"></div>
       <div class="rectangle" id="usa_pl_rkI_2_box"></div>
+      <div class="arrow-vertical" id="arrow_rkI_2_9"></div>
       <div class="rectangle" id="usa_pl_rkI_3_box"></div>
+      <div class="arrow-vertical" id="arrow_rkI_3_10"></div>
       <div class="rectangle" id="usa_pl_rkI_4_box"></div>
-      <div class="rectangle hidden blue" id="usa_pl_rkI_5_box"></div>
-      <div class="rectangle hidden blue" id="usa_pl_rkI_6_box"></div>
+      <div class="rectangle hidden blue" id="usa_pl_rkI_4-1_box"></div>
+      <div class="rectangle hidden blue" id="usa_pl_rkI_4-2_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_5_box"></div>
+      <div class="arrow-vertical" id="arrow_rkI_5_12"></div>
+      <div class="rectangle hidden blue" id="usa_pl_rkI_5-1_box"></div>
+      <div class="arrow-vertical" id="arrow_rkI_5-1_5-2"></div>
+      <div class="rectangle hidden blue" id="usa_pl_rkI_5-2_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_6_box"></div>
       <div class="rectangle" id="usa_pl_rkI_7_box"></div>
-      <div class="rectangleeeeee" id="usa_pl_rkI_8_box"></div>
-      <div class="rectangleeeeee" id="usa_pl_rkI_9_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_10_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_11_box"></div>
     </div>
     <div class="rect-row">
+      <div class="rectangle" id="usa_pl_rkI_8_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_9_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_10_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_11_box"></div>
       <div class="rectangle" id="usa_pl_rkI_12_box"></div>
       <div class="rectangle" id="usa_pl_rkI_13_box"></div>
       <div class="rectangle" id="usa_pl_rkI_14_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_15_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_16_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_17_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_18_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent" id="usa_pl_rkI_19_box"></div>
-      <div class="rectangle transparent" id="usa_pl_rkI_20_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_21_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_22_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_23_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_24_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_25_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkI_15_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkI_16_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_17_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_18_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_19_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_20_box"></div>
+      <div class="rectangle " id="usa_pl_rkI_21_box"></div>
     </div>
+    <hr>
   </div>
   <div class="rank-II">
     <div class="rect-row">
@@ -119,8 +154,9 @@
       <div class="rectangle transparent" id="usa_pl_rkII_32_box"></div>
       <div class="rectangle transparent" id="usa_pl_rkII_33_box"></div>
       <div class="rectangle" id="usa_pl_rkII_34_box"></div>
-      <div class="rectangle" id="usa_pl_rkII_35_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkII_35_box"></div>
     </div>
+    <hr>
   </div>
   <div class="rank-III">
     <div class="rect-row">
@@ -168,6 +204,7 @@
       <div class="rectangle" id="usa_pl_rkIII_34_box"></div>
       <div class="rectangle" id="usa_pl_rkIII_35_box"></div>
     </div>
+    <hr>
   </div>
   <div class="rank-IV">
     <div class="rect-row">
@@ -180,7 +217,7 @@
       <div class="rectangle" id="usa_pl_rkIV_7_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle" id="usa_pl_rkIV_8_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_8_box"></div>
       <div class="rectangle" id="usa_pl_rkIV_9_box"></div>
       <div class="rectangle" id="usa_pl_rkIV_10_box"></div>
       <div class="rectangle" id="usa_pl_rkIV_11_box"></div>
@@ -260,6 +297,7 @@
       <div class="rectangle transparent" id="usa_pl_rkIV_69_box"></div>
       <div class="rectangle" id="usa_pl_rkIV_70_box"></div>
     </div>
+    <hr>
   </div>
   <div class="rank-V">
     <div class="rect-row">
@@ -280,6 +318,7 @@
       <div class="rectangle" id="usa_pl_rkV_13_box"></div>
       <div class="rectangle" id="usa_pl_rkV_14_box"></div>
     </div>
+    <hr>
   </div>
   <div class="rank-VI">
     <div class="rect-row">
@@ -318,6 +357,7 @@
       <div class="rectangle" id="usa_pl_rkVI_27_box"></div>
       <div class="rectangle" id="usa_pl_rkVI_28_box"></div>
     </div>
+    <hr>
   </div>
   <div class="rank-VII">
     <div class="rect-row">
@@ -347,6 +387,7 @@
       <div class="rectangle" id="usa_pl_rkVII_20_box"></div>
       <div class="rectangle" id="usa_pl_rkVII_21_box"></div> 
     </div>
+    <hr>
   </div>
   <div class="rank-VIII">
     <div class="rect-row">
@@ -375,14 +416,14 @@
       <div class="rectangle transparent" id="usa_pl_rkVIII_19_box"></div>
       <div class="rectangle transparent" id="usa_pl_rkVIII_20_box"></div>
       <div class="rectangle transparent" id="usa_pl_rkVIII_21_box"></div>
-    </div>  
+    </div>
   </div>
 </body>
 <script>
 document.getElementById('usa_pl_rkI_4_box').onclick = function() {
   const rect4 = document.getElementById('usa_pl_rkI_4_box');
-  const rect5 = document.getElementById('usa_pl_rkI_5_box');
-  const rect6 = document.getElementById('usa_pl_rkI_6_box');
+  const rect5 = document.getElementById('usa_pl_rkI_4-1_box');
+  const rect6 = document.getElementById('usa_pl_rkI_4-2_box');
   const parent = rect4.parentElement;
 
   parent.style.position = 'relative';
@@ -394,5 +435,15 @@ document.getElementById('usa_pl_rkI_4_box').onclick = function() {
   rect6.style.top = '87px';
   rect6.style.display = 'block';
 };
+window.onload = function() {
+  const rect1 = document.getElementById('usa_pl_rkI_1_box');
+  const arrow = document.getElementById('arrow_rkI_1_8');
+  const parent = rect1.parentElement;
+
+  parent.style.position = 'relative';
+  arrow.style.position = 'absolute';
+  arrow.style.left = rect1.offsetHeight;
+  arrow.style.top = (rect1.offsetTop + rect1.offsetHeight);
+};
 </script>
-</html> 
+</html>
