@@ -18,55 +18,64 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    overflow: auto;
   }
   .rectangle {
     width: 144px;
     height: 57.6px;
     background: green;
     margin: 10px;
+    cursor: pointer;
   }
   .transparent {
     background: transparent;
   }
+  .blue {
+    background: #2d89ef;
+  }
   .hidden {
     display: none;
   }
+  .popup-rect {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+  }
 </style>
-<div class="rank-I">
-  <div class="rect-row">
-    <div class="rectangle" id="usa_pl_rkI_1_box"></div>
-     <div class="rectangle" id="usa_pl_rkI_2_box"></div>
-    <div class="rectangle" id="usa_pl_rkI_3_box"></div>
-    <div class="rectangle" id="usa_pl_rkI_4_box"></div>
-    <div class="rectangle hidden" id="usa_pl_rkI_4-1_box"></div>
-    <div class="rectangle hidden" id="usa_pl_rkI_4-2_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_5_box"></div>
-      <div class="rectangle hidden" id="usa_pl_rkI_5-1_box"></div>
-      <div class="rectangle hidden" id="usa_pl_rkI_5-2_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_6_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_7_box"></div>
-    </div>
+  <div class="rank-I">
     <div class="rect-row">
-      <div class="rectangle" id="usa_pl_rkI_8_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_9_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_1_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_2_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_3_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_4_box"></div>
+      <div class="rectangle hidden blue" id="usa_pl_rkI_5_box"></div>
+      <div class="rectangle hidden blue" id="usa_pl_rkI_6_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_7_box"></div>
+      <div class="rectangleeeeee" id="usa_pl_rkI_8_box"></div>
+      <div class="rectangleeeeee" id="usa_pl_rkI_9_box"></div>
       <div class="rectangle" id="usa_pl_rkI_10_box"></div>
       <div class="rectangle" id="usa_pl_rkI_11_box"></div>
+    </div>
+    <div class="rect-row">
       <div class="rectangle" id="usa_pl_rkI_12_box"></div>
       <div class="rectangle" id="usa_pl_rkI_13_box"></div>
       <div class="rectangle" id="usa_pl_rkI_14_box"></div>
-    </div>
-    <div class="rect-row">
-      <div class="rectangle transparent" id="usa_pl_rkI_15_box"></div>
-      <div class="rectangle transparent" id="usa_pl_rkI_16_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_15_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_16_box"></div>
       <div class="rectangle" id="usa_pl_rkI_17_box"></div>
       <div class="rectangle" id="usa_pl_rkI_18_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_19_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_20_box"></div>
-      <div class="rectangle" id="usa_pl_rkI_21_box"></div>
     </div>
-</div>
-<div class="rank-II">
+    <div class="rect-row">
+      <div class="rectangle transparent" id="usa_pl_rkI_19_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkI_20_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_21_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_22_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_23_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_24_box"></div>
+      <div class="rectangle" id="usa_pl_rkI_25_box"></div>
+    </div>
+  </div>
+  <div class="rank-II">
     <div class="rect-row">
       <div class="rectangle" id="usa_pl_rkII_1_box"></div>
       <div class="rectangle" id="usa_pl_rkII_2_box"></div>
@@ -112,252 +121,278 @@
       <div class="rectangle" id="usa_pl_rkII_34_box"></div>
       <div class="rectangle" id="usa_pl_rkII_35_box"></div>
     </div>
-</div>
-<div class="rank-III">
+  </div>
+  <div class="rank-III">
     <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle" id="usa_pl_rkIII_1_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_2_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_3_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_4_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_5_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_6_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_7_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle" id="usa_pl_rkIII_8_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_9_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_10_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_11_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_12_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_13_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_14_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle" id="usa_pl_rkIII_15_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_16_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_17_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_18_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_19_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_20_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_21_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_22_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_23_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_24_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_25_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_26_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_27_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_28_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_29_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_30_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_31_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_32_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIII_33_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_34_box"></div>
+      <div class="rectangle" id="usa_pl_rkIII_35_box"></div>
     </div>
-</div>
-<div class="rank-IV">
+  </div>
+  <div class="rank-IV">
     <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-    </div>
-    <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle" id="usa_pl_rkIV_1_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_2_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_3_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_4_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_5_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_6_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_7_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle" id="usa_pl_rkIV_8_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_9_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_10_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_11_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_12_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_13_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_14_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_15_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_16_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_17_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_18_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_19_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_20_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_21_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_22_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_23_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_24_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_25_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_26_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_27_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_28_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_29_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_30_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_31_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_32_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_33_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_34_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_35_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_36_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_37_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_38_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_39_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_40_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_41_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_42_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_43_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_44_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_45_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_46_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_47_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_48_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_49_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-    </div>
-</div>
-<div class="rank-V">
-    <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_50_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_51_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_52_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_53_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_54_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_55_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_56_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-    </div>
-</div>
-<div class="rank-VI">
-    <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div> 
+      <div class="rectangle transparent" id="usa_pl_rkIV_57_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_58_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_59_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_60_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_61_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_62_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_63_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_64_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_65_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_66_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_67_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_68_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkIV_69_box"></div>
+      <div class="rectangle" id="usa_pl_rkIV_70_box"></div>
+    </div>
+  </div>
+  <div class="rank-V">
+    <div class="rect-row">
+      <div class="rectangle" id="usa_pl_rkV_1_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_2_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_3_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_4_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_5_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_6_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_7_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
+      <div class="rectangle" id="usa_pl_rkV_8_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_9_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_10_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_11_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkV_12_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_13_box"></div>
+      <div class="rectangle" id="usa_pl_rkV_14_box"></div>
+    </div>
+  </div>
+  <div class="rank-VI">
+    <div class="rect-row">
+      <div class="rectangle" id="usa_pl_rkVI_1_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_2_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_3_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_4_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_5_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_6_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_7_box"></div> 
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-    </div>
-</div>
-<div class="rank-VII">
-    <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div> 
+      <div class="rectangle transparent" id="usa_pl_rkVI_8_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_9_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_10_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_11_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVI_12_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_13_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_14_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div> 
+      <div class="rectangle transparent" id="usa_pl_rkVI_15_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVI_16_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVI_17_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVI_18_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVI_19_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_20_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_21_box"></div>
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div> 
+      <div class="rectangle transparent" id="usa_pl_rkVI_22_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVI_23_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVI_24_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVI_25_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVI_26_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_27_box"></div>
+      <div class="rectangle" id="usa_pl_rkVI_28_box"></div>
     </div>
+  </div>
+  <div class="rank-VII">
+    <div class="rect-row">
+      <div class="rectangle" id="usa_pl_rkVII_1_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_2_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_3_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_4_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_5_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_6_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_7_box"></div> 
+    </div>
+    <div class="rect-row">
+      <div class="rectangle transparent" id="usa_pl_rkVII_8_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_9_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_10_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_11_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_12_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_13_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_14_box"></div> 
+    </div>
+    <div class="rect-row">
+      <div class="rectangle transparent" id="usa_pl_rkVII_15_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVII_16_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVII_17_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_18_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_19_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_20_box"></div>
+      <div class="rectangle" id="usa_pl_rkVII_21_box"></div> 
+    </div>
+  </div>
   <div class="rank-VIII">
     <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div> 
+      <div class="rectangle" id="usa_pl_rkVIII_1_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_2_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_3_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_4_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_5_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_6_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_7_box"></div> 
     </div>
     <div class="rect-row">
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle transparent"></div> 
+      <div class="rectangle" id="usa_pl_rkVIII_8_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_9_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_10_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVIII_11_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVIII_12_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_13_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVIII_14_box"></div> 
     </div>
     <div class="rect-row">
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-      <div class="rectangle transparent"></div>
-    </div>
-</div>
-</div>
+      <div class="rectangle transparent" id="usa_pl_rkVIII_15_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVIII_16_box"></div>
+      <div class="rectangle" id="usa_pl_rkVIII_17_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVIII_18_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVIII_19_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVIII_20_box"></div>
+      <div class="rectangle transparent" id="usa_pl_rkVIII_21_box"></div>
+    </div>  
+  </div>
 </body>
+<script>
+document.getElementById('usa_pl_rkI_4_box').onclick = function() {
+  const rect4 = document.getElementById('usa_pl_rkI_4_box');
+  const rect5 = document.getElementById('usa_pl_rkI_5_box');
+  const rect6 = document.getElementById('usa_pl_rkI_6_box');
+  const parent = rect4.parentElement;
+
+  parent.style.position = 'relative';
+
+  rect5.style.position = 'absolute';
+  rect5.style.display = 'block';
+
+  rect6.style.position = 'absolute';
+  rect6.style.top = '87px';
+  rect6.style.display = 'block';
+};
+</script>
 </html> 
