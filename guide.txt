@@ -26,3 +26,15 @@ then (box number-x)
 
 ex: id = "usa_pl_rkI_1"
 
+ABABABABABABABAAB A FAIRE:
+l'idée ce serait pour chaque box d'imiter l'image(sans la bande jaune)
+si tu peux me config les dimensions de l'image, du texte, et de la barre de progression ce serait parfait
+
+dans l'html pour l'instant j'ai juste imité :
+https://wiki.warthunder.com/aviation?v=t&t_c=usa
+
+et si t'arrives a faire fonctionner les flèches psk je galère avec cette merde
+il faudrait aussi faire les box dynamique, t'en a certaine ou quand tu cliques dessus t'as 2 vehicules qui apparaissent(il me faut la mm chose)
+(regarde l'image 2 si tu comprends pas(souvent y'en a 2-3 max))
+et fait pas gaffe au couleur ct pas mon principal pb a ce moment
+si jamais t'as des questions envoie sur ds ou atre comme tv
