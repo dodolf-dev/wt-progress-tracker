@@ -29,6 +29,7 @@ ex: id = "usa_pl_rkI_1"
 ABABABABABABABAAB A FAIRE:
 l'idée ce serait pour chaque box d'imiter l'image(sans la bande jaune)
 si tu peux me config les dimensions de l'image, du texte, et de la barre de progression ce serait parfait
+pour la barre de progression c'est <progress></progress>
 
 dans l'html pour l'instant j'ai juste imité :
 https://wiki.warthunder.com/aviation?v=t&t_c=usa
