@@ -11,7 +11,7 @@
 </html>
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <title>NEGATOWN</title>
@@ -84,6 +84,13 @@
   border-top: 20px solid #2d89ef;
   margin: 0 auto;
 }
+.popup-container {
+    position: absolute;
+    border: 3px solid #2d89ef;
+    border-radius: 8px;
+    padding: 5px;
+    z-index: 9;
+  }
 </style>
   <div class="rank-I">
     <div class="rect-row">
@@ -94,8 +101,10 @@
       <div class="rectangle" id="usa_pl_rkI_3_box"></div>
       <div class="arrow-vertical" id="arrow_rkI_3_10"></div>
       <div class="rectangle" id="usa_pl_rkI_4_box"></div>
-      <div class="rectangle hidden blue" id="usa_pl_rkI_4-1_box"></div>
-      <div class="rectangle hidden blue" id="usa_pl_rkI_4-2_box"></div>
+      <div class="popup-container hidden" id="popup_rkI_4">
+  <div class="rectangle blue" id="usa_pl_rkI_4-1_box"></div>
+  <div class="rectangle blue" id="usa_pl_rkI_4-2_box"></div>
+</div>
       <div class="rectangle" id="usa_pl_rkI_5_box"></div>
       <div class="arrow-vertical" id="arrow_rkI_5_12"></div>
       <div class="rectangle hidden blue" id="usa_pl_rkI_5-1_box"></div>
@@ -443,20 +452,38 @@
   </div>
 </body>
 <script>
-document.getElementById('usa_pl_rkI_4_box').onclick = function() {
+let isRectI4Active = false;
+
+document.getElementById('usa_pl_rkI_4_box').onclick = function(e) {
+  e.stopPropagation();
+  
   const rect4 = document.getElementById('usa_pl_rkI_4_box');
+  const popup = document.getElementById('popup_rkI_4');
   const rect5 = document.getElementById('usa_pl_rkI_4-1_box');
   const rect6 = document.getElementById('usa_pl_rkI_4-2_box');
   const parent = rect4.parentElement;
 
   parent.style.position = 'relative';
 
-  rect5.style.position = 'absolute';
+  popup.style.position = 'absolute';
+  popup.style.left = rect4.offsetLeft + 'px';
+  popup.style.top = (rect4.offsetTop + rect4.offsetHeight) + 'px';
+  popup.style.display = 'flex';
+  popup.style.flexDirection = 'column';
+  popup.style.alignItems = 'center';
+  popup.style.gap = '5px';
+  
   rect5.style.display = 'block';
-
-  rect6.style.position = 'absolute';
-  rect6.style.top = '87px';
   rect6.style.display = 'block';
+  
+  isRectI4Active = true;
+};
+
+document.onclick = function() {
+  if (isRectI4Active) {
+    document.getElementById('popup_rkI_4').style.display = 'none';
+    isRectI4Active = false;
+  }
 };
 </script>
-</html> -->
+</html>
