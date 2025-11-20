@@ -1,7 +1,18 @@
-export default function Error404() {
+import { Link } from 'react-router-dom';
+
+import ProgressButton from '../../components/ProgressButton/ProgressButton';
+import StatButton from '../../components/StatButton/StatButton';
+
+export default function Home() {
+
     return (
-        <div className="error404">
-            <p className="error404_subtitle">Oups! La page que vous demandez n'existe pas.</p>
-        </div>
+        <>
+            <Link to="/stat">
+                <StatButton />
+            </Link>
+            <Link to="/progress">
+                <ProgressButton />
+            </Link>
+        </>
     )
 }
