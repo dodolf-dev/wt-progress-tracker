@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-const DEFAULT_VEHICULE_ID = process.env.DEFAULT_VEHICULE_ID || 'hp52_hampden_tbmk1_ussr_utk1';
+const DEFAULT_VEHICULE_ID = process.env.DEFAULT_VEHICULE_ID || 'p26_group';
 
 function vehiculeAssetsFor(id) {
     return {

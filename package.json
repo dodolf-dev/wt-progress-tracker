@@ -39,5 +39,10 @@
   },
   "devDependencies": {
     "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "update-vehicles": "node scripts/updateProgressTreeWithBackup.js",
+    "dev": "vite",
+    "build": "vite build"
   }
 }

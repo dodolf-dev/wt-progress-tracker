@@ -215,6 +215,7 @@
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  position: relative;
 }
 
 .tree-header {
@@ -316,13 +317,16 @@
   flex-direction: column;
   gap: 15px;
   align-items: center;
+  width: 100%;
 }
 
 .rank-row {
   display: flex;
-  justify-content: center;
   gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  min-height: 160px; /* Hauteur fixe pour toutes les lignes */
 }
 
 .grid-cell {
@@ -339,6 +343,7 @@
   transition: all 0.3s ease;
   position: relative;
   flex-shrink: 0;
+  box-sizing: border-box; /* Inclure border dans les dimensions */
 }
 
 .grid-cell:hover {
@@ -348,9 +353,18 @@
 }
 
 .grid-cell.empty {
-  border: 2px dashed #dee2e6;
-  background: transparent;
-  visibility: hidden; /* Cache les cases vides mais garde l'espace */
+  border: none !important;
+  background: transparent !important;
+  visibility: hidden; /* Rendre invisible */
+  pointer-events: none; /* Désactiver les interactions */
+}
+
+.grid-cell.empty:hover {
+  border: none !important;
+  background: transparent !important;
+  transform: none !important;
+  box-shadow: none !important;
+  cursor: default !important;
 }
 
 .grid-cell.error {
@@ -440,12 +454,9 @@
   font-weight: 600;
 }
 
-/* Styles pour les décalages (cases vides au début des rangées) */
-.offset-1 { margin-left: 152px; } /* 140px + 12px de gap */
-.offset-2 { margin-left: 304px; } /* 2 * (140px + 12px) */
-.offset-3 { margin-left: 456px; }
-.offset-4 { margin-left: 608px; }
-.offset-5 { margin-left: 760px; }
+.offset-1, .offset-2, .offset-3, .offset-4, .offset-5 {
+  margin-left: 0 !important;
+}
 
 /* Responsive */
 @media (max-width: 1200px) {
@@ -453,12 +464,6 @@
     width: 130px;
     height: 150px;
   }
-  
-  .offset-1 { margin-left: 142px; }
-  .offset-2 { margin-left: 284px; }
-  .offset-3 { margin-left: 426px; }
-  .offset-4 { margin-left: 568px; }
-  .offset-5 { margin-left: 710px; }
 }
 
 @media (max-width: 768px) {
@@ -471,20 +476,6 @@
     width: 60px;
     height: 40px;
   }
-  
-  .tree-header h2 {
-    font-size: 1.8em;
-  }
-  
-  .selection-info {
-    font-size: 1.1em;
-  }
-  
-  .offset-1 { margin-left: 122px; }
-  .offset-2 { margin-left: 244px; }
-  .offset-3 { margin-left: 366px; }
-  .offset-4 { margin-left: 488px; }
-  .offset-5 { margin-left: 610px; }
 }
 
 @media (max-width: 480px) {
@@ -493,23 +484,150 @@
     height: 120px;
   }
   
-  .vehicle-name {
-    font-size: 0.7em;
+  /* Pour les très petits écrans, permettre le wrapping */
+  .rank-row {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  .progress-text {
-    font-size: 0.65em;
-  }
-  
-  .rank-header {
+}
+
+/* Styles pour les cases avec enfants */
+.grid-cell.has-children {
+  cursor: pointer;
+  position: relative;
+  border-color: #ffa500 !important;
+}
+
+.grid-cell.has-children:hover {
+  border-color: #ff8c00 !important;
+  background-color: #fffaf0;
+}
+
+.grid-cell.has-children.expanded {
+  border-color: #ff8c00 !important;
+  background-color: #fffaf0;
+  z-index: 10;
+}
+
+/* Indicateur d'expansion */
+.expand-indicator {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background: #ffa500;
+  color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* Conteneur des enfants */
+.children-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #ffa500;
+  border-radius: 8px;
+  padding: 8px;
+  z-index: 20;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 5px;
+  min-width: max-content;
+}
+
+/* Cases enfants */
+.child-cell {
+  width: 120px;
+  height: 140px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.child-cell:hover {
+  border-color: #007bff;
+  transform: translateY(-2px);
+}
+
+.child-cell .vehicle-image {
+  width: 60px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.child-cell .vehicle-name {
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+  height: 2.4em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.child-cell .progress-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.child-cell .progress-bar {
+  width: 100%;
+  height: 6px;
+}
+
+.child-cell .progress-text {
+  font-size: 0.65em;
+}
+
+.child-cell .vehicle-badge {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background: #28a745;
+  color: white;
+  font-size: 0.5em;
+  padding: 1px 4px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Responsive pour les enfants */
+@media (max-width: 768px) {
+  .children-container {
     flex-direction: column;
-    gap: 10px;
-    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    max-height: 80vh;
+    overflow-y: auto;
   }
   
-  .offset-1 { margin-left: 112px; }
-  .offset-2 { margin-left: 224px; }
-  .offset-3 { margin-left: 336px; }
-  .offset-4 { margin-left: 448px; }
-  .offset-5 { margin-left: 560px; }
+  .child-cell {
+    width: 100px;
+    height: 120px;
+  }
 }

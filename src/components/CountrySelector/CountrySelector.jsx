@@ -24,7 +24,7 @@ const CountryVehicleSelector = () => {
     { type: "Helico", icon: "🚁" },
     { type: "Tank", icon: "🚛" },
     { type: "Bateau", icon: "🚢" },
-    { type: "Côtier", icon: "⛵" }
+    { type: "Cotier", icon: "⛵" }
   ];
 
   const handleCountrySelect = (country) => {
