@@ -101,7 +101,7 @@ const ProgressTree = ({ country, vehicle }) => {
     return (
       <div key={`rank-${rank.name}`} className="rank-container">
         <div className="rank-header">
-          <h3 className="rank-title">Rang {rank.name}</h3>
+          <h3 className="rank-title">Rank {rank.name}</h3>
           <span className="rank-stats">{totalVehicles} véhicules</span>
         </div>
         <div className="rank-rows">
@@ -143,7 +143,7 @@ const ProgressTree = ({ country, vehicle }) => {
 
       {treeKey in progressTree ? null : (
         <div className="development-notice">
-          ⚠️ Arbre en développement - Structure par défaut affichée
+          ⚠️ Y'a rien a voir bouge de la
         </div>
       )}
     </div>

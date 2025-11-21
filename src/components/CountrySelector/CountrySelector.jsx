@@ -21,7 +21,7 @@ const CountryVehicleSelector = () => {
 
   const vehicles = [
     { type: "Avion", icon: "✈️" },
-    { type: "Hélico", icon: "🚁" },
+    { type: "Helico", icon: "🚁" },
     { type: "Tank", icon: "🚛" },
     { type: "Bateau", icon: "🚢" },
     { type: "Côtier", icon: "⛵" }
