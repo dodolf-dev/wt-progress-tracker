@@ -1,8 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { progressTree } from '../../data/progressTree';
+import VehicleModifications from '../VehicleModification/VehicleModification';
 
 const ProgressTree = ({ country, vehicle }) => {
   const [expandedCells, setExpandedCells] = useState({});
+  const [selectedVehicle, setSelectedVehicle] = useState(null);
   const treeKey = `${country.name}_${vehicle.type}`;
   const treeData = progressTree[treeKey] || progressTree.default;
   const containerRef = useRef(null);
@@ -94,14 +96,23 @@ const ProgressTree = ({ country, vehicle }) => {
       );
     }
 
-    // Vérifier si ce véhicule a des enfants (cases à révéler)
+    // Vérifier si c'est un groupe (contient "_group" dans l'ID)
+    const isGroup = vehicleData.id && vehicleData.id.includes('_group');
     const hasChildren = vehicleData.children && vehicleData.children.length > 0;
+    const hasModifications = vehicleData.modifications && !isGroup;
 
     return (
       <div 
         key={`cell-${rowIndex}-${colIndex}`} 
-        className={`grid-cell ${hasChildren ? 'has-children' : ''} ${isExpanded ? 'expanded' : ''}`}
-        onClick={(e) => hasChildren && toggleCellExpansion(e, rank.name, rowIndex, colIndex)}
+        className={`grid-cell ${hasChildren ? 'has-children' : ''} ${isExpanded ? 'expanded' : ''} ${hasModifications ? 'has-mods' : ''}`}
+        onClick={(e) => {
+          if (hasChildren) {
+            toggleCellExpansion(e, rank.name, rowIndex, colIndex);
+          } else if (hasModifications) {
+            // Ouvrir les modifications pour les véhicules normaux avec modifications
+            setSelectedVehicle(vehicleData);
+          }
+        }}
       >
         <img 
           className="vehicle-image" 
@@ -122,10 +133,17 @@ const ProgressTree = ({ country, vehicle }) => {
         </div>
         <div className="vehicle-badge">R{rank.name} #{rankIndex}</div>
         
-        {/* Indicateur visuel pour les cases cliquables */}
+        {/* Indicateur visuel pour les cases avec enfants */}
         {hasChildren && (
           <div className="expand-indicator">
             {isExpanded ? '▼' : '▶'}
+          </div>
+        )}
+
+        {/* Indicateur pour les cases avec modifications */}
+        {hasModifications && (
+          <div className="mods-indicator">
+            ⚙️
           </div>
         )}
 
@@ -237,6 +255,14 @@ const ProgressTree = ({ country, vehicle }) => {
         <div className="development-notice">
           ⚠️ Y'a rien a voir bouge de la
         </div>
+      )}
+
+      {/* Modal des modifications du véhicule */}
+      {selectedVehicle && (
+        <VehicleModifications 
+          vehicle={selectedVehicle} 
+          onClose={() => setSelectedVehicle(null)} 
+        />
       )}
     </div>
   );

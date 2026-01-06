@@ -580,7 +580,59 @@ export const progressTree = {
             "id": "p-63a-5",
             "name": "P-63A-5",
             "image": "https://static.encyclopedia.warthunder.com/slots/p-63a-5.png",
-            "progress": ""
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1, 0],
+                    [1, 1],
+                    [1, 0],
+                    [1, 1],
+                  ],
+                  "mods": {
+                    "1": {"name": "Fuselage repair", "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png", cost:"10456165", "progress": 0 },
+                    "2": {"name": "Radiator", "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png", cost: "", "progress": 0 },
+                    "3": {"name": "Compressor", "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png", "cost": 2200, "progress": 0 },
+                    "4": {"name": "Wings repair", "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png", "cost": 2800, "progress": 0 }
+                  }
+                },
+                "Protection": {
+                  "grid": [
+                    [1, 0],
+                    [1, 1]
+                  ],
+                  "mods": {
+                    "1": { "id": "brake_system", "name": "Brake System", "image": "/assets/modifications/brake_system.png", "cost": 1900, "progress": 0 },
+                    "2": { "id": "engine", "name": "Engine", "image": "/assets/modifications/engine.png", "cost": 5800, "progress": 0 }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [1, 0, 0],
+                    [1, 1, 1]
+                  ],
+                  "mods": {
+                    "1": { "id": "horizontal_drive", "name": "Horizontal Drive", "image": "/assets/modifications/horizontal_drive.png", "cost": 0, "progress": 0 },
+                    "2": { "id": "adjustment_of_fire", "name": "Adjustment of Fire", "image": "/assets/modifications/adjustment_of_fire.png", "cost": 0, "progress": 0 },
+                    "3": { "id": "elevation_mechanism", "name": "Elevation Mechanism", "image": "/assets/modifications/elevation_mechanism.png", "cost": 2200, "progress": 0 },
+                    "4": { "id": "artillery_support", "name": "Artillery Support", "image": "/assets/modifications/artillery_support.png", "cost": 2800, "progress": 0 }
+                  }
+                },
+                "Tools": {
+                  "grid": [
+                    [1, 1, 1]
+                  ],
+                  "mods": {
+                    "1": { "id": "trading", "name": "Trading", "image": "/assets/modifications/trading.png", "cost": 0, "progress": 100 },
+                    "2": { "id": "training", "name": "Training", "image": "/assets/modifications/training.png", "cost": 0, "progress": 100 },
+                    "3": { "id": "transmission", "name": "Transmission", "image": "/assets/modifications/transmission_tool.png", "cost": 0, "progress": 100 }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            }
           },
           "2": {
             "id": "p-51_early_group",
