@@ -696,29 +696,21 @@
   font-size: 1.8em;
 }
 
-.rp-summary {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
-}
-
-.available-rp {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #28a745;
-}
-
-.total-cost {
-  font-size: 1em;
-  color: #666;
-}
-
 /* MODIFICATIONS PRINCIPALES POUR LA LARGEUR */
 .modifications-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Colonnes plus larges */
   gap: 25px;
+}
+
+.vehicle-progress-section {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.rp-cost-display {
+  font-size: 0.9em;
+  color: #ddd;
 }
 
 .modification-category {
@@ -886,19 +878,6 @@
   font-weight: 600;
 }
 
-.research-indicator {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  background: #28a745;
-  color: white;
-  font-size: 0.65em; /* Taille de police ajustée */
-  padding: 3px 8px;
-  border-radius: 10px;
-  font-weight: 600;
-  animation: pulse 2s infinite;
-}
-
 @keyframes pulse {
   0% { opacity: 1; }
   50% { opacity: 0.7; }
@@ -956,10 +935,6 @@
     flex-direction: column;
     gap: 5px;
     text-align: center;
-  }
-
-  .rp-summary {
-    align-items: center;
   }
 
   .modifications-content {

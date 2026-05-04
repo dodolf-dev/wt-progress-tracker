@@ -39,3 +39,12 @@ il faudrait aussi faire les box dynamique, t'en a certaine ou quand tu cliques d
 (regarde l'image 2 si tu comprends pas(souvent y'en a 2-3 max))
 et fait pas gaffe au couleur ct pas mon principal pb a ce moment
 si jamais t'as des questions envoie sur ds ou atre comme tv
+
+RESTANT:
+Le projet est plutot bien avancé dans son ensemble, il faut:
+->afficher la valeur des rp restant en dessous de la barre de progression, éventuellement avec le pourcentage
+-> et quand la progression atteint 100%, faut afficher le prix en sl
+-> dans le menu des modifs faudrait pousser le délire et pouvoir modifier l'avancement de la progression en mettant des valeurs(rp restant ou deja fait a voir)
+->il faut faire la mm avec les modifs, et mettre une barre de progression en dessous du menu
+    pour le délire des modifs, ce qui serait bien c'est que quand on clique sur la valeur qu'on puisse edit. et que quand ca atteint 100% la valeur en sl s'affiche, et juste avec un clique sur la box pour l'acheter
+-> pour plus tard faut aussi envisager un ui plus poussé sur le coté du tech tree ca peut etre cool

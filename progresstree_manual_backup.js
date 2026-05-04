@@ -11,13 +11,145 @@ export const progressTree = {
           [0, 0, 1, 1, 1, 1, 1],
         ],
         vehicles: {
-          1: {id:"p-26a_34_m2", name: "", image: "", progress:""},
-          2: {id:"p-36a", name: "", image: "", progress:""},
-          3: {id:"bf2c_1", name: "", image: "", progress:""},
+          1: {id:"p-26a_34_m2", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          2: {id:"p-36a", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"bf2c_1", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
           4: {id: "os2u_group",name: "", image: "", progress: "",
             children: [
-              {id: "os2u_1", name: "", image: "", progress: ""},
-              {id: "os2u_3", name: "", image: "", progress: ""},
+              {id: "os2u_1", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+              {id: "os2u_3", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
             ]
           },
           5: {id:"tbd_group", name: "", image: "", progress:"",
@@ -239,14 +371,23 @@ export const progressTree = {
           6: {id:"xa_38", name:"", image:"", progress:""},
           7: {id:"p-38j_marge", name:"", image:"", progress:""},
           8: {id:"p-51h-5_na", name:"", image:"", progress:""},
-          9: {id:"f8f1_group(f8f1b/f7f1)", name:"", image:"", progress:""},
-          10: {id:"", name:"", image:"", progress:""},
-          11: {id:"", name:"", image:"", progress:""},
-          12: {id:"", name:"", image:"", progress:""},
-          13: {id:"", name:"", image:"", progress:""},
-          14: {id:"", name:"", image:"", progress:""},
-          15: {id:"", name:"", image:"", progress:""},
-          16: {id:"", name:"", image:"", progress:""},
+          9: {id:"f8f1_group", name:"", image:"", progress:"",
+            children: [
+              {id:"f8f1b", name:"", image:"", progress:""},
+              {id:"f7f1", name:"", image:"", progress:""},
+            ]},
+          10: {id:"douglas_ad_group", name:"", image:"", progress:"",
+            children: [
+              {id:"douglas_ad_2", name:"", image:"", progress:""},
+              {id:"douglas_ad_4", name:"", image:"", progress:""},
+              {id:"am_1_mauler", name:"", image:"", progress:""}
+            ]},
+          11: {id:"b-29", name:"", image:"", progress:""},
+          12: {id:"p-51d-20-na", name:"", image:"", progress:""},
+          13: {id:"p-38k", name:"", image:"", progress:""},
+          14: {id:"p-51d-10", name:"", image:"", progress:""},
+          15: {id:"a-26c", name:"", image:"", progress:""},
+          16: {id:"p-47m-1-re", name:"", image:"", progress:""},
           17: {id:"", name:"", image:"", progress:""},
           18: {id:"", name:"", image:"", progress:""},
           19: {id:"", name:"", image:"", progress:""},

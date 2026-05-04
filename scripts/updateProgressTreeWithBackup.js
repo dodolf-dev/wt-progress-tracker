@@ -1,4 +1,3 @@
-// scripts/updateProgressTreeWithBackup.js
 const fs = require('fs');
 const path = require('path');
 
@@ -143,9 +142,108 @@ class ProgressTreeUpdater {
         });
       }
     });
+    
 
     console.log(`📈 ${updatedCount} véhicules mis à jour, ${groupCount} groupes traités, ${missingCount} véhicules non trouvés`);
   }
+  updateChildren(children, vehicleMap) {
+  let updated = 0;
+  children.forEach(child => {
+    if (child.id && child.id !== '') {
+      if (vehicleMap.has(child.id)) {
+        const serverChild = vehicleMap.get(child.id);
+        child.name = serverChild.vehicule_name || '';
+        child.image = serverChild.vehicule_icone || '';
+          if (child.rp_cost === undefined || child.rp_cost === '') {
+          child.rp_cost = parseInt(serverChild.purchase?.research_cost_rp) || 0;
+        }
+        if (child.sl_cost === undefined || child.sl_cost === '') {
+          child.sl_cost = parseInt(serverChild.purchase?.purchase_cost_sl) || 0;
+        }
+
+        // Appliquer les modifications si elles existent
+        if (serverChild.modifications_by_group) {
+          child.modifications = this.buildModifications(serverChild, child.modifications);
+          console.log(`🔧 Modifications mises à jour pour l'enfant ${child.id}`);
+        }
+        updated++;
+      } else {
+        console.warn(`❓ Enfant non trouvé: ${child.id}`);
+      }
+    }
+  });
+  return updated;
+}
+
+  /**
+   * Construit ou met à jour les modifications d'un véhicule
+   * @param {Object} apiVehicleData - Données du véhicule depuis l'API
+   * @param {Object|null} existingModifications - Modifications déjà présentes dans progressTree.js (peut être null)
+   * @returns {Object} La nouvelle structure modifications complète
+   */
+buildModifications(apiVehicleData, existingModifications = null) {
+  // Si aucune modification existante ou pas de données API, on ne fait rien
+  if (!existingModifications || !existingModifications.categories) return existingModifications;
+  const apiGroups = apiVehicleData?.modifications_by_group;
+  if (!apiGroups) return existingModifications;
+
+  const existingCategories = existingModifications.categories;
+  const updatedCategories = {};
+
+  for (const [categoryName, categoryData] of Object.entries(existingCategories)) {
+    // On garde la grille intacte
+    const grid = categoryData.grid;
+    const existingMods = categoryData.mods || {};
+
+    // Si le nom de la catégorie ne correspond à aucun groupe API, on la laisse telle quelle
+    const apiModsArray = apiGroups[categoryName];
+    if (!apiModsArray) {
+      updatedCategories[categoryName] = categoryData;
+      console.log(`🔒 Catégorie "${categoryName}" laissée intacte (pas de données API)`);
+      continue;
+    }
+
+    // On va parcourir la grille dans l'ordre et associer aux données API
+    const newMods = {};
+    let apiIndex = 0; // index dans le tableau API
+
+    for (let row = 0; row < grid.length; row++) {
+      for (let col = 0; col < grid[row].length; col++) {
+        if (grid[row][col] === 1) {
+          const modKey = String(apiIndex + 1); // clé "1", "2", ...
+          const existingMod = existingMods[modKey] || {};
+          const apiMod = apiModsArray[apiIndex] || {}; // peut être undefined si plus de cases que de mods API
+
+          // On remplit les champs vides avec les données API, sinon on garde l'existant
+          newMods[modKey] = {
+            id: existingMod.id || `mod_${categoryName.replace(/\s+/g, '_')}_${apiIndex + 1}`,
+            name: existingMod.name || apiMod.name || '',
+            image: existingMod.image || apiMod.image_url || '',
+            rp_cost: existingMod.rp_cost ?? (apiMod.rp_cost ? parseInt(apiMod.rp_cost, 10) : 0),
+            sl_cost: existingMod.sl_cost ?? (apiMod.sl_cost ? parseInt(apiMod.sl_cost, 10) : 0),
+            progress: existingMod.progress ?? 0
+          };
+
+          apiIndex++;
+        }
+      }
+    }
+
+    // On met à jour la catégorie avec la même grille et les mods complétés
+    updatedCategories[categoryName] = {
+      grid: grid,
+      mods: newMods
+    };
+
+    console.log(`✏️ Catégorie "${categoryName}" mise à jour (grille préservée, champs vides remplis)`);
+  }
+
+  return {
+    categories: updatedCategories,
+    availableRP: existingModifications.availableRP ?? 0,
+    researchedMods: existingModifications.researchedMods ?? []
+  };
+}
 
   updateVehicleGroup(vehicles, vehicleMap, groupMap) {
     let updated = 0;
@@ -159,7 +257,6 @@ class ProgressTreeUpdater {
       if (isGroup) {
         groups++;
         
-        // Pour les groupes, chercher dans groupMap
         if (groupMap.has(vehicle.id)) {
           const groupData = groupMap.get(vehicle.id);
           const groupName = this.formatGroupName(vehicle.id);
@@ -169,7 +266,6 @@ class ProgressTreeUpdater {
           
           console.log(`👥 Groupe trouvé: ${vehicle.id} -> ${groupName}`);
         } else {
-          // Si le groupe n'est pas trouvé, utiliser le nom formaté
           const groupName = this.formatGroupName(vehicle.id);
           vehicle.name = groupName;
           vehicle.image = "";
@@ -184,6 +280,20 @@ class ProgressTreeUpdater {
           const serverVehicle = vehicleMap.get(vehicle.id);
           vehicle.name = serverVehicle.vehicule_name || "";
           vehicle.image = serverVehicle.vehicule_icone || "";
+            if (vehicle.rp_cost === undefined || vehicle.rp_cost === '') {
+            vehicle.rp_cost = parseInt(serverVehicle.purchase?.research_cost_rp) || 0;
+          }
+          if (vehicle.sl_cost === undefined || vehicle.sl_cost === '') {
+            vehicle.sl_cost = parseInt(serverVehicle.purchase?.purchase_cost_sl) || 0;
+          }
+          
+          // >>> AJOUT : génération automatique des modifications en conservant la grille existante
+          if (serverVehicle.modifications_by_group) {
+            // Passer l'objet modifications actuel (peut être undefined)
+            vehicle.modifications = this.buildModifications(serverVehicle, vehicle.modifications);
+            console.log(`🔧 Modifications mises à jour pour ${vehicle.id} (grille préservée si existante)`);
+          }
+          
           updated++;
         } else {
           console.warn(`❓ Véhicule non trouvé: ${vehicle.id}`);
@@ -191,51 +301,32 @@ class ProgressTreeUpdater {
         }
       }
 
-      // Mettre à jour les enfants (pour les groupes et les véhicules normaux avec enfants)
+      // Mettre à jour les enfants
       if (vehicle.children && Array.isArray(vehicle.children)) {
-        vehicle.children.forEach(child => {
-          if (child.id && child.id !== "") {
-            if (vehicleMap.has(child.id)) {
-              const serverChild = vehicleMap.get(child.id);
-              child.name = serverChild.vehicule_name || "";
-              child.image = serverChild.vehicule_icone || "";
-              updated++;
-            } else {
-              console.warn(`❓ Véhicule enfant non trouvé: ${child.id}`);
-              missing++;
-            }
-          }
-        });
+        const childUpdated = this.updateChildren(vehicle.children, vehicleMap);
+        updated += childUpdated;
       }
     });
 
     return { updated, missing, groups };
   }
 
-  // Fonction pour formater le nom des groupes
   formatGroupName(groupId) {
-    // Enlever le suffixe "_group"
     let name = groupId.replace(/_group$/, '');
-    
-    // Remplacer les underscores par des espaces
     name = name.replace(/_/g, ' ');
     
-    // Traitement spécial pour les modèles avec versions (ex: "yak-3up" -> "Yak-3UP")
     name = name.replace(/([a-zA-Z]+)-([0-9]+)([a-zA-Z]*)/g, (match, letters, numbers, suffix) => {
       const formattedLetters = letters.toUpperCase();
       const formattedSuffix = suffix ? suffix.toUpperCase() : '';
       return `${formattedLetters}-${numbers}${formattedSuffix}`;
     });
     
-    // Appliquer les acronymes connus
     Object.entries(this.acronyms).forEach(([key, value]) => {
       const regex = new RegExp(`\\b${key}\\b`, 'gi');
       name = name.replace(regex, value);
     });
     
-    // Mettre en majuscule la première lettre de chaque mot qui n'est pas déjà en majuscule
     name = name.replace(/\b([a-z])([a-z]*)\b/g, (match, first, rest) => {
-      // Ne pas modifier les mots qui contiennent déjà des majuscules
       if (match !== match.toLowerCase()) {
         return match;
       }

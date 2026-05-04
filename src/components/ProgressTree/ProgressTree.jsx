@@ -100,6 +100,7 @@ const ProgressTree = ({ country, vehicle }) => {
     const isGroup = vehicleData.id && vehicleData.id.includes('_group');
     const hasChildren = vehicleData.children && vehicleData.children.length > 0;
     const hasModifications = vehicleData.modifications && !isGroup;
+    const hasVehicleCost = vehicleData.rp_cost && vehicleData.rp_cost > 0;
 
     return (
       <div 
@@ -108,8 +109,8 @@ const ProgressTree = ({ country, vehicle }) => {
         onClick={(e) => {
           if (hasChildren) {
             toggleCellExpansion(e, rank.name, rowIndex, colIndex);
-          } else if (hasModifications) {
-            // Ouvrir les modifications pour les véhicules normaux avec modifications
+          } else if (hasModifications || hasVehicleCost) {
+            // Ouvrir la fenêtre de modifications/progression pour les véhicules avec mods OU un coût RP
             setSelectedVehicle(vehicleData);
           }
         }}
@@ -140,38 +141,48 @@ const ProgressTree = ({ country, vehicle }) => {
           </div>
         )}
 
-        {/* Indicateur pour les cases avec modifications */}
-        {hasModifications && (
-          <div className="mods-indicator">
-            ⚙️
-          </div>
-        )}
-
         {/* Cases enfants qui apparaissent au clic */}
         {hasChildren && isExpanded && (
           <div className="children-container" onClick={(e) => e.stopPropagation()}>
-            {vehicleData.children.map((child, childIndex) => (
-              <div key={`child-${childIndex}`} className="child-cell">
-                <img 
-                  className="vehicle-image" 
-                  src={child.image} 
-                  alt={child.name}
-                  onError={(e) => {
-                    e.target.src = '/assets/vehicles/default.png';
+            {vehicleData.children.map((child, childIndex) => {
+              const childHasMods = child.modifications && 
+                                   child.modifications.categories && 
+                                   Object.keys(child.modifications.categories).length > 0;
+              const childHasCost = child.rp_cost && child.rp_cost > 0;
+
+              return (
+                <div 
+                  key={`child-${childIndex}`} 
+                  className={`child-cell ${childHasMods ? 'has-mods' : ''}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (childHasMods || childHasCost) {
+                      setSelectedVehicle(child);
+                    }
                   }}
-                />
-                <p className="vehicle-name">{child.name}</p>
-                <div className="progress-container">
-                  <progress 
-                    className="progress-bar" 
-                    max="100" 
-                    value={child.progress}
+                  style={{ cursor: (childHasMods || childHasCost) ? 'pointer' : 'default' }}
+                  title={(childHasMods || childHasCost) ? 'Voir la progression' : ''}
+                >
+                  <img 
+                    className="vehicle-image" 
+                    src={child.image} 
+                    alt={child.name}
+                    onError={(e) => {
+                      e.target.src = '/assets/vehicles/default.png';
+                    }}
                   />
-                  <span className="progress-text">{child.progress}%</span>
+                  <p className="vehicle-name">{child.name}</p>
+                  <div className="progress-container">
+                    <progress 
+                      className="progress-bar" 
+                      max="100" 
+                      value={child.progress}
+                    />
+                    <span className="progress-text">{child.progress}%</span>
+                  </div>
                 </div>
-                <div className="vehicle-badge">Variante</div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>
