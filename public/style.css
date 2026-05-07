@@ -495,16 +495,14 @@
 .grid-cell.has-children {
   cursor: pointer;
   position: relative;
-  border-color: #ffa500 !important;
 }
 
 .grid-cell.has-children:hover {
-  border-color: #ff8c00 !important;
-  background-color: #fffaf0;
+  border-color: #007bff !important;
+  background-color: #ffffff;
 }
 
 .grid-cell.has-children.expanded {
-  border-color: #ff8c00 !important;
   background-color: #fffaf0;
   z-index: 10;
 }
@@ -514,7 +512,6 @@
   position: absolute;
   bottom: 5px;
   left: 5px;
-  background: #ffa500;
   color: white;
   width: 16px;
   height: 16px;
@@ -534,7 +531,6 @@
   display: flex;
   gap: 8px;
   background: rgba(255, 255, 255, 0.95);
-  border: 2px solid #ffa500;
   border-radius: 8px;
   padding: 8px;
   z-index: 20;
@@ -682,12 +678,12 @@
 }
 
 .modifications-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #e9ecef;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e9ecef;
+    gap: 50px;
 }
 
 .modifications-header h2 {
@@ -700,7 +696,7 @@
 .modifications-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Colonnes plus larges */
-  gap: 25px;
+  gap: 2px;
 }
 
 .vehicle-progress-section {
@@ -876,6 +872,57 @@
   font-size: 0.75em; /* Taille de police augmentée */
   color: #6c757d;
   font-weight: 600;
+}
+
+/* Thèmes avec transparence (couleurs douces) */
+.grid-cell.theme-premium,
+.child-cell.theme-premium {
+  background-color: rgba(255, 215, 0, 0.2); /* jaune doré transparent */
+  border-color: rgba(184, 134, 11, 0.5);
+}
+.grid-cell.theme-premium:hover,
+.child-cell.theme-premium:hover {
+  background-color: rgba(255, 215, 0, 0.35);
+}
+
+.grid-cell.theme-squadron,
+.child-cell.theme-squadron {
+  background-color: rgba(46, 139, 87, 0.25); /* vert transparent */
+  border-color: rgba(30, 107, 40, 0.5);
+}
+.grid-cell.theme-squadron:hover,
+.child-cell.theme-squadron:hover {
+  background-color: rgba(46, 139, 87, 0.4);
+}
+
+.grid-cell.theme-normal,
+.child-cell.theme-normal {
+  background-color: rgba(33, 113, 181, 0.2); /* bleu transparent */
+  border-color: rgba(24, 90, 140, 0.5);
+}
+.grid-cell.theme-normal:hover,
+.child-cell.theme-normal:hover {
+  background-color: rgba(33, 113, 181, 0.35);
+}
+
+/* Thème des groupes (enfants repliés) */
+.grid-cell.theme-group {
+  background-color: rgba(173, 216, 230, 0.15); /* bleu très pâle */
+  border-color: rgba(135, 206, 250, 0.4);
+}
+.grid-cell.theme-group:hover {
+  background-color: rgba(173, 216, 230, 0.25);
+}
+
+/* Supprimer l'ancien fond orange au survol des groupes si présent */
+.grid-cell.has-children:hover {
+  background-color: inherit; /* réinitialisé par la classe theme-group */
+}
+
+/* Optionnel : survol discret */
+.grid-cell.theme-premium:hover,
+.child-cell.theme-premium:hover {
+  filter: brightness(1.05);
 }
 
 @keyframes pulse {

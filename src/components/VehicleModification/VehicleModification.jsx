@@ -1,209 +1,144 @@
-// src/components/VehicleModification/VehicleModification.jsx
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 
-const RpIcon = () => (
-  <img src="/assets/img/icons/rp_icon.svg" alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginRight: '2px' }} />
-);
-const SlIcon = () => (
-  <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginRight: '2px' }} />
-);
+const RpIcon = () => <img src="/assets/img/icons/rp_icon.svg" alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginRight: '2px' }} />;
+const SlIcon = () => <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginRight: '2px' }} />;
 
-const ModificationCell = ({
-  modData,
-  researchedMods,
-  modRpValues,
-  onModRpChange,
-  onPurchase
-}) => {
+const ModificationCell = ({ modData, isResearched, modRp, onModRpChange, onPurchase, onReset }) => {
   const [editing, setEditing] = useState(false);
   const [editValue, setEditValue] = useState('');
 
-  const isPurchased = researchedMods.has(modData.id);
-  const modRp = modRpValues[modData.id] || 0;
   const modRpCost = Number(modData.rp_cost) || 0;
   const modSlCost = Number(modData.sl_cost) || 0;
   const isFree = modRpCost === 0;
-
-  const effectivePurchased = isPurchased || isFree;
+  const effectiveResearched = isResearched || isFree;
   const rpProgress = isFree ? 100 : modRpCost > 0 ? Math.min(100, Math.round((modRp / modRpCost) * 100)) : 0;
-  const rpComplete = !isFree && modRp >= modRpCost && !effectivePurchased;
+  const rpComplete = !isFree && modRp >= modRpCost && !effectiveResearched;
+  const canPurchase = rpComplete && !effectiveResearched;
 
-  let progressLabel;
-  if (effectivePurchased) progressLabel = 'Recherché';
-  else if (rpComplete) progressLabel = 'Terminé';
-  else progressLabel = `${rpProgress}%`;
+  let label;
+  if (effectiveResearched) label = 'Recherché';
+  else if (rpComplete) label = 'Terminé';
+  else label = `${rpProgress}%`;
 
-  const canPurchase = rpComplete && !effectivePurchased;
-
-  const startEdit = () => {
-    setEditValue(modRp.toString());
-    setEditing(true);
-  };
+  const startEdit = () => { setEditValue(String(modRp)); setEditing(true); };
+  const handleInputChange = (e) => setEditValue(e.target.value.replace(/^0+(?=\d)/, ''));
   const confirmEdit = () => {
-    onModRpChange(modData.id, editValue, modRpCost);
+    const num = parseInt(editValue, 10);
+    if (!isNaN(num)) onModRpChange(modData.id, Math.min(modRpCost, Math.max(0, num)));
     setEditing(false);
   };
 
   return (
     <div
-      className={`mod-cell ${canPurchase ? 'purchasable' : ''} ${effectivePurchased ? 'researched' : ''}`}
+      className={`mod-cell ${canPurchase ? 'purchasable' : ''} ${effectiveResearched ? 'researched' : ''}`}
       onClick={() => { if (canPurchase) onPurchase(modData.id); }}
       style={{ cursor: canPurchase ? 'pointer' : 'default' }}
     >
-      <div className="mod-image">
-        <img src={modData.image} alt={modData.name} onError={(e) => { e.target.src = '/assets/modifications/default.png'; }} />
-      </div>
-      <div className="mod-info">
-        <h4 className="mod-name">{modData.name}</h4>
-      </div>
-      <div className="progress-container">
-        <div className="progress-bar">
-          <div className="progress-fill" style={{ width: `${effectivePurchased ? 100 : rpProgress}%` }} />
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
+        <div className="mod-image" style={{ flexShrink: 0 }}>
+          <img src={modData.image} alt={modData.name} onError={(e) => e.target.src = '/assets/modifications/default.png'} />
         </div>
-        <span className="progress-text">{progressLabel}</span>
-      </div>
-
-      {!isFree && !effectivePurchased && !rpComplete && (
-        <div className="mod-rp-editor">
-          {editing ? (
-            <span>
-              <input type="number" value={editValue} onChange={(e) => setEditValue(e.target.value)}
-                onBlur={confirmEdit} onKeyDown={(e) => e.key === 'Enter' && confirmEdit()}
-                autoFocus min="0" max={modRpCost} style={{ width: '60px' }} />
-              <button onClick={confirmEdit}>✓</button>
-            </span>
-          ) : (
-            <span onClick={startEdit} style={{ cursor: 'pointer', borderBottom: '1px dashed #aaa' }}>
-              {modRp.toLocaleString()} / {modRpCost.toLocaleString()} <RpIcon />
-            </span>
+        <div style={{ flex: 1, marginLeft: '10px', minWidth: 0 }}>
+          <h4 className="mod-name" style={{ margin: 0, fontSize: '0.95em' }}>{modData.name}</h4>
+          {!isFree && !effectiveResearched && !rpComplete && (
+            <div className="mod-rp-editor" style={{ marginTop: '2px' }}>
+              {editing ? (
+                <span>
+                  <input type="text" value={editValue} onChange={handleInputChange} onBlur={confirmEdit} onKeyDown={(e) => e.key === 'Enter' && confirmEdit()} autoFocus style={{ width: '60px' }} />
+                  <button onClick={confirmEdit}>✓</button>
+                </span>
+              ) : (
+                <span onClick={startEdit} style={{ cursor: 'pointer', borderBottom: '1px dashed #aaa' }}>
+                  {modRp.toLocaleString()} / {modRpCost.toLocaleString()} <RpIcon />
+                </span>
+              )}
+            </div>
+          )}
+          {rpComplete && <div className="mod-sl-cost" style={{ marginTop: '2px' }}>{modSlCost.toLocaleString()} <SlIcon /></div>}
+          {effectiveResearched && !isFree && (
+            <div style={{ marginTop: '2px', fontSize: '0.8em', color: '#aaa' }}>
+              {modRpCost.toLocaleString()} <RpIcon /> / {modSlCost.toLocaleString()} <SlIcon />
+            </div>
           )}
         </div>
-      )}
+      </div>
 
-      {rpComplete && (
-        <div className="mod-sl-cost">
-          {modSlCost.toLocaleString()} <SlIcon />
-        </div>
+      <div className="progress-container">
+        <div className="progress-bar"><div className="progress-fill" style={{ width: `${effectiveResearched ? 100 : rpProgress}%` }} /></div>
+        <span className="progress-text">{label}</span>
+      </div>
+
+      {!isFree && (
+        <button
+          onClick={(e) => { e.stopPropagation(); onReset(modData.id); }}
+          style={{ marginTop: '4px', width: '24px', height: '24px', borderRadius: '50%', backgroundColor: '#d9534f', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          title="Remettre à zéro"
+        >
+          <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '60%', height: '60%' }} />
+        </button>
       )}
     </div>
   );
 };
 
-const VehicleModifications = ({ vehicle, onClose }) => {
-  // État du véhicule
-  const [rpResearched, setRpResearched] = useState(0);
-  const [vehiclePurchased, setVehiclePurchased] = useState(false);
+const VehicleModifications = ({
+  vehicle, onClose,
+  onRpResearchedChange, onVehiclePurchase,
+  onModRpChange, onModPurchase, onModReset, onVehicleReset
+}) => {
+  const isPremium = !!vehicle?.premium;
+  const geCost = vehicle?.ge_cost ?? null;
+  const rpResearched = Number(vehicle?.rp_researched) || 0;
+  const vehiclePurchased = vehicle?.purchased || false;
+  const vehicleRpCost = Number(vehicle?.rp_cost) || 0;
+  const vehicleSlCost = Number(vehicle?.sl_cost) || 0;
   const [isEditingRp, setIsEditingRp] = useState(false);
   const [inputValue, setInputValue] = useState('');
 
-  // Modifications
-  const [researchedMods, setResearchedMods] = useState(new Set());
-  const [availableRP, setAvailableRP] = useState(0);
-  const [availableSL, setAvailableSL] = useState(0);
-  const [modRpValues, setModRpValues] = useState({});
-
   const modificationsData = useMemo(() => vehicle?.modifications?.categories || {}, [vehicle]);
+  const modRpValues = vehicle?.modRpValues || {};
+  const researchedMods = new Set(vehicle?.researchedMods || []);
 
-  const vehicleRpCost = Number(vehicle?.rp_cost) || 0;
-  const vehicleSlCost = Number(vehicle?.sl_cost) || 0;
-  const vehicleAvailableRP = vehicle?.modifications?.availableRP || 0;
-  const vehicleAvailableSL = vehicle?.modifications?.availableSL || 0;
-
-  useEffect(() => {
-    setAvailableRP(vehicleAvailableRP);
-    setAvailableSL(vehicleAvailableSL);
-    setResearchedMods(new Set(vehicle?.modifications?.researchedMods || []));
-    setRpResearched(Number(vehicle?.rp_researched) || 0);
-    setVehiclePurchased(vehicle?.purchased || false);
-
-    const initialModValues = {};
-    Object.values(modificationsData).forEach(category => {
-      Object.values(category.mods || {}).forEach(mod => {
-        initialModValues[mod.id] = mod.rp_researched || 0;
-      });
-    });
-    setModRpValues(initialModValues);
-  }, [vehicle, vehicleAvailableRP, vehicleAvailableSL, modificationsData]);
-
-  // --- Totaux pour les barres globales ---
   const allMods = useMemo(() => {
     const mods = [];
-    Object.values(modificationsData).forEach(cat => {
-      Object.values(cat.mods || {}).forEach(mod => mods.push(mod));
-    });
+    Object.values(modificationsData).forEach(cat => Object.values(cat.mods || {}).forEach(m => mods.push(m)));
     return mods;
   }, [modificationsData]);
 
-  const totalRpCost = useMemo(() => allMods.reduce((sum, mod) => sum + (Number(mod.rp_cost) || 0), 0), [allMods]);
-  const totalRpResearched = useMemo(() => allMods.reduce((sum, mod) => sum + (modRpValues[mod.id] || 0), 0), [allMods, modRpValues]);
+  const totalRpCost = allMods.reduce((s, m) => s + (Number(m.rp_cost) || 0), 0);
+  const totalRpResearched = allMods.reduce((s, m) => s + (modRpValues[m.id] || 0), 0);
   const totalRpPercent = totalRpCost > 0 ? Math.min(100, Math.round((totalRpResearched / totalRpCost) * 100)) : 0;
 
-  const totalSlCost = useMemo(() => allMods.reduce((sum, mod) => sum + (Number(mod.sl_cost) || 0), 0), [allMods]);
-  const totalSlSpent = useMemo(() => allMods.reduce((sum, mod) => {
-    return sum + (researchedMods.has(mod.id) ? (Number(mod.sl_cost) || 0) : 0);
-  }, 0), [allMods, researchedMods]);
+  const totalSlCost = allMods.reduce((s, m) => s + (Number(m.sl_cost) || 0), 0);
+  const totalSlSpent = allMods.reduce((s, m) => s + (researchedMods.has(m.id) ? Number(m.sl_cost) || 0 : 0), 0);
 
-  // Progression véhicule
-  const handleVehicleRpChange = (newValue) => {
-    const val = Math.min(Math.max(0, Number(newValue) || 0), vehicleRpCost);
-    setRpResearched(val);
+  const handleVehicleRpChange = (val) => {
+    const newVal = Math.min(vehicleRpCost, Math.max(0, Number(val) || 0));
+    onRpResearchedChange(newVal);
   };
 
-  const startEditingVehicleRp = () => {
-    setInputValue(rpResearched.toString());
-    setIsEditingRp(true);
-  };
-
-  const confirmEditingVehicleRp = () => {
-    handleVehicleRpChange(inputValue);
-    setIsEditingRp(false);
-  };
+  const startEditing = () => { setInputValue(String(rpResearched)); setIsEditingRp(true); };
+  const confirmEditing = () => { handleVehicleRpChange(inputValue); setIsEditingRp(false); };
+  const handleVehicleInputChange = (e) => setInputValue(e.target.value.replace(/^0+(?=\d)/, ''));
 
   const handleVehiclePurchase = () => {
-    if (vehiclePurchased || rpResearched < vehicleRpCost) return;
-    setAvailableSL(prev => prev - vehicleSlCost);
-    setVehiclePurchased(true);
+    if (!vehiclePurchased) onVehiclePurchase();
   };
 
-  const vehicleProgressPercent = vehicleRpCost > 0
-    ? Math.min(100, Math.round((rpResearched / vehicleRpCost) * 100))
-    : 0;
+  const vehiclePercent = vehicleRpCost > 0 ? Math.min(100, Math.round((rpResearched / vehicleRpCost) * 100)) : 0;
   const vehicleRpComplete = vehicleRpCost > 0 && rpResearched >= vehicleRpCost && !vehiclePurchased;
-  const showVehicleSl = vehicleRpComplete;
 
-  // Modifications
   const calculateGridIndex = (grid, targetRow, targetCol) => {
-    let index = 0;
-    for (let row = 0; row < grid.length; row++) {
-      for (let col = 0; col < grid[row].length; col++) {
-        if (grid[row][col] === 1) {
-          index++;
-          if (row === targetRow && col === targetCol) return index;
+    let idx = 0;
+    for (let r = 0; r < grid.length; r++) {
+      for (let c = 0; c < grid[r].length; c++) {
+        if (grid[r][c] === 1) {
+          idx++;
+          if (r === targetRow && c === targetCol) return idx;
         }
       }
     }
     return -1;
-  };
-
-  const handleModPurchase = (modId) => {
-    let mod = null;
-    for (const category of Object.values(modificationsData)) {
-      if (!category.mods) continue;
-      for (const modData of Object.values(category.mods)) {
-        if (modData.id === modId) { mod = modData; break; }
-      }
-      if (mod) break;
-    }
-
-    if (mod && !researchedMods.has(modId)) {
-      setAvailableSL(prev => prev - mod.sl_cost);
-      setResearchedMods(prev => new Set([...prev, modId]));
-    }
-  };
-
-  const handleModRpChange = (modId, newValue, maxRp) => {
-    const val = Math.min(Math.max(0, Number(newValue) || 0), maxRp);
-    setModRpValues(prev => ({ ...prev, [modId]: val }));
   };
 
   if (!vehicle) return null;
@@ -216,79 +151,124 @@ const VehicleModifications = ({ vehicle, onClose }) => {
         <div className="modifications-header">
           <h2>{vehicle.name}</h2>
 
-          {/* Barre de progression du véhicule */}
-          {vehicleRpCost > 0 && (
+          {/* ---- BLOC VÉHICULE PREMIUM ---- */}
+          {isPremium ? (
             <div className={`vehicle-progress-section ${vehiclePurchased ? 'vehicle-purchased' : ''}`}>
-              <div className="progress-container" style={{ marginBottom: '8px' }}>
-                <div className="progress-bar" style={{ height: '20px' }}>
-                  <div
-                    className="progress-fill"
+              {!vehiclePurchased ? (
+                <>
+                  <div style={{ fontWeight: 'bold', fontSize: '1.1em', marginBottom: '8px' }}>
+                    Prix : {geCost ? `${geCost} GE` : 'Market'}
+                  </div>
+                  <button
+                    onClick={handleVehiclePurchase}
                     style={{
-                      width: `${vehiclePurchased ? 100 : vehicleProgressPercent}%`,
-                      backgroundColor: vehiclePurchased ? '#888' : '#4caf50'
+                      padding: '6px 16px',
+                      backgroundColor: '#f0ad4e',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '4px',
+                      cursor: 'pointer',
+                      fontWeight: 'bold',
                     }}
-                  />
-                </div>
-                <span className="progress-text">
-                  {vehiclePurchased ? 'Acheté' : `${vehicleProgressPercent}%`}
-                </span>
-              </div>
-
-              {!vehiclePurchased && !vehicleRpComplete && (
-                <div>
-                  {isEditingRp ? (
-                    <span>
-                      <input type="number" value={inputValue} onChange={(e) => setInputValue(e.target.value)}
-                        onBlur={confirmEditingVehicleRp} onKeyDown={(e) => e.key === 'Enter' && confirmEditingVehicleRp()}
-                        autoFocus min="0" max={vehicleRpCost} style={{ width: '80px' }} />
-                      <button onClick={confirmEditingVehicleRp}>✓</button>
-                    </span>
-                  ) : (
-                    <span onClick={startEditingVehicleRp} style={{ cursor: 'pointer', borderBottom: '1px dashed #aaa' }}>
-                      {rpResearched.toLocaleString()} / {vehicleRpCost.toLocaleString()} <RpIcon />
-                    </span>
-                  )}
-                </div>
+                  >
+                    Acheter
+                  </button>
+                </>
+              ) : (
+                <div style={{ color: '#888', fontWeight: 'bold', marginBottom: '8px' }}>Véhicule possédé</div>
               )}
-
-              {showVehicleSl && (
-                <div
-                  className="vehicle-sl-cost"
-                  onClick={handleVehiclePurchase}
-                  style={{ cursor: 'pointer', fontWeight: 'bold' }}
-                >
-                  {vehicleSlCost.toLocaleString()} <SlIcon />
-                </div>
-              )}
+              {/* Bouton reset toujours visible */}
+              <button
+                onClick={onVehicleReset}
+                style={{
+                  marginTop: '12px',
+                  width: '28px',
+                  height: '28px',
+                  borderRadius: '50%',
+                  backgroundColor: '#d9534f',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: 0,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+                title="Remettre à zéro"
+              >
+                <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '65%', height: '65%' }} />
+              </button>
             </div>
+          ) : (
+            /* ---- BLOC VÉHICULE NORMAL ---- */
+            vehicleRpCost > 0 && (
+              <div className={`vehicle-progress-section ${vehiclePurchased ? 'vehicle-purchased' : ''}`}>
+                <div className="progress-container" style={{ marginBottom: '8px' }}>
+                  <div className="progress-bar" style={{ height: '20px' }}>
+                    <div className="progress-fill" style={{
+                      width: `${vehiclePurchased ? 100 : vehiclePercent}%`,
+                      backgroundColor: vehiclePurchased ? '#888' : '#4caf50'
+                    }} />
+                  </div>
+                  <span className="progress-text">{vehiclePurchased ? '100%' : `${vehiclePercent}%`}</span>
+                </div>
+
+                {!vehiclePurchased && !vehicleRpComplete && (
+                  <div>
+                    {isEditingRp ? (
+                      <span>
+                        <input type="text" value={inputValue} onChange={handleVehicleInputChange}
+                          onBlur={confirmEditing} onKeyDown={(e) => e.key === 'Enter' && confirmEditing()}
+                          autoFocus style={{ width: '80px' }} />
+                        <button onClick={confirmEditing}>✓</button>
+                      </span>
+                    ) : (
+                      <span onClick={startEditing} style={{ cursor: 'pointer', borderBottom: '1px dashed #aaa' }}>
+                        {rpResearched.toLocaleString()} / {vehicleRpCost.toLocaleString()} <RpIcon />
+                      </span>
+                    )}
+                  </div>
+                )}
+
+                {vehicleRpComplete && (
+                  <div className="vehicle-sl-cost" onClick={handleVehiclePurchase} style={{ cursor: 'pointer', fontWeight: 'bold' }}>
+                    {vehicleSlCost.toLocaleString()} <SlIcon />
+                  </div>
+                )}
+
+                <button
+                  onClick={onVehicleReset}
+                  style={{
+                    marginTop: '8px',
+                    width: '28px',
+                    height: '28px',
+                    borderRadius: '50%',
+                    backgroundColor: '#d9534f',
+                    border: 'none',
+                    cursor: 'pointer',
+                    padding: 0,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                  title="Remettre à zéro"
+                >
+                  <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '65%', height: '65%' }} />
+                </button>
+              </div>
+            )
           )}
 
-          {/* Barre de progression RP totale des modifications */}
+          {/* Progression totale des modifications */}
           {Object.keys(modificationsData).length > 0 && totalRpCost > 0 && (
             <div style={{ marginTop: '12px' }}>
               <div className="progress-container" style={{ marginBottom: '4px' }}>
                 <div className="progress-bar" style={{ height: '12px', backgroundColor: '#333' }}>
-                  <div
-                    className="progress-fill"
-                    style={{
-                      width: `${totalRpPercent}%`,
-                      backgroundColor: '#5a7',
-                      height: '100%'
-                    }}
-                  />
+                  <div className="progress-fill" style={{ width: `${totalRpPercent}%`, backgroundColor: '#5a7', height: '100%' }} />
                 </div>
-                <span className="progress-text" style={{ fontSize: '0.75em', lineHeight: '12px' }}>
-                  {totalRpPercent}%
-                </span>
+                <span className="progress-text" style={{ fontSize: '0.75em', lineHeight: '12px' }}>{totalRpPercent}%</span>
               </div>
-              <div style={{ fontSize: '0.85em' }}>
-                <RpIcon /> {totalRpResearched.toLocaleString()} / {totalRpCost.toLocaleString()}
-              </div>
-
-              {/* Ligne SL simple (sans barre) */}
-              <div style={{ fontSize: '0.85em', marginTop: '4px' }}>
-                <SlIcon /> {totalSlSpent.toLocaleString()} / {totalSlCost.toLocaleString()} SL
-              </div>
+              <div style={{ fontSize: '0.85em' }}><RpIcon /> {totalRpResearched.toLocaleString()} / {totalRpCost.toLocaleString()}</div>
+              <div style={{ fontSize: '0.85em', marginTop: '4px' }}><SlIcon /> {totalSlSpent.toLocaleString()} / {totalSlCost.toLocaleString()} SL</div>
             </div>
           )}
         </div>
@@ -296,25 +276,26 @@ const VehicleModifications = ({ vehicle, onClose }) => {
         {/* Grille des modifications */}
         {Object.keys(modificationsData).length > 0 && (
           <div className="modifications-content">
-            {Object.entries(modificationsData).map(([categoryName, categoryData]) => (
-              <div key={categoryName} className="modification-category">
-                <h3 className="category-title">{categoryName}</h3>
+            {Object.entries(modificationsData).map(([catName, catData]) => (
+              <div key={catName} className="modification-category">
+                <h3>{catName}</h3>
                 <div className="category-grid">
-                  {categoryData.grid.map((row, rowIndex) => (
+                  {catData.grid.map((row, rowIndex) => (
                     <div key={`row-${rowIndex}`} className="mod-row">
                       {row.map((cell, colIndex) => {
                         if (cell !== 1) return <div key={`empty-${rowIndex}-${colIndex}`} className="mod-cell empty" />;
-                        const gridIndex = calculateGridIndex(categoryData.grid, rowIndex, colIndex);
-                        const modData = categoryData.mods?.[gridIndex];
-                        if (!modData) return <div key={`error-${rowIndex}-${colIndex}`} className="mod-cell error">Mod manquant</div>;
+                        const idx = calculateGridIndex(catData.grid, rowIndex, colIndex);
+                        const modData = catData.mods?.[idx];
+                        if (!modData) return <div key={`err-${rowIndex}-${colIndex}`} className="mod-cell error">Mod manquant</div>;
                         return (
                           <ModificationCell
                             key={`mod-${rowIndex}-${colIndex}`}
                             modData={modData}
-                            researchedMods={researchedMods}
-                            modRpValues={modRpValues}
-                            onModRpChange={handleModRpChange}
-                            onPurchase={handleModPurchase}
+                            isResearched={researchedMods.has(modData.id)}
+                            modRp={modRpValues[modData.id] || 0}
+                            onModRpChange={onModRpChange}
+                            onPurchase={onModPurchase}
+                            onReset={onModReset}
                           />
                         );
                       })}

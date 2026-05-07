@@ -48,3 +48,4 @@ Le projet est plutot bien avancé dans son ensemble, il faut:
 ->il faut faire la mm avec les modifs, et mettre une barre de progression en dessous du menu
     pour le délire des modifs, ce qui serait bien c'est que quand on clique sur la valeur qu'on puisse edit. et que quand ca atteint 100% la valeur en sl s'affiche, et juste avec un clique sur la box pour l'acheter
 -> pour plus tard faut aussi envisager un ui plus poussé sur le coté du tech tree ca peut etre cool
+67

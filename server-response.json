@@ -429357,5 +429357,100 @@
       "total_ge": 4540
     },
     "fetched_at": "2026-05-04T20:07:14.015Z"
+  },
+  {
+    "vehicule_id": "fr_1_fireball",
+    "vehicule_name": "FR-1 Fireball",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/fr_1_fireball.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/fr_1_fireball.png",
+    "vehicule_premium": 1,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "4.0",
+      "rb": "4.3",
+      "sb": "4.3"
+    },
+    "rank": "III",
+    "purchase": {
+      "purchase_cost_ge": "1600"
+    },
+    "economy": {
+      "crew_training_sl": "10000",
+      "experts_sl": "165000",
+      "aces_ge": "590",
+      "research_aces_rp": "710000"
+    },
+    "modifications_by_group": {
+      "Flight performance": [
+        {
+          "name": "Fuselage repair",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png"
+        },
+        {
+          "name": "Radiator",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png"
+        },
+        {
+          "name": "Airframe",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png"
+        },
+        {
+          "name": "Compressor",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png"
+        },
+        {
+          "name": "Wings repair",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png"
+        },
+        {
+          "name": "Engine",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png"
+        },
+        {
+          "name": "Cover",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png"
+        },
+        {
+          "name": "Engine injection",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png"
+        }
+      ],
+      "Survivability": [
+        {
+          "name": "G-suit",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png"
+        }
+      ],
+      "Weaponry": [
+        {
+          "name": "Offensive 12.7 mm belts",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "FRC mk.2",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png"
+        },
+        {
+          "name": "New 12.7 mm MGs",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png"
+        },
+        {
+          "name": "FLBC mk.1",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png"
+        },
+        {
+          "name": "Mk 13 Mod 0",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 0,
+      "total_sl": 0,
+      "total_ge": 0
+    },
+    "fetched_at": "2026-05-05T17:07:46.099Z"
   }
 ]

@@ -1,6 +1,19 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { progressTree } from '../../data/progressTree';
 import VehicleModifications from '../VehicleModification/VehicleModification';
+
+const areAllModsCompleted = (vehicleData, progressEntry) => {
+  const categories = vehicleData?.modifications?.categories;
+  if (!categories) return false;
+  const researchedSet = new Set(progressEntry?.researchedMods || []);
+  for (const cat of Object.values(categories)) {
+    for (const mod of Object.values(cat.mods || {})) {
+      const rpCost = Number(mod.rp_cost) || 0;
+      if (!(rpCost === 0 || researchedSet.has(mod.id))) return false;
+    }
+  }
+  return true;
+};
 
 const ProgressTree = ({ country, vehicle }) => {
   const [expandedCells, setExpandedCells] = useState({});
@@ -9,78 +22,101 @@ const ProgressTree = ({ country, vehicle }) => {
   const treeData = progressTree[treeKey] || progressTree.default;
   const containerRef = useRef(null);
 
-  // Fermer les cases dépliées quand on clique en dehors
+  const [vehicleProgress, setVehicleProgress] = useState(() => {
+    const initial = {};
+    const initVehicle = (v) => {
+      if (!v.id) return;
+      initial[v.id] = {
+        rpResearched: v.rp_researched || 0,
+        purchased: v.purchased || false,
+        modRpValues: v.modifications?.modRpValues || {},
+        researchedMods: v.modifications?.researchedMods || [],
+      };
+      (v.children || []).forEach(initVehicle);
+    };
+    (treeData.ranks || []).forEach(rank => {
+      Object.values(rank.vehicles || {}).forEach(initVehicle);
+    });
+    return initial;
+  });
+
+  const updateVehicleProgress = useCallback((vehicleId, updates) => {
+    setVehicleProgress(prev => ({
+      ...prev,
+      [vehicleId]: { ...prev[vehicleId], ...updates },
+    }));
+  }, []);
+
+  const handleRpResearchedChange = (vehicleId, newValue) => updateVehicleProgress(vehicleId, { rpResearched: newValue });
+  const handleVehiclePurchase = (vehicleId) => updateVehicleProgress(vehicleId, { purchased: true });
+
+  const handleModRpChange = (vehicleId, modId, newValue) => {
+    setVehicleProgress(prev => ({
+      ...prev,
+      [vehicleId]: {
+        ...prev[vehicleId],
+        modRpValues: { ...prev[vehicleId].modRpValues, [modId]: newValue },
+      },
+    }));
+  };
+
+  const handleModPurchase = (vehicleId, modId) => {
+    setVehicleProgress(prev => ({
+      ...prev,
+      [vehicleId]: {
+        ...prev[vehicleId],
+        researchedMods: [...new Set([...prev[vehicleId].researchedMods, modId])],
+      },
+    }));
+  };
+
+  const handleModReset = (vehicleId, modId) => {
+    setVehicleProgress(prev => ({
+      ...prev,
+      [vehicleId]: {
+        ...prev[vehicleId],
+        modRpValues: { ...prev[vehicleId].modRpValues, [modId]: 0 },
+        researchedMods: prev[vehicleId].researchedMods.filter(id => id !== modId),
+      },
+    }));
+  };
+
+  const handleVehicleReset = (vehicleId) => updateVehicleProgress(vehicleId, { rpResearched: 0, purchased: false });
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (containerRef.current && !containerRef.current.contains(event.target)) {
         setExpandedCells({});
       }
     };
-
     document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  // Fonction pour calculer l'index global DANS LE RANG
   const calculateRankIndex = (rowGrid, targetRow, targetCol) => {
-    let rankIndex = 0;
-    
-    for (let row = 0; row < rowGrid.length; row++) {
-      for (let col = 0; col < rowGrid[row].length; col++) {
-        if (rowGrid[row][col] === 1) {
-          rankIndex++;
-          if (row === targetRow && col === targetCol) {
-            return rankIndex;
-          }
+    let idx = 0;
+    for (let r = 0; r < rowGrid.length; r++) {
+      for (let c = 0; c < rowGrid[r].length; c++) {
+        if (rowGrid[r][c] === 1) {
+          idx++;
+          if (r === targetRow && c === targetCol) return idx;
         }
       }
     }
     return -1;
   };
 
-  // Fonction pour basculer l'état d'expansion d'une cellule
   const toggleCellExpansion = (event, rankName, rowIndex, colIndex) => {
-    event.stopPropagation(); // Empêche la fermeture immédiate
-    const cellKey = `${rankName}_${rowIndex}_${colIndex}`;
-    setExpandedCells(prev => ({
-      [cellKey]: !prev[cellKey] // Ferme les autres en n'ouvrant que celle-ci
-    }));
+    event.stopPropagation();
+    const key = `${rankName}_${rowIndex}_${colIndex}`;
+    setExpandedCells(prev => ({ [key]: !prev[key] }));
   };
 
-  // Fonction pour fermer toutes les cases dépliées
-  const closeAllExpandedCells = () => {
-    setExpandedCells({});
-  };
+  const closeAllExpandedCells = () => setExpandedCells({});
 
-  // Fonction pour compter les véhicules uniques (enfants seulement pour les parents avec enfants)
-  const countUniqueVehicles = (ranks) => {
-    let count = 0;
-    
-    ranks.forEach(rank => {
-      Object.values(rank.vehicles).forEach(vehicle => {
-        if (vehicle.children && vehicle.children.length > 0) {
-          // Pour les véhicules avec enfants, compter seulement les enfants
-          count += vehicle.children.length;
-        } else {
-          // Pour les véhicules sans enfants, compter le véhicule lui-même
-          count += 1;
-        }
-      });
-    });
-    
-    return count;
-  };
-
-  // Fonction pour render une cellule
   const renderCell = (hasContent, rank, rowIndex, colIndex) => {
     if (!hasContent) {
-      return (
-        <div key={`cell-${rowIndex}-${colIndex}`} className="grid-cell empty">
-          {/* Case vide invisible mais qui conserve l'espace */}
-        </div>
-      );
+      return <div key={`cell-${rowIndex}-${colIndex}`} className="grid-cell empty" />;
     }
 
     const rankIndex = calculateRankIndex(rank.grid, rowIndex, colIndex);
@@ -96,90 +132,169 @@ const ProgressTree = ({ country, vehicle }) => {
       );
     }
 
-    // Vérifier si c'est un groupe (contient "_group" dans l'ID)
-    const isGroup = vehicleData.id && vehicleData.id.includes('_group');
     const hasChildren = vehicleData.children && vehicleData.children.length > 0;
-    const hasModifications = vehicleData.modifications && !isGroup;
+    const hasModifications = vehicleData.modifications && Object.keys(vehicleData.modifications.categories || {}).length > 0;
     const hasVehicleCost = vehicleData.rp_cost && vehicleData.rp_cost > 0;
 
+    // Thème
+    let themeClass = '';
+    if (hasChildren) {
+      themeClass = 'theme-normal';
+    } else {
+      if (vehicleData.premium) {
+        themeClass = 'theme-premium';
+      } else if (vehicleData.squadron) {
+        themeClass = 'theme-squadron';
+      } else {
+        themeClass = 'theme-normal';
+      }
+    }
+
+    const progress = vehicleProgress[vehicleData.id] || {};
+    const rpResearched = progress.rpResearched || 0;
+    const purchased = progress.purchased || false;
+    const rpCost = Number(vehicleData.rp_cost) || 0;
+    const percent = rpCost > 0 ? Math.min(100, Math.round((rpResearched / rpCost) * 100)) : 0;
+    const allModsDone = areAllModsCompleted(vehicleData, progress);
+
     return (
-      <div 
-        key={`cell-${rowIndex}-${colIndex}`} 
-        className={`grid-cell ${hasChildren ? 'has-children' : ''} ${isExpanded ? 'expanded' : ''} ${hasModifications ? 'has-mods' : ''}`}
+      <div
+        key={`cell-${rowIndex}-${colIndex}`}
+        className={`grid-cell ${hasChildren ? 'has-children' : ''} ${isExpanded ? 'expanded' : ''} ${themeClass}`}
         onClick={(e) => {
           if (hasChildren) {
             toggleCellExpansion(e, rank.name, rowIndex, colIndex);
-          } else if (hasModifications || hasVehicleCost) {
-            // Ouvrir la fenêtre de modifications/progression pour les véhicules avec mods OU un coût RP
+          } else if (hasModifications || hasVehicleCost || vehicleData.premium) {
             setSelectedVehicle(vehicleData);
           }
         }}
       >
-        <img 
-          className="vehicle-image" 
-          src={vehicleData.image} 
-          alt={vehicleData.name}
-          onError={(e) => {
-            e.target.src = '/assets/vehicles/default.png';
-          }}
-        />
-        <p className="vehicle-name">{vehicleData.name}</p>
-        <div className="progress-container">
-          <progress 
-            className="progress-bar" 
-            max="100" 
-            value={vehicleData.progress}
+        <div style={{ position: 'relative', display: 'inline-block' }}>
+          {allModsDone && (
+            <img
+              src="/assets/img/icons/spade_icon.svg"
+              alt=""
+              style={{
+                position: 'absolute',
+                top: '65%',
+                left: '50%',
+                transform: 'translate(-50%, -50%) rotate(25deg)',
+                width: '250%',
+                height: '250%',
+                opacity: 0.3,
+                pointerEvents: 'none',
+                zIndex: 0,
+              }}
+            />
+          )}
+          <img
+            className="vehicle-image"
+            src={vehicleData.image}
+            alt={vehicleData.name}
+            style={{ position: 'relative', zIndex: 1 }}
+            onError={(e) => { e.target.src = '/assets/vehicles/default.png'; }}
           />
-          <span className="progress-text">{vehicleData.progress}%</span>
         </div>
-        <div className="vehicle-badge">R{rank.name} #{rankIndex}</div>
-        
-        {/* Indicateur visuel pour les cases avec enfants */}
-        {hasChildren && (
-          <div className="expand-indicator">
-            {isExpanded ? '▼' : '▶'}
+        <p className="vehicle-name">{vehicleData.name}</p>
+
+        {/* ---- Gestion de l'affichage sous le nom ---- */}
+        {vehicleData.premium ? (
+          // Premium : prix GE ou "Acheté"
+          <div className="vehicle-ge-cost" style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0' }}>
+            {purchased ? '' : (vehicleData.ge_cost != null ? `${vehicleData.ge_cost} GE` : 'Market')}
           </div>
+        ) : (
+          // Non premium
+          purchased ? (
+            // Acheté : juste un texte, sans barre
+            <div style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0', color: '#888' }}></div>
+          ) : (
+            // Pas encore acheté : barre de progression et pourcentage
+            <div className="progress-container">
+              <progress className="progress-bar" max="100" value={percent} />
+              <span className="progress-text">{`${percent}%`}</span>
+            </div>
+          )
         )}
 
-        {/* Cases enfants qui apparaissent au clic */}
+        {hasChildren && (
+          <div className="expand-indicator">{isExpanded ? '˅' : '˃'}</div>
+        )}
+
         {hasChildren && isExpanded && (
           <div className="children-container" onClick={(e) => e.stopPropagation()}>
             {vehicleData.children.map((child, childIndex) => {
-              const childHasMods = child.modifications && 
-                                   child.modifications.categories && 
-                                   Object.keys(child.modifications.categories).length > 0;
-              const childHasCost = child.rp_cost && child.rp_cost > 0;
+              const childProg = vehicleProgress[child.id] || {};
+              const childRp = childProg.rpResearched || 0;
+              const childPurchased = childProg.purchased || false;
+              const childRpCost = Number(child.rp_cost) || 0;
+              const childPercent = childRpCost > 0 ? Math.min(100, Math.round((childRp / childRpCost) * 100)) : 0;
+              const childHasMods = child.modifications && child.modifications.categories && Object.keys(child.modifications.categories).length > 0;
+              const childHasCost = childRpCost > 0;
+              const childAllModsDone = areAllModsCompleted(child, childProg);
+
+              let childTheme = '';
+              if (child.premium) {
+                childTheme = 'theme-premium';
+              } else if (child.squadron) {
+                childTheme = 'theme-squadron';
+              } else {
+                childTheme = 'theme-normal';
+              }
 
               return (
-                <div 
-                  key={`child-${childIndex}`} 
-                  className={`child-cell ${childHasMods ? 'has-mods' : ''}`}
+                <div
+                  key={`child-${childIndex}`}
+                  className={`child-cell ${childTheme}`}
                   onClick={(e) => {
                     e.stopPropagation();
-                    if (childHasMods || childHasCost) {
-                      setSelectedVehicle(child);
-                    }
+                    if (childHasMods || childHasCost || child.premium) setSelectedVehicle(child);
                   }}
-                  style={{ cursor: (childHasMods || childHasCost) ? 'pointer' : 'default' }}
-                  title={(childHasMods || childHasCost) ? 'Voir la progression' : ''}
+                  style={{ cursor: (childHasMods || childHasCost || child.premium) ? 'pointer' : 'default' }}
                 >
-                  <img 
-                    className="vehicle-image" 
-                    src={child.image} 
-                    alt={child.name}
-                    onError={(e) => {
-                      e.target.src = '/assets/vehicles/default.png';
-                    }}
-                  />
-                  <p className="vehicle-name">{child.name}</p>
-                  <div className="progress-container">
-                    <progress 
-                      className="progress-bar" 
-                      max="100" 
-                      value={child.progress}
+                  <div style={{ position: 'relative', display: 'inline-block' }}>
+                    {childAllModsDone && (
+                      <img
+                        src="/assets/img/icons/spade_icon.svg"
+                        alt=""
+                        style={{
+                          position: 'absolute',
+                          top: '65%',
+                          left: '50%',
+                          transform: 'translate(-50%, -50%) rotate(25deg)',
+                          width: '250%',
+                          height: '250%',
+                          opacity: 0.3,
+                          pointerEvents: 'none',
+                          zIndex: 0,
+                        }}
+                      />
+                    )}
+                    <img
+                      className="vehicle-image"
+                      src={child.image}
+                      alt={child.name}
+                      style={{ position: 'relative', zIndex: 1 }}
+                      onError={(e) => { e.target.src = '/assets/vehicles/default.png'; }}
                     />
-                    <span className="progress-text">{child.progress}%</span>
                   </div>
+                  <p className="vehicle-name">{child.name}</p>
+
+                  {/* Même logique pour les enfants */}
+                  {child.premium ? (
+                    <div className="vehicle-ge-cost" style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0' }}>
+                      {childPurchased ? '' : (child.ge_cost != null ? `${child.ge_cost} GE` : 'Market')}
+                    </div>
+                  ) : (
+                    childPurchased ? (
+                      <div style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0', color: '#888' }}></div>
+                    ) : (
+                      <div className="progress-container">
+                        <progress className="progress-bar" max="100" value={childPercent} />
+                        <span className="progress-text">{`${childPercent}%`}</span>
+                      </div>
+                    )
+                  )}
                 </div>
               );
             })}
@@ -189,35 +304,21 @@ const ProgressTree = ({ country, vehicle }) => {
     );
   };
 
-  // Fonction pour render une rangée
   const renderRow = (row, rowIndex, rank) => {
-    // Trouver le nombre maximum de cellules dans toutes les rangées de ce rang
-    const maxCells = Math.max(...rank.grid.map(row => row.length));
-    
-    // S'assurer que chaque rangée a le même nombre de cellules
+    const maxCells = Math.max(...rank.grid.map(r => r.length));
     const normalizedRow = [...row];
-    while (normalizedRow.length < maxCells) {
-      normalizedRow.push(0); // Ajouter des cellules vides si nécessaire
-    }
-
-    const cells = normalizedRow.map((cell, colIndex) => 
-      renderCell(cell === 1, rank, rowIndex, colIndex)
-    );
+    while (normalizedRow.length < maxCells) normalizedRow.push(0);
 
     return (
       <div key={`row-${rowIndex}`} className="rank-row">
-        {cells}
+        {normalizedRow.map((cell, colIndex) => renderCell(cell === 1, rank, rowIndex, colIndex))}
       </div>
     );
   };
 
-  // Fonction pour render un rang complet
-  const renderRank = (rank, rankIndex) => {
-    // Compter les véhicules uniques pour ce rang
-    const rankVehiclesCount = Object.values(rank.vehicles).reduce((count, vehicle) => {
-      if (vehicle.children && vehicle.children.length > 0) {
-        return count + vehicle.children.length;
-      }
+  const renderRank = (rank) => {
+    const rankVehiclesCount = Object.values(rank.vehicles).reduce((count, v) => {
+      if (v.children && v.children.length > 0) return count + v.children.length;
       return count + 1;
     }, 0);
 
@@ -228,25 +329,27 @@ const ProgressTree = ({ country, vehicle }) => {
           <span className="rank-stats">{rankVehiclesCount} véhicules</span>
         </div>
         <div className="rank-rows">
-          {rank.grid.map((row, rowIndex) => 
-            renderRow(row, rowIndex, rank)
-          )}
+          {rank.grid.map((row, rowIndex) => renderRow(row, rowIndex, rank))}
         </div>
       </div>
     );
   };
 
-  // Calculer le total des véhicules UNIQUES (enfants seulement pour les parents avec enfants)
-  const totalVehicles = countUniqueVehicles(treeData.ranks);
+  const totalVehicles = treeData.ranks.reduce((sum, rank) => {
+    return sum + Object.values(rank.vehicles).reduce((s, v) => {
+      if (v.children && v.children.length > 0) return s + v.children.length;
+      return s + 1;
+    }, 0);
+  }, 0);
 
   return (
     <div className="progress-tree" ref={containerRef} onClick={closeAllExpandedCells}>
       <div className="tree-header">
         <h2>{treeData.name}</h2>
         <div className="selection-info">
-          <img 
-            src={country.flag} 
-            alt={country.name} 
+          <img
+            src={country.flag}
+            alt={country.name}
             className="country-flag-small"
           />
           <span className="vehicle-icon">{vehicle.icon}</span>
@@ -268,11 +371,22 @@ const ProgressTree = ({ country, vehicle }) => {
         </div>
       )}
 
-      {/* Modal des modifications du véhicule */}
       {selectedVehicle && (
-        <VehicleModifications 
-          vehicle={selectedVehicle} 
-          onClose={() => setSelectedVehicle(null)} 
+        <VehicleModifications
+          vehicle={{
+            ...selectedVehicle,
+            rp_researched: vehicleProgress[selectedVehicle.id]?.rpResearched ?? 0,
+            purchased: vehicleProgress[selectedVehicle.id]?.purchased ?? false,
+            modRpValues: vehicleProgress[selectedVehicle.id]?.modRpValues || {},
+            researchedMods: vehicleProgress[selectedVehicle.id]?.researchedMods || [],
+          }}
+          onRpResearchedChange={(val) => handleRpResearchedChange(selectedVehicle.id, val)}
+          onVehiclePurchase={() => handleVehiclePurchase(selectedVehicle.id)}
+          onModRpChange={(modId, val) => handleModRpChange(selectedVehicle.id, modId, val)}
+          onModPurchase={(modId) => handleModPurchase(selectedVehicle.id, modId)}
+          onModReset={(modId) => handleModReset(selectedVehicle.id, modId)}
+          onVehicleReset={() => handleVehicleReset(selectedVehicle.id)}
+          onClose={() => setSelectedVehicle(null)}
         />
       )}
     </div>
