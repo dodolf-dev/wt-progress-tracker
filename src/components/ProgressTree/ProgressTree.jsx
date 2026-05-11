@@ -15,6 +15,10 @@ const areAllModsCompleted = (vehicleData, progressEntry) => {
   return true;
 };
 
+const RpIcon = () => <img src="/assets/img/icons/rp_icon.svg" alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
+const SlIcon = () => <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
+const GeIcon = () => <img src="/assets/img/icons/ge_icon.svg" alt="GE" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '4px' }} />;
+
 const ProgressTree = ({ country, vehicle }) => {
   const [expandedCells, setExpandedCells] = useState({});
   const [selectedVehicle, setSelectedVehicle] = useState(null);
@@ -29,6 +33,7 @@ const ProgressTree = ({ country, vehicle }) => {
       initial[v.id] = {
         rpResearched: v.rp_researched || 0,
         purchased: v.purchased || false,
+        talisman_purchased: v.talisman_purchased || false,
         modRpValues: v.modifications?.modRpValues || {},
         researchedMods: v.modifications?.researchedMods || [],
       };
@@ -49,6 +54,12 @@ const ProgressTree = ({ country, vehicle }) => {
 
   const handleRpResearchedChange = (vehicleId, newValue) => updateVehicleProgress(vehicleId, { rpResearched: newValue });
   const handleVehiclePurchase = (vehicleId) => updateVehicleProgress(vehicleId, { purchased: true });
+  const handleTalismanPurchase = (vehicleId) => updateVehicleProgress(vehicleId, { talisman_purchased: true });
+
+  // Nouveau handler pour reset le talisman
+  const handleTalismanReset = (vehicleId) => {
+    updateVehicleProgress(vehicleId, { talisman_purchased: false });
+  };
 
   const handleModRpChange = (vehicleId, modId, newValue) => {
     setVehicleProgress(prev => ({
@@ -81,7 +92,7 @@ const ProgressTree = ({ country, vehicle }) => {
     }));
   };
 
-  const handleVehicleReset = (vehicleId) => updateVehicleProgress(vehicleId, { rpResearched: 0, purchased: false });
+  const handleVehicleReset = (vehicleId) => updateVehicleProgress(vehicleId, { rpResearched: 0, purchased: false, talisman_purchased: false });
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -136,7 +147,6 @@ const ProgressTree = ({ country, vehicle }) => {
     const hasModifications = vehicleData.modifications && Object.keys(vehicleData.modifications.categories || {}).length > 0;
     const hasVehicleCost = vehicleData.rp_cost && vehicleData.rp_cost > 0;
 
-    // Thème
     let themeClass = '';
     if (hasChildren) {
       themeClass = 'theme-normal';
@@ -154,8 +164,15 @@ const ProgressTree = ({ country, vehicle }) => {
     const rpResearched = progress.rpResearched || 0;
     const purchased = progress.purchased || false;
     const rpCost = Number(vehicleData.rp_cost) || 0;
+    const slCost = Number(vehicleData.sl_cost) || 0;
     const percent = rpCost > 0 ? Math.min(100, Math.round((rpResearched / rpCost) * 100)) : 0;
     const allModsDone = areAllModsCompleted(vehicleData, progress);
+
+    const isEffectivelyPurchased = !hasChildren && (purchased || slCost === 0);
+
+    // Déterminer si le talisman est actif (possédé ou automatique)
+    const talismanCostGe = Number(vehicleData.talisman_cost_ge) || 0;
+    const talismanActive = (talismanCostGe > 0 && progress.talisman_purchased) || (talismanCostGe === 0 && isEffectivelyPurchased);
 
     return (
       <div
@@ -187,6 +204,27 @@ const ProgressTree = ({ country, vehicle }) => {
               }}
             />
           )}
+          {/* Icône talisman cliquable pour reset */}
+          {talismanActive && (
+            <img
+              src="/assets/img/icons/talisman_icon.svg"
+              alt="Talisman"
+              title="Cliquer pour retirer le talisman"
+              style={{
+                position: 'absolute',
+                top: '-10px',
+                right: '-20px',
+                width: '28px',
+                height: '28px',
+                zIndex: 2,
+                cursor: 'pointer',
+              }}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleTalismanReset(vehicleData.id);
+              }}
+            />
+          )}
           <img
             className="vehicle-image"
             src={vehicleData.image}
@@ -197,22 +235,24 @@ const ProgressTree = ({ country, vehicle }) => {
         </div>
         <p className="vehicle-name">{vehicleData.name}</p>
 
-        {/* ---- Gestion de l'affichage sous le nom ---- */}
         {vehicleData.premium ? (
-          // Premium : prix GE ou "Acheté"
           <div className="vehicle-ge-cost" style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0' }}>
-            {purchased ? '' : (vehicleData.ge_cost != null ? `${vehicleData.ge_cost} GE` : 'Market')}
+            {purchased ? 'Acheté' : (vehicleData.ge_cost != null ? <>{vehicleData.ge_cost.toLocaleString()}<GeIcon /></> : 'Market')}
           </div>
         ) : (
-          // Non premium
-          purchased ? (
-            // Acheté : juste un texte, sans barre
-            <div style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0', color: '#888' }}></div>
-          ) : (
-            // Pas encore acheté : barre de progression et pourcentage
-            <div className="progress-container">
-              <progress className="progress-bar" max="100" value={percent} />
-              <span className="progress-text">{`${percent}%`}</span>
+          (rpCost > 0 && !isEffectivelyPurchased) && (
+            <div style={{ margin: '4px 0' }}>
+              <div className="progress-container">
+                <progress className="progress-bar" max="100" value={percent} />
+                <span className="progress-text">{percent}%</span>
+              </div>
+              <div style={{ fontSize: '0.8em', marginTop: '2px', textAlign: 'center' }}>
+                {percent < 100 ? (
+                  <>{Math.max(0, rpCost - rpResearched).toLocaleString()} <RpIcon /></>
+                ) : (
+                  <>{slCost.toLocaleString()} <SlIcon /></>
+                )}
+              </div>
             </div>
           )
         )}
@@ -228,10 +268,12 @@ const ProgressTree = ({ country, vehicle }) => {
               const childRp = childProg.rpResearched || 0;
               const childPurchased = childProg.purchased || false;
               const childRpCost = Number(child.rp_cost) || 0;
+              const childSlCost = Number(child.sl_cost) || 0;
               const childPercent = childRpCost > 0 ? Math.min(100, Math.round((childRp / childRpCost) * 100)) : 0;
               const childHasMods = child.modifications && child.modifications.categories && Object.keys(child.modifications.categories).length > 0;
               const childHasCost = childRpCost > 0;
               const childAllModsDone = areAllModsCompleted(child, childProg);
+              const childEffectivelyPurchased = childPurchased || childSlCost === 0;
 
               let childTheme = '';
               if (child.premium) {
@@ -241,6 +283,9 @@ const ProgressTree = ({ country, vehicle }) => {
               } else {
                 childTheme = 'theme-normal';
               }
+
+              const childTalismanCostGe = Number(child.talisman_cost_ge) || 0;
+              const childTalismanActive = (childTalismanCostGe > 0 && childProg.talisman_purchased) || (childTalismanCostGe === 0 && childEffectivelyPurchased);
 
               return (
                 <div
@@ -270,6 +315,26 @@ const ProgressTree = ({ country, vehicle }) => {
                         }}
                       />
                     )}
+                    {childTalismanActive && (
+                      <img
+                        src="/assets/img/icons/talisman_icon.svg"
+                        alt="Talisman"
+                        title="Cliquer pour retirer le talisman"
+                        style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '-10px',
+                          width: '28px',
+                          height: '28px',
+                          zIndex: 2,
+                          cursor: 'pointer',
+                        }}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleTalismanReset(child.id);
+                        }}
+                      />
+                    )}
                     <img
                       className="vehicle-image"
                       src={child.image}
@@ -280,18 +345,24 @@ const ProgressTree = ({ country, vehicle }) => {
                   </div>
                   <p className="vehicle-name">{child.name}</p>
 
-                  {/* Même logique pour les enfants */}
                   {child.premium ? (
                     <div className="vehicle-ge-cost" style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0' }}>
-                      {childPurchased ? '' : (child.ge_cost != null ? `${child.ge_cost} GE` : 'Market')}
+                      {childPurchased ? 'Acheté' : (child.ge_cost != null ? <>{child.ge_cost.toLocaleString()}<GeIcon /></> : 'Market')}
                     </div>
                   ) : (
-                    childPurchased ? (
-                      <div style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0', color: '#888' }}></div>
-                    ) : (
-                      <div className="progress-container">
-                        <progress className="progress-bar" max="100" value={childPercent} />
-                        <span className="progress-text">{`${childPercent}%`}</span>
+                    (childRpCost > 0 && !childEffectivelyPurchased) && (
+                      <div style={{ margin: '4px 0' }}>
+                        <div className="progress-container">
+                          <progress className="progress-bar" max="100" value={childPercent} />
+                          <span className="progress-text">{childPercent}%</span>
+                        </div>
+                        <div style={{ fontSize: '0.8em', marginTop: '2px', textAlign: 'center' }}>
+                          {childPercent < 100 ? (
+                            <>{Math.max(0, childRpCost - childRp).toLocaleString()} <RpIcon /></>
+                          ) : (
+                            <>{childSlCost.toLocaleString()} <SlIcon /></>
+                          )}
+                        </div>
                       </div>
                     )
                   )}
@@ -308,7 +379,6 @@ const ProgressTree = ({ country, vehicle }) => {
     const maxCells = Math.max(...rank.grid.map(r => r.length));
     const normalizedRow = [...row];
     while (normalizedRow.length < maxCells) normalizedRow.push(0);
-
     return (
       <div key={`row-${rowIndex}`} className="rank-row">
         {normalizedRow.map((cell, colIndex) => renderCell(cell === 1, rank, rowIndex, colIndex))}
@@ -321,7 +391,6 @@ const ProgressTree = ({ country, vehicle }) => {
       if (v.children && v.children.length > 0) return count + v.children.length;
       return count + 1;
     }, 0);
-
     return (
       <div key={`rank-${rank.name}`} className="rank-container">
         <div className="rank-header">
@@ -347,11 +416,7 @@ const ProgressTree = ({ country, vehicle }) => {
       <div className="tree-header">
         <h2>{treeData.name}</h2>
         <div className="selection-info">
-          <img
-            src={country.flag}
-            alt={country.name}
-            className="country-flag-small"
-          />
+          <img src={country.flag} alt={country.name} className="country-flag-small" />
           <span className="vehicle-icon">{vehicle.icon}</span>
           <span className="selection-text">{country.name} - {vehicle.type}</span>
         </div>
@@ -366,9 +431,7 @@ const ProgressTree = ({ country, vehicle }) => {
       </div>
 
       {treeKey in progressTree ? null : (
-        <div className="development-notice">
-          ⚠️ Y'a rien a voir bouge de la
-        </div>
+        <div className="development-notice">⚠️ Y'a rien a voir bouge de la</div>
       )}
 
       {selectedVehicle && (
@@ -377,11 +440,13 @@ const ProgressTree = ({ country, vehicle }) => {
             ...selectedVehicle,
             rp_researched: vehicleProgress[selectedVehicle.id]?.rpResearched ?? 0,
             purchased: vehicleProgress[selectedVehicle.id]?.purchased ?? false,
+            talisman_purchased: vehicleProgress[selectedVehicle.id]?.talisman_purchased ?? false,
             modRpValues: vehicleProgress[selectedVehicle.id]?.modRpValues || {},
             researchedMods: vehicleProgress[selectedVehicle.id]?.researchedMods || [],
           }}
           onRpResearchedChange={(val) => handleRpResearchedChange(selectedVehicle.id, val)}
           onVehiclePurchase={() => handleVehiclePurchase(selectedVehicle.id)}
+          onTalismanPurchase={() => handleTalismanPurchase(selectedVehicle.id)}
           onModRpChange={(modId, val) => handleModRpChange(selectedVehicle.id, modId, val)}
           onModPurchase={(modId) => handleModPurchase(selectedVehicle.id, modId)}
           onModReset={(modId) => handleModReset(selectedVehicle.id, modId)}

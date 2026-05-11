@@ -105,7 +105,6 @@ class ProgressTreeUpdater {
     console.log(`📈 ${updatedCount} véhicules mis à jour, ${groupCount} groupes traités, ${missingCount} véhicules non trouvés`);
   }
 
-  // Helper : générer une grille par défaut à 2 colonnes
   generateDefaultGrid(length) {
     const COLS = 2;
     const grid = [];
@@ -131,13 +130,11 @@ class ProgressTreeUpdater {
     for (const [categoryName, existingCat] of Object.entries(existingCategories)) {
       const apiModsArray = apiGroups[categoryName] ?? null;
       if (!apiModsArray || apiModsArray.length === 0) {
-        // Garder la catégorie existante telle quelle (même si invalide)
         newCategories[categoryName] = existingCat;
         continue;
       }
 
       let grid, mods;
-      // Vérifier que existingCat est un objet avec une grille valide
       if (typeof existingCat === 'object' && existingCat !== null && Array.isArray(existingCat.grid)) {
         grid = existingCat.grid;
         if (grid.length === 0) {
@@ -145,7 +142,6 @@ class ProgressTreeUpdater {
         }
         mods = existingCat.mods || {};
       } else {
-        // Structure invalide (ex: string), on la remplace par un objet propre
         grid = this.generateDefaultGrid(apiModsArray.length);
         mods = {};
       }
@@ -180,7 +176,6 @@ class ProgressTreeUpdater {
       newCategories[categoryName] = { grid, mods: newMods };
     }
 
-    // Nouveaux groupes de l'API
     for (const [groupName, modsArray] of Object.entries(apiGroups)) {
       if (!(groupName in newCategories) && modsArray.length > 0) {
         const grid = this.generateDefaultGrid(modsArray.length);
@@ -234,8 +229,22 @@ class ProgressTreeUpdater {
           vehicle.squadron = !!sv.squadron_vehicule;
           vehicle.event = !!sv.event_vehicule;
 
+          if (sv.purchase?.research_cost_rp) {
+            vehicle.rp_cost = parseInt(sv.purchase.research_cost_rp, 10);
+          }
+          if (sv.purchase?.purchase_cost_sl) {
+            vehicle.sl_cost = parseInt(sv.purchase.purchase_cost_sl, 10);
+          }
+
           const geCost = sv.purchase?.purchase_cost_ge || sv.purchase_cost_ge;
           if (geCost) vehicle.ge_cost = parseInt(geCost, 10);
+
+          // Talisman cost GE
+          if (sv.purchase?.talisman_cost_ge) {
+            vehicle.talisman_cost_ge = parseInt(sv.purchase.talisman_cost_ge, 10);
+          } else {
+            vehicle.talisman_cost_ge = 0;
+          }
 
           if (sv.modifications_by_group) {
             vehicle.modifications = this.buildModifications(sv, vehicle.modifications);
@@ -257,8 +266,22 @@ class ProgressTreeUpdater {
             child.squadron = !!sc.squadron_vehicule;
             child.event = !!sc.event_vehicule;
 
+            if (sc.purchase?.research_cost_rp) {
+              child.rp_cost = parseInt(sc.purchase.research_cost_rp, 10);
+            }
+            if (sc.purchase?.purchase_cost_sl) {
+              child.sl_cost = parseInt(sc.purchase.purchase_cost_sl, 10);
+            }
+
             const geCost = sc.purchase?.purchase_cost_ge || sc.purchase_cost_ge;
             if (geCost) child.ge_cost = parseInt(geCost, 10);
+
+            // Talisman cost GE for child
+            if (sc.purchase?.talisman_cost_ge) {
+              child.talisman_cost_ge = parseInt(sc.purchase.talisman_cost_ge, 10);
+            } else {
+              child.talisman_cost_ge = 0;
+            }
 
             updated++;
           }

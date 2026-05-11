@@ -1,7 +1,9 @@
+// src/components/VehicleModification/VehicleModification.jsx
 import React, { useState, useMemo } from 'react';
 
-const RpIcon = () => <img src="/assets/img/icons/rp_icon.svg" alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginRight: '2px' }} />;
-const SlIcon = () => <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginRight: '2px' }} />;
+const RpIcon = () => <img src="/assets/img/icons/rp_icon.svg" alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
+const SlIcon = () => <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
+const GeIcon = () => <img src="/assets/img/icons/ge_icon.svg" alt="GE" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '4px' }} />;
 
 const ModificationCell = ({ modData, isResearched, modRp, onModRpChange, onPurchase, onReset }) => {
   const [editing, setEditing] = useState(false);
@@ -32,14 +34,27 @@ const ModificationCell = ({ modData, isResearched, modRp, onModRpChange, onPurch
     <div
       className={`mod-cell ${canPurchase ? 'purchasable' : ''} ${effectiveResearched ? 'researched' : ''}`}
       onClick={() => { if (canPurchase) onPurchase(modData.id); }}
-      style={{ cursor: canPurchase ? 'pointer' : 'default' }}
+      style={{ cursor: canPurchase ? 'pointer' : 'default', width: '100%' }}
     >
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
         <div className="mod-image" style={{ flexShrink: 0 }}>
           <img src={modData.image} alt={modData.name} onError={(e) => e.target.src = '/assets/modifications/default.png'} />
         </div>
         <div style={{ flex: 1, marginLeft: '10px', minWidth: 0 }}>
-          <h4 className="mod-name" style={{ margin: 0, fontSize: '0.95em' }}>{modData.name}</h4>
+          <h4
+            className="mod-name"
+            style={{
+              margin: 0,
+              fontSize: '0.95em',
+              whiteSpace: 'nowrap',
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              maxWidth: '100%'
+            }}
+            title={modData.name}
+          >
+            {modData.name}
+          </h4>
           {!isFree && !effectiveResearched && !rpComplete && (
             <div className="mod-rp-editor" style={{ marginTop: '2px' }}>
               {editing ? (
@@ -84,7 +99,8 @@ const ModificationCell = ({ modData, isResearched, modRp, onModRpChange, onPurch
 const VehicleModifications = ({
   vehicle, onClose,
   onRpResearchedChange, onVehiclePurchase,
-  onModRpChange, onModPurchase, onModReset, onVehicleReset
+  onModRpChange, onModPurchase, onModReset, onVehicleReset,
+  onTalismanPurchase
 }) => {
   const isPremium = !!vehicle?.premium;
   const geCost = vehicle?.ge_cost ?? null;
@@ -92,6 +108,8 @@ const VehicleModifications = ({
   const vehiclePurchased = vehicle?.purchased || false;
   const vehicleRpCost = Number(vehicle?.rp_cost) || 0;
   const vehicleSlCost = Number(vehicle?.sl_cost) || 0;
+  const talismanCostGe = Number(vehicle?.talisman_cost_ge) || 0;
+  const talismanPurchased = vehicle?.talisman_purchased || false;
   const [isEditingRp, setIsEditingRp] = useState(false);
   const [inputValue, setInputValue] = useState('');
 
@@ -151,8 +169,52 @@ const VehicleModifications = ({
         <div className="modifications-header">
           <h2>{vehicle.name}</h2>
 
+          {/* ---- BOUTON POSSÉDER (tous les véhicules non premium) ---- */}
+          {!isPremium && vehicleRpCost === 0 && (
+            <div style={{ margin: '8px 0', display: 'flex', alignItems: 'center' }}>
+              {vehiclePurchased ? (
+                <>
+                  <span style={{ fontWeight: 'bold', color: '#4caf50', marginRight: '8px' }}>Possédé</span>
+                  <button
+                    onClick={onVehicleReset}
+                    style={{
+                      width: '24px',
+                      height: '24px',
+                      borderRadius: '50%',
+                      backgroundColor: '#d9534f',
+                      border: 'none',
+                      cursor: 'pointer',
+                      padding: 0,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                    title="Remettre à zéro"
+                  >
+                    <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '60%', height: '60%' }} />
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={handleVehiclePurchase}
+                  style={{
+                    padding: '4px 12px',
+                    backgroundColor: '#2196F3',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '4px',
+                    cursor: 'pointer',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  Posséder
+                </button>
+              )}
+            </div>
+          )}
+
           {/* ---- BLOC VÉHICULE PREMIUM ---- */}
-          {isPremium ? (
+          {isPremium && (
             <div className={`vehicle-progress-section ${vehiclePurchased ? 'vehicle-purchased' : ''}`}>
               {!vehiclePurchased ? (
                 <>
@@ -177,7 +239,6 @@ const VehicleModifications = ({
               ) : (
                 <div style={{ color: '#888', fontWeight: 'bold', marginBottom: '8px' }}>Véhicule possédé</div>
               )}
-              {/* Bouton reset toujours visible */}
               <button
                 onClick={onVehicleReset}
                 style={{
@@ -198,67 +259,108 @@ const VehicleModifications = ({
                 <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '65%', height: '65%' }} />
               </button>
             </div>
-          ) : (
-            /* ---- BLOC VÉHICULE NORMAL ---- */
-            vehicleRpCost > 0 && (
-              <div className={`vehicle-progress-section ${vehiclePurchased ? 'vehicle-purchased' : ''}`}>
-                <div className="progress-container" style={{ marginBottom: '8px' }}>
-                  <div className="progress-bar" style={{ height: '20px' }}>
-                    <div className="progress-fill" style={{
-                      width: `${vehiclePurchased ? 100 : vehiclePercent}%`,
-                      backgroundColor: vehiclePurchased ? '#888' : '#4caf50'
-                    }} />
-                  </div>
-                  <span className="progress-text">{vehiclePurchased ? '100%' : `${vehiclePercent}%`}</span>
+          )}
+
+          {/* ---- BLOC VÉHICULE NORMAL (RP_COST > 0) ---- */}
+          {!isPremium && vehicleRpCost > 0 && !vehiclePurchased && (
+            <div className="vehicle-progress-section">
+              <div className="progress-container" style={{ marginBottom: '8px' }}>
+                <div className="progress-bar" style={{ height: '20px' }}>
+                  <div className="progress-fill" style={{
+                    width: `${vehiclePercent}%`,
+                    backgroundColor: '#4caf50'
+                  }} />
                 </div>
+                <span className="progress-text">{`${vehiclePercent}%`}</span>
+              </div>
 
-                {!vehiclePurchased && !vehicleRpComplete && (
-                  <div>
-                    {isEditingRp ? (
-                      <span>
-                        <input type="text" value={inputValue} onChange={handleVehicleInputChange}
-                          onBlur={confirmEditing} onKeyDown={(e) => e.key === 'Enter' && confirmEditing()}
-                          autoFocus style={{ width: '80px' }} />
-                        <button onClick={confirmEditing}>✓</button>
-                      </span>
-                    ) : (
-                      <span onClick={startEditing} style={{ cursor: 'pointer', borderBottom: '1px dashed #aaa' }}>
-                        {rpResearched.toLocaleString()} / {vehicleRpCost.toLocaleString()} <RpIcon />
-                      </span>
-                    )}
+              {!vehicleRpComplete && (
+                <div>
+                  {isEditingRp ? (
+                    <span>
+                      <input type="text" value={inputValue} onChange={handleVehicleInputChange}
+                        onBlur={confirmEditing} onKeyDown={(e) => e.key === 'Enter' && confirmEditing()}
+                        autoFocus style={{ width: '80px' }} />
+                      <button onClick={confirmEditing}>✓</button>
+                    </span>
+                  ) : (
+                    <span onClick={startEditing} style={{ cursor: 'pointer', borderBottom: '1px dashed #aaa' }}>
+                      {rpResearched.toLocaleString()} / {vehicleRpCost.toLocaleString()} <RpIcon />
+                    </span>
+                  )}
+                </div>
+              )}
+
+              {vehicleRpComplete && (
+                <div className="vehicle-sl-cost" onClick={handleVehiclePurchase} style={{ cursor: 'pointer', fontWeight: 'bold' }}>
+                  {vehicleSlCost.toLocaleString()} <SlIcon />
+                </div>
+              )}
+
+              <button
+                onClick={onVehicleReset}
+                style={{
+                  marginTop: '8px',
+                  width: '28px',
+                  height: '28px',
+                  borderRadius: '50%',
+                  backgroundColor: '#d9534f',
+                  border: 'none',
+                  cursor: 'pointer',
+                  padding: 0,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+                title="Remettre à zéro"
+              >
+                <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '65%', height: '65%' }} />
+              </button>
+            </div>
+          )}
+
+          {/* ---- SECTION TALISMAN ---- */}
+          {talismanCostGe > 0 ? (
+            <div style={{ marginTop: '10px' }}>
+              {talismanPurchased ? (
+                <div style={{ display: 'flex', alignItems: 'center', color: '#4caf50', fontWeight: 'bold' }}>
+                  <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ height: '1.5em', marginRight: '6px' }} />
+                  <span></span>
+                </div>
+              ) : (
+                <div>
+                  <button
+                    onClick={() => onTalismanPurchase && onTalismanPurchase(vehicle.id)}
+                    style={{
+                      padding: '6px 12px',
+                      backgroundColor: '#f7d358',
+                      border: '1px solid #e0b42c',
+                      borderRadius: '4px',
+                      cursor: 'pointer',
+                      fontWeight: 'bold',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }}
+                  >
+                    <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ height: '1.2em', marginRight: '6px' }} />
+                    <span>Talisman</span>
+                  </button>
+                  <div style={{ marginTop: '4px', display: 'flex', alignItems: 'center', fontSize: '0.9em' }}>
+                    <span>{talismanCostGe.toLocaleString()}</span>
+                    <GeIcon />
                   </div>
-                )}
-
-                {vehicleRpComplete && (
-                  <div className="vehicle-sl-cost" onClick={handleVehiclePurchase} style={{ cursor: 'pointer', fontWeight: 'bold' }}>
-                    {vehicleSlCost.toLocaleString()} <SlIcon />
-                  </div>
-                )}
-
-                <button
-                  onClick={onVehicleReset}
-                  style={{
-                    marginTop: '8px',
-                    width: '28px',
-                    height: '28px',
-                    borderRadius: '50%',
-                    backgroundColor: '#d9534f',
-                    border: 'none',
-                    cursor: 'pointer',
-                    padding: 0,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                  title="Remettre à zéro"
-                >
-                  <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '65%', height: '65%' }} />
-                </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            vehiclePurchased && (
+              <div style={{ marginTop: '10px', display: 'flex', alignItems: 'center', color: '#666' }}>
+                <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ height: '1.5em', marginRight: '6px' }} />
               </div>
             )
           )}
 
-          {/* Progression totale des modifications */}
+          {/* ---- PROGRESSION TOTALE DES MODIFICATIONS ---- */}
           {Object.keys(modificationsData).length > 0 && totalRpCost > 0 && (
             <div style={{ marginTop: '12px' }}>
               <div className="progress-container" style={{ marginBottom: '4px' }}>
@@ -273,7 +375,7 @@ const VehicleModifications = ({
           )}
         </div>
 
-        {/* Grille des modifications */}
+        {/* ---- GRILLE DES MODIFICATIONS ---- */}
         {Object.keys(modificationsData).length > 0 && (
           <div className="modifications-content">
             {Object.entries(modificationsData).map(([catName, catData]) => (

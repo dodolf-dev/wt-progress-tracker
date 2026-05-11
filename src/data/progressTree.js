@@ -213,7 +213,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 190
           },
           "2": {
             "id": "p-36a",
@@ -382,7 +385,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 2900,
+            "sl_cost": 700,
+            "talisman_cost_ge": 190
           },
           "3": {
             "id": "bf2c_1",
@@ -521,7 +527,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 190
           },
           "4": {
             "id": "os2u_group",
@@ -554,7 +563,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 220,
+                          "sl_cost": 65,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 220,
+                          "sl_cost": 65,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 250,
+                          "sl_cost": 75,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 250,
+                          "sl_cost": 75,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 240,
+                          "sl_cost": 75,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 240,
+                          "sl_cost": 75,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -570,7 +645,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 240,
+                          "sl_cost": 75,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -590,13 +675,60 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Mk.41",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 0,
+                          "sl_cost": 0,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 220,
+                          "sl_cost": 65,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 250,
+                          "sl_cost": 75,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 240,
+                          "sl_cost": 75,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 0,
+                "sl_cost": 0,
+                "talisman_cost_ge": 190
               },
               {
                 "id": "os2u_3",
@@ -623,7 +755,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 220,
+                          "sl_cost": 65,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 220,
+                          "sl_cost": 65,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 250,
+                          "sl_cost": 75,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 250,
+                          "sl_cost": 75,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 240,
+                          "sl_cost": 75,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 240,
+                          "sl_cost": 75,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -639,7 +837,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 240,
+                          "sl_cost": 75,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -659,13 +867,60 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Mk.41",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 0,
+                          "sl_cost": 0,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 220,
+                          "sl_cost": 65,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 250,
+                          "sl_cost": 75,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 240,
+                          "sl_cost": 75,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 0,
+                "sl_cost": 0,
+                "talisman_cost_ge": 190
               }
             ]
           },
@@ -700,7 +955,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 185,
+                          "sl_cost": 55,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 185,
+                          "sl_cost": 55,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -716,7 +1037,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -736,13 +1067,84 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "ITC mk.III",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Improved torpedo",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 185,
+                          "sl_cost": 55,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "SBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 185,
+                          "sl_cost": 55,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "MBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 2900,
+                "sl_cost": 700,
+                "talisman_cost_ge": 190
               },
               {
                 "id": "b_18a",
@@ -769,7 +1171,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 330,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 370,
+                          "sl_cost": 220,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 370,
+                          "sl_cost": 220,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 480,
+                          "sl_cost": 290,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -785,7 +1237,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 330,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 480,
+                          "sl_cost": 290,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -805,13 +1275,60 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "LBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 330,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "SBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 370,
+                          "sl_cost": 220,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "MBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 480,
+                          "sl_cost": 290,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 2000,
+                "sl_cost": 2100,
+                "talisman_cost_ge": 300
               }
             ]
           },
@@ -1007,7 +1524,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 250
+            "ge_cost": 250,
+            "talisman_cost_ge": 0
           },
           "7": {
             "id": "p-26a_34",
@@ -1172,7 +1690,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "8": {
             "id": "p26_group",
@@ -1205,7 +1724,49 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 220,
+                          "sl_cost": 65,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 250,
+                          "sl_cost": 75,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 250,
+                          "sl_cost": 75,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -1221,7 +1782,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 220,
+                          "sl_cost": 65,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 970,
+                          "sl_cost": 290,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -1241,13 +1820,44 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Mk.41",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 220,
+                          "sl_cost": 65,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 250,
+                          "sl_cost": 75,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 2900,
+                "sl_cost": 700,
+                "talisman_cost_ge": 190
               },
               {
                 "id": "p-26b_35",
@@ -1274,7 +1884,49 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 300,
+                          "sl_cost": 180,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 300,
+                          "sl_cost": 180,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 330,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 370,
+                          "sl_cost": 220,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 370,
+                          "sl_cost": 220,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -1290,7 +1942,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 330,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 850,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -1310,13 +1980,44 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 300,
+                          "sl_cost": 180,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Mk.41",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 330,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 370,
+                          "sl_cost": 220,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 2000,
+                "sl_cost": 2100,
+                "talisman_cost_ge": 300
               }
             ]
           },
@@ -1487,7 +2188,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 4000,
+            "sl_cost": 2100,
+            "talisman_cost_ge": 300
           },
           "10": {
             "id": "f3f-2",
@@ -1680,7 +2384,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 2900,
+            "sl_cost": 700,
+            "talisman_cost_ge": 190
           },
           "11": {
             "id": "sb2u_group",
@@ -1713,7 +2420,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 185,
+                          "sl_cost": 55,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 185,
+                          "sl_cost": 55,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -1729,7 +2502,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -1749,13 +2532,84 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 7.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 150,
+                          "sl_cost": 45,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Turret 7.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 185,
+                          "sl_cost": 55,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 185,
+                          "sl_cost": 55,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "New 7.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 195,
+                          "sl_cost": 60,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 2900,
+                "sl_cost": 700,
+                "talisman_cost_ge": 190
               },
               {
                 "id": "sb2u-3",
@@ -1782,7 +2636,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 250,
+                          "sl_cost": 150,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 250,
+                          "sl_cost": 150,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 280,
+                          "sl_cost": 170,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 280,
+                          "sl_cost": 170,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -1798,7 +2718,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -1818,13 +2748,84 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 250,
+                          "sl_cost": 150,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 250,
+                          "sl_cost": 150,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 280,
+                          "sl_cost": 170,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 280,
+                          "sl_cost": 170,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 2000,
+                "sl_cost": 2100,
+                "talisman_cost_ge": 300
               }
             ]
           },
@@ -1859,7 +2860,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 280,
+                          "sl_cost": 170,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 280,
+                          "sl_cost": 170,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 360,
+                          "sl_cost": 220,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -1875,7 +2926,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 360,
+                          "sl_cost": 220,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -1899,13 +2968,92 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "LTC-5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "MBC-5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Improved torpedo",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 280,
+                          "sl_cost": 170,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 280,
+                          "sl_cost": 170,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 360,
+                          "sl_cost": 220,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "LBC-5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 360,
+                          "sl_cost": 220,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 4000,
+                "sl_cost": 2100,
+                "talisman_cost_ge": 300
               },
               {
                 "id": "pby-5a",
@@ -1932,7 +3080,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 300,
+                          "sl_cost": 230,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 300,
+                          "sl_cost": 230,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 270,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 370,
+                          "sl_cost": 280,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 370,
+                          "sl_cost": 280,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 480,
+                          "sl_cost": 360,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -1948,7 +3146,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 270,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 480,
+                          "sl_cost": 360,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -1972,13 +3188,92 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 300,
+                          "sl_cost": 230,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "LTC-5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 300,
+                          "sl_cost": 230,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 270,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "MBC-5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 270,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Improved torpedo",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 270,
+                          "sl_cost": 200,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 370,
+                          "sl_cost": 280,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 370,
+                          "sl_cost": 280,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 480,
+                          "sl_cost": 360,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "LBC-5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 480,
+                          "sl_cost": 360,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 3000,
+                "sl_cost": 6300,
+                "talisman_cost_ge": 410
               }
             ]
           },
@@ -2149,7 +3444,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 300
           },
           "14": {
             "id": "p-36a_rasmussen",
@@ -2318,7 +3616,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "15": {
             "id": "f2a-1",
@@ -2495,7 +3794,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 4000,
+            "sl_cost": 2100,
+            "talisman_cost_ge": 300
           },
           "16": {
             "id": "tbf_group",
@@ -2528,7 +3830,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 180,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 180,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -2556,13 +3924,116 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 180,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FRC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 180,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "ITC mk.III",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 180,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 200,
+                          "sl_cost": 120,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "Improved torpedo",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "MBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 220,
+                          "sl_cost": 135,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "LBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 290,
+                          "sl_cost": 175,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 4000,
+                "sl_cost": 2100,
+                "talisman_cost_ge": 300
               },
               {
                 "id": "sbd-3",
@@ -2589,7 +4060,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 300,
+                          "sl_cost": 230,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 300,
+                          "sl_cost": 230,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 330,
+                          "sl_cost": 250,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 330,
+                          "sl_cost": 250,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 370,
+                          "sl_cost": 280,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 370,
+                          "sl_cost": 280,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 390,
+                          "sl_cost": 300,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 390,
+                          "sl_cost": 300,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -2605,7 +4142,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 390,
+                          "sl_cost": 300,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -2625,13 +4172,84 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 300,
+                          "sl_cost": 230,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "DGP-1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 300,
+                          "sl_cost": 230,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 330,
+                          "sl_cost": 250,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 330,
+                          "sl_cost": 250,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 370,
+                          "sl_cost": 280,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "MBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 370,
+                          "sl_cost": 280,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 390,
+                          "sl_cost": 300,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 390,
+                          "sl_cost": 300,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 3000,
+                "sl_cost": 6300,
+                "talisman_cost_ge": 410
               }
             ]
           },
@@ -2816,7 +4434,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 5900,
+            "sl_cost": 6300,
+            "talisman_cost_ge": 410
           },
           "18": {
             "id": "f2a-1_thach",
@@ -2994,7 +4615,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 400
+            "ge_cost": 400,
+            "talisman_cost_ge": 0
           },
           "19": {
             "id": "b_10b",
@@ -3168,7 +4790,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 400
+            "ge_cost": 400,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -3421,7 +5044,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 7900,
+            "sl_cost": 10000,
+            "talisman_cost_ge": 530
           },
           "2": {
             "id": "p-36g",
@@ -3590,7 +5216,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 7900,
+            "sl_cost": 10000,
+            "talisman_cost_ge": 530
           },
           "3": {
             "id": "f2a-3",
@@ -3759,7 +5388,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 7900,
+            "sl_cost": 10000,
+            "talisman_cost_ge": 530
           },
           "4": {
             "id": "p-51_a-36",
@@ -3940,7 +5572,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 7900,
+            "sl_cost": 10000,
+            "talisman_cost_ge": 530
           },
           "5": {
             "id": "b_34",
@@ -4173,7 +5808,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 7900,
+            "sl_cost": 10000,
+            "talisman_cost_ge": 530
           },
           "6": {
             "id": "p-40e_td",
@@ -4346,7 +5984,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 530
           },
           "7": {
             "id": "p-40c",
@@ -4527,7 +6168,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "8": {
             "id": "p-38_group",
@@ -4560,7 +6202,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 560,
+                          "sl_cost": 630,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 560,
+                          "sl_cost": 630,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 630,
+                          "sl_cost": 710,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 700,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 700,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 910,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -4576,7 +6268,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 630,
+                          "sl_cost": 710,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 910,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -4592,13 +6302,52 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 560,
+                          "sl_cost": 630,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 630,
+                          "sl_cost": 710,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 700,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 910,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 9200,
+                "sl_cost": 16000,
+                "talisman_cost_ge": 640
               },
               {
                 "id": "p-38g",
@@ -4625,7 +6374,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 650,
+                          "sl_cost": 860,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 650,
+                          "sl_cost": 860,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -4641,7 +6440,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -4661,13 +6478,60 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 650,
+                          "sl_cost": 860,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Rocket Launcher M10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 650,
+                          "sl_cost": 860,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 5600,
+                "sl_cost": 22000,
+                "talisman_cost_ge": 750
               }
             ]
           },
@@ -4702,7 +6566,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 560,
+                          "sl_cost": 630,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 560,
+                          "sl_cost": 630,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 630,
+                          "sl_cost": 710,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 700,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 700,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 910,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -4718,7 +6632,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 630,
+                          "sl_cost": 710,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 910,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -4738,13 +6670,52 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 560,
+                          "sl_cost": 630,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FSBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 630,
+                          "sl_cost": 710,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 700,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 910,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 9200,
+                "sl_cost": 16000,
+                "talisman_cost_ge": 640
               },
               {
                 "id": "p-40f_10",
@@ -4771,7 +6742,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1200,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1200,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -4787,7 +6808,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -4807,13 +6846,52 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FSBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 5600,
+                "sl_cost": 22000,
+                "talisman_cost_ge": 750
               }
             ]
           },
@@ -4848,7 +6926,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 560,
+                          "sl_cost": 630,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 560,
+                          "sl_cost": 630,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 630,
+                          "sl_cost": 710,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 630,
+                          "sl_cost": 710,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 700,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 700,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 910,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 910,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -4864,7 +7008,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 910,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -4884,13 +7038,44 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 560,
+                          "sl_cost": 630,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Mk.41",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 630,
+                          "sl_cost": 710,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 700,
+                          "sl_cost": 790,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 9200,
+                "sl_cost": 16000,
+                "talisman_cost_ge": 640
               },
               {
                 "id": "f4f-4",
@@ -4917,7 +7102,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1200,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1200,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -4933,7 +7184,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -4953,13 +7214,44 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Mk.41",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1200,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 5600,
+                "sl_cost": 22000,
+                "talisman_cost_ge": 750
               },
               {
                 "id": "f6f-3",
@@ -4986,7 +7278,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1100,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1100,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -5010,13 +7368,84 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "ITC mk.III",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1100,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "500 LB",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1100,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "LFRC mk.12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "M66",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 6900,
+                "sl_cost": 32000,
+                "talisman_cost_ge": 860
               }
             ]
           },
@@ -5181,7 +7610,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 9200,
+            "sl_cost": 16000,
+            "talisman_cost_ge": 640
           },
           "12": {
             "id": "b_25j_1",
@@ -5394,7 +7826,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 9200,
+            "sl_cost": 16000,
+            "talisman_cost_ge": 640
           },
           "13": {
             "id": "ki_43_2_late",
@@ -5548,7 +7983,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 700
+            "ge_cost": 700,
+            "talisman_cost_ge": 0
           },
           "14": {
             "id": "yp-38",
@@ -5737,7 +8173,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "15": {
             "id": "p-39_group",
@@ -5770,7 +8207,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 580,
+                          "sl_cost": 770,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -5786,7 +8273,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 580,
+                          "sl_cost": 770,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -5810,13 +8315,84 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Rocket Launcher M10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 7.62 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 580,
+                          "sl_cost": 770,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 580,
+                          "sl_cost": 770,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 37 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "New 37 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 11000,
+                "sl_cost": 22000,
+                "talisman_cost_ge": 750
               },
               {
                 "id": "p-39q_5",
@@ -5843,7 +8419,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1000,
+                          "sl_cost": 1400,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -5859,7 +8485,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1000,
+                          "sl_cost": 1400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -5879,13 +8523,68 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Rocket Launcher M10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1000,
+                          "sl_cost": 1400,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Offensive 37 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 37 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 6900,
+                "sl_cost": 32000,
+                "talisman_cost_ge": 860
               }
             ]
           },
@@ -6068,7 +8767,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 11000,
+            "sl_cost": 22000,
+            "talisman_cost_ge": 750
           },
           "17": {
             "id": "f4u_group",
@@ -6101,7 +8803,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1200,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1200,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -6117,7 +8869,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -6137,13 +8907,52 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 690,
+                          "sl_cost": 910,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "BMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 780,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 870,
+                          "sl_cost": 1200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "BLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1500,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 11000,
+                "sl_cost": 22000,
+                "talisman_cost_ge": 750
               },
               {
                 "id": "f4u-1a_usmc",
@@ -6170,7 +8979,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 920,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 920,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 2300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 1700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 1700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -6186,7 +9045,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 2300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -6202,13 +9079,36 @@ export const progressTree = {
                         [
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 920,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 1700,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 6900,
+                "sl_cost": 32000,
+                "talisman_cost_ge": 860
               },
               {
                 "id": "f4u-1d",
@@ -6235,7 +9135,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2100,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2100,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 2800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 2800,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -6251,7 +9201,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -6271,13 +9239,52 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2100,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 2800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3400,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 9200,
+                "sl_cost": 47000,
+                "talisman_cost_ge": 980
               }
             ]
           },
@@ -6312,7 +9319,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 470,
+                          "sl_cost": 620,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 840,
+                          "sl_cost": 1100,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -6328,7 +9385,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 470,
+                          "sl_cost": 620,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 840,
+                          "sl_cost": 1100,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -6352,13 +9427,100 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "ITC mk.III",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 470,
+                          "sl_cost": 620,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Improved torpedo",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 470,
+                          "sl_cost": 620,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "SBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 470,
+                          "sl_cost": 620,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "MBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 520,
+                          "sl_cost": 690,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 840,
+                          "sl_cost": 1100,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 840,
+                          "sl_cost": 1100,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 11000,
+                "sl_cost": 22000,
+                "talisman_cost_ge": 750
               },
               {
                 "id": "sb2c_4",
@@ -6385,7 +9547,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 550,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 550,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 620,
+                          "sl_cost": 890,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 620,
+                          "sl_cost": 890,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 900,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 900,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -6409,13 +9637,116 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "ITC mk.III",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 550,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "DGP-1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 550,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 550,
+                          "sl_cost": 790,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Improved torpedo",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 620,
+                          "sl_cost": 890,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 620,
+                          "sl_cost": 890,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 620,
+                          "sl_cost": 890,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 690,
+                          "sl_cost": 1000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "MBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 900,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 900,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 900,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 6900,
+                "sl_cost": 32000,
+                "talisman_cost_ge": 860
               }
             ]
           },
@@ -6630,7 +9961,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 11000,
+            "sl_cost": 22000,
+            "talisman_cost_ge": 750
           },
           "20": {
             "id": "p-51a_tl",
@@ -6765,7 +10099,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "21": {
             "id": "p-43a-1",
@@ -6918,7 +10253,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "22": {
             "id": "p-38g_metal",
@@ -7099,7 +10435,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "23": {
             "id": "pbm_3",
@@ -7274,7 +10611,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "24": {
             "id": "ki_61_1a_otsu_usa",
@@ -7428,7 +10766,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 850
+            "ge_cost": 850,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -7670,7 +11009,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 18000,
+            "sl_cost": 47000,
+            "talisman_cost_ge": 980
           },
           "2": {
             "id": "p-51_early_group",
@@ -7703,7 +11045,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2100,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2100,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 2800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 2800,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -7719,7 +11111,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -7735,13 +11145,52 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2100,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Mk.II year 1942",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gun_camora_mod.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 2800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Mk.II year 1943",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gun_camora_mod.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3400,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 18000,
+                "sl_cost": 47000,
+                "talisman_cost_ge": 980
               },
               {
                 "id": "p-51d-5",
@@ -7768,7 +11217,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -7784,7 +11299,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -7808,13 +11333,84 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FSBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Rocket Launcher M10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 13000,
+                "sl_cost": 76000,
+                "talisman_cost_ge": 1100
               }
             ]
           },
@@ -8005,7 +11601,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 18000,
+            "sl_cost": 47000,
+            "talisman_cost_ge": 980
           },
           "4": {
             "id": "pbj_group",
@@ -8038,7 +11637,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 790,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 790,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -8054,7 +11719,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Protective vest",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bulletproof_vest.png",
+                          "rp_cost": 790,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -8078,13 +11761,92 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 790,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "SBC-25",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 790,
+                          "sl_cost": 1300,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "MBC-25",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "MBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "LBC-8",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 18000,
+                "sl_cost": 47000,
+                "talisman_cost_ge": 980
               },
               {
                 "id": "pbj_1h",
@@ -8111,7 +11873,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 990,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 990,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 2000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 2000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2400,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -8127,7 +11955,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Protective vest",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bulletproof_vest.png",
+                          "rp_cost": 990,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -8151,13 +11997,108 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 990,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "SBC-25",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 990,
+                          "sl_cost": 1800,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 2000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "MBC-25",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 2000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 75 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1100,
+                          "sl_cost": 2000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "MBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "New 75 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2400,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2400,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "LBC-8",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1300,
+                          "sl_cost": 2400,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 13000,
+                "sl_cost": 76000,
+                "talisman_cost_ge": 1100
               }
             ]
           },
@@ -8384,7 +12325,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 18000,
+            "sl_cost": 47000,
+            "talisman_cost_ge": 980
           },
           "6": {
             "id": "a6m2_zero_usa",
@@ -8561,7 +12505,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "7": {
             "id": "xf5f",
@@ -8722,7 +12667,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "8": {
             "id": "p-63_group",
@@ -8755,7 +12701,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4900,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4900,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 3200,
+                          "sl_cost": 6300,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -8771,7 +12767,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 3200,
+                          "sl_cost": 6300,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -8791,13 +12805,68 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Rocket Launcher M10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 37 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4900,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 37 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 3200,
+                          "sl_cost": 6300,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 33000,
+                "sl_cost": 105000,
+                "talisman_cost_ge": 1200
               },
               {
                 "id": "p-63c-5",
@@ -8824,7 +12893,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -8840,7 +12959,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -8860,13 +12997,68 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Rocket Launcher M10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 37 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 37 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 20000,
+                "sl_cost": 135000,
+                "talisman_cost_ge": 1300
               }
             ]
           },
@@ -8901,7 +13093,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -8917,7 +13175,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -8937,13 +13205,68 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Rocket Launcher M10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 26000,
+                "sl_cost": 76000,
+                "talisman_cost_ge": 1100
               },
               {
                 "id": "p-47d",
@@ -8970,7 +13293,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2200,
+                          "sl_cost": 4300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2200,
+                          "sl_cost": 4300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -8986,7 +13375,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -9006,13 +13405,68 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2200,
+                          "sl_cost": 4300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 17000,
+                "sl_cost": 105000,
+                "talisman_cost_ge": 1200
               }
             ]
           },
@@ -9247,7 +13701,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 26000,
+            "sl_cost": 76000,
+            "talisman_cost_ge": 1100
           },
           "11": {
             "id": "p-61c_1",
@@ -9452,7 +13909,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 26000,
+            "sl_cost": 76000,
+            "talisman_cost_ge": 1100
           },
           "12": {
             "id": "b-17_group",
@@ -9485,7 +13945,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -9501,7 +14019,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Protective vest",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bulletproof_vest.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -9521,13 +14057,76 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1200,
+                          "sl_cost": 2200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "LBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "SBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "MBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 26000,
+                "sl_cost": 76000,
+                "talisman_cost_ge": 1100
               },
               {
                 "id": "b-17e_late",
@@ -9554,7 +14153,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -9570,7 +14227,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Protective vest",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bulletproof_vest.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -9590,13 +14265,76 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Turret 7.62 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "New 7.62 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "LBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "SBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "MBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 17000,
+                "sl_cost": 105000,
+                "talisman_cost_ge": 1200
               }
             ]
           },
@@ -9808,7 +14546,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 1750
+            "ge_cost": 1750,
+            "talisman_cost_ge": 0
           },
           "14": {
             "id": "pbm_5a",
@@ -10009,7 +14748,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "15": {
             "id": "p-38_late_group",
@@ -10042,7 +14782,65 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 2700,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 2700,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 6600,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 6600,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -10058,7 +14856,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -10078,13 +14894,68 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2700,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 6600,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Rocket Launcher M10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 46000,
+                "sl_cost": 155000,
+                "talisman_cost_ge": 1400
               },
               {
                 "id": "p-38l",
@@ -10111,7 +14982,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 3900,
+                          "sl_cost": 7100,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 3900,
+                          "sl_cost": 7100,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -10127,7 +15064,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -10147,13 +15102,76 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "DGP-1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 3900,
+                          "sl_cost": 7100,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "CTRC mk.3",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 27000,
+                "sl_cost": 185000,
+                "talisman_cost_ge": 1500
               }
             ]
           },
@@ -10188,7 +15206,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -10204,7 +15288,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -10228,13 +15322,76 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Rocket Launcher M10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1700,
+                          "sl_cost": 3300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 33000,
+                "sl_cost": 105000,
+                "talisman_cost_ge": 1200
               },
               {
                 "id": "p-47n-15",
@@ -10261,7 +15418,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5100,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5100,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 2200,
+                          "sl_cost": 4300,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 2200,
+                          "sl_cost": 4300,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2800,
+                          "sl_cost": 5500,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2800,
+                          "sl_cost": 5500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -10277,7 +15500,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 2800,
+                          "sl_cost": 5500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -10297,13 +15530,60 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5100,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 2200,
+                          "sl_cost": 4300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 2200,
+                          "sl_cost": 4300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2800,
+                          "sl_cost": 5500,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 20000,
+                "sl_cost": 135000,
+                "talisman_cost_ge": 1300
               }
             ]
           },
@@ -10504,7 +15784,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 33000,
+            "sl_cost": 105000,
+            "talisman_cost_ge": 1200
           },
           "18": {
             "id": "pb4y-2",
@@ -10713,7 +15996,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 40000,
+            "sl_cost": 135000,
+            "talisman_cost_ge": 1300
           },
           "19": {
             "id": "xp-55",
@@ -10883,7 +16169,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 3900
+            "ge_cost": 3900,
+            "talisman_cost_ge": 0
           },
           "20": {
             "id": "p-61a_1",
@@ -11062,7 +16349,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "21": {
             "id": "xp-50",
@@ -11224,7 +16512,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 1600
+            "ge_cost": 1600,
+            "talisman_cost_ge": 0
           },
           "22": {
             "id": "pv_2d",
@@ -11457,7 +16746,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "23": {
             "id": "bf-109f-4_usa",
@@ -11627,7 +16917,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 1450
+            "ge_cost": 1450,
+            "talisman_cost_ge": 0
           },
           "24": {
             "id": "p-63c-5_kingcobra_animal_version",
@@ -11816,7 +17107,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "25": {
             "id": "fr_1_fireball",
@@ -12006,7 +17298,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 1600
+            "ge_cost": 1600,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -12332,7 +17625,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 71000,
+            "sl_cost": 210000,
+            "talisman_cost_ge": 1800
           },
           "2": {
             "id": "p-51d-30_usaaf_korea",
@@ -12557,7 +17853,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 46000,
+            "sl_cost": 155000,
+            "talisman_cost_ge": 1400
           },
           "3": {
             "id": "f4u_late_group",
@@ -12590,7 +17889,57 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 4100,
+                          "sl_cost": 7900,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 4100,
+                          "sl_cost": 7900,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 5100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 5100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 4400,
+                          "sl_cost": 8500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -12606,7 +17955,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 4400,
+                          "sl_cost": 8500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -12626,13 +17993,44 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 2300,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 4400,
+                          "sl_cost": 8500,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 46000,
+                "sl_cost": 155000,
+                "talisman_cost_ge": 1400
               },
               {
                 "id": "f4u-4b",
@@ -12659,7 +18057,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 9600,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 9600,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5300,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5300,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6900,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6900,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -12675,7 +18139,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6900,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -12695,20 +18169,67 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6900,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 27000,
+                "sl_cost": 185000,
+                "talisman_cost_ge": 1500
               }
             ]
           },
           "4": {
             "id": "a-26_group",
             "name": "A-26",
-            "image": "",
+            "image": "https://static.encyclopedia.warthunder.com/slots/a-26_group.png",
             "progress": "",
             "children": [
               {
@@ -12736,7 +18257,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3900,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3900,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 3300,
+                          "sl_cost": 6400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -12752,7 +18331,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 3300,
+                          "sl_cost": 6400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -12780,13 +18369,124 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "M9/4-50",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/cannon.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "SBC-25",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FRC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1400,
+                          "sl_cost": 2700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "M9",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/cannon.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "SBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "ITC mk.III",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 1500,
+                          "sl_cost": 2900,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3900,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "Offensive 37 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3900,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "MBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2000,
+                          "sl_cost": 3900,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 3300,
+                          "sl_cost": 6400,
+                          "progress": 0
+                        },
+                        "13": {
+                          "id": "mod_Weaponry_13",
+                          "name": "New 37 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 3300,
+                          "sl_cost": 6400,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 46000,
+                "sl_cost": 155000,
+                "talisman_cost_ge": 1400
               },
               {
                 "id": "a-26b",
@@ -12813,7 +18513,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5300,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5300,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6900,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6900,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -12829,7 +18595,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6900,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -12853,13 +18629,92 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "SBC-25",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FRC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "SBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "ITC mk.III",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5300,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "MBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 5300,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6900,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 27000,
+                "sl_cost": 185000,
+                "talisman_cost_ge": 1500
               }
             ]
           },
@@ -12894,7 +18749,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 3100,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 3100,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4800,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4800,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -12910,7 +18831,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Protective vest",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bulletproof_vest.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 3100,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -12934,13 +18873,76 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 3100,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "LBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1600,
+                          "sl_cost": 3100,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "SBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "MBC-17",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4800,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "M10 bomb rack",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "AN-M56",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 5000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 46000,
+                "sl_cost": 155000,
+                "talisman_cost_ge": 1400
               },
               {
                 "id": "b_24d",
@@ -12967,7 +18969,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 3900,
+                          "sl_cost": 7100,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 3900,
+                          "sl_cost": 7100,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -12983,7 +19051,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Protective vest",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bulletproof_vest.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -13003,13 +19089,76 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "SBC-24",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Turret 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "MBC-24",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "New 12.7 mm MGs (turret)",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/turret_gun.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "LBC-24",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3900,
+                          "sl_cost": 7100,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "M66",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 27000,
+                "sl_cost": 185000,
+                "talisman_cost_ge": 1500
               }
             ]
           },
@@ -13237,7 +19386,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 2980
+            "ge_cost": 2980,
+            "talisman_cost_ge": 0
           },
           "7": {
             "id": "p-38j_marge",
@@ -13434,7 +19584,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "8": {
             "id": "p-51h-5_na",
@@ -13659,7 +19810,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 54000,
+            "sl_cost": 185000,
+            "talisman_cost_ge": 1500
           },
           "9": {
             "id": "f8f1_group",
@@ -13692,7 +19846,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4500,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -13708,7 +19928,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -13736,13 +19966,116 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "DGP-1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3800,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "LFRC mk.12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2400,
+                          "sl_cost": 4400,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4500,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4500,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2500,
+                          "sl_cost": 4500,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 54000,
+                "sl_cost": 185000,
+                "talisman_cost_ge": 1500
               },
               {
                 "id": "f7f1",
@@ -13769,7 +20102,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 3500,
+                          "sl_cost": 6000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 3500,
+                          "sl_cost": 6000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 4400,
+                          "sl_cost": 7600,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 4400,
+                          "sl_cost": 7600,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -13789,13 +20188,68 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 3500,
+                          "sl_cost": 6000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 4400,
+                          "sl_cost": 7600,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 31000,
+                "sl_cost": 200000,
+                "talisman_cost_ge": 1700
               }
             ]
           },
@@ -13830,7 +20284,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 3900,
+                          "sl_cost": 7100,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 3900,
+                          "sl_cost": 7100,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -13854,13 +20374,92 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "SBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "TC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Mk78",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 1900,
+                          "sl_cost": 3500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "LFRC mk.12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 2600,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "MBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3900,
+                          "sl_cost": 7100,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "LBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5600,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 54000,
+                "sl_cost": 185000,
+                "talisman_cost_ge": 1500
               },
               {
                 "id": "douglas_ad_4",
@@ -13887,7 +20486,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 3300,
+                          "sl_cost": 5700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 3300,
+                          "sl_cost": 5700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5900,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5900,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -13915,13 +20580,100 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "SBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Mk78",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 2100,
+                          "sl_cost": 3600,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "TC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "LFRC mk.12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 3000,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 3300,
+                          "sl_cost": 5700,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "MBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3300,
+                          "sl_cost": 5700,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5900,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "LBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5900,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "FFAR Mighty Mouse",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5900,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 31000,
+                "sl_cost": 200000,
+                "talisman_cost_ge": 1700
               },
               {
                 "id": "am_1_mauler",
@@ -13948,7 +20700,73 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Radiator",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 2800,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                          "rp_cost": 2800,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6300,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6300,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 4000,
+                          "sl_cost": 6600,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Flight_performance_8",
+                          "name": "Engine injection",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                          "rp_cost": 4000,
+                          "sl_cost": 6600,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -13972,13 +20790,100 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "M64",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 3100,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2800,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "M65",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2800,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "LFRC mk.12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 2800,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "AN-Mk 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6300,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "Mk.13",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_torpedo.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6300,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 4000,
+                          "sl_cost": 6600,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "M66",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4000,
+                          "sl_cost": 6600,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "Mk 13 Mod 0",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_naval_mine.png",
+                          "rp_cost": 4000,
+                          "sl_cost": 6600,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 35000,
+                "sl_cost": 210000,
+                "talisman_cost_ge": 1800
               }
             ]
           },
@@ -14181,7 +21086,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 63000,
+            "sl_cost": 200000,
+            "talisman_cost_ge": 1700
           },
           "12": {
             "id": "p-51d-20-na",
@@ -14398,7 +21306,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "13": {
             "id": "p-38k",
@@ -14575,7 +21484,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "14": {
             "id": "p-51d-10",
@@ -14792,7 +21702,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "15": {
             "id": "a-26c",
@@ -14997,7 +21908,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 1500
           },
           "16": {
             "id": "p-47m-1-re",
@@ -15194,7 +22108,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "17": {
             "id": "a-26c-45-dt",
@@ -15407,7 +22322,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "18": {
             "id": "p-47m-1-re_boxted",
@@ -15604,7 +22520,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "19": {
             "id": "xf5u_1",
@@ -15785,7 +22702,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "20": {
             "id": "fw-190a-8_usa",
@@ -15955,7 +22873,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 3850
+            "ge_cost": 3850,
+            "talisman_cost_ge": 0
           },
           "21": {
             "id": "p-59a",
@@ -16116,7 +23035,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "22": {
             "id": "spitfire_ix_usa",
@@ -16330,7 +23250,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 4880
+            "ge_cost": 4880,
+            "talisman_cost_ge": 0
           },
           "23": {
             "id": "f4u-4b_vmf_214",
@@ -16519,7 +23440,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "24": {
             "id": "douglas_a_1h",
@@ -16780,7 +23702,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "25": {
             "id": "f4u-6_au-1",
@@ -16997,7 +23920,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "26": {
             "id": "f2g-1",
@@ -17198,7 +24122,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "27": {
             "id": "f7f3",
@@ -17423,7 +24348,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -17621,7 +24547,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 82000,
+            "sl_cost": 240000,
+            "talisman_cost_ge": 1900
           },
           "2": {
             "id": "f-84_group",
@@ -17654,7 +24583,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 4000,
+                          "sl_cost": 6500,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 4000,
+                          "sl_cost": 6500,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 5800,
+                          "sl_cost": 9500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -17670,7 +24657,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 5800,
+                          "sl_cost": 9500,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -17694,13 +24691,92 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FRC mk.7",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FSBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 2900,
+                          "sl_cost": 4700,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FRC mk.7a",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 4000,
+                          "sl_cost": 6500,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4000,
+                          "sl_cost": 6500,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "LFRC mk.12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 5800,
+                          "sl_cost": 9500,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 5800,
+                          "sl_cost": 9500,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 82000,
+                "sl_cost": 240000,
+                "talisman_cost_ge": 1900
               },
               {
                 "id": "f-84g",
@@ -17727,7 +24803,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 3200,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 3200,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 5000,
+                          "sl_cost": 8100,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 5000,
+                          "sl_cost": 8100,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -17743,7 +24877,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -17767,13 +24911,92 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 3200,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FRC mk.7",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 3200,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FSBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3200,
+                          "sl_cost": 5200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FRC mk.7a",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 5000,
+                          "sl_cost": 8100,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 5000,
+                          "sl_cost": 8100,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "LFRC mk.12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 48000,
+                "sl_cost": 270000,
+                "talisman_cost_ge": 2000
               }
             ]
           },
@@ -17956,7 +25179,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 82000,
+            "sl_cost": 240000,
+            "talisman_cost_ge": 1900
           },
           "4": {
             "id": "f3d_1",
@@ -18145,7 +25371,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 82000,
+            "sl_cost": 240000,
+            "talisman_cost_ge": 1900
           },
           "5": {
             "id": "b_57_group",
@@ -18178,7 +25407,49 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 6100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 6100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -18194,7 +25465,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 20000,
+                          "sl_cost": 32000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -18210,13 +25499,36 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "EEMBC No.2 Mark 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 6100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 105000,
+                "sl_cost": 300000,
+                "talisman_cost_ge": 2100
               },
               {
                 "id": "b-57b",
@@ -18243,7 +25555,57 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 4200,
+                          "sl_cost": 6700,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 4200,
+                          "sl_cost": 6700,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 8300,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -18259,7 +25621,33 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 4200,
+                          "sl_cost": 6700,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Survivability_3",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                          "rp_cost": 8300,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -18287,13 +25675,116 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "M39 cannon",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/cannon.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5400,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "EESBC No.2 Mark 2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5400,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "BLU-27/B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 3400,
+                          "sl_cost": 5400,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "M117",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "EERC No.3 Mark 1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 4200,
+                          "sl_cost": 6700,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "EELBC No.1 Mark 3",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4200,
+                          "sl_cost": 6700,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "EERC No.3 Mark 2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 4200,
+                          "sl_cost": 6700,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 8300,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "LAU-3/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 8300,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 61000,
+                "sl_cost": 340000,
+                "talisman_cost_ge": 2200
               }
             ]
           },
@@ -18449,7 +25940,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 7540
+            "ge_cost": 7540,
+            "talisman_cost_ge": 0
           },
           "7": {
             "id": "a2d",
@@ -18667,7 +26159,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 6900
+            "ge_cost": 6900,
+            "talisman_cost_ge": 0
           },
           "8": {
             "id": "f-80",
@@ -18868,7 +26361,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 105000,
+            "sl_cost": 300000,
+            "talisman_cost_ge": 2100
           },
           "9": {
             "id": "f-86_group",
@@ -18901,7 +26397,57 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 6100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 6100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 6800,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 7600,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 7600,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -18917,7 +26463,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 6800,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -18937,13 +26501,52 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 6100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 6800,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 7600,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 105000,
+                "sl_cost": 300000,
+                "talisman_cost_ge": 2100
               },
               {
                 "id": "f-86f-25",
@@ -18970,7 +26573,57 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 6800,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 6800,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 7600,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -18986,7 +26639,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 7600,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -19006,13 +26677,60 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 12.7 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 6800,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 7600,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 12.7 mm MGs",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "M117",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 61000,
+                "sl_cost": 340000,
+                "talisman_cost_ge": 2200
               }
             ]
           },
@@ -19047,7 +26765,57 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 8600,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 8600,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 6700,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 6700,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -19063,7 +26831,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -19087,13 +26873,68 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 8600,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4500,
+                          "sl_cost": 7300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 6700,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "LFRC mk.12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 95000,
+                "sl_cost": 270000,
+                "talisman_cost_ge": 2000
               },
               {
                 "id": "f9f-5",
@@ -19120,7 +26961,57 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 6100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 6100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 5100,
+                          "sl_cost": 8200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 7600,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 7600,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -19136,7 +27027,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 5100,
+                          "sl_cost": 8200,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -19156,13 +27065,60 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "FRC mk.2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 6100,
+                          "sl_cost": 9800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 5100,
+                          "sl_cost": 8200,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 5100,
+                          "sl_cost": 8200,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 7600,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 53000,
+                "sl_cost": 300000,
+                "talisman_cost_ge": 2100
               },
               {
                 "id": "f9f-8",
@@ -19189,7 +27145,57 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 6800,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 6800,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 8500,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 8500,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -19205,7 +27211,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -19229,13 +27253,68 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "FMBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 6800,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "FLBC mk.1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "FFAR Mighty Mouse",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 4600,
+                          "sl_cost": 7400,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 8500,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "AIM-9B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 61000,
+                "sl_cost": 340000,
+                "talisman_cost_ge": 2200
               }
             ]
           },
@@ -19454,7 +27533,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 120000,
+            "sl_cost": 340000,
+            "talisman_cost_ge": 2200
           },
           "12": {
             "id": "f-89d",
@@ -19583,7 +27665,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "13": {
             "id": "f-86f-35",
@@ -19764,7 +27847,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -19849,7 +27933,49 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 14000,
+                          "sl_cost": 22000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 21000,
+                          "sl_cost": 33000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -19865,7 +27991,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 14000,
+                          "sl_cost": 22000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 21000,
+                          "sl_cost": 33000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -19885,13 +28029,44 @@ export const progressTree = {
                           0,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "AIM-9B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 150000,
+                "sl_cost": 420000,
+                "talisman_cost_ge": 2400
               },
               {
                 "id": "f-104c",
@@ -19918,7 +28093,49 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -19934,7 +28151,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -19958,13 +28193,68 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "BLU-1",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "AIM-9B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "M117",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "LAU-3/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 86000,
+                "sl_cost": 480000,
+                "talisman_cost_ge": 2600
               }
             ]
           },
@@ -20147,7 +28437,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 135000,
+            "sl_cost": 380000,
+            "talisman_cost_ge": 2300
           },
           "3": {
             "id": "f3h-2",
@@ -20400,7 +28693,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 150000,
+            "sl_cost": 420000,
+            "talisman_cost_ge": 2400
           },
           "4": {
             "id": "a_4b_group",
@@ -20433,7 +28729,57 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 6800,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 5700,
+                          "sl_cost": 9000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 5700,
+                          "sl_cost": 9000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 7400,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -20449,7 +28795,25 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 6800,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 7400,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -20477,13 +28841,132 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Mk81",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "AGM-12B Bullpup",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_missile.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "MK 77",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 3800,
+                          "sl_cost": 6000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 6800,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Mk82",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 6800,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "LAU-3/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 6800,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "Mk79",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 4300,
+                          "sl_cost": 6800,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "Mk 4 Mod 0 gun pod",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 5700,
+                          "sl_cost": 9000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "Mk83",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 5700,
+                          "sl_cost": 9000,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "LAU-10/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                          "rp_cost": 5700,
+                          "sl_cost": 9000,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 7400,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "13": {
+                          "id": "mod_Weaponry_13",
+                          "name": "Mk84",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 7400,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "14": {
+                          "id": "mod_Weaponry_14",
+                          "name": "AIM-9B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 7400,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 135000,
+                "sl_cost": 380000,
+                "talisman_cost_ge": 2300
               },
               {
                 "id": "fj_4b",
@@ -20510,7 +28993,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -20526,7 +29067,17 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -20550,13 +29101,92 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "FSBC mk.5",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "SBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "AERO-7",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "MBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "LAU-10/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                          "rp_cost": 6400,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "AIM-9B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "LBC mk.I",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 16000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 76000,
+                "sl_cost": 420000,
+                "talisman_cost_ge": 2400
               }
             ]
           },
@@ -20689,7 +29319,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 170000,
+            "sl_cost": 480000,
+            "talisman_cost_ge": 2600
           },
           "6": {
             "id": "a_4e_early",
@@ -20701,19 +29334,15 @@ export const progressTree = {
                 "Flight performance": {
                   "grid": [
                     [
-                      1,
                       1
                     ],
                     [
-                      1,
                       1
                     ],
                     [
-                      1,
                       1
                     ],
                     [
-                      1,
                       1
                     ]
                   ],
@@ -20746,6 +29375,56 @@ export const progressTree = {
                       "id": "mod_Flight_performance_4",
                       "name": "Engine",
                       "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 4300,
+                      "sl_cost": 6800,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 4800,
+                      "sl_cost": 7600,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 8600,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
                       "rp_cost": 8400,
                       "sl_cost": 13000,
                       "progress": 0
@@ -20901,52 +29580,6 @@ export const progressTree = {
                       "progress": 0
                     }
                   }
-                },
-                "Survivability": {
-                  "grid": [
-                    [
-                      1,
-                      1
-                    ],
-                    [
-                      1,
-                      1
-                    ]
-                  ],
-                  "mods": {
-                    "1": {
-                      "id": "mod_Survivability_1",
-                      "name": "Fuselage repair",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
-                      "rp_cost": 4300,
-                      "sl_cost": 6800,
-                      "progress": 0
-                    },
-                    "2": {
-                      "id": "mod_Survivability_2",
-                      "name": "Airframe",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
-                      "rp_cost": 4800,
-                      "sl_cost": 7600,
-                      "progress": 0
-                    },
-                    "3": {
-                      "id": "mod_Survivability_3",
-                      "name": "G-suit",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
-                      "rp_cost": 5400,
-                      "sl_cost": 8600,
-                      "progress": 0
-                    },
-                    "4": {
-                      "id": "mod_Survivability_4",
-                      "name": "Cover",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
-                      "rp_cost": 8400,
-                      "sl_cost": 13000,
-                      "progress": 0
-                    }
-                  }
                 }
               },
               "availableRP": 0,
@@ -20954,7 +29587,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": true,
-            "event": false
+            "event": false,
+            "sl_cost": 420000,
+            "rp_cost": 400000,
+            "talisman_cost_ge": 2400
           },
           "7": {
             "id": "fj_4b_agm_12b",
@@ -21179,7 +29815,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2800
           },
           "8": {
             "id": "f-100d",
@@ -21416,7 +30055,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 170000,
+            "sl_cost": 480000,
+            "talisman_cost_ge": 2600
           },
           "9": {
             "id": "f8u-2",
@@ -21601,7 +30243,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 190000,
+            "sl_cost": 530000,
+            "talisman_cost_ge": 2700
           },
           "10": {
             "id": "av_8c",
@@ -21842,7 +30487,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 190000,
+            "sl_cost": 530000,
+            "talisman_cost_ge": 2700
           },
           "11": {
             "id": "f_117",
@@ -22023,12 +30671,15 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": true,
-            "event": false
+            "event": false,
+            "sl_cost": 440000,
+            "rp_cost": 400000,
+            "talisman_cost_ge": 2400
           },
           "12": {
             "id": "b_52h",
-            "name": "",
-            "image": "",
+            "name": "B-52H",
+            "image": "https://static.encyclopedia.warthunder.com/slots/b_52h.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -22050,7 +30701,57 @@ export const progressTree = {
                       1,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 47000,
+                      "sl_cost": 75000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Weaponry": {
                   "grid": [
@@ -22070,10 +30771,60 @@ export const progressTree = {
                       0,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "M117",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "Mk84",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2600
           },
           "13": {
             "id": "av_8a",
@@ -22315,7 +31066,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 8910
+            "ge_cost": 8910,
+            "talisman_cost_ge": 0
           },
           "14": {
             "id": "f11f_1_late",
@@ -22516,7 +31268,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2800
           },
           "15": {
             "id": "a_10a_early",
@@ -22765,7 +31520,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "16": {
             "id": "f4d_1",
@@ -22950,7 +31706,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2600
           },
           "17": {
             "id": "f_106a_1972",
@@ -23123,7 +31882,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2400
           }
         }
       },
@@ -23426,7 +32188,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 230000,
+            "sl_cost": 630000,
+            "talisman_cost_ge": 2900
           },
           "2": {
             "id": "f-4c",
@@ -23691,7 +32456,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 210000,
+            "sl_cost": 580000,
+            "talisman_cost_ge": 2800
           },
           "3": {
             "id": "f-8e",
@@ -23956,7 +32724,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 210000,
+            "sl_cost": 580000,
+            "talisman_cost_ge": 2800
           },
           "4": {
             "id": "a_10a_late",
@@ -24169,7 +32940,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 210000,
+            "sl_cost": 580000,
+            "talisman_cost_ge": 2800
           },
           "5": {
             "id": "f-105d",
@@ -24426,7 +33200,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 210000,
+            "sl_cost": 580000,
+            "talisman_cost_ge": 2800
           },
           "6": {
             "id": "f-5c",
@@ -24659,7 +33436,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "7": {
             "id": "f-5a",
@@ -24892,7 +33670,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2800
           },
           "8": {
             "id": "f-4e",
@@ -25177,7 +33958,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 260000,
+            "sl_cost": 720000,
+            "talisman_cost_ge": 3000
           },
           "9": {
             "id": "f-4j",
@@ -25426,7 +34210,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 260000,
+            "sl_cost": 720000,
+            "talisman_cost_ge": 3000
           },
           "10": {
             "id": "a_7_group",
@@ -25455,7 +34242,41 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -25471,7 +34292,41 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Survivability_3",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Survivability_4",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -25503,13 +34358,148 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "SUU-23/A. gun pod",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Mk82",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "LAU-3/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "GPU-5/A. gun pod",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "M117",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "BLU-27/B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "Offensive 30 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "Mk83",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "AIM-9J",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "13": {
+                          "id": "mod_Weaponry_13",
+                          "name": "New 30 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "14": {
+                          "id": "mod_Weaponry_14",
+                          "name": "Mk84",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "15": {
+                          "id": "mod_Weaponry_15",
+                          "name": "GBU-8",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "16": {
+                          "id": "mod_Weaponry_16",
+                          "name": "AGM-65A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 230000,
+                "sl_cost": 630000,
+                "talisman_cost_ge": 2900
               },
               {
                 "id": "a_7e",
@@ -25532,7 +34522,41 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 7000,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 9100,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 14000,
+                          "sl_cost": 22000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -25548,7 +34572,41 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 7000,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Survivability_3",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 9100,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Survivability_4",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 14000,
+                          "sl_cost": 22000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -25580,13 +34638,148 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "SUU-23/A. gun pod",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Mk82",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "LAU-3/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 7300,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 7000,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "GPU-5/A. gun pod",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 7000,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "M117",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 7000,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "BLU-27/B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 7000,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "LAU-10/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                          "rp_cost": 7000,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 9100,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "Offensive 30 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 9100,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "Mk83",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 9100,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "13": {
+                          "id": "mod_Weaponry_13",
+                          "name": "AIM-9G",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 9100,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "14": {
+                          "id": "mod_Weaponry_14",
+                          "name": "New 30 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 14000,
+                          "sl_cost": 22000,
+                          "progress": 0
+                        },
+                        "15": {
+                          "id": "mod_Weaponry_15",
+                          "name": "Mk84",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 14000,
+                          "sl_cost": 22000,
+                          "progress": 0
+                        },
+                        "16": {
+                          "id": "mod_Weaponry_16",
+                          "name": "AGM-62A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                          "rp_cost": 14000,
+                          "sl_cost": 22000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 130000,
+                "sl_cost": 720000,
+                "talisman_cost_ge": 3000
               }
             ]
           },
@@ -25845,7 +35038,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 230000,
+            "sl_cost": 630000,
+            "talisman_cost_ge": 2900
           },
           "12": {
             "id": "av_8b_na",
@@ -26114,7 +35310,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "13": {
             "id": "a_6e_tram",
@@ -26392,7 +35589,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 9270
+            "ge_cost": 9270,
+            "talisman_cost_ge": 0
           },
           "14": {
             "id": "a_10c",
@@ -26677,7 +35875,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 260000,
+            "sl_cost": 720000,
+            "talisman_cost_ge": 3000
           },
           "15": {
             "id": "f_111f",
@@ -26946,7 +36147,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 260000,
+            "sl_cost": 720000,
+            "talisman_cost_ge": 3000
           },
           "16": {
             "id": "f-4s",
@@ -27191,7 +36395,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "17": {
             "id": "a_7k",
@@ -27468,7 +36673,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 3000
           }
         }
       },
@@ -27526,7 +36734,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 26000,
+                          "sl_cost": 40000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -27542,7 +36808,25 @@ export const progressTree = {
                         [
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -27570,13 +36854,100 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "BLU-27/B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "AIM-9J",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Mk82",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "LAU-3/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "AIM-9L",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "Mk84",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "GBU-8",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                          "rp_cost": 26000,
+                          "sl_cost": 40000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "AGM-65B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                          "rp_cost": 26000,
+                          "sl_cost": 40000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 290000,
+                "sl_cost": 780000,
+                "talisman_cost_ge": 3100
               },
               {
                 "id": "f_16a_block_15_adf",
@@ -27603,7 +36974,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 22000,
+                          "sl_cost": 34000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 22000,
+                          "sl_cost": 34000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 43000,
+                          "sl_cost": 66000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -27619,7 +37048,25 @@ export const progressTree = {
                         [
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -27639,13 +37086,60 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "AIM-9L",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "AIM-7M",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 22000,
+                          "sl_cost": 34000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "AIM-120A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                          "rp_cost": 43000,
+                          "sl_cost": 66000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 160000,
+                "sl_cost": 860000,
+                "talisman_cost_ge": 3200
               }
             ]
           },
@@ -27880,12 +37374,15 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 290000,
+            "sl_cost": 780000,
+            "talisman_cost_ge": 3100
           },
           "3": {
             "id": "f_18_group",
             "name": "F 18",
-            "image": "",
+            "image": "https://static.encyclopedia.warthunder.com/slots/f_18_group.png",
             "progress": "",
             "children": [
               {
@@ -27913,7 +37410,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 26000,
+                          "sl_cost": 40000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -27929,7 +37484,33 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Survivability_3",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                          "rp_cost": 26000,
+                          "sl_cost": 40000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -27949,13 +37530,76 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "AN/AAS-38",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "AGM-62 ER/DL",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "AIM-9L",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "AIM-7F",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                          "rp_cost": 15000,
+                          "sl_cost": 23000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "AIM-7M",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                          "rp_cost": 26000,
+                          "sl_cost": 40000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 290000,
+                "sl_cost": 780000,
+                "talisman_cost_ge": 3100
               },
               {
                 "id": "fa_18c_late",
@@ -27982,7 +37626,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -27998,7 +37700,33 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Survivability_3",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -28026,13 +37754,148 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "AIM-9L",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "LITENING II",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "JDAM",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                          "rp_cost": 8600,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "AIM-7P",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "LGBU",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "LJDAM",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "AIM-9M",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "AGM-62 ER/DL",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "APKWS II",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "AGM-65F",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "13": {
+                          "id": "mod_Weaponry_13",
+                          "name": "AIM-120B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        },
+                        "14": {
+                          "id": "mod_Weaponry_14",
+                          "name": "AIM-120C",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        },
+                        "15": {
+                          "id": "mod_Weaponry_15",
+                          "name": "AGM-65E",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        },
+                        "16": {
+                          "id": "mod_Weaponry_16",
+                          "name": "AGM-84H",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_lr_missile.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 175000,
+                "sl_cost": 940000,
+                "talisman_cost_ge": 3300
               }
             ]
           },
@@ -28287,7 +38150,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 320000,
+            "sl_cost": 860000,
+            "talisman_cost_ge": 3200
           },
           "5": {
             "id": "f_15e",
@@ -28580,7 +38446,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 350000,
+            "sl_cost": 940000,
+            "talisman_cost_ge": 3300
           },
           "6": {
             "id": "f_20a",
@@ -28845,7 +38714,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "7": {
             "id": "f_14a_iriaf",
@@ -29114,7 +38984,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 3100
           },
           "8": {
             "id": "f_16c_block_50",
@@ -29383,7 +39256,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 350000,
+            "sl_cost": 940000,
+            "talisman_cost_ge": 3300
           },
           "9": {
             "id": "f_15c_msip2",
@@ -29624,7 +39500,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 350000,
+            "sl_cost": 940000,
+            "talisman_cost_ge": 3300
           },
           "10": {
             "id": "f_14_group",
@@ -29653,7 +39532,41 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -29669,7 +39582,41 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Survivability_3",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Survivability_4",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -29697,13 +39644,124 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "LAU-10/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "AIM-9G",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Mk82",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "AIM-9H",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "AIM-7E-2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "Mk83",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "AIM-7F",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "Mk84",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        },
+                        "13": {
+                          "id": "mod_Weaponry_13",
+                          "name": "AIM-54A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_longrange_missile.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 320000,
+                "sl_cost": 860000,
+                "talisman_cost_ge": 3200
               },
               {
                 "id": "f_14b",
@@ -29726,7 +39784,41 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -29742,7 +39834,41 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Survivability_3",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Survivability_4",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
@@ -29770,13 +39896,124 @@ export const progressTree = {
                           0,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "LAU-10/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "LANTIRN",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "Mk82/GBU-38",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "GBU-12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "Flares/Chaff BOL",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "AIM-7M",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "Mk83",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "GBU-16",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "AIM-9L",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "13": {
+                          "id": "mod_Weaponry_13",
+                          "name": "AIM-54A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_longrange_missile.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
                 },
                 "premium": false,
                 "squadron": false,
-                "event": false
+                "event": false,
+                "rp_cost": 175000,
+                "sl_cost": 940000,
+                "talisman_cost_ge": 3300
               }
             ]
           },
@@ -30011,7 +40248,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -30031,8 +40269,8 @@ export const progressTree = {
         "vehicles": {
           "1": {
             "id": "f_16c_block_52_aesa",
-            "name": "",
-            "image": "",
+            "name": "F-16CM PoBIT",
+            "image": "https://static.encyclopedia.warthunder.com/slots/f_16c_block_52_aesa.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -30054,7 +40292,65 @@ export const progressTree = {
                       1,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "New boosters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 38000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Survivability": {
                   "grid": [
@@ -30070,7 +40366,33 @@ export const progressTree = {
                     [
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Weaponry": {
                   "grid": [
@@ -30098,10 +40420,132 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "SNIPER ATP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "APKWS II",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "AIM-9M",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "LGBU",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "AGM-65D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "JDAM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "LJDAM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "AGM-65G",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "AIM-120B/C",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "12": {
+                      "id": "mod_Weaponry_12",
+                      "name": "GBU-39",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_glide_little.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 38000,
+                      "progress": 0
+                    },
+                    "13": {
+                      "id": "mod_Weaponry_13",
+                      "name": "AGM-154",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_glide_little.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 38000,
+                      "progress": 0
+                    },
+                    "14": {
+                      "id": "mod_Weaponry_14",
+                      "name": "AIM-120D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 38000,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1080000,
+            "talisman_cost_ge": 3500
           },
           "2": {
             "id": "f_15c_golden_eagle",
@@ -30354,12 +40798,15 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1080000,
+            "talisman_cost_ge": 3500
           },
           "3": {
             "id": "fa_18e_block_2",
-            "name": "",
-            "image": "",
+            "name": "F/A-18E",
+            "image": "https://static.encyclopedia.warthunder.com/slots/fa_18e_block_2.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -30381,7 +40828,65 @@ export const progressTree = {
                       1,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "New boosters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Survivability": {
                   "grid": [
@@ -30397,7 +40902,33 @@ export const progressTree = {
                     [
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Weaponry": {
                   "grid": [
@@ -30429,10 +40960,132 @@ export const progressTree = {
                       0,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "ATFLIR",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "JDAM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "AIM-9M",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "LGBU",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "LJDAM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "AGM-65F",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "APKWS II",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "AGM-62 ER/DL",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "AIM-120C",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "12": {
+                      "id": "mod_Weaponry_12",
+                      "name": "AGM-84H",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_lr_missile.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    },
+                    "13": {
+                      "id": "mod_Weaponry_13",
+                      "name": "AGM-65E",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    },
+                    "14": {
+                      "id": "mod_Weaponry_14",
+                      "name": "AIM-120D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1080000,
+            "talisman_cost_ge": 3500
           }
         }
       }
@@ -31756,7 +42409,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 370000,
+            "sl_cost": 370000,
+            "talisman_cost_ge": 2000
           },
           "2": {
             "id": "h_34",
@@ -31973,7 +42629,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "3": {
             "id": "uh_1b",
@@ -32162,7 +42819,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 99000,
+            "sl_cost": 390000,
+            "talisman_cost_ge": 2100
           },
           "4": {
             "id": "uh_1c",
@@ -32359,7 +43019,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 150000,
+            "sl_cost": 490000,
+            "talisman_cost_ge": 2200
           },
           "5": {
             "id": "uh_1c_xm_30",
@@ -32536,7 +43199,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -32745,7 +43409,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 370000,
+            "sl_cost": 990000,
+            "talisman_cost_ge": 2400
           },
           "2": {
             "id": "ah_1f",
@@ -32946,7 +43613,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 370000,
+            "sl_cost": 990000,
+            "talisman_cost_ge": 2400
           },
           "3": {
             "id": "rah_66",
@@ -33119,7 +43789,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "4": {
             "id": "ah_56a",
@@ -33292,7 +43963,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": true,
-            "event": false
+            "event": false,
+            "sl_cost": 1020000,
+            "rp_cost": 520000,
+            "talisman_cost_ge": 2800
           },
           "5": {
             "id": "oh_58d",
@@ -33517,7 +44191,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 380000,
+            "sl_cost": 1000000,
+            "talisman_cost_ge": 2600
           },
           "6": {
             "id": "ah_64a",
@@ -33722,7 +44399,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 390000,
+            "sl_cost": 1010000,
+            "talisman_cost_ge": 2700
           },
           "7": {
             "id": "ah_1w",
@@ -33947,7 +44627,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 380000,
+            "sl_cost": 1000000,
+            "talisman_cost_ge": 2600
           },
           "8": {
             "id": "ah_64a_greece_usa",
@@ -34152,7 +44835,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "9": {
             "id": "yah_64",
@@ -34317,7 +45001,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": true,
-            "event": false
+            "event": false,
+            "sl_cost": 1010000,
+            "rp_cost": 480000,
+            "talisman_cost_ge": 2700
           },
           "10": {
             "id": "ah_64a_peten",
@@ -34502,7 +45189,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -34768,7 +45456,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1020000,
+            "talisman_cost_ge": 2800
           },
           "2": {
             "id": "ah_64d",
@@ -34965,7 +45656,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1020000,
+            "talisman_cost_ge": 2800
           },
           "3": {
             "id": "ah_1z",
@@ -35190,12 +45884,15 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1020000,
+            "talisman_cost_ge": 2800
           },
           "4": {
-            "id": "",
-            "name": "",
-            "image": "",
+            "id": "ah_64e",
+            "name": "AH-64E",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_64e.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -35213,7 +45910,33 @@ export const progressTree = {
                     [
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Survivability": {
                   "grid": [
@@ -35233,7 +45956,57 @@ export const progressTree = {
                       1,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Survivability_5",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Survivability_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Weaponry": {
                   "grid": [
@@ -35253,10 +46026,68 @@ export const progressTree = {
                       1,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "New 30 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "AGM-114 2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "APKWS II",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "AGM-179 (SAL)",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "AIM-92 Stinger",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "AGM-179 (IR)",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1030000,
+            "talisman_cost_ge": 2900
           }
         }
       }
@@ -35487,7 +46318,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": true
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 190
           },
           "2": {
             "id": "us_destroyer_clemson_barker",
@@ -35708,7 +46542,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 2900,
+            "sl_cost": 700,
+            "talisman_cost_ge": 190
           },
           "3": {
             "id": "us_destroyer_clemson_welborn_c_wood",
@@ -35914,7 +46751,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 250
+            "ge_cost": 250,
+            "talisman_cost_ge": 0
           },
           "4": {
             "id": "us_destroyer_farragut_1942",
@@ -36163,7 +47001,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 5300,
+            "sl_cost": 5000,
+            "talisman_cost_ge": 410
           }
         }
       },
@@ -36187,16 +47028,508 @@ export const progressTree = {
         ],
         "vehicles": {
           "1": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_destroyer_fletcher",
+            "name": "USS Fletcher",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_fletcher.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 380,
+                      "sl_cost": 530,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 360,
+                      "sl_cost": 510,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 400,
+                      "sl_cost": 560,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 620,
+                      "sl_cost": 870,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 380,
+                      "sl_cost": 530,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 360,
+                      "sl_cost": 510,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 360,
+                      "sl_cost": 510,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 400,
+                      "sl_cost": 560,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 400,
+                      "sl_cost": 560,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 620,
+                      "sl_cost": 870,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 620,
+                      "sl_cost": 870,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "5 inch Common Mk.32",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 380,
+                      "sl_cost": 530,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 380,
+                      "sl_cost": 530,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 380,
+                      "sl_cost": 530,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 360,
+                      "sl_cost": 510,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 360,
+                      "sl_cost": 510,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 360,
+                      "sl_cost": 510,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 400,
+                      "sl_cost": 560,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 400,
+                      "sl_cost": 560,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 400,
+                      "sl_cost": 560,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Firepower_10",
+                      "name": "Torpedo Mode",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/torpedo.png",
+                      "rp_cost": 620,
+                      "sl_cost": 870,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Firepower_11",
+                      "name": "Bomb mortar",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_mortar.png",
+                      "rp_cost": 620,
+                      "sl_cost": 870,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 11000,
+            "sl_cost": 22000,
+            "talisman_cost_ge": 750
           },
           "2": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_destroyer_bagley_class_bagley",
+            "name": "USS Bagley",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_bagley_class_bagley.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 340,
+                      "sl_cost": 340,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 250,
+                      "sl_cost": 250,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 280,
+                      "sl_cost": 280,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 550,
+                      "sl_cost": 550,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 340,
+                      "sl_cost": 340,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 250,
+                      "sl_cost": 250,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 250,
+                      "sl_cost": 250,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 280,
+                      "sl_cost": 280,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 280,
+                      "sl_cost": 280,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 550,
+                      "sl_cost": 550,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 550,
+                      "sl_cost": 550,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "5 inch Common Mk.32",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 340,
+                      "sl_cost": 340,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": ".50 AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 340,
+                      "sl_cost": 340,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 250,
+                      "sl_cost": 250,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": ".50 API-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 250,
+                      "sl_cost": 250,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 250,
+                      "sl_cost": 250,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 280,
+                      "sl_cost": 280,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 280,
+                      "sl_cost": 280,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 280,
+                      "sl_cost": 280,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Torpedo Mode",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/torpedo.png",
+                      "rp_cost": 550,
+                      "sl_cost": 550,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 7000,
+            "sl_cost": 8700,
+            "talisman_cost_ge": 530
           },
           "3": {
             "id": "",
@@ -36831,7 +48164,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 190
           },
           "2": {
             "id": "us_elco_77ft_pt20",
@@ -36841,6 +48177,8 @@ export const progressTree = {
             "premium": false,
             "squadron": false,
             "event": false,
+            "rp_cost": 2900,
+            "sl_cost": 700,
             "modifications": {
               "categories": {
                 "Seakeeping": {
@@ -36984,7 +48322,8 @@ export const progressTree = {
               },
               "availableRP": 0,
               "researchedMods": []
-            }
+            },
+            "talisman_cost_ge": 190
           },
           "3": {
             "id": "us_pt3",
@@ -37170,7 +48509,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 250
+            "ge_cost": 250,
+            "talisman_cost_ge": 0
           },
           "4": {
             "id": "us_nasty_ptf",
@@ -37387,7 +48727,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 4000,
+            "sl_cost": 2100,
+            "talisman_cost_ge": 300
           },
           "5": {
             "id": "us_huckins_78ft_pt95",
@@ -37596,7 +48939,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 4000,
+            "sl_cost": 2100,
+            "talisman_cost_ge": 300
           },
           "modifications": {
             "categories": {
@@ -37890,7 +49236,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 9200,
+            "sl_cost": 16000,
+            "talisman_cost_ge": 640
           },
           "2": {
             "id": "us_pc_451",
@@ -38107,7 +49456,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 7900,
+            "sl_cost": 10000,
+            "talisman_cost_ge": 530
           },
           "3": {
             "id": "us_pc_466_carmi",
@@ -38325,7 +49677,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 1150
+            "ge_cost": 1150,
+            "talisman_cost_ge": 0
           },
           "4": {
             "id": "us_huckins_78ft_pt262",
@@ -38535,7 +49888,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 850
+            "ge_cost": 850,
+            "talisman_cost_ge": 0
           },
           "5": {
             "id": "us_higgins_78ft_pt71",
@@ -38736,7 +50090,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 11000,
+            "sl_cost": 22000,
+            "talisman_cost_ge": 750
           },
           "6": {
             "id": "us_sc_497",
@@ -38953,7 +50310,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 14000,
+            "sl_cost": 32000,
+            "talisman_cost_ge": 860
           },
           "7": {
             "id": "us_elco_80ft_pt174",
@@ -39163,7 +50523,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 1150
+            "ge_cost": 1150,
+            "talisman_cost_ge": 0
           },
           "8": {
             "id": "us_elco_80ft_pt109_boat",
@@ -39364,7 +50725,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -39594,7 +50956,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 18000,
+            "sl_cost": 47000,
+            "talisman_cost_ge": 980
           },
           "2": {
             "id": "us_higgins_78ft_pt625",
@@ -39811,7 +51176,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 26000,
+            "sl_cost": 76000,
+            "talisman_cost_ge": 1100
           },
           "3": {
             "id": "us_pgm_59_class",
@@ -40020,7 +51388,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 48000,
+            "sl_cost": 180000,
+            "talisman_cost_ge": 1300
           },
           "4": {
             "id": "us_lcm_zippo",
@@ -40229,7 +51600,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "5": {
             "id": "us_higgins_78ft_pt658",
@@ -40454,7 +51826,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "6": {
             "id": "us_elco_80ft_pt_boat_mod02",
@@ -40671,7 +52044,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 36000,
+            "sl_cost": 115000,
+            "talisman_cost_ge": 1200
           },
           "7": {
             "id": "us_elco_77ft_pt59",
@@ -40872,7 +52248,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 48000,
+            "sl_cost": 180000,
+            "talisman_cost_ge": 1300
           },
           "8": {
             "id": "us_elco_80ft_pt_boat_thunderbolt",
@@ -41074,7 +52453,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 1600
+            "ge_cost": 1600,
+            "talisman_cost_ge": 0
           },
           "9": {
             "id": "us_flagstaff_pgh1",
@@ -41291,7 +52671,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -41521,7 +52902,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 89000,
+            "sl_cost": 300000,
+            "talisman_cost_ge": 1700
           },
           "2": {
             "id": "us_ashville_class",
@@ -41730,7 +53114,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 75000,
+            "sl_cost": 250000,
+            "talisman_cost_ge": 1500
           },
           "3": {
             "id": "us_pgm_9_class",
@@ -41939,7 +53326,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 89000,
+            "sl_cost": 300000,
+            "talisman_cost_ge": 1700
           },
           "4": {
             "id": "us_pt811",
@@ -42148,7 +53538,8 @@ export const progressTree = {
             },
             "premium": true,
             "squadron": false,
-            "event": false
+            "event": false,
+            "talisman_cost_ge": 0
           },
           "5": {
             "id": "us_pt812",
@@ -42357,7 +53748,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 120000,
+            "sl_cost": 360000,
+            "talisman_cost_ge": 1800
           },
           "6": {
             "id": "us_admirable_class",
@@ -42582,7 +53976,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 89000,
+            "sl_cost": 300000,
+            "talisman_cost_ge": 1700
           },
           "7": {
             "id": "us_ashville_class_douglas",
@@ -42784,7 +54181,8 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "ge_cost": 6090
+            "ge_cost": 6090,
+            "talisman_cost_ge": 0
           }
         }
       },
@@ -43029,7 +54427,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 220000,
+            "sl_cost": 640000,
+            "talisman_cost_ge": 1900
           },
           "2": {
             "id": "us_lcs_l_3",
@@ -43238,7 +54639,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 250000,
+            "sl_cost": 700000,
+            "talisman_cost_ge": 2000
           },
           "3": {
             "id": "us_cyclone_class_cyclone",
@@ -43447,7 +54851,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 250000,
+            "sl_cost": 700000,
+            "talisman_cost_ge": 2000
           },
           "4": {
             "id": "us_frigate_tacoma",
@@ -43672,7 +55079,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 250000,
+            "sl_cost": 700000,
+            "talisman_cost_ge": 2000
           },
           "5": {
             "id": "us_frigate_buckley_class_coolbaugh",
@@ -43897,7 +55307,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 280000,
+            "sl_cost": 780000,
+            "talisman_cost_ge": 2100
           },
           "6": {
             "id": "us_frigate_dealey",
@@ -44090,7 +55503,10 @@ export const progressTree = {
             },
             "premium": false,
             "squadron": false,
-            "event": false
+            "event": false,
+            "rp_cost": 280000,
+            "sl_cost": 780000,
+            "talisman_cost_ge": 2100
           }
         }
       }

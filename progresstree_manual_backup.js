@@ -4347,10 +4347,18 @@ export const progressTree = {
             {"categories": {
                 "Flight performance": {
                   "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,1]
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
                   ],
                 },
                 "Weaponry": {
@@ -6495,7 +6503,7 @@ export const progressTree = {
                 }
               }
             }},
-          4: {id: "", name: "", image: "", progress: "",
+          4: {id: "ah_64e", name: "", image: "", progress: "",
             "modifications":
             {"categories": {
                 "Flight performance": {
