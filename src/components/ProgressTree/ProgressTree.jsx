@@ -22,6 +22,7 @@ const GeIcon = () => <img src="/assets/img/icons/ge_icon.svg" alt="GE" style={{ 
 const ProgressTree = ({ country, vehicle }) => {
   const [expandedCells, setExpandedCells] = useState({});
   const [selectedVehicle, setSelectedVehicle] = useState(null);
+  const [collapsedRanks, setCollapsedRanks] = useState(new Set());
   const treeKey = `${country.name}_${vehicle.type}`;
   const treeData = progressTree[treeKey] || progressTree.default;
   const containerRef = useRef(null);
@@ -55,11 +56,6 @@ const ProgressTree = ({ country, vehicle }) => {
   const handleRpResearchedChange = (vehicleId, newValue) => updateVehicleProgress(vehicleId, { rpResearched: newValue });
   const handleVehiclePurchase = (vehicleId) => updateVehicleProgress(vehicleId, { purchased: true });
   const handleTalismanPurchase = (vehicleId) => updateVehicleProgress(vehicleId, { talisman_purchased: true });
-
-  // Nouveau handler pour reset le talisman
-  const handleTalismanReset = (vehicleId) => {
-    updateVehicleProgress(vehicleId, { talisman_purchased: false });
-  };
 
   const handleModRpChange = (vehicleId, modId, newValue) => {
     setVehicleProgress(prev => ({
@@ -125,6 +121,16 @@ const ProgressTree = ({ country, vehicle }) => {
 
   const closeAllExpandedCells = () => setExpandedCells({});
 
+  // Bascule le rang plié/déplié
+  const toggleRankCollapse = (rankName) => {
+    setCollapsedRanks(prev => {
+      const next = new Set(prev);
+      if (next.has(rankName)) next.delete(rankName);
+      else next.add(rankName);
+      return next;
+    });
+  };
+
   const renderCell = (hasContent, rank, rowIndex, colIndex) => {
     if (!hasContent) {
       return <div key={`cell-${rowIndex}-${colIndex}`} className="grid-cell empty" />;
@@ -168,93 +174,86 @@ const ProgressTree = ({ country, vehicle }) => {
     const percent = rpCost > 0 ? Math.min(100, Math.round((rpResearched / rpCost) * 100)) : 0;
     const allModsDone = areAllModsCompleted(vehicleData, progress);
 
-    const isEffectivelyPurchased = !hasChildren && (purchased || slCost === 0);
+    let isEffectivelyPurchased = false;
+    let rpComplete = false;
+    let notOwned = false;
 
-    // Déterminer si le talisman est actif (possédé ou automatique)
+    if (hasChildren) {
+      const allChildrenOwned = vehicleData.children.every(child => {
+        const childProg = vehicleProgress[child.id] || {};
+        const childPurchased = childProg.purchased || false;
+        const childSlCost = Number(child.sl_cost) || 0;
+        return childPurchased || childSlCost === 0;
+      });
+      notOwned = !allChildrenOwned;
+    } else {
+      if (rpCost === 0) {
+        isEffectivelyPurchased = purchased;
+        notOwned = !purchased;
+      } else {
+        isEffectivelyPurchased = purchased || slCost === 0;
+        rpComplete = rpCost > 0 && rpResearched >= rpCost && !purchased;
+        notOwned = !isEffectivelyPurchased && !rpComplete;
+      }
+    }
+
+    const cellStyle = {
+      opacity: 1,
+      transition: 'opacity 0.2s',
+      ...(notOwned && { opacity: 0.6 }),
+      ...(rpComplete && !hasChildren && { opacity: 1, boxShadow: '0 0 8px rgba(255,255,255,0.5)', backgroundColor: 'rgba(255,255,255,0.05)' }),
+    };
+
     const talismanCostGe = Number(vehicleData.talisman_cost_ge) || 0;
-    const talismanActive = (talismanCostGe > 0 && progress.talisman_purchased) || (talismanCostGe === 0 && isEffectivelyPurchased);
+    const talismanActive = !hasChildren && (
+      (talismanCostGe > 0 && progress.talisman_purchased) ||
+      (talismanCostGe === 0 && isEffectivelyPurchased)
+    );
 
     return (
       <div
         key={`cell-${rowIndex}-${colIndex}`}
         className={`grid-cell ${hasChildren ? 'has-children' : ''} ${isExpanded ? 'expanded' : ''} ${themeClass}`}
+        style={cellStyle}
         onClick={(e) => {
           if (hasChildren) {
             toggleCellExpansion(e, rank.name, rowIndex, colIndex);
-          } else if (hasModifications || hasVehicleCost || vehicleData.premium) {
+          } else if (hasModifications || hasVehicleCost || vehicleData.premium || (rpCost === 0 && !purchased)) {
             setSelectedVehicle(vehicleData);
           }
         }}
       >
         <div style={{ position: 'relative', display: 'inline-block' }}>
           {allModsDone && (
-            <img
-              src="/assets/img/icons/spade_icon.svg"
-              alt=""
-              style={{
-                position: 'absolute',
-                top: '65%',
-                left: '50%',
-                transform: 'translate(-50%, -50%) rotate(25deg)',
-                width: '250%',
-                height: '250%',
-                opacity: 0.3,
-                pointerEvents: 'none',
-                zIndex: 0,
-              }}
-            />
+            <img src="/assets/img/icons/spade_icon.svg" alt="" style={{ position: 'absolute', top: '65%', left: '50%', transform: 'translate(-50%, -50%) rotate(25deg)', width: '250%', height: '250%', opacity: 0.3, pointerEvents: 'none', zIndex: 0 }} />
           )}
-          {/* Icône talisman cliquable pour reset */}
           {talismanActive && (
-            <img
-              src="/assets/img/icons/talisman_icon.svg"
-              alt="Talisman"
-              title="Cliquer pour retirer le talisman"
-              style={{
-                position: 'absolute',
-                top: '-10px',
-                right: '-20px',
-                width: '28px',
-                height: '28px',
-                zIndex: 2,
-                cursor: 'pointer',
-              }}
-              onClick={(e) => {
-                e.stopPropagation();
-                handleTalismanReset(vehicleData.id);
-              }}
-            />
+            <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ position: 'absolute', top: '-10px', right: '-20px', width: '28px', height: '28px', zIndex: 2 }} />
           )}
-          <img
-            className="vehicle-image"
-            src={vehicleData.image}
-            alt={vehicleData.name}
-            style={{ position: 'relative', zIndex: 1 }}
-            onError={(e) => { e.target.src = '/assets/vehicles/default.png'; }}
-          />
+          <img className="vehicle-image" src={vehicleData.image} alt={vehicleData.name} style={{ position: 'relative', zIndex: 1 }} onError={(e) => { e.target.src = '/assets/vehicles/default.png'; }} />
         </div>
         <p className="vehicle-name">{vehicleData.name}</p>
 
-        {vehicleData.premium ? (
+        {!hasChildren && vehicleData.premium && (
           <div className="vehicle-ge-cost" style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0' }}>
-            {purchased ? 'Acheté' : (vehicleData.ge_cost != null ? <>{vehicleData.ge_cost.toLocaleString()}<GeIcon /></> : 'Market')}
+            {!purchased && vehicleData.ge_cost != null && <>{vehicleData.ge_cost.toLocaleString()}<GeIcon /></>}
           </div>
-        ) : (
-          (rpCost > 0 && !isEffectivelyPurchased) && (
-            <div style={{ margin: '4px 0' }}>
-              <div className="progress-container">
-                <progress className="progress-bar" max="100" value={percent} />
-                <span className="progress-text">{percent}%</span>
-              </div>
-              <div style={{ fontSize: '0.8em', marginTop: '2px', textAlign: 'center' }}>
-                {percent < 100 ? (
-                  <>{Math.max(0, rpCost - rpResearched).toLocaleString()} <RpIcon /></>
-                ) : (
-                  <>{slCost.toLocaleString()} <SlIcon /></>
-                )}
-              </div>
+        )}
+
+        {!hasChildren && !vehicleData.premium && rpCost > 0 && !isEffectivelyPurchased && (
+          <div style={{ margin: '4px 0' }}>
+            <div className="progress-container">
+              <progress className="progress-bar" max="100" value={percent} />
+              <span className="progress-text">{percent}%</span>
             </div>
-          )
+            <div style={{ fontSize: '0.8em', marginTop: '2px', textAlign: 'center' }}>
+              {percent < 100 ? (
+                <>{Math.max(0, rpCost - rpResearched).toLocaleString()} <RpIcon /></>
+              ) : (
+                <>{slCost.toLocaleString()} <SlIcon /></>
+              )}
+            </div>
+          </div>
         )}
 
         {hasChildren && (
@@ -273,7 +272,10 @@ const ProgressTree = ({ country, vehicle }) => {
               const childHasMods = child.modifications && child.modifications.categories && Object.keys(child.modifications.categories).length > 0;
               const childHasCost = childRpCost > 0;
               const childAllModsDone = areAllModsCompleted(child, childProg);
+
               const childEffectivelyPurchased = childPurchased || childSlCost === 0;
+              const childRpComplete = childRpCost > 0 && childRp >= childRpCost && !childPurchased;
+              const childNotOwned = !childEffectivelyPurchased && !childRpComplete;
 
               let childTheme = '';
               if (child.premium) {
@@ -287,84 +289,74 @@ const ProgressTree = ({ country, vehicle }) => {
               const childTalismanCostGe = Number(child.talisman_cost_ge) || 0;
               const childTalismanActive = (childTalismanCostGe > 0 && childProg.talisman_purchased) || (childTalismanCostGe === 0 && childEffectivelyPurchased);
 
+              const childCellStyle = {
+                opacity: 1,
+                transition: 'opacity 0.2s',
+                ...(childNotOwned && { opacity: 0.6 }),
+                ...(childRpComplete && { opacity: 1, boxShadow: '0 0 8px rgba(255,255,255,0.5)', backgroundColor: 'rgba(255,255,255,0.05)' }),
+              };
+
               return (
                 <div
                   key={`child-${childIndex}`}
                   className={`child-cell ${childTheme}`}
+                  style={childCellStyle}
                   onClick={(e) => {
                     e.stopPropagation();
-                    if (childHasMods || childHasCost || child.premium) setSelectedVehicle(child);
+                    if (childHasMods || childHasCost || child.premium || (childRpCost === 0 && !childPurchased)) setSelectedVehicle(child);
                   }}
-                  style={{ cursor: (childHasMods || childHasCost || child.premium) ? 'pointer' : 'default' }}
                 >
                   <div style={{ position: 'relative', display: 'inline-block' }}>
                     {childAllModsDone && (
-                      <img
-                        src="/assets/img/icons/spade_icon.svg"
-                        alt=""
-                        style={{
-                          position: 'absolute',
-                          top: '65%',
-                          left: '50%',
-                          transform: 'translate(-50%, -50%) rotate(25deg)',
-                          width: '250%',
-                          height: '250%',
-                          opacity: 0.3,
-                          pointerEvents: 'none',
-                          zIndex: 0,
-                        }}
-                      />
+                      <img src="/assets/img/icons/spade_icon.svg" alt="" style={{
+                      position: 'absolute',
+                      top: '65%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%) rotate(25deg)',
+                      width: '250%',
+                      height: '250%',
+                      opacity: 0.3,
+                      pointerEvents: 'none',
+                      zIndex: 0,}} />
                     )}
                     {childTalismanActive && (
                       <img
-                        src="/assets/img/icons/talisman_icon.svg"
-                        alt="Talisman"
-                        title="Cliquer pour retirer le talisman"
-                        style={{
-                          position: 'absolute',
-                          top: '-10px',
-                          right: '-10px',
-                          width: '28px',
-                          height: '28px',
-                          zIndex: 2,
-                          cursor: 'pointer',
-                        }}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleTalismanReset(child.id);
-                        }}
-                      />
-                    )}
-                    <img
-                      className="vehicle-image"
-                      src={child.image}
-                      alt={child.name}
-                      style={{ position: 'relative', zIndex: 1 }}
-                      onError={(e) => { e.target.src = '/assets/vehicles/default.png'; }}
+                      src="/assets/img/icons/talisman_icon.svg"
+                      alt="Talisman"
+                      style={{
+                        position: 'absolute',
+                        top: '-10px',
+                        right: '-10px',
+                        width: '28px',
+                        height: '28px',
+                        zIndex: 2,
+                      }}
                     />
+                    )}
+                    <img className="vehicle-image" src={child.image} alt={child.name} style={{ position: 'relative', zIndex: 1 }} onError={(e) => { e.target.src = '/assets/vehicles/default.png'; }} />
                   </div>
                   <p className="vehicle-name">{child.name}</p>
 
-                  {child.premium ? (
+                  {child.premium && (
                     <div className="vehicle-ge-cost" style={{ fontWeight: 'bold', fontSize: '0.9em', margin: '4px 0' }}>
-                      {childPurchased ? 'Acheté' : (child.ge_cost != null ? <>{child.ge_cost.toLocaleString()}<GeIcon /></> : 'Market')}
+                      {!childPurchased && child.ge_cost != null && <>{child.ge_cost.toLocaleString()}<GeIcon /></>}
                     </div>
-                  ) : (
-                    (childRpCost > 0 && !childEffectivelyPurchased) && (
-                      <div style={{ margin: '4px 0' }}>
-                        <div className="progress-container">
-                          <progress className="progress-bar" max="100" value={childPercent} />
-                          <span className="progress-text">{childPercent}%</span>
-                        </div>
-                        <div style={{ fontSize: '0.8em', marginTop: '2px', textAlign: 'center' }}>
-                          {childPercent < 100 ? (
-                            <>{Math.max(0, childRpCost - childRp).toLocaleString()} <RpIcon /></>
-                          ) : (
-                            <>{childSlCost.toLocaleString()} <SlIcon /></>
-                          )}
-                        </div>
+                  )}
+
+                  {!child.premium && childRpCost > 0 && !childEffectivelyPurchased && (
+                    <div style={{ margin: '4px 0' }}>
+                      <div className="progress-container">
+                        <progress className="progress-bar" max="100" value={childPercent} />
+                        <span className="progress-text">{childPercent}%</span>
                       </div>
-                    )
+                      <div style={{ fontSize: '0.8em', marginTop: '2px', textAlign: 'center' }}>
+                        {childPercent < 100 ? (
+                          <>{Math.max(0, childRpCost - childRp).toLocaleString()} <RpIcon /></>
+                        ) : (
+                          <>{childSlCost.toLocaleString()} <SlIcon /></>
+                        )}
+                      </div>
+                    </div>
                   )}
                 </div>
               );
@@ -387,19 +379,34 @@ const ProgressTree = ({ country, vehicle }) => {
   };
 
   const renderRank = (rank) => {
-    const rankVehiclesCount = Object.values(rank.vehicles).reduce((count, v) => {
-      if (v.children && v.children.length > 0) return count + v.children.length;
-      return count + 1;
-    }, 0);
+    const isCollapsed = collapsedRanks.has(rank.name);
+
     return (
       <div key={`rank-${rank.name}`} className="rank-container">
         <div className="rank-header">
           <h3 className="rank-title">Rank {rank.name}</h3>
-          <span className="rank-stats">{rankVehiclesCount} véhicules</span>
+          <button
+            onClick={() => toggleRankCollapse(rank.name)}
+            style={{
+              marginLeft: '10px',
+              background: 'none',
+              border: '1px solid #aaa',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '0.9em',
+              padding: '2px 8px',
+              color: 'inherit',
+            }}
+            title={isCollapsed ? 'Afficher le rang' : 'Masquer le rang'}
+          >
+            {isCollapsed ? 'Afficher' : 'Masquer'}
+          </button>
         </div>
-        <div className="rank-rows">
-          {rank.grid.map((row, rowIndex) => renderRow(row, rowIndex, rank))}
-        </div>
+        {!isCollapsed && (
+          <div className="rank-rows">
+            {rank.grid.map((row, rowIndex) => renderRow(row, rowIndex, rank))}
+          </div>
+        )}
       </div>
     );
   };

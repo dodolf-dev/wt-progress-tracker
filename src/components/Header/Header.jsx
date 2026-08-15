@@ -1,38 +1,51 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Header = ({ activeView, onNavigate }) => {
-  const buttonStyle = (view) => ({
+const Header = () => {
+  const linkStyle = ({ isActive }) => ({
     padding: '8px 16px',
-    margin: '0 4px',
-    backgroundColor: activeView === view ? '#2196F3' : '#f0f0f0',
-    color: activeView === view ? '#fff' : '#333',
+    backgroundColor: isActive ? '#2196F3' : '#f0f0f0',
+    color: isActive ? '#fff' : '#333',
     border: 'none',
     borderRadius: '4px',
     cursor: 'pointer',
-    fontWeight: activeView === view ? 'bold' : 'normal',
+    fontWeight: isActive ? 'bold' : 'normal',
+    textDecoration: 'none',
   });
 
   return (
     <div
       style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 1000,
         display: 'flex',
-        justifyContent: 'center',
         alignItems: 'center',
-        padding: '10px 20px',
-        backgroundColor: '#fff',
+        padding: '8px 20px',
+        backgroundColor: '#ffffff',
         borderBottom: '1px solid #ccc',
         boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
       }}
     >
-      <button style={buttonStyle('home')} onClick={() => onNavigate('home')}>
-        Accueil
-      </button>
-      <button style={buttonStyle('stats')} onClick={() => onNavigate('stats')}>
-        Statistiques
-      </button>
-      <button style={buttonStyle('progression')} onClick={() => onNavigate('progression')}>
-        Progression
-      </button>
+      {/* Logo à gauche */}
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
+        <NavLink to="/" end style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/img/icons/logoWT_stripe_flat.png`}
+            alt="WT Progress Tracker"
+            style={{ height: '40px', marginRight: '10px' }}
+          />
+        </NavLink>
+      </div>
+
+      {/* Boutons centrés */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <NavLink to="/" end style={linkStyle}>Accueil</NavLink>
+        <NavLink to="/stat" style={linkStyle}>Statistiques</NavLink>
+        <NavLink to="/progress" style={linkStyle}>Progression</NavLink>
+      </div>
+
+      {/* Équilibrage à droite (espace vide) */}
+      <div style={{ flex: 1 }} />
     </div>
   );
 };

@@ -42,15 +42,30 @@ si jamais t'as des questions envoie sur ds ou atre comme tv
 
 RESTANT:
 Le projet est plutot bien avancé dans son ensemble, il faut:
-->afficher la valeur des rp restant en dessous de la barre de progression, éventuellement avec le pourcentage
--> et quand la progression atteint 100%, faut afficher le prix en sl
--> dans le menu des modifs faudrait pousser le délire et pouvoir modifier l'avancement de la progression en mettant des valeurs(rp restant ou deja fait a voir)
-->il faut faire la mm avec les modifs, et mettre une barre de progression en dessous du menu
-    pour le délire des modifs, ce qui serait bien c'est que quand on clique sur la valeur qu'on puisse edit. et que quand ca atteint 100% la valeur en sl s'affiche, et juste avec un clique sur la box pour l'acheter
--> pour plus tard faut aussi envisager un ui plus poussé sur le coté du tech tree ca peut etre cool
-67
+afficher la valeur des rp restant en dessous de la barre de progression, éventuellement avec le pourcentage
+et quand la progression atteint 100%, faut afficher le prix en sl
+dans le menu des modifs faudrait pousser le délire et pouvoir modifier l'avancement de la progression en mettant des valeurs(rp restant ou deja fait a voir)
+il faut faire la mm avec les modifs, et mettre une barre de progression en dessous du menu
+pour le délire des modifs, ce qui serait bien c'est que quand on clique sur la valeur qu'on puisse edit. et que quand ca atteint 100% la valeur en sl s'affiche, et juste avec un clique sur la box pour l'acheter
 
+67
+-> pour plus tard faut aussi envisager un ui plus poussé sur le coté du tech tree ca peut etre cool
 implémenter les talismans
 -> implémenter les équipages
--> faire l'overhead
+faire l'overhead
 -> refont css
+enlever la possibilité de cliquer sur les talismans dans le techtree
+-> mettre en place un système de localstorage
+-> mettre un bouton pour désactiver le localstorage
+-> implémenter un système de backup en json
+-> implémenter un moyen d'intégrer la backup json dans le site
+enlever le texte "Talisman automatique" dans les modifs
+-> mettre un bouton pour max le véhicule (modifs et achat de l'avion + equipage standard)
+-> quand le bouton est recliquer, supprimer tout (modifs et achat de l'avion + equipage standard)
+faire en sorte que l'overhead reste meme si l'utilisateur scroll vers le bas
+mettre le logo de war thunder a gauche dans l'overhead
+mettre un bouton pour réduire les véhicules par rang
+supprimer le nombre total de véhicules a chaque rang
+-> faire la page statistiques
+faire en sorte que si un caractère different d'un chiffre est ajouté dans la zone d'inserstion des valeurs, considérer la valeur comme 100%
+-> faire un bouton pour retract et etendre les rang, avec une animation qui rend le visuel plus agreable

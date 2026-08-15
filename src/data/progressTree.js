@@ -216,7 +216,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 190
+            "talisman_cost_ge": 190,
+            "crew_training_sl": null,
+            "experts_sl": 1000,
+            "aces_ge": 10,
+            "research_aces_rp": 80000
           },
           "2": {
             "id": "p-36a",
@@ -388,7 +392,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 2900,
             "sl_cost": 700,
-            "talisman_cost_ge": 190
+            "talisman_cost_ge": 190,
+            "crew_training_sl": 200,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 96000
           },
           "3": {
             "id": "bf2c_1",
@@ -530,7 +538,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 190
+            "talisman_cost_ge": 190,
+            "crew_training_sl": null,
+            "experts_sl": 1000,
+            "aces_ge": 10,
+            "research_aces_rp": 80000
           },
           "4": {
             "id": "os2u_group",
@@ -728,7 +740,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 0,
                 "sl_cost": 0,
-                "talisman_cost_ge": 190
+                "talisman_cost_ge": 190,
+                "crew_training_sl": 200,
+                "experts_sl": 1000,
+                "aces_ge": 20,
+                "research_aces_rp": 96000
               },
               {
                 "id": "os2u_3",
@@ -920,7 +936,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 0,
                 "sl_cost": 0,
-                "talisman_cost_ge": 190
+                "talisman_cost_ge": 190,
+                "crew_training_sl": 200,
+                "experts_sl": 1000,
+                "aces_ge": 20,
+                "research_aces_rp": 96000
               }
             ]
           },
@@ -1144,7 +1164,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 2900,
                 "sl_cost": 700,
-                "talisman_cost_ge": 190
+                "talisman_cost_ge": 190,
+                "crew_training_sl": 200,
+                "experts_sl": 1000,
+                "aces_ge": 20,
+                "research_aces_rp": 96000
               },
               {
                 "id": "b_18a",
@@ -1328,7 +1352,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 2000,
                 "sl_cost": 2100,
-                "talisman_cost_ge": 300
+                "talisman_cost_ge": 300,
+                "crew_training_sl": 600,
+                "experts_sl": 2100,
+                "aces_ge": 45,
+                "research_aces_rp": 110000
               }
             ]
           },
@@ -1525,7 +1553,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 250,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 150,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 145000
           },
           "7": {
             "id": "p-26a_34",
@@ -1691,7 +1723,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 450,
+            "experts_sl": 3000,
+            "aces_ge": 45,
+            "research_aces_rp": 220000
           },
           "8": {
             "id": "p26_group",
@@ -1857,7 +1893,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 2900,
                 "sl_cost": 700,
-                "talisman_cost_ge": 190
+                "talisman_cost_ge": 190,
+                "crew_training_sl": 200,
+                "experts_sl": 1000,
+                "aces_ge": 20,
+                "research_aces_rp": 96000
               },
               {
                 "id": "p-26b_35",
@@ -2017,7 +2057,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 2000,
                 "sl_cost": 2100,
-                "talisman_cost_ge": 300
+                "talisman_cost_ge": 300,
+                "crew_training_sl": 600,
+                "experts_sl": 2100,
+                "aces_ge": 45,
+                "research_aces_rp": 110000
               }
             ]
           },
@@ -2191,7 +2235,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 4000,
             "sl_cost": 2100,
-            "talisman_cost_ge": 300
+            "talisman_cost_ge": 300,
+            "crew_training_sl": 600,
+            "experts_sl": 2100,
+            "aces_ge": 45,
+            "research_aces_rp": 110000
           },
           "10": {
             "id": "f3f-2",
@@ -2387,7 +2435,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 2900,
             "sl_cost": 700,
-            "talisman_cost_ge": 190
+            "talisman_cost_ge": 190,
+            "crew_training_sl": 200,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 96000
           },
           "11": {
             "id": "sb2u_group",
@@ -2609,7 +2661,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 2900,
                 "sl_cost": 700,
-                "talisman_cost_ge": 190
+                "talisman_cost_ge": 190,
+                "crew_training_sl": 200,
+                "experts_sl": 1000,
+                "aces_ge": 20,
+                "research_aces_rp": 96000
               },
               {
                 "id": "sb2u-3",
@@ -2825,7 +2881,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 2000,
                 "sl_cost": 2100,
-                "talisman_cost_ge": 300
+                "talisman_cost_ge": 300,
+                "crew_training_sl": 600,
+                "experts_sl": 2100,
+                "aces_ge": 45,
+                "research_aces_rp": 110000
               }
             ]
           },
@@ -3053,7 +3113,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 4000,
                 "sl_cost": 2100,
-                "talisman_cost_ge": 300
+                "talisman_cost_ge": 300,
+                "crew_training_sl": 600,
+                "experts_sl": 2100,
+                "aces_ge": 45,
+                "research_aces_rp": 110000
               },
               {
                 "id": "pby-5a",
@@ -3273,7 +3337,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 3000,
                 "sl_cost": 6300,
-                "talisman_cost_ge": 410
+                "talisman_cost_ge": 410,
+                "crew_training_sl": 1800,
+                "experts_sl": 6300,
+                "aces_ge": 80,
+                "research_aces_rp": 135000
               }
             ]
           },
@@ -3447,7 +3515,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 300
+            "talisman_cost_ge": 300,
+            "crew_training_sl": 600,
+            "experts_sl": 2100,
+            "aces_ge": 45,
+            "research_aces_rp": 110000
           },
           "14": {
             "id": "p-36a_rasmussen",
@@ -3617,7 +3689,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 450,
+            "experts_sl": 3000,
+            "aces_ge": 45,
+            "research_aces_rp": 220000
           },
           "15": {
             "id": "f2a-1",
@@ -3797,7 +3873,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 4000,
             "sl_cost": 2100,
-            "talisman_cost_ge": 300
+            "talisman_cost_ge": 300,
+            "crew_training_sl": 600,
+            "experts_sl": 2100,
+            "aces_ge": 45,
+            "research_aces_rp": 110000
           },
           "16": {
             "id": "tbf_group",
@@ -4033,7 +4113,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 4000,
                 "sl_cost": 2100,
-                "talisman_cost_ge": 300
+                "talisman_cost_ge": 300,
+                "crew_training_sl": 600,
+                "experts_sl": 2100,
+                "aces_ge": 45,
+                "research_aces_rp": 110000
               },
               {
                 "id": "sbd-3",
@@ -4249,7 +4333,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 3000,
                 "sl_cost": 6300,
-                "talisman_cost_ge": 410
+                "talisman_cost_ge": 410,
+                "crew_training_sl": 1800,
+                "experts_sl": 6300,
+                "aces_ge": 80,
+                "research_aces_rp": 135000
               }
             ]
           },
@@ -4437,7 +4525,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 5900,
             "sl_cost": 6300,
-            "talisman_cost_ge": 410
+            "talisman_cost_ge": 410,
+            "crew_training_sl": 1800,
+            "experts_sl": 6300,
+            "aces_ge": 80,
+            "research_aces_rp": 135000
           },
           "18": {
             "id": "f2a-1_thach",
@@ -4616,7 +4708,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 400,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 450,
+            "experts_sl": 3000,
+            "aces_ge": 45,
+            "research_aces_rp": 220000
           },
           "19": {
             "id": "b_10b",
@@ -4791,7 +4887,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 400,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 450,
+            "experts_sl": 3000,
+            "aces_ge": 45,
+            "research_aces_rp": 220000
           }
         }
       },
@@ -5047,7 +5147,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 7900,
             "sl_cost": 10000,
-            "talisman_cost_ge": 530
+            "talisman_cost_ge": 530,
+            "crew_training_sl": 3000,
+            "experts_sl": 10000,
+            "aces_ge": 125,
+            "research_aces_rp": 160000
           },
           "2": {
             "id": "p-36g",
@@ -5219,7 +5323,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 7900,
             "sl_cost": 10000,
-            "talisman_cost_ge": 530
+            "talisman_cost_ge": 530,
+            "crew_training_sl": 3000,
+            "experts_sl": 10000,
+            "aces_ge": 125,
+            "research_aces_rp": 160000
           },
           "3": {
             "id": "f2a-3",
@@ -5391,7 +5499,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 7900,
             "sl_cost": 10000,
-            "talisman_cost_ge": 530
+            "talisman_cost_ge": 530,
+            "crew_training_sl": 3000,
+            "experts_sl": 10000,
+            "aces_ge": 125,
+            "research_aces_rp": 160000
           },
           "4": {
             "id": "p-51_a-36",
@@ -5575,7 +5687,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 7900,
             "sl_cost": 10000,
-            "talisman_cost_ge": 530
+            "talisman_cost_ge": 530,
+            "crew_training_sl": 3000,
+            "experts_sl": 10000,
+            "aces_ge": 125,
+            "research_aces_rp": 160000
           },
           "5": {
             "id": "b_34",
@@ -5811,7 +5927,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 7900,
             "sl_cost": 10000,
-            "talisman_cost_ge": 530
+            "talisman_cost_ge": 530,
+            "crew_training_sl": 3000,
+            "experts_sl": 10000,
+            "aces_ge": 125,
+            "research_aces_rp": 160000
           },
           "6": {
             "id": "p-40e_td",
@@ -5987,7 +6107,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 530
+            "talisman_cost_ge": 530,
+            "crew_training_sl": 3000,
+            "experts_sl": 10000,
+            "aces_ge": 125,
+            "research_aces_rp": 160000
           },
           "7": {
             "id": "p-40c",
@@ -6169,7 +6293,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 3400,
+            "experts_sl": 23000,
+            "aces_ge": 180,
+            "research_aces_rp": 380000
           },
           "8": {
             "id": "p-38_group",
@@ -6347,7 +6475,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 9200,
                 "sl_cost": 16000,
-                "talisman_cost_ge": 640
+                "talisman_cost_ge": 640,
+                "crew_training_sl": 4500,
+                "experts_sl": 16000,
+                "aces_ge": 180,
+                "research_aces_rp": 190000
               },
               {
                 "id": "p-38g",
@@ -6531,7 +6663,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 5600,
                 "sl_cost": 22000,
-                "talisman_cost_ge": 750
+                "talisman_cost_ge": 750,
+                "crew_training_sl": 6300,
+                "experts_sl": 22000,
+                "aces_ge": 250,
+                "research_aces_rp": 220000
               }
             ]
           },
@@ -6715,7 +6851,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 9200,
                 "sl_cost": 16000,
-                "talisman_cost_ge": 640
+                "talisman_cost_ge": 640,
+                "crew_training_sl": 4500,
+                "experts_sl": 16000,
+                "aces_ge": 180,
+                "research_aces_rp": 190000
               },
               {
                 "id": "p-40f_10",
@@ -6891,7 +7031,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 5600,
                 "sl_cost": 22000,
-                "talisman_cost_ge": 750
+                "talisman_cost_ge": 750,
+                "crew_training_sl": 6300,
+                "experts_sl": 22000,
+                "aces_ge": 250,
+                "research_aces_rp": 220000
               }
             ]
           },
@@ -7075,7 +7219,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 9200,
                 "sl_cost": 16000,
-                "talisman_cost_ge": 640
+                "talisman_cost_ge": 640,
+                "crew_training_sl": 4500,
+                "experts_sl": 16000,
+                "aces_ge": 180,
+                "research_aces_rp": 190000
               },
               {
                 "id": "f4f-4",
@@ -7251,7 +7399,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 5600,
                 "sl_cost": 22000,
-                "talisman_cost_ge": 750
+                "talisman_cost_ge": 750,
+                "crew_training_sl": 6300,
+                "experts_sl": 22000,
+                "aces_ge": 250,
+                "research_aces_rp": 220000
               },
               {
                 "id": "f6f-3",
@@ -7445,7 +7597,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 6900,
                 "sl_cost": 32000,
-                "talisman_cost_ge": 860
+                "talisman_cost_ge": 860,
+                "crew_training_sl": 9200,
+                "experts_sl": 32000,
+                "aces_ge": 320,
+                "research_aces_rp": 250000
               }
             ]
           },
@@ -7613,7 +7769,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 9200,
             "sl_cost": 16000,
-            "talisman_cost_ge": 640
+            "talisman_cost_ge": 640,
+            "crew_training_sl": 4500,
+            "experts_sl": 16000,
+            "aces_ge": 180,
+            "research_aces_rp": 190000
           },
           "12": {
             "id": "b_25j_1",
@@ -7829,7 +7989,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 9200,
             "sl_cost": 16000,
-            "talisman_cost_ge": 640
+            "talisman_cost_ge": 640,
+            "crew_training_sl": 4500,
+            "experts_sl": 16000,
+            "aces_ge": 180,
+            "research_aces_rp": 190000
           },
           "13": {
             "id": "ki_43_2_late",
@@ -7984,7 +8148,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 700,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 2300,
+            "experts_sl": 15000,
+            "aces_ge": 125,
+            "research_aces_rp": 320000
           },
           "14": {
             "id": "yp-38",
@@ -8174,7 +8342,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 6900,
+            "experts_sl": 46000,
+            "aces_ge": 320,
+            "research_aces_rp": 500000
           },
           "15": {
             "id": "p-39_group",
@@ -8392,7 +8564,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 11000,
                 "sl_cost": 22000,
-                "talisman_cost_ge": 750
+                "talisman_cost_ge": 750,
+                "crew_training_sl": 6300,
+                "experts_sl": 22000,
+                "aces_ge": 250,
+                "research_aces_rp": 220000
               },
               {
                 "id": "p-39q_5",
@@ -8584,7 +8760,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 6900,
                 "sl_cost": 32000,
-                "talisman_cost_ge": 860
+                "talisman_cost_ge": 860,
+                "crew_training_sl": 9200,
+                "experts_sl": 32000,
+                "aces_ge": 320,
+                "research_aces_rp": 250000
               }
             ]
           },
@@ -8770,7 +8950,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 11000,
             "sl_cost": 22000,
-            "talisman_cost_ge": 750
+            "talisman_cost_ge": 750,
+            "crew_training_sl": 6300,
+            "experts_sl": 22000,
+            "aces_ge": 250,
+            "research_aces_rp": 220000
           },
           "17": {
             "id": "f4u_group",
@@ -8952,7 +9136,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 11000,
                 "sl_cost": 22000,
-                "talisman_cost_ge": 750
+                "talisman_cost_ge": 750,
+                "crew_training_sl": 6300,
+                "experts_sl": 22000,
+                "aces_ge": 250,
+                "research_aces_rp": 220000
               },
               {
                 "id": "f4u-1a_usmc",
@@ -9108,7 +9296,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 6900,
                 "sl_cost": 32000,
-                "talisman_cost_ge": 860
+                "talisman_cost_ge": 860,
+                "crew_training_sl": 9200,
+                "experts_sl": 32000,
+                "aces_ge": 320,
+                "research_aces_rp": 250000
               },
               {
                 "id": "f4u-1d",
@@ -9284,7 +9476,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 9200,
                 "sl_cost": 47000,
-                "talisman_cost_ge": 980
+                "talisman_cost_ge": 980,
+                "crew_training_sl": 13000,
+                "experts_sl": 47000,
+                "aces_ge": 400,
+                "research_aces_rp": 280000
               }
             ]
           },
@@ -9520,7 +9716,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 11000,
                 "sl_cost": 22000,
-                "talisman_cost_ge": 750
+                "talisman_cost_ge": 750,
+                "crew_training_sl": 6300,
+                "experts_sl": 22000,
+                "aces_ge": 250,
+                "research_aces_rp": 220000
               },
               {
                 "id": "sb2c_4",
@@ -9746,7 +9946,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 6900,
                 "sl_cost": 32000,
-                "talisman_cost_ge": 860
+                "talisman_cost_ge": 860,
+                "crew_training_sl": 9200,
+                "experts_sl": 32000,
+                "aces_ge": 320,
+                "research_aces_rp": 250000
               }
             ]
           },
@@ -9964,7 +10168,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 11000,
             "sl_cost": 22000,
-            "talisman_cost_ge": 750
+            "talisman_cost_ge": 750,
+            "crew_training_sl": 6300,
+            "experts_sl": 22000,
+            "aces_ge": 250,
+            "research_aces_rp": 220000
           },
           "20": {
             "id": "p-51a_tl",
@@ -10100,7 +10308,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 4800,
+            "experts_sl": 32000,
+            "aces_ge": 250,
+            "research_aces_rp": 440000
           },
           "21": {
             "id": "p-43a-1",
@@ -10254,7 +10466,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 4800,
+            "experts_sl": 32000,
+            "aces_ge": 250,
+            "research_aces_rp": 440000
           },
           "22": {
             "id": "p-38g_metal",
@@ -10436,7 +10652,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 6900,
+            "experts_sl": 46000,
+            "aces_ge": 320,
+            "research_aces_rp": 500000
           },
           "23": {
             "id": "pbm_3",
@@ -10612,7 +10832,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 4800,
+            "experts_sl": 32000,
+            "aces_ge": 250,
+            "research_aces_rp": 440000
           },
           "24": {
             "id": "ki_61_1a_otsu_usa",
@@ -10767,7 +10991,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 850,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 3400,
+            "experts_sl": 23000,
+            "aces_ge": 180,
+            "research_aces_rp": 380000
           }
         }
       },
@@ -11012,7 +11240,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 18000,
             "sl_cost": 47000,
-            "talisman_cost_ge": 980
+            "talisman_cost_ge": 980,
+            "crew_training_sl": 13000,
+            "experts_sl": 47000,
+            "aces_ge": 400,
+            "research_aces_rp": 280000
           },
           "2": {
             "id": "p-51_early_group",
@@ -11190,7 +11422,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 18000,
                 "sl_cost": 47000,
-                "talisman_cost_ge": 980
+                "talisman_cost_ge": 980,
+                "crew_training_sl": 13000,
+                "experts_sl": 47000,
+                "aces_ge": 400,
+                "research_aces_rp": 280000
               },
               {
                 "id": "p-51d-5",
@@ -11410,7 +11646,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 13000,
                 "sl_cost": 76000,
-                "talisman_cost_ge": 1100
+                "talisman_cost_ge": 1100,
+                "crew_training_sl": 22000,
+                "experts_sl": 76000,
+                "aces_ge": 500,
+                "research_aces_rp": 320000
               }
             ]
           },
@@ -11604,7 +11844,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 18000,
             "sl_cost": 47000,
-            "talisman_cost_ge": 980
+            "talisman_cost_ge": 980,
+            "crew_training_sl": 13000,
+            "experts_sl": 47000,
+            "aces_ge": 400,
+            "research_aces_rp": 280000
           },
           "4": {
             "id": "pbj_group",
@@ -11846,7 +12090,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 18000,
                 "sl_cost": 47000,
-                "talisman_cost_ge": 980
+                "talisman_cost_ge": 980,
+                "crew_training_sl": 13000,
+                "experts_sl": 47000,
+                "aces_ge": 400,
+                "research_aces_rp": 280000
               },
               {
                 "id": "pbj_1h",
@@ -12098,7 +12346,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 13000,
                 "sl_cost": 76000,
-                "talisman_cost_ge": 1100
+                "talisman_cost_ge": 1100,
+                "crew_training_sl": 22000,
+                "experts_sl": 76000,
+                "aces_ge": 500,
+                "research_aces_rp": 320000
               }
             ]
           },
@@ -12328,7 +12580,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 18000,
             "sl_cost": 47000,
-            "talisman_cost_ge": 980
+            "talisman_cost_ge": 980,
+            "crew_training_sl": 13000,
+            "experts_sl": 47000,
+            "aces_ge": 400,
+            "research_aces_rp": 280000
           },
           "6": {
             "id": "a6m2_zero_usa",
@@ -12506,7 +12762,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 67000,
+            "aces_ge": 400,
+            "research_aces_rp": 570000
           },
           "7": {
             "id": "xf5f",
@@ -12668,7 +12928,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 210000,
+            "aces_ge": 700,
+            "research_aces_rp": 790000
           },
           "8": {
             "id": "p-63_group",
@@ -12866,7 +13130,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 33000,
                 "sl_cost": 105000,
-                "talisman_cost_ge": 1200
+                "talisman_cost_ge": 1200,
+                "crew_training_sl": 30000,
+                "experts_sl": 105000,
+                "aces_ge": 590,
+                "research_aces_rp": 360000
               },
               {
                 "id": "p-63c-5",
@@ -13058,7 +13326,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 20000,
                 "sl_cost": 135000,
-                "talisman_cost_ge": 1300
+                "talisman_cost_ge": 1300,
+                "crew_training_sl": 39000,
+                "experts_sl": 135000,
+                "aces_ge": 700,
+                "research_aces_rp": 390000
               }
             ]
           },
@@ -13266,7 +13538,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 26000,
                 "sl_cost": 76000,
-                "talisman_cost_ge": 1100
+                "talisman_cost_ge": 1100,
+                "crew_training_sl": 22000,
+                "experts_sl": 76000,
+                "aces_ge": 500,
+                "research_aces_rp": 320000
               },
               {
                 "id": "p-47d",
@@ -13466,7 +13742,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 17000,
                 "sl_cost": 105000,
-                "talisman_cost_ge": 1200
+                "talisman_cost_ge": 1200,
+                "crew_training_sl": 30000,
+                "experts_sl": 105000,
+                "aces_ge": 590,
+                "research_aces_rp": 360000
               }
             ]
           },
@@ -13704,7 +13984,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 26000,
             "sl_cost": 76000,
-            "talisman_cost_ge": 1100
+            "talisman_cost_ge": 1100,
+            "crew_training_sl": 22000,
+            "experts_sl": 76000,
+            "aces_ge": 500,
+            "research_aces_rp": 320000
           },
           "11": {
             "id": "p-61c_1",
@@ -13912,7 +14196,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 26000,
             "sl_cost": 76000,
-            "talisman_cost_ge": 1100
+            "talisman_cost_ge": 1100,
+            "crew_training_sl": 22000,
+            "experts_sl": 76000,
+            "aces_ge": 500,
+            "research_aces_rp": 320000
           },
           "12": {
             "id": "b-17_group",
@@ -14126,7 +14414,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 26000,
                 "sl_cost": 76000,
-                "talisman_cost_ge": 1100
+                "talisman_cost_ge": 1100,
+                "crew_training_sl": 22000,
+                "experts_sl": 76000,
+                "aces_ge": 500,
+                "research_aces_rp": 320000
               },
               {
                 "id": "b-17e_late",
@@ -14334,7 +14626,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 17000,
                 "sl_cost": 105000,
-                "talisman_cost_ge": 1200
+                "talisman_cost_ge": 1200,
+                "crew_training_sl": 30000,
+                "experts_sl": 105000,
+                "aces_ge": 590,
+                "research_aces_rp": 360000
               }
             ]
           },
@@ -14547,7 +14843,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 1750,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 210000,
+            "aces_ge": 700,
+            "research_aces_rp": 790000
           },
           "14": {
             "id": "pbm_5a",
@@ -14749,7 +15049,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 67000,
+            "aces_ge": 400,
+            "research_aces_rp": 570000
           },
           "15": {
             "id": "p-38_late_group",
@@ -14955,7 +15259,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 46000,
                 "sl_cost": 155000,
-                "talisman_cost_ge": 1400
+                "talisman_cost_ge": 1400,
+                "crew_training_sl": 45000,
+                "experts_sl": 155000,
+                "aces_ge": 820,
+                "research_aces_rp": 440000
               },
               {
                 "id": "p-38l",
@@ -15171,7 +15479,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 27000,
                 "sl_cost": 185000,
-                "talisman_cost_ge": 1500
+                "talisman_cost_ge": 1500,
+                "crew_training_sl": 52000,
+                "experts_sl": 185000,
+                "aces_ge": 940,
+                "research_aces_rp": 480000
               }
             ]
           },
@@ -15391,7 +15703,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 33000,
                 "sl_cost": 105000,
-                "talisman_cost_ge": 1200
+                "talisman_cost_ge": 1200,
+                "crew_training_sl": 30000,
+                "experts_sl": 105000,
+                "aces_ge": 590,
+                "research_aces_rp": 360000
               },
               {
                 "id": "p-47n-15",
@@ -15583,7 +15899,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 20000,
                 "sl_cost": 135000,
-                "talisman_cost_ge": 1300
+                "talisman_cost_ge": 1300,
+                "crew_training_sl": 39000,
+                "experts_sl": 135000,
+                "aces_ge": 700,
+                "research_aces_rp": 390000
               }
             ]
           },
@@ -15787,7 +16107,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 33000,
             "sl_cost": 105000,
-            "talisman_cost_ge": 1200
+            "talisman_cost_ge": 1200,
+            "crew_training_sl": 30000,
+            "experts_sl": 105000,
+            "aces_ge": 590,
+            "research_aces_rp": 360000
           },
           "18": {
             "id": "pb4y-2",
@@ -15999,7 +16323,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 40000,
             "sl_cost": 135000,
-            "talisman_cost_ge": 1300
+            "talisman_cost_ge": 1300,
+            "crew_training_sl": 39000,
+            "experts_sl": 135000,
+            "aces_ge": 700,
+            "research_aces_rp": 390000
           },
           "19": {
             "id": "xp-55",
@@ -16170,7 +16498,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 3900,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 67000,
+            "aces_ge": 400,
+            "research_aces_rp": 570000
           },
           "20": {
             "id": "p-61a_1",
@@ -16350,7 +16682,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 67000,
+            "aces_ge": 400,
+            "research_aces_rp": 570000
           },
           "21": {
             "id": "xp-50",
@@ -16513,7 +16849,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 1600,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 165000,
+            "aces_ge": 590,
+            "research_aces_rp": 710000
           },
           "22": {
             "id": "pv_2d",
@@ -16747,7 +17087,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 67000,
+            "aces_ge": 400,
+            "research_aces_rp": 570000
           },
           "23": {
             "id": "bf-109f-4_usa",
@@ -16918,7 +17262,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 1450,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 115000,
+            "aces_ge": 500,
+            "research_aces_rp": 640000
           },
           "24": {
             "id": "p-63c-5_kingcobra_animal_version",
@@ -17108,7 +17456,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 210000,
+            "aces_ge": 700,
+            "research_aces_rp": 790000
           },
           "25": {
             "id": "fr_1_fireball",
@@ -17299,7 +17651,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 1600,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 165000,
+            "aces_ge": 590,
+            "research_aces_rp": 710000
           }
         }
       },
@@ -17628,7 +17984,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 71000,
             "sl_cost": 210000,
-            "talisman_cost_ge": 1800
+            "talisman_cost_ge": 1800,
+            "crew_training_sl": 61000,
+            "experts_sl": 210000,
+            "aces_ge": 1200,
+            "research_aces_rp": 570000
           },
           "2": {
             "id": "p-51d-30_usaaf_korea",
@@ -17856,7 +18216,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 46000,
             "sl_cost": 155000,
-            "talisman_cost_ge": 1400
+            "talisman_cost_ge": 1400,
+            "crew_training_sl": 45000,
+            "experts_sl": 155000,
+            "aces_ge": 820,
+            "research_aces_rp": 440000
           },
           "3": {
             "id": "f4u_late_group",
@@ -18030,7 +18394,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 46000,
                 "sl_cost": 155000,
-                "talisman_cost_ge": 1400
+                "talisman_cost_ge": 1400,
+                "crew_training_sl": 45000,
+                "experts_sl": 155000,
+                "aces_ge": 820,
+                "research_aces_rp": 440000
               },
               {
                 "id": "f4u-4b",
@@ -18222,7 +18590,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 27000,
                 "sl_cost": 185000,
-                "talisman_cost_ge": 1500
+                "talisman_cost_ge": 1500,
+                "crew_training_sl": 52000,
+                "experts_sl": 185000,
+                "aces_ge": 940,
+                "research_aces_rp": 480000
               }
             ]
           },
@@ -18486,7 +18858,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 46000,
                 "sl_cost": 155000,
-                "talisman_cost_ge": 1400
+                "talisman_cost_ge": 1400,
+                "crew_training_sl": 45000,
+                "experts_sl": 155000,
+                "aces_ge": 820,
+                "research_aces_rp": 440000
               },
               {
                 "id": "a-26b",
@@ -18714,7 +19090,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 27000,
                 "sl_cost": 185000,
-                "talisman_cost_ge": 1500
+                "talisman_cost_ge": 1500,
+                "crew_training_sl": 52000,
+                "experts_sl": 185000,
+                "aces_ge": 940,
+                "research_aces_rp": 480000
               }
             ]
           },
@@ -18942,7 +19322,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 46000,
                 "sl_cost": 155000,
-                "talisman_cost_ge": 1400
+                "talisman_cost_ge": 1400,
+                "crew_training_sl": 45000,
+                "experts_sl": 155000,
+                "aces_ge": 820,
+                "research_aces_rp": 440000
               },
               {
                 "id": "b_24d",
@@ -19158,7 +19542,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 27000,
                 "sl_cost": 185000,
-                "talisman_cost_ge": 1500
+                "talisman_cost_ge": 1500,
+                "crew_training_sl": 52000,
+                "experts_sl": 185000,
+                "aces_ge": 940,
+                "research_aces_rp": 480000
               }
             ]
           },
@@ -19387,7 +19775,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 2980,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 250000,
+            "aces_ge": 820,
+            "research_aces_rp": 870000
           },
           "7": {
             "id": "p-38j_marge",
@@ -19585,7 +19977,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 320000,
+            "aces_ge": 1100,
+            "research_aces_rp": 1050000
           },
           "8": {
             "id": "p-51h-5_na",
@@ -19813,7 +20209,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 54000,
             "sl_cost": 185000,
-            "talisman_cost_ge": 1500
+            "talisman_cost_ge": 1500,
+            "crew_training_sl": 52000,
+            "experts_sl": 185000,
+            "aces_ge": 940,
+            "research_aces_rp": 480000
           },
           "9": {
             "id": "f8f1_group",
@@ -20075,7 +20475,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 54000,
                 "sl_cost": 185000,
-                "talisman_cost_ge": 1500
+                "talisman_cost_ge": 1500,
+                "crew_training_sl": 52000,
+                "experts_sl": 185000,
+                "aces_ge": 940,
+                "research_aces_rp": 480000
               },
               {
                 "id": "f7f1",
@@ -20249,7 +20653,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 31000,
                 "sl_cost": 200000,
-                "talisman_cost_ge": 1700
+                "talisman_cost_ge": 1700,
+                "crew_training_sl": 57000,
+                "experts_sl": 200000,
+                "aces_ge": 1100,
+                "research_aces_rp": 520000
               }
             ]
           },
@@ -20459,7 +20867,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 54000,
                 "sl_cost": 185000,
-                "talisman_cost_ge": 1500
+                "talisman_cost_ge": 1500,
+                "crew_training_sl": 52000,
+                "experts_sl": 185000,
+                "aces_ge": 940,
+                "research_aces_rp": 480000
               },
               {
                 "id": "douglas_ad_4",
@@ -20673,7 +21085,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 31000,
                 "sl_cost": 200000,
-                "talisman_cost_ge": 1700
+                "talisman_cost_ge": 1700,
+                "crew_training_sl": 57000,
+                "experts_sl": 200000,
+                "aces_ge": 1100,
+                "research_aces_rp": 520000
               },
               {
                 "id": "am_1_mauler",
@@ -20883,7 +21299,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 35000,
                 "sl_cost": 210000,
-                "talisman_cost_ge": 1800
+                "talisman_cost_ge": 1800,
+                "crew_training_sl": 61000,
+                "experts_sl": 210000,
+                "aces_ge": 1200,
+                "research_aces_rp": 570000
               }
             ]
           },
@@ -21089,7 +21509,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 63000,
             "sl_cost": 200000,
-            "talisman_cost_ge": 1700
+            "talisman_cost_ge": 1700,
+            "crew_training_sl": 57000,
+            "experts_sl": 200000,
+            "aces_ge": 1100,
+            "research_aces_rp": 520000
           },
           "12": {
             "id": "p-51d-20-na",
@@ -21307,7 +21731,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 290000,
+            "aces_ge": 940,
+            "research_aces_rp": 960000
           },
           "13": {
             "id": "p-38k",
@@ -21485,7 +21913,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 320000,
+            "aces_ge": 1100,
+            "research_aces_rp": 1050000
           },
           "14": {
             "id": "p-51d-10",
@@ -21703,7 +22135,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 290000,
+            "aces_ge": 940,
+            "research_aces_rp": 960000
           },
           "15": {
             "id": "a-26c",
@@ -21911,7 +22347,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 1500
+            "talisman_cost_ge": 1500,
+            "crew_training_sl": 52000,
+            "experts_sl": 185000,
+            "aces_ge": 940,
+            "research_aces_rp": 480000
           },
           "16": {
             "id": "p-47m-1-re",
@@ -22109,7 +22549,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 340000,
+            "aces_ge": 1200,
+            "research_aces_rp": 1140000
           },
           "17": {
             "id": "a-26c-45-dt",
@@ -22323,7 +22767,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 290000,
+            "aces_ge": 940,
+            "research_aces_rp": 960000
           },
           "18": {
             "id": "p-47m-1-re_boxted",
@@ -22521,7 +22969,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 340000,
+            "aces_ge": 1200,
+            "research_aces_rp": 1140000
           },
           "19": {
             "id": "xf5u_1",
@@ -22703,7 +23155,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 320000,
+            "aces_ge": 1100,
+            "research_aces_rp": 1050000
           },
           "20": {
             "id": "fw-190a-8_usa",
@@ -22874,7 +23330,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 3850,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 290000,
+            "aces_ge": 940,
+            "research_aces_rp": 960000
           },
           "21": {
             "id": "p-59a",
@@ -23036,7 +23496,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 290000,
+            "aces_ge": 940,
+            "research_aces_rp": 960000
           },
           "22": {
             "id": "spitfire_ix_usa",
@@ -23251,7 +23715,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 4880,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 320000,
+            "aces_ge": 1100,
+            "research_aces_rp": 1050000
           },
           "23": {
             "id": "f4u-4b_vmf_214",
@@ -23441,7 +23909,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 320000,
+            "aces_ge": 1100,
+            "research_aces_rp": 1050000
           },
           "24": {
             "id": "douglas_a_1h",
@@ -23703,7 +24175,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 340000,
+            "aces_ge": 1200,
+            "research_aces_rp": 1180000
           },
           "25": {
             "id": "f4u-6_au-1",
@@ -23921,7 +24397,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 320000,
+            "aces_ge": 1100,
+            "research_aces_rp": 1050000
           },
           "26": {
             "id": "f2g-1",
@@ -24123,7 +24603,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 340000,
+            "aces_ge": 1200,
+            "research_aces_rp": 1180000
           },
           "27": {
             "id": "f7f3",
@@ -24349,7 +24833,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 340000,
+            "aces_ge": 1200,
+            "research_aces_rp": 1180000
           }
         }
       },
@@ -24550,7 +25038,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 82000,
             "sl_cost": 240000,
-            "talisman_cost_ge": 1900
+            "talisman_cost_ge": 1900,
+            "crew_training_sl": 68000,
+            "experts_sl": 240000,
+            "aces_ge": 1400,
+            "research_aces_rp": 620000
           },
           "2": {
             "id": "f-84_group",
@@ -24776,7 +25268,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 82000,
                 "sl_cost": 240000,
-                "talisman_cost_ge": 1900
+                "talisman_cost_ge": 1900,
+                "crew_training_sl": 68000,
+                "experts_sl": 240000,
+                "aces_ge": 1400,
+                "research_aces_rp": 620000
               },
               {
                 "id": "f-84g",
@@ -24996,7 +25492,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 48000,
                 "sl_cost": 270000,
-                "talisman_cost_ge": 2000
+                "talisman_cost_ge": 2000,
+                "crew_training_sl": 78000,
+                "experts_sl": 270000,
+                "aces_ge": 1500,
+                "research_aces_rp": 670000
               }
             ]
           },
@@ -25182,7 +25682,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 82000,
             "sl_cost": 240000,
-            "talisman_cost_ge": 1900
+            "talisman_cost_ge": 1900,
+            "crew_training_sl": 68000,
+            "experts_sl": 240000,
+            "aces_ge": 1400,
+            "research_aces_rp": 620000
           },
           "4": {
             "id": "f3d_1",
@@ -25374,7 +25878,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 82000,
             "sl_cost": 240000,
-            "talisman_cost_ge": 1900
+            "talisman_cost_ge": 1900,
+            "crew_training_sl": 68000,
+            "experts_sl": 240000,
+            "aces_ge": 1400,
+            "research_aces_rp": 620000
           },
           "5": {
             "id": "b_57_group",
@@ -25528,7 +26036,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 105000,
                 "sl_cost": 300000,
-                "talisman_cost_ge": 2100
+                "talisman_cost_ge": 2100,
+                "crew_training_sl": 86000,
+                "experts_sl": 300000,
+                "aces_ge": 1700,
+                "research_aces_rp": 720000
               },
               {
                 "id": "b-57b",
@@ -25784,7 +26296,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 61000,
                 "sl_cost": 340000,
-                "talisman_cost_ge": 2200
+                "talisman_cost_ge": 2200,
+                "crew_training_sl": 98000,
+                "experts_sl": 340000,
+                "aces_ge": 1800,
+                "research_aces_rp": 780000
               }
             ]
           },
@@ -25941,7 +26457,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 7540,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 550000,
+            "aces_ge": 1800,
+            "research_aces_rp": 1550000
           },
           "7": {
             "id": "a2d",
@@ -26160,7 +26680,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 6900,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 440000,
+            "aces_ge": 1500,
+            "research_aces_rp": 1340000
           },
           "8": {
             "id": "f-80",
@@ -26364,7 +26888,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 105000,
             "sl_cost": 300000,
-            "talisman_cost_ge": 2100
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 86000,
+            "experts_sl": 300000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
           },
           "9": {
             "id": "f-86_group",
@@ -26546,7 +27074,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 105000,
                 "sl_cost": 300000,
-                "talisman_cost_ge": 2100
+                "talisman_cost_ge": 2100,
+                "crew_training_sl": 86000,
+                "experts_sl": 300000,
+                "aces_ge": 1700,
+                "research_aces_rp": 720000
               },
               {
                 "id": "f-86f-25",
@@ -26730,7 +27262,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 61000,
                 "sl_cost": 340000,
-                "talisman_cost_ge": 2200
+                "talisman_cost_ge": 2200,
+                "crew_training_sl": 98000,
+                "experts_sl": 340000,
+                "aces_ge": 1800,
+                "research_aces_rp": 780000
               }
             ]
           },
@@ -26934,7 +27470,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 95000,
                 "sl_cost": 270000,
-                "talisman_cost_ge": 2000
+                "talisman_cost_ge": 2000,
+                "crew_training_sl": 78000,
+                "experts_sl": 270000,
+                "aces_ge": 1500,
+                "research_aces_rp": 670000
               },
               {
                 "id": "f9f-5",
@@ -27118,7 +27658,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 53000,
                 "sl_cost": 300000,
-                "talisman_cost_ge": 2100
+                "talisman_cost_ge": 2100,
+                "crew_training_sl": 86000,
+                "experts_sl": 300000,
+                "aces_ge": 1700,
+                "research_aces_rp": 720000
               },
               {
                 "id": "f9f-8",
@@ -27314,7 +27858,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 61000,
                 "sl_cost": 340000,
-                "talisman_cost_ge": 2200
+                "talisman_cost_ge": 2200,
+                "crew_training_sl": 98000,
+                "experts_sl": 340000,
+                "aces_ge": 1800,
+                "research_aces_rp": 780000
               }
             ]
           },
@@ -27536,7 +28084,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 120000,
             "sl_cost": 340000,
-            "talisman_cost_ge": 2200
+            "talisman_cost_ge": 2200,
+            "crew_training_sl": 98000,
+            "experts_sl": 340000,
+            "aces_ge": 1800,
+            "research_aces_rp": 780000
           },
           "12": {
             "id": "f-89d",
@@ -27666,7 +28218,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 550000,
+            "aces_ge": 1800,
+            "research_aces_rp": 1550000
           },
           "13": {
             "id": "f-86f-35",
@@ -27848,7 +28404,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 940000,
+            "aces_ge": 2800,
+            "research_aces_rp": 2150000
           }
         }
       },
@@ -28066,7 +28626,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 150000,
                 "sl_cost": 420000,
-                "talisman_cost_ge": 2400
+                "talisman_cost_ge": 2400,
+                "crew_training_sl": 120000,
+                "experts_sl": 420000,
+                "aces_ge": 2200,
+                "research_aces_rp": 890000
               },
               {
                 "id": "f-104c",
@@ -28254,7 +28818,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 86000,
                 "sl_cost": 480000,
-                "talisman_cost_ge": 2600
+                "talisman_cost_ge": 2600,
+                "crew_training_sl": 135000,
+                "experts_sl": 480000,
+                "aces_ge": 2400,
+                "research_aces_rp": 950000
               }
             ]
           },
@@ -28440,7 +29008,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 135000,
             "sl_cost": 380000,
-            "talisman_cost_ge": 2300
+            "talisman_cost_ge": 2300,
+            "crew_training_sl": 110000,
+            "experts_sl": 380000,
+            "aces_ge": 2000,
+            "research_aces_rp": 830000
           },
           "3": {
             "id": "f3h-2",
@@ -28696,7 +29268,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 150000,
             "sl_cost": 420000,
-            "talisman_cost_ge": 2400
+            "talisman_cost_ge": 2400,
+            "crew_training_sl": 120000,
+            "experts_sl": 420000,
+            "aces_ge": 2200,
+            "research_aces_rp": 890000
           },
           "4": {
             "id": "a_4b_group",
@@ -28966,7 +29542,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 135000,
                 "sl_cost": 380000,
-                "talisman_cost_ge": 2300
+                "talisman_cost_ge": 2300,
+                "crew_training_sl": 110000,
+                "experts_sl": 380000,
+                "aces_ge": 2000,
+                "research_aces_rp": 830000
               },
               {
                 "id": "fj_4b",
@@ -29186,7 +29766,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 76000,
                 "sl_cost": 420000,
-                "talisman_cost_ge": 2400
+                "talisman_cost_ge": 2400,
+                "crew_training_sl": 120000,
+                "experts_sl": 420000,
+                "aces_ge": 2200,
+                "research_aces_rp": 890000
               }
             ]
           },
@@ -29322,7 +29906,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 170000,
             "sl_cost": 480000,
-            "talisman_cost_ge": 2600
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 135000,
+            "experts_sl": 480000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
           },
           "6": {
             "id": "a_4e_early",
@@ -29590,7 +30178,11 @@ export const progressTree = {
             "event": false,
             "sl_cost": 420000,
             "rp_cost": 400000,
-            "talisman_cost_ge": 2400
+            "talisman_cost_ge": 2400,
+            "crew_training_sl": 120000,
+            "experts_sl": 420000,
+            "aces_ge": 2200,
+            "research_aces_rp": 890000
           },
           "7": {
             "id": "fj_4b_agm_12b",
@@ -29818,7 +30410,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 165000,
+            "experts_sl": 580000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "8": {
             "id": "f-100d",
@@ -30058,7 +30654,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 170000,
             "sl_cost": 480000,
-            "talisman_cost_ge": 2600
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 135000,
+            "experts_sl": 480000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
           },
           "9": {
             "id": "f8u-2",
@@ -30246,7 +30846,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 190000,
             "sl_cost": 530000,
-            "talisman_cost_ge": 2700
+            "talisman_cost_ge": 2700,
+            "crew_training_sl": 150000,
+            "experts_sl": 530000,
+            "aces_ge": 2600,
+            "research_aces_rp": 1010000
           },
           "10": {
             "id": "av_8c",
@@ -30490,7 +31094,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 190000,
             "sl_cost": 530000,
-            "talisman_cost_ge": 2700
+            "talisman_cost_ge": 2700,
+            "crew_training_sl": 150000,
+            "experts_sl": 530000,
+            "aces_ge": 2600,
+            "research_aces_rp": 1010000
           },
           "11": {
             "id": "f_117",
@@ -30674,7 +31282,11 @@ export const progressTree = {
             "event": false,
             "sl_cost": 440000,
             "rp_cost": 400000,
-            "talisman_cost_ge": 2400
+            "talisman_cost_ge": 2400,
+            "crew_training_sl": 120000,
+            "experts_sl": 420000,
+            "aces_ge": 2200,
+            "research_aces_rp": 890000
           },
           "12": {
             "id": "b_52h",
@@ -30824,7 +31436,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 2600
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 135000,
+            "experts_sl": 480000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
           },
           "13": {
             "id": "av_8a",
@@ -31067,7 +31683,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 8910,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 770000,
+            "aces_ge": 2400,
+            "research_aces_rp": 1900000
           },
           "14": {
             "id": "f11f_1_late",
@@ -31271,7 +31891,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 165000,
+            "experts_sl": 580000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "15": {
             "id": "a_10a_early",
@@ -31521,7 +32145,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 860000,
+            "aces_ge": 2600,
+            "research_aces_rp": 2020000
           },
           "16": {
             "id": "f4d_1",
@@ -31709,7 +32337,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 2600
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 135000,
+            "experts_sl": 480000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
           },
           "17": {
             "id": "f_106a_1972",
@@ -31885,7 +32517,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 2400
+            "talisman_cost_ge": 2400,
+            "crew_training_sl": 120000,
+            "experts_sl": 420000,
+            "aces_ge": 2200,
+            "research_aces_rp": 890000
           }
         }
       },
@@ -32191,7 +32827,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 230000,
             "sl_cost": 630000,
-            "talisman_cost_ge": 2900
+            "talisman_cost_ge": 2900,
+            "crew_training_sl": 180000,
+            "experts_sl": 630000,
+            "aces_ge": 3000,
+            "research_aces_rp": 1140000
           },
           "2": {
             "id": "f-4c",
@@ -32459,7 +33099,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 210000,
             "sl_cost": 580000,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 165000,
+            "experts_sl": 580000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "3": {
             "id": "f-8e",
@@ -32727,7 +33371,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 210000,
             "sl_cost": 580000,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 165000,
+            "experts_sl": 580000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "4": {
             "id": "a_10a_late",
@@ -32943,7 +33591,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 210000,
             "sl_cost": 580000,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 165000,
+            "experts_sl": 580000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "5": {
             "id": "f-105d",
@@ -33203,7 +33855,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 210000,
             "sl_cost": 580000,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 165000,
+            "experts_sl": 580000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "6": {
             "id": "f-5c",
@@ -33437,7 +34093,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 940000,
+            "aces_ge": 2800,
+            "research_aces_rp": 2150000
           },
           "7": {
             "id": "f-5a",
@@ -33673,7 +34333,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 165000,
+            "experts_sl": 580000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "8": {
             "id": "f-4e",
@@ -33961,7 +34625,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 260000,
             "sl_cost": 720000,
-            "talisman_cost_ge": 3000
+            "talisman_cost_ge": 3000,
+            "crew_training_sl": 200000,
+            "experts_sl": 720000,
+            "aces_ge": 3200,
+            "research_aces_rp": 1210000
           },
           "9": {
             "id": "f-4j",
@@ -34213,7 +34881,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 260000,
             "sl_cost": 720000,
-            "talisman_cost_ge": 3000
+            "talisman_cost_ge": 3000,
+            "crew_training_sl": 200000,
+            "experts_sl": 720000,
+            "aces_ge": 3200,
+            "research_aces_rp": 1210000
           },
           "10": {
             "id": "a_7_group",
@@ -34499,7 +35171,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 230000,
                 "sl_cost": 630000,
-                "talisman_cost_ge": 2900
+                "talisman_cost_ge": 2900,
+                "crew_training_sl": 180000,
+                "experts_sl": 630000,
+                "aces_ge": 3000,
+                "research_aces_rp": 1140000
               },
               {
                 "id": "a_7e",
@@ -34779,7 +35455,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 130000,
                 "sl_cost": 720000,
-                "talisman_cost_ge": 3000
+                "talisman_cost_ge": 3000,
+                "crew_training_sl": 200000,
+                "experts_sl": 720000,
+                "aces_ge": 3200,
+                "research_aces_rp": 1210000
               }
             ]
           },
@@ -35041,7 +35721,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 230000,
             "sl_cost": 630000,
-            "talisman_cost_ge": 2900
+            "talisman_cost_ge": 2900,
+            "crew_training_sl": 180000,
+            "experts_sl": 630000,
+            "aces_ge": 3000,
+            "research_aces_rp": 1140000
           },
           "12": {
             "id": "av_8b_na",
@@ -35311,7 +35995,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1170000,
+            "aces_ge": 3200,
+            "research_aces_rp": 2420000
           },
           "13": {
             "id": "a_6e_tram",
@@ -35590,7 +36278,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 9270,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 940000,
+            "aces_ge": 2800,
+            "research_aces_rp": 2150000
           },
           "14": {
             "id": "a_10c",
@@ -35878,7 +36570,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 260000,
             "sl_cost": 720000,
-            "talisman_cost_ge": 3000
+            "talisman_cost_ge": 3000,
+            "crew_training_sl": 200000,
+            "experts_sl": 720000,
+            "aces_ge": 3200,
+            "research_aces_rp": 1210000
           },
           "15": {
             "id": "f_111f",
@@ -36150,7 +36846,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 260000,
             "sl_cost": 720000,
-            "talisman_cost_ge": 3000
+            "talisman_cost_ge": 3000,
+            "crew_training_sl": 200000,
+            "experts_sl": 720000,
+            "aces_ge": 3200,
+            "research_aces_rp": 1210000
           },
           "16": {
             "id": "f-4s",
@@ -36396,7 +37096,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1030000,
+            "aces_ge": 3000,
+            "research_aces_rp": 2280000
           },
           "17": {
             "id": "a_7k",
@@ -36676,7 +37380,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 3000
+            "talisman_cost_ge": 3000,
+            "crew_training_sl": 200000,
+            "experts_sl": 720000,
+            "aces_ge": 3200,
+            "research_aces_rp": 1210000
           }
         }
       },
@@ -36947,7 +37655,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 290000,
                 "sl_cost": 780000,
-                "talisman_cost_ge": 3100
+                "talisman_cost_ge": 3100,
+                "crew_training_sl": 220000,
+                "experts_sl": 780000,
+                "aces_ge": 3400,
+                "research_aces_rp": 1280000
               },
               {
                 "id": "f_16a_block_15_adf",
@@ -37139,7 +37851,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 160000,
                 "sl_cost": 860000,
-                "talisman_cost_ge": 3200
+                "talisman_cost_ge": 3200,
+                "crew_training_sl": 250000,
+                "experts_sl": 860000,
+                "aces_ge": 3600,
+                "research_aces_rp": 1350000
               }
             ]
           },
@@ -37377,7 +38093,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 290000,
             "sl_cost": 780000,
-            "talisman_cost_ge": 3100
+            "talisman_cost_ge": 3100,
+            "crew_training_sl": 220000,
+            "experts_sl": 780000,
+            "aces_ge": 3400,
+            "research_aces_rp": 1280000
           },
           "3": {
             "id": "f_18_group",
@@ -37599,7 +38319,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 290000,
                 "sl_cost": 780000,
-                "talisman_cost_ge": 3100
+                "talisman_cost_ge": 3100,
+                "crew_training_sl": 220000,
+                "experts_sl": 780000,
+                "aces_ge": 3400,
+                "research_aces_rp": 1280000
               },
               {
                 "id": "fa_18c_late",
@@ -37895,7 +38619,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 175000,
                 "sl_cost": 940000,
-                "talisman_cost_ge": 3300
+                "talisman_cost_ge": 3300,
+                "crew_training_sl": 270000,
+                "experts_sl": 940000,
+                "aces_ge": 3700,
+                "research_aces_rp": 1380000
               }
             ]
           },
@@ -38153,7 +38881,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 320000,
             "sl_cost": 860000,
-            "talisman_cost_ge": 3200
+            "talisman_cost_ge": 3200,
+            "crew_training_sl": 250000,
+            "experts_sl": 860000,
+            "aces_ge": 3600,
+            "research_aces_rp": 1350000
           },
           "5": {
             "id": "f_15e",
@@ -38449,7 +39181,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 350000,
             "sl_cost": 940000,
-            "talisman_cost_ge": 3300
+            "talisman_cost_ge": 3300,
+            "crew_training_sl": 270000,
+            "experts_sl": 940000,
+            "aces_ge": 3700,
+            "research_aces_rp": 1380000
           },
           "6": {
             "id": "f_20a",
@@ -38715,7 +39451,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1280000,
+            "aces_ge": 3400,
+            "research_aces_rp": 2560000
           },
           "7": {
             "id": "f_14a_iriaf",
@@ -38987,7 +39727,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 3100
+            "talisman_cost_ge": 3100,
+            "crew_training_sl": 220000,
+            "experts_sl": 780000,
+            "aces_ge": 3400,
+            "research_aces_rp": 1280000
           },
           "8": {
             "id": "f_16c_block_50",
@@ -39259,7 +40003,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 350000,
             "sl_cost": 940000,
-            "talisman_cost_ge": 3300
+            "talisman_cost_ge": 3300,
+            "crew_training_sl": 270000,
+            "experts_sl": 940000,
+            "aces_ge": 3700,
+            "research_aces_rp": 1380000
           },
           "9": {
             "id": "f_15c_msip2",
@@ -39503,7 +40251,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 350000,
             "sl_cost": 940000,
-            "talisman_cost_ge": 3300
+            "talisman_cost_ge": 3300,
+            "crew_training_sl": 270000,
+            "experts_sl": 940000,
+            "aces_ge": 3700,
+            "research_aces_rp": 1380000
           },
           "10": {
             "id": "f_14_group",
@@ -39761,7 +40513,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 320000,
                 "sl_cost": 860000,
-                "talisman_cost_ge": 3200
+                "talisman_cost_ge": 3200,
+                "crew_training_sl": 250000,
+                "experts_sl": 860000,
+                "aces_ge": 3600,
+                "research_aces_rp": 1350000
               },
               {
                 "id": "f_14b",
@@ -40013,7 +40769,11 @@ export const progressTree = {
                 "event": false,
                 "rp_cost": 175000,
                 "sl_cost": 940000,
-                "talisman_cost_ge": 3300
+                "talisman_cost_ge": 3300,
+                "crew_training_sl": 270000,
+                "experts_sl": 940000,
+                "aces_ge": 3700,
+                "research_aces_rp": 1380000
               }
             ]
           },
@@ -40249,7 +41009,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1280000,
+            "aces_ge": 3400,
+            "research_aces_rp": 2560000
           }
         }
       },
@@ -40545,7 +41309,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 400000,
             "sl_cost": 1080000,
-            "talisman_cost_ge": 3500
+            "talisman_cost_ge": 3500,
+            "crew_training_sl": 310000,
+            "experts_sl": 1080000,
+            "aces_ge": 3800,
+            "research_aces_rp": 1400000
           },
           "2": {
             "id": "f_15c_golden_eagle",
@@ -40801,7 +41569,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 400000,
             "sl_cost": 1080000,
-            "talisman_cost_ge": 3500
+            "talisman_cost_ge": 3500,
+            "crew_training_sl": 310000,
+            "experts_sl": 1080000,
+            "aces_ge": 3800,
+            "research_aces_rp": 1400000
           },
           "3": {
             "id": "fa_18e_block_2",
@@ -41085,7 +41857,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 400000,
             "sl_cost": 1080000,
-            "talisman_cost_ge": 3500
+            "talisman_cost_ge": 3500,
+            "crew_training_sl": 310000,
+            "experts_sl": 1080000,
+            "aces_ge": 3800,
+            "research_aces_rp": 1400000
           }
         }
       }
@@ -42412,7 +43188,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 370000,
             "sl_cost": 370000,
-            "talisman_cost_ge": 2000
+            "talisman_cost_ge": 2000,
+            "crew_training_sl": 105000,
+            "experts_sl": 370000,
+            "aces_ge": 1500,
+            "research_aces_rp": 670000
           },
           "2": {
             "id": "h_34",
@@ -42630,7 +43410,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 800000,
+            "aces_ge": 1800,
+            "research_aces_rp": 1550000
           },
           "3": {
             "id": "uh_1b",
@@ -42822,7 +43606,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 99000,
             "sl_cost": 390000,
-            "talisman_cost_ge": 2100
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 110000,
+            "experts_sl": 390000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
           },
           "4": {
             "id": "uh_1c",
@@ -43022,7 +43810,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 150000,
             "sl_cost": 490000,
-            "talisman_cost_ge": 2200
+            "talisman_cost_ge": 2200,
+            "crew_training_sl": 140000,
+            "experts_sl": 490000,
+            "aces_ge": 1800,
+            "research_aces_rp": 780000
           },
           "5": {
             "id": "uh_1c_xm_30",
@@ -43200,7 +43992,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1600000,
+            "aces_ge": 2000,
+            "research_aces_rp": 1760000
           }
         }
       },
@@ -43412,7 +44208,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 370000,
             "sl_cost": 990000,
-            "talisman_cost_ge": 2400
+            "talisman_cost_ge": 2400,
+            "crew_training_sl": 280000,
+            "experts_sl": 990000,
+            "aces_ge": 2200,
+            "research_aces_rp": 890000
           },
           "2": {
             "id": "ah_1f",
@@ -43616,7 +44416,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 370000,
             "sl_cost": 990000,
-            "talisman_cost_ge": 2400
+            "talisman_cost_ge": 2400,
+            "crew_training_sl": 280000,
+            "experts_sl": 990000,
+            "aces_ge": 2200,
+            "research_aces_rp": 890000
           },
           "3": {
             "id": "rah_66",
@@ -43790,7 +44594,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1670000,
+            "aces_ge": 2800,
+            "research_aces_rp": 2150000
           },
           "4": {
             "id": "ah_56a",
@@ -43966,7 +44774,11 @@ export const progressTree = {
             "event": false,
             "sl_cost": 1020000,
             "rp_cost": 520000,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 290000,
+            "experts_sl": 1020000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "5": {
             "id": "oh_58d",
@@ -44194,7 +45006,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 380000,
             "sl_cost": 1000000,
-            "talisman_cost_ge": 2600
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 290000,
+            "experts_sl": 1000000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
           },
           "6": {
             "id": "ah_64a",
@@ -44402,7 +45218,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 390000,
             "sl_cost": 1010000,
-            "talisman_cost_ge": 2700
+            "talisman_cost_ge": 2700,
+            "crew_training_sl": 290000,
+            "experts_sl": 1010000,
+            "aces_ge": 2600,
+            "research_aces_rp": 1010000
           },
           "7": {
             "id": "ah_1w",
@@ -44630,7 +45450,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 380000,
             "sl_cost": 1000000,
-            "talisman_cost_ge": 2600
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 290000,
+            "experts_sl": 1000000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
           },
           "8": {
             "id": "ah_64a_greece_usa",
@@ -44836,7 +45660,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1670000,
+            "aces_ge": 2800,
+            "research_aces_rp": 2150000
           },
           "9": {
             "id": "yah_64",
@@ -45004,7 +45832,11 @@ export const progressTree = {
             "event": false,
             "sl_cost": 1010000,
             "rp_cost": 480000,
-            "talisman_cost_ge": 2700
+            "talisman_cost_ge": 2700,
+            "crew_training_sl": 290000,
+            "experts_sl": 1010000,
+            "aces_ge": 2600,
+            "research_aces_rp": 1010000
           },
           "10": {
             "id": "ah_64a_peten",
@@ -45190,7 +46022,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1670000,
+            "aces_ge": 2800,
+            "research_aces_rp": 2150000
           }
         }
       },
@@ -45459,7 +46295,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 400000,
             "sl_cost": 1020000,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 290000,
+            "experts_sl": 1020000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "2": {
             "id": "ah_64d",
@@ -45659,7 +46499,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 400000,
             "sl_cost": 1020000,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 290000,
+            "experts_sl": 1020000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "3": {
             "id": "ah_1z",
@@ -45887,7 +46731,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 400000,
             "sl_cost": 1020000,
-            "talisman_cost_ge": 2800
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 290000,
+            "experts_sl": 1020000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "4": {
             "id": "ah_64e",
@@ -46087,7 +46935,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 400000,
             "sl_cost": 1030000,
-            "talisman_cost_ge": 2900
+            "talisman_cost_ge": 2900,
+            "crew_training_sl": 300000,
+            "experts_sl": 1030000,
+            "aces_ge": 3000,
+            "research_aces_rp": 1140000
           }
         }
       }
@@ -46321,7 +47173,11 @@ export const progressTree = {
             "event": true,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 190
+            "talisman_cost_ge": 190,
+            "crew_training_sl": null,
+            "experts_sl": 1000,
+            "aces_ge": 10,
+            "research_aces_rp": 80000
           },
           "2": {
             "id": "us_destroyer_clemson_barker",
@@ -46545,7 +47401,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 2900,
             "sl_cost": 700,
-            "talisman_cost_ge": 190
+            "talisman_cost_ge": 190,
+            "crew_training_sl": 200,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 96000
           },
           "3": {
             "id": "us_destroyer_clemson_welborn_c_wood",
@@ -46752,7 +47612,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 250,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 150,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 145000
           },
           "4": {
             "id": "us_destroyer_farragut_1942",
@@ -47004,7 +47868,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 5300,
             "sl_cost": 5000,
-            "talisman_cost_ge": 410
+            "talisman_cost_ge": 410,
+            "crew_training_sl": 1400,
+            "experts_sl": 5000,
+            "aces_ge": 80,
+            "research_aces_rp": 135000
           }
         }
       },
@@ -47285,7 +48153,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 11000,
             "sl_cost": 22000,
-            "talisman_cost_ge": 750
+            "talisman_cost_ge": 750,
+            "crew_training_sl": 6300,
+            "experts_sl": 22000,
+            "aces_ge": 250,
+            "research_aces_rp": 220000
           },
           "2": {
             "id": "us_destroyer_bagley_class_bagley",
@@ -47529,7 +48401,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 7000,
             "sl_cost": 8700,
-            "talisman_cost_ge": 530
+            "talisman_cost_ge": 530,
+            "crew_training_sl": 2500,
+            "experts_sl": 8700,
+            "aces_ge": 125,
+            "research_aces_rp": 160000
           },
           "3": {
             "id": "",
@@ -48167,7 +49043,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 0,
             "sl_cost": 0,
-            "talisman_cost_ge": 190
+            "talisman_cost_ge": 190,
+            "crew_training_sl": null,
+            "experts_sl": 1000,
+            "aces_ge": 10,
+            "research_aces_rp": 80000
           },
           "2": {
             "id": "us_elco_77ft_pt20",
@@ -48323,7 +49203,11 @@ export const progressTree = {
               "availableRP": 0,
               "researchedMods": []
             },
-            "talisman_cost_ge": 190
+            "talisman_cost_ge": 190,
+            "crew_training_sl": 200,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 96000
           },
           "3": {
             "id": "us_pt3",
@@ -48510,7 +49394,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 250,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 150,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 145000
           },
           "4": {
             "id": "us_nasty_ptf",
@@ -48730,7 +49618,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 4000,
             "sl_cost": 2100,
-            "talisman_cost_ge": 300
+            "talisman_cost_ge": 300,
+            "crew_training_sl": 600,
+            "experts_sl": 2100,
+            "aces_ge": 45,
+            "research_aces_rp": 110000
           },
           "5": {
             "id": "us_huckins_78ft_pt95",
@@ -48942,7 +49834,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 4000,
             "sl_cost": 2100,
-            "talisman_cost_ge": 300
+            "talisman_cost_ge": 300,
+            "crew_training_sl": 600,
+            "experts_sl": 2100,
+            "aces_ge": 45,
+            "research_aces_rp": 110000
           },
           "modifications": {
             "categories": {
@@ -49239,7 +50135,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 9200,
             "sl_cost": 16000,
-            "talisman_cost_ge": 640
+            "talisman_cost_ge": 640,
+            "crew_training_sl": 4500,
+            "experts_sl": 16000,
+            "aces_ge": 180,
+            "research_aces_rp": 190000
           },
           "2": {
             "id": "us_pc_451",
@@ -49459,7 +50359,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 7900,
             "sl_cost": 10000,
-            "talisman_cost_ge": 530
+            "talisman_cost_ge": 530,
+            "crew_training_sl": 3000,
+            "experts_sl": 10000,
+            "aces_ge": 125,
+            "research_aces_rp": 160000
           },
           "3": {
             "id": "us_pc_466_carmi",
@@ -49678,7 +50582,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 1150,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 6900,
+            "experts_sl": 46000,
+            "aces_ge": 320,
+            "research_aces_rp": 500000
           },
           "4": {
             "id": "us_huckins_78ft_pt262",
@@ -49889,7 +50797,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 850,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 3400,
+            "experts_sl": 23000,
+            "aces_ge": 180,
+            "research_aces_rp": 380000
           },
           "5": {
             "id": "us_higgins_78ft_pt71",
@@ -50093,7 +51005,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 11000,
             "sl_cost": 22000,
-            "talisman_cost_ge": 750
+            "talisman_cost_ge": 750,
+            "crew_training_sl": 6300,
+            "experts_sl": 22000,
+            "aces_ge": 250,
+            "research_aces_rp": 220000
           },
           "6": {
             "id": "us_sc_497",
@@ -50313,7 +51229,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 14000,
             "sl_cost": 32000,
-            "talisman_cost_ge": 860
+            "talisman_cost_ge": 860,
+            "crew_training_sl": 9200,
+            "experts_sl": 32000,
+            "aces_ge": 320,
+            "research_aces_rp": 250000
           },
           "7": {
             "id": "us_elco_80ft_pt174",
@@ -50524,7 +51444,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 1150,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 6900,
+            "experts_sl": 46000,
+            "aces_ge": 320,
+            "research_aces_rp": 500000
           },
           "8": {
             "id": "us_elco_80ft_pt109_boat",
@@ -50726,7 +51650,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 4800,
+            "experts_sl": 32000,
+            "aces_ge": 250,
+            "research_aces_rp": 440000
           }
         }
       },
@@ -50959,7 +51887,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 18000,
             "sl_cost": 47000,
-            "talisman_cost_ge": 980
+            "talisman_cost_ge": 980,
+            "crew_training_sl": 13000,
+            "experts_sl": 47000,
+            "aces_ge": 400,
+            "research_aces_rp": 280000
           },
           "2": {
             "id": "us_higgins_78ft_pt625",
@@ -51179,7 +52111,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 26000,
             "sl_cost": 76000,
-            "talisman_cost_ge": 1100
+            "talisman_cost_ge": 1100,
+            "crew_training_sl": 22000,
+            "experts_sl": 76000,
+            "aces_ge": 500,
+            "research_aces_rp": 320000
           },
           "3": {
             "id": "us_pgm_59_class",
@@ -51391,7 +52327,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 48000,
             "sl_cost": 180000,
-            "talisman_cost_ge": 1300
+            "talisman_cost_ge": 1300,
+            "crew_training_sl": 52000,
+            "experts_sl": 180000,
+            "aces_ge": 700,
+            "research_aces_rp": 390000
           },
           "4": {
             "id": "us_lcm_zippo",
@@ -51601,7 +52541,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 115000,
+            "aces_ge": 500,
+            "research_aces_rp": 640000
           },
           "5": {
             "id": "us_higgins_78ft_pt658",
@@ -51827,7 +52771,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 115000,
+            "aces_ge": 500,
+            "research_aces_rp": 640000
           },
           "6": {
             "id": "us_elco_80ft_pt_boat_mod02",
@@ -52047,7 +52995,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 36000,
             "sl_cost": 115000,
-            "talisman_cost_ge": 1200
+            "talisman_cost_ge": 1200,
+            "crew_training_sl": 33000,
+            "experts_sl": 115000,
+            "aces_ge": 590,
+            "research_aces_rp": 360000
           },
           "7": {
             "id": "us_elco_77ft_pt59",
@@ -52251,7 +53203,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 48000,
             "sl_cost": 180000,
-            "talisman_cost_ge": 1300
+            "talisman_cost_ge": 1300,
+            "crew_training_sl": 52000,
+            "experts_sl": 180000,
+            "aces_ge": 700,
+            "research_aces_rp": 390000
           },
           "8": {
             "id": "us_elco_80ft_pt_boat_thunderbolt",
@@ -52454,7 +53410,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 1600,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 180000,
+            "aces_ge": 590,
+            "research_aces_rp": 710000
           },
           "9": {
             "id": "us_flagstaff_pgh1",
@@ -52672,7 +53632,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 400000,
+            "aces_ge": 940,
+            "research_aces_rp": 960000
           }
         }
       },
@@ -52905,7 +53869,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 89000,
             "sl_cost": 300000,
-            "talisman_cost_ge": 1700
+            "talisman_cost_ge": 1700,
+            "crew_training_sl": 87000,
+            "experts_sl": 300000,
+            "aces_ge": 1100,
+            "research_aces_rp": 520000
           },
           "2": {
             "id": "us_ashville_class",
@@ -53117,7 +54085,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 75000,
             "sl_cost": 250000,
-            "talisman_cost_ge": 1500
+            "talisman_cost_ge": 1500,
+            "crew_training_sl": 72000,
+            "experts_sl": 250000,
+            "aces_ge": 940,
+            "research_aces_rp": 480000
           },
           "3": {
             "id": "us_pgm_9_class",
@@ -53329,7 +54301,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 89000,
             "sl_cost": 300000,
-            "talisman_cost_ge": 1700
+            "talisman_cost_ge": 1700,
+            "crew_training_sl": 87000,
+            "experts_sl": 300000,
+            "aces_ge": 1100,
+            "research_aces_rp": 520000
           },
           "4": {
             "id": "us_pt811",
@@ -53539,7 +54515,11 @@ export const progressTree = {
             "premium": true,
             "squadron": false,
             "event": false,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 580000,
+            "aces_ge": 1200,
+            "research_aces_rp": 1180000
           },
           "5": {
             "id": "us_pt812",
@@ -53751,7 +54731,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 120000,
             "sl_cost": 360000,
-            "talisman_cost_ge": 1800
+            "talisman_cost_ge": 1800,
+            "crew_training_sl": 105000,
+            "experts_sl": 360000,
+            "aces_ge": 1200,
+            "research_aces_rp": 570000
           },
           "6": {
             "id": "us_admirable_class",
@@ -53979,7 +54963,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 89000,
             "sl_cost": 300000,
-            "talisman_cost_ge": 1700
+            "talisman_cost_ge": 1700,
+            "crew_training_sl": 87000,
+            "experts_sl": 300000,
+            "aces_ge": 1100,
+            "research_aces_rp": 520000
           },
           "7": {
             "id": "us_ashville_class_douglas",
@@ -54182,7 +55170,11 @@ export const progressTree = {
             "squadron": false,
             "event": false,
             "ge_cost": 6090,
-            "talisman_cost_ge": 0
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 580000,
+            "aces_ge": 1200,
+            "research_aces_rp": 1140000
           }
         }
       },
@@ -54430,7 +55422,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 220000,
             "sl_cost": 640000,
-            "talisman_cost_ge": 1900
+            "talisman_cost_ge": 1900,
+            "crew_training_sl": 185000,
+            "experts_sl": 640000,
+            "aces_ge": 1400,
+            "research_aces_rp": 620000
           },
           "2": {
             "id": "us_lcs_l_3",
@@ -54642,7 +55638,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 250000,
             "sl_cost": 700000,
-            "talisman_cost_ge": 2000
+            "talisman_cost_ge": 2000,
+            "crew_training_sl": 200000,
+            "experts_sl": 700000,
+            "aces_ge": 1500,
+            "research_aces_rp": 670000
           },
           "3": {
             "id": "us_cyclone_class_cyclone",
@@ -54854,7 +55854,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 250000,
             "sl_cost": 700000,
-            "talisman_cost_ge": 2000
+            "talisman_cost_ge": 2000,
+            "crew_training_sl": 200000,
+            "experts_sl": 700000,
+            "aces_ge": 1500,
+            "research_aces_rp": 670000
           },
           "4": {
             "id": "us_frigate_tacoma",
@@ -55082,7 +56086,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 250000,
             "sl_cost": 700000,
-            "talisman_cost_ge": 2000
+            "talisman_cost_ge": 2000,
+            "crew_training_sl": 200000,
+            "experts_sl": 700000,
+            "aces_ge": 1500,
+            "research_aces_rp": 670000
           },
           "5": {
             "id": "us_frigate_buckley_class_coolbaugh",
@@ -55310,7 +56318,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 280000,
             "sl_cost": 780000,
-            "talisman_cost_ge": 2100
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 220000,
+            "experts_sl": 780000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
           },
           "6": {
             "id": "us_frigate_dealey",
@@ -55506,7 +56518,11 @@ export const progressTree = {
             "event": false,
             "rp_cost": 280000,
             "sl_cost": 780000,
-            "talisman_cost_ge": 2100
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 220000,
+            "experts_sl": 780000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
           }
         }
       }

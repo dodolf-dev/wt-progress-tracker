@@ -246,6 +246,19 @@ class ProgressTreeUpdater {
             vehicle.talisman_cost_ge = 0;
           }
 
+          // ---- NOUVEAU : équipage et experts/aces ----
+          if (sv.economy) {
+            vehicle.crew_training_sl = sv.economy.crew_training_sl ? parseInt(sv.economy.crew_training_sl, 10) : 0;
+            vehicle.experts_sl = sv.economy.experts_sl ? parseInt(sv.economy.experts_sl, 10) : 0;
+            vehicle.aces_ge = sv.economy.aces_ge ? parseInt(sv.economy.aces_ge, 10) : 0;
+            vehicle.research_aces_rp = sv.economy.research_aces_rp ? parseInt(sv.economy.research_aces_rp, 10) : 0;
+          } else {
+            vehicle.crew_training_sl = 0;
+            vehicle.experts_sl = 0;
+            vehicle.aces_ge = 0;
+            vehicle.research_aces_rp = 0;
+          }
+
           if (sv.modifications_by_group) {
             vehicle.modifications = this.buildModifications(sv, vehicle.modifications);
           }
@@ -276,11 +289,23 @@ class ProgressTreeUpdater {
             const geCost = sc.purchase?.purchase_cost_ge || sc.purchase_cost_ge;
             if (geCost) child.ge_cost = parseInt(geCost, 10);
 
-            // Talisman cost GE for child
             if (sc.purchase?.talisman_cost_ge) {
               child.talisman_cost_ge = parseInt(sc.purchase.talisman_cost_ge, 10);
             } else {
               child.talisman_cost_ge = 0;
+            }
+
+            // ---- NOUVEAU pour les enfants ----
+            if (sc.economy) {
+              child.crew_training_sl = sc.economy.crew_training_sl ? parseInt(sc.economy.crew_training_sl, 10) : 0;
+              child.experts_sl = sc.economy.experts_sl ? parseInt(sc.economy.experts_sl, 10) : 0;
+              child.aces_ge = sc.economy.aces_ge ? parseInt(sc.economy.aces_ge, 10) : 0;
+              child.research_aces_rp = sc.economy.research_aces_rp ? parseInt(sc.economy.research_aces_rp, 10) : 0;
+            } else {
+              child.crew_training_sl = 0;
+              child.experts_sl = 0;
+              child.aces_ge = 0;
+              child.research_aces_rp = 0;
             }
 
             updated++;

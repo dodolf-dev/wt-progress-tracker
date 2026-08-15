@@ -6540,6 +6540,7 @@ export const progressTree = {
   "USA_Bateau": {
     name: "Bateau haute mer USA",
     ranks: [
+      // Rank I (ok)
       {
         name: "I",
         grid: [
@@ -6665,7 +6666,8 @@ export const progressTree = {
             }},
         }
       },
-            {
+      //Rank II (ok)
+      {
         name: "II",
         grid: [
           [1,1,0,1,0],
@@ -6730,11 +6732,96 @@ export const progressTree = {
                 }
               }
             }},
-          3: {id: "", name: "", image: "", progress: ""},
-          4: {id: "", name: "", image: "", progress: ""},
-          5: {id: "", name: "", image: "", progress: ""},
+          3: {id: "us_destroyer_bagley_class_helm", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id: "us_destroyer_mitscher", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [0,0,0]
+                  ],
+                }
+              }
+            }},
+          5: {id: "us_destroyer_mitscher_wilkinson", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [0,0,0]
+                  ],
+                }
+              }
+            }},
         }
       },
+      //Rank III (ok)
       {
         name: "III",
         grid: [
@@ -6744,21 +6831,386 @@ export const progressTree = {
           [0,0,0,1,0],
         ],
         vehicles: {
-          1: {id: "", name: "", image: "", progress: ""},
-          2: {id: "", name: "", image: "", progress: ""},
-          3: {id: "", name: "", image: "", progress: ""},
-          4: {id: "", name: "", image: "", progress: ""},
-          5: {id: "", name: "", image: "", progress: ""},
-          6: {id: "", name: "", image: "", progress: ""},
-          7: {id: "", name: "", image: "", progress: ""},
-          8: {id: "", name: "", image: "", progress: ""},
-          9: {id: "", name: "", image: "", progress: ""},
-          10: {id: "", name: "", image: "", progress: ""},
-          11: {id: "", name: "", image: "", progress: ""},
-          12: {id: "", name: "", image: "", progress: ""},
-          13: {id: "", name: "", image: "", progress: ""},
+          1: {id: "us_destroyer_porter_1941", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "us_cruiser_omaha_class_trenton", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,1],
+                    [0,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          3: {id: "us_destroyer_sumner", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id: "us_destroyer_gearing_frank_knox", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          5: {id: "us_destroyer_somers_davis", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          6: {id: "us_destroyer_somers", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          7: {id: "us_cruiser_omaha_class_raleigh", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [0,1,1],
+                    [0,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          8: {id: "us_destroyer_gearing", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          9: {id: "us_destroyer_fletcher_cowell", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          10: {id: "us_destroyer_porter_1944", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          11: {id: "us_destroyer_porter_1942", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          12: {id: "us_cruiser_omaha_class_detroit", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,1],
+                    [0,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          13: {id: "us_destroyer_fletcher_bennion", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
         }
       },
+      //Rank IV (ok)
       {
         name: "IV",
         grid: [
@@ -6767,25 +7219,333 @@ export const progressTree = {
           [1,0,0,0,0]
         ],
         vehicles: {
-          1: {id: "", name: "", image: "", progress: ""},
-          2: {id: "", name: "", image: "", progress: ""},
-          3: {id: "", name: "", image: "", progress: "",
+          1: {id: "us_destroyer_cf_adams_class_cf_adams", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "us_cruiser_cleveland_class_cleveland", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          3: {id: "us_cruiser_northampton_pensacola_group", name: "", image: "", progress: "",
             children: [
-              {id: "", name: "", image: "", progress: ""},
-              {id: "", name: "", image: "", progress: ""},
-              {id: "", name: "", image: "", progress: ""},
+              {id: "us_cruiser_northampton_class", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+              {id: "us_cruiser_portland_class", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+              {id: "us_cruiser_pensacola_class", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,1],
+                    [1,0,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
             ]
           },
-          4: {id: "", name: "", image: "", progress: ""},
-          5: {id: "", name: "", image: "", progress: ""},
-          6: {id: "", name: "", image: "", progress: "",
+          4: {id: "us_cruiser_brooklyn_class_helena", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          5: {id: "us_destroyer_forrestsherman_class", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,1],
+                    [0,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          6: {id: "us_cruiser_fargo_brooklyn_group", name: "", image: "", progress: "",
             children: [
-              {id: "", name: "", image: "", progress: ""},
-              {id: "", name: "", image: "", progress: ""},
+              {id: "us_cruiser_fargo_class", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+              {id: "us_cruiser_brooklyn_class_brooklyn", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
             ]
           },
-          7: {id: "", name: "", image: "", progress: ""},
-          8: {id: "", name: "", image: "", progress: ""},
+          7: {id: "us_cruiser_new_orleans_class", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          8: {id: "us_cruiser_atlanta_class_atlanta", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [0,1,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
         }
       },
       {
@@ -6824,6 +7584,7 @@ export const progressTree = {
           8: {id: "", name: "", image: "", progress: ""},
         }
       },
+      //Rank VII (ok)
       {
         name: "VII",
         grid: [
@@ -6831,8 +7592,64 @@ export const progressTree = {
           [0,1,0,0,0],
         ],
         vehicles: {
-          1: {id: "", name: "", image: "", progress: ""},
-          2: {id: "", name: "", image: "", progress: ""},
+          1: {id: "us_battleship_south_dakota", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "us_battleship_iowa_class_iowa", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
         }
       },
     ]

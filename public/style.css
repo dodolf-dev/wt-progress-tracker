@@ -694,9 +694,10 @@
 
 /* MODIFICATIONS PRINCIPALES POUR LA LARGEUR */
 .modifications-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Colonnes plus larges */
-  gap: 2px;
+  display: flex;
+  align-items: center;      /* centre horizontalement chaque catégorie */
+  gap: 12px;                /* espacement régulier entre les catégories */
+  padding: 10px 0;
 }
 
 .vehicle-progress-section {
