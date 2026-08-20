@@ -430001,5 +430001,10 @@
       "total_ge": 6910
     },
     "fetched_at": "2026-05-10T12:40:23.268Z"
+  },
+  {
+    "vehicule_group_id": "f-86_group",
+    "vehicule_group_icon": "https://static.encyclopedia.warthunder.com/slots/f-86_group.png",
+    "fetched_at": "2026-08-20T13:30:41.535Z"
   }
 ]

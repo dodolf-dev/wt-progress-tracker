@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { progressTree } from '../../data/progressTree';
 import VehicleModifications from '../VehicleModification/VehicleModification';
 
+const STORAGE_KEY = 'wt-progress-tracker-progress';
+const SESSION_KEY = 'wt-progress-tracker-session';
+
 const areAllModsCompleted = (vehicleData, progressEntry) => {
   const categories = vehicleData?.modifications?.categories;
   if (!categories) return false;
@@ -20,23 +23,31 @@ const SlIcon = () => <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ 
 const GeIcon = () => <img src="/assets/img/icons/ge_icon.svg" alt="GE" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '4px' }} />;
 
 const ProgressTree = ({ country, vehicle }) => {
-  const [expandedCells, setExpandedCells] = useState({});
-  const [selectedVehicle, setSelectedVehicle] = useState(null);
-  const [collapsedRanks, setCollapsedRanks] = useState(new Set());
   const treeKey = `${country.name}_${vehicle.type}`;
   const treeData = progressTree[treeKey] || progressTree.default;
   const containerRef = useRef(null);
 
-  const [vehicleProgress, setVehicleProgress] = useState(() => {
+  // ========== INITIALISATION AVEC LOCALSTORAGE & SESSIONSTORAGE ==========
+  const buildInitialProgress = () => {
+    let saved = null;
+    try {
+      saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    } catch (e) {
+      console.warn('Erreur de parsing localStorage, réinitialisation');
+    }
+
     const initial = {};
     const initVehicle = (v) => {
       if (!v.id) return;
+      const savedEntry = saved?.[v.id] || {};
       initial[v.id] = {
-        rpResearched: v.rp_researched || 0,
-        purchased: v.purchased || false,
-        talisman_purchased: v.talisman_purchased || false,
-        modRpValues: v.modifications?.modRpValues || {},
-        researchedMods: v.modifications?.researchedMods || [],
+        rpResearched: savedEntry.rp_researched ?? v.rp_researched ?? 0,
+        purchased: savedEntry.purchased ?? v.purchased ?? false,
+        talisman_purchased: savedEntry.talisman_purchased ?? v.talisman_purchased ?? false,
+        crewPurchased: Number.isInteger(savedEntry.crewPurchased) ? savedEntry.crewPurchased : (v.crewPurchased || 0),
+        acesRpResearched: Number.isInteger(savedEntry.acesRpResearched) ? savedEntry.acesRpResearched : (v.acesRpResearched || 0),
+        modRpValues: savedEntry.modRpValues || v.modifications?.modRpValues || {},
+        researchedMods: savedEntry.researchedMods || v.modifications?.researchedMods || [],
       };
       (v.children || []).forEach(initVehicle);
     };
@@ -44,8 +55,52 @@ const ProgressTree = ({ country, vehicle }) => {
       Object.values(rank.vehicles || {}).forEach(initVehicle);
     });
     return initial;
+  };
+
+  const [expandedCells, setExpandedCells] = useState(() => {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(SESSION_KEY));
+      return saved?.expandedCells || {};
+    } catch {
+      return {};
+    }
   });
 
+  const [collapsedRanks, setCollapsedRanks] = useState(() => {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(SESSION_KEY));
+      return new Set(saved?.collapsedRanks || []);
+    } catch {
+      return new Set();
+    }
+  });
+
+  const [selectedVehicle, setSelectedVehicle] = useState(null);
+  const [vehicleProgress, setVehicleProgress] = useState(buildInitialProgress);
+
+  // ========== SAUVEGARDE AUTOMATIQUE (FUSION AVEC EXISTANT) ==========
+  useEffect(() => {
+    try {
+      const existing = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+      const merged = { ...existing, ...vehicleProgress };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+    } catch (e) {
+      console.warn('Impossible de sauvegarder dans localStorage');
+    }
+  }, [vehicleProgress]);
+
+  useEffect(() => {
+    try {
+      sessionStorage.setItem(SESSION_KEY, JSON.stringify({
+        expandedCells,
+        collapsedRanks: Array.from(collapsedRanks),
+      }));
+    } catch (e) {
+      console.warn('Impossible de sauvegarder dans sessionStorage');
+    }
+  }, [expandedCells, collapsedRanks]);
+
+  // ========== HANDLERS ==========
   const updateVehicleProgress = useCallback((vehicleId, updates) => {
     setVehicleProgress(prev => ({
       ...prev,
@@ -56,6 +111,11 @@ const ProgressTree = ({ country, vehicle }) => {
   const handleRpResearchedChange = (vehicleId, newValue) => updateVehicleProgress(vehicleId, { rpResearched: newValue });
   const handleVehiclePurchase = (vehicleId) => updateVehicleProgress(vehicleId, { purchased: true });
   const handleTalismanPurchase = (vehicleId) => updateVehicleProgress(vehicleId, { talisman_purchased: true });
+
+  // Équipage : nombre 0,1,2,3
+  const handleCrewPurchasedChange = (vehicleId, value) => updateVehicleProgress(vehicleId, { crewPurchased: value });
+  // RP de l'as : valeur numérique
+  const handleAcesRpResearchedChange = (vehicleId, value) => updateVehicleProgress(vehicleId, { acesRpResearched: value });
 
   const handleModRpChange = (vehicleId, modId, newValue) => {
     setVehicleProgress(prev => ({
@@ -88,7 +148,57 @@ const ProgressTree = ({ country, vehicle }) => {
     }));
   };
 
-  const handleVehicleReset = (vehicleId) => updateVehicleProgress(vehicleId, { rpResearched: 0, purchased: false, talisman_purchased: false });
+  const handleVehicleReset = (vehicleId) => updateVehicleProgress(vehicleId, {
+    rpResearched: 0,
+    purchased: false,
+    talisman_purchased: false,
+    crewPurchased: 0,
+    acesRpResearched: 0,
+    modRpValues: {},
+    researchedMods: [],
+  });
+
+  // ---- AUTO-COMPLETE ----
+  const handleAutoCompleteAll = (vehicleId) => {
+    const vData = selectedVehicle;
+    if (!vData) return;
+
+    const modRpValues = {};
+    const researchedMods = [];
+    Object.values(vData.modifications?.categories || {}).forEach(cat => {
+      Object.values(cat.mods || {}).forEach(mod => {
+        modRpValues[mod.id] = Number(mod.rp_cost) || 0;
+        researchedMods.push(mod.id);
+      });
+    });
+
+    setVehicleProgress(prev => ({
+      ...prev,
+      [vehicleId]: {
+        ...prev[vehicleId],
+        purchased: true,
+        rp_researched: Number(vData.rp_cost) || 0,
+        crewPurchased: 1,
+        acesRpResearched: 0,
+        modRpValues,
+        researchedMods,
+      },
+    }));
+  };
+
+  // ---- RESET MODIFICATIONS ET ÉQUIPAGE ----
+  const handleResetAllMods = (vehicleId) => {
+    setVehicleProgress(prev => ({
+      ...prev,
+      [vehicleId]: {
+        ...prev[vehicleId],
+        modRpValues: {},
+        researchedMods: [],
+        crewPurchased: 0,
+        acesRpResearched: 0,
+      },
+    }));
+  };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -121,7 +231,6 @@ const ProgressTree = ({ country, vehicle }) => {
 
   const closeAllExpandedCells = () => setExpandedCells({});
 
-  // Bascule le rang plié/déplié
   const toggleRankCollapse = (rankName) => {
     setCollapsedRanks(prev => {
       const next = new Set(prev);
@@ -173,6 +282,12 @@ const ProgressTree = ({ country, vehicle }) => {
     const slCost = Number(vehicleData.sl_cost) || 0;
     const percent = rpCost > 0 ? Math.min(100, Math.round((rpResearched / rpCost) * 100)) : 0;
     const allModsDone = areAllModsCompleted(vehicleData, progress);
+
+    const crewLevel = Number(progress.crewPurchased) || 0;
+    let crewIcon = null;
+    if (crewLevel === 1) crewIcon = '/assets/img/icons/base_crew.png';
+    else if (crewLevel === 2) crewIcon = '/assets/img/icons/expert_crew.png';
+    else if (crewLevel === 3) crewIcon = '/assets/img/icons/ace_crew.png';
 
     let isEffectivelyPurchased = false;
     let rpComplete = false;
@@ -230,6 +345,20 @@ const ProgressTree = ({ country, vehicle }) => {
           {talismanActive && (
             <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ position: 'absolute', top: '-10px', right: '-20px', width: '28px', height: '28px', zIndex: 2 }} />
           )}
+          {crewIcon && (
+            <img
+              src={crewIcon}
+              alt="Niveau équipage"
+              style={{
+                position: 'absolute',
+                top: '-10px',
+                left: '-10px',
+                width: '24px',
+                height: '24px',
+                zIndex: 2,
+              }}
+            />
+          )}
           <img className="vehicle-image" src={vehicleData.image} alt={vehicleData.name} style={{ position: 'relative', zIndex: 1 }} onError={(e) => { e.target.src = '/assets/vehicles/default.png'; }} />
         </div>
         <p className="vehicle-name">{vehicleData.name}</p>
@@ -273,6 +402,12 @@ const ProgressTree = ({ country, vehicle }) => {
               const childHasCost = childRpCost > 0;
               const childAllModsDone = areAllModsCompleted(child, childProg);
 
+              const childCrewLevel = Number(childProg.crewPurchased) || 0;
+              let childCrewIcon = null;
+              if (childCrewLevel === 1) childCrewIcon = '/assets/img/icons/base_crew.png';
+              else if (childCrewLevel === 2) childCrewIcon = '/assets/img/icons/expert_crew.png';
+              else if (childCrewLevel === 3) childCrewIcon = '/assets/img/icons/ace_crew.png';
+
               const childEffectivelyPurchased = childPurchased || childSlCost === 0;
               const childRpComplete = childRpCost > 0 && childRp >= childRpCost && !childPurchased;
               const childNotOwned = !childEffectivelyPurchased && !childRpComplete;
@@ -309,29 +444,22 @@ const ProgressTree = ({ country, vehicle }) => {
                   <div style={{ position: 'relative', display: 'inline-block' }}>
                     {childAllModsDone && (
                       <img src="/assets/img/icons/spade_icon.svg" alt="" style={{
-                      position: 'absolute',
-                      top: '65%',
-                      left: '50%',
-                      transform: 'translate(-50%, -50%) rotate(25deg)',
-                      width: '250%',
-                      height: '250%',
-                      opacity: 0.3,
-                      pointerEvents: 'none',
-                      zIndex: 0,}} />
+                        position: 'absolute',
+                        top: '65%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%) rotate(25deg)',
+                        width: '250%',
+                        height: '250%',
+                        opacity: 0.3,
+                        pointerEvents: 'none',
+                        zIndex: 0,
+                      }} />
                     )}
                     {childTalismanActive && (
-                      <img
-                      src="/assets/img/icons/talisman_icon.svg"
-                      alt="Talisman"
-                      style={{
-                        position: 'absolute',
-                        top: '-10px',
-                        right: '-10px',
-                        width: '28px',
-                        height: '28px',
-                        zIndex: 2,
-                      }}
-                    />
+                      <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ position: 'absolute', top: '-10px', right: '-10px', width: '28px', height: '28px', zIndex: 2 }} />
+                    )}
+                    {childCrewIcon && (
+                      <img src={childCrewIcon} alt="Niveau équipage" style={{ position: 'absolute', top: '-10px', left: '-10px', width: '24px', height: '24px', zIndex: 2 }} />
                     )}
                     <img className="vehicle-image" src={child.image} alt={child.name} style={{ position: 'relative', zIndex: 1 }} onError={(e) => { e.target.src = '/assets/vehicles/default.png'; }} />
                   </div>
@@ -424,7 +552,12 @@ const ProgressTree = ({ country, vehicle }) => {
         <h2>{treeData.name}</h2>
         <div className="selection-info">
           <img src={country.flag} alt={country.name} className="country-flag-small" />
-          <span className="vehicle-icon">{vehicle.icon}</span>
+          <img
+            src={vehicle.icon}
+            alt={vehicle.type}
+            className="vehicle-icon"
+            style={{ width: '24px', height: '24px', objectFit: 'contain' }}
+          />
           <span className="selection-text">{country.name} - {vehicle.type}</span>
         </div>
         <div className="tree-stats">
@@ -448,12 +581,18 @@ const ProgressTree = ({ country, vehicle }) => {
             rp_researched: vehicleProgress[selectedVehicle.id]?.rpResearched ?? 0,
             purchased: vehicleProgress[selectedVehicle.id]?.purchased ?? false,
             talisman_purchased: vehicleProgress[selectedVehicle.id]?.talisman_purchased ?? false,
+            crewPurchased: vehicleProgress[selectedVehicle.id]?.crewPurchased ?? 0,
+            acesRpResearched: vehicleProgress[selectedVehicle.id]?.acesRpResearched ?? 0,
             modRpValues: vehicleProgress[selectedVehicle.id]?.modRpValues || {},
             researchedMods: vehicleProgress[selectedVehicle.id]?.researchedMods || [],
           }}
           onRpResearchedChange={(val) => handleRpResearchedChange(selectedVehicle.id, val)}
           onVehiclePurchase={() => handleVehiclePurchase(selectedVehicle.id)}
           onTalismanPurchase={() => handleTalismanPurchase(selectedVehicle.id)}
+          onCrewPurchasedChange={(val) => handleCrewPurchasedChange(selectedVehicle.id, val)}
+          onAcesRpResearchedChange={(val) => handleAcesRpResearchedChange(selectedVehicle.id, val)}
+          onAutoCompleteAll={() => handleAutoCompleteAll(selectedVehicle.id)}
+          onResetAllMods={() => handleResetAllMods(selectedVehicle.id)}
           onModRpChange={(modId, val) => handleModRpChange(selectedVehicle.id, modId, val)}
           onModPurchase={(modId) => handleModPurchase(selectedVehicle.id, modId)}
           onModReset={(modId) => handleModReset(selectedVehicle.id, modId)}

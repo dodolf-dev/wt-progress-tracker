@@ -246,7 +246,7 @@ class ProgressTreeUpdater {
             vehicle.talisman_cost_ge = 0;
           }
 
-          // ---- NOUVEAU : équipage et experts/aces ----
+          // ---- Économie (équipage, experts, as) ----
           if (sv.economy) {
             vehicle.crew_training_sl = sv.economy.crew_training_sl ? parseInt(sv.economy.crew_training_sl, 10) : 0;
             vehicle.experts_sl = sv.economy.experts_sl ? parseInt(sv.economy.experts_sl, 10) : 0;
@@ -295,7 +295,7 @@ class ProgressTreeUpdater {
               child.talisman_cost_ge = 0;
             }
 
-            // ---- NOUVEAU pour les enfants ----
+            // ---- Économie pour enfant ----
             if (sc.economy) {
               child.crew_training_sl = sc.economy.crew_training_sl ? parseInt(sc.economy.crew_training_sl, 10) : 0;
               child.experts_sl = sc.economy.experts_sl ? parseInt(sc.economy.experts_sl, 10) : 0;
@@ -306,6 +306,11 @@ class ProgressTreeUpdater {
               child.experts_sl = 0;
               child.aces_ge = 0;
               child.research_aces_rp = 0;
+            }
+
+            // ---- NOUVEAU : mise à jour des modifications pour l'enfant ----
+            if (sc.modifications_by_group) {
+              child.modifications = this.buildModifications(sc, child.modifications);
             }
 
             updated++;

@@ -1,3 +1,4 @@
+// src/components/Header/Header.jsx
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
@@ -11,6 +12,15 @@ const Header = () => {
     fontWeight: isActive ? 'bold' : 'normal',
     textDecoration: 'none',
   });
+
+  const handleResetAllData = () => {
+    // Efface le localStorage (achats, progression, etc.)
+    localStorage.clear();
+    // Efface le sessionStorage (état de l'interface, rangs repliés, etc.)
+    sessionStorage.clear();
+    // Recharge la page pour repartir de zéro
+    window.location.reload();
+  };
 
   return (
     <div
@@ -44,8 +54,24 @@ const Header = () => {
         <NavLink to="/progress" style={linkStyle}>Progression</NavLink>
       </div>
 
-      {/* Équilibrage à droite (espace vide) */}
-      <div style={{ flex: 1 }} />
+      {/* Bouton reset à droite */}
+      <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
+        <button
+          onClick={handleResetAllData}
+          style={{
+            padding: '6px 12px',
+            backgroundColor: '#d9534f',
+            color: 'white',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontWeight: 'bold',
+          }}
+          title="Effacer toutes les données (progression, achats, interface)"
+        >
+          Reset
+        </button>
+      </div>
     </div>
   );
 };

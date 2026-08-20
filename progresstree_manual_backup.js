@@ -1,6 +1,6 @@
 export const progressTree = {
   // USA
-  "USA_Avion": { //ok
+  "USA_Avion": { //ok 
     name: "Aviation USA",
     ranks: [
       //Rank I (ok)
@@ -8945,6 +8945,903 @@ export const progressTree = {
             9: {id: "", name: "", image: "", progress: ""},
         }
       },
+    ]
+  },
+
+  //Israel
+  "Israel_Avion": {
+    name: "Aviation Israel",
+    ranks: [
+      {
+        name: "IV",
+        grid: [
+          [1,1,1,1],
+          [1,1,0,1]
+        ],
+        vehicles: {
+          1: {id: "spitfire_mk9c_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [0,1,1],
+                    [1,1,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "s_199", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          3: {id: "b-17g_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,0],
+                    [1,1],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          4: {id: "spitfire_lf_mk9e_weisman", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,0],
+                    [1,1,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          5: {id: "spitfire_lf_mk9e_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,0],
+                    [1,1,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          6: {id: "p-51d-20-na_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          7: {id: "spitfire_lf_mk9c_cw_greece", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1],
+                    [1,0,1],
+                    [1,1,1],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      {
+        name: "V",
+        grid: [
+          [1,1,0,1],
+          [1,0,0,1]
+        ],
+        vehicles: {
+          1: {id: "meteor_nfmk13", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "md_450b_ouragan_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [0,1,1],
+                    [1,0,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          3: {id: "md_450b_ouragan_iaf_29", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [0,1,1],
+                    [1,0,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id: "meteor_fmk8_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          5: {id: "meteor_frmk9_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      {
+        name: "VI",
+        grid: [
+          [1,1,1,1],
+          [1,1,0,1]
+        ],
+        vehicles: {
+          1: {id: "md_454_mystere_4a_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [0,1,0,0],
+                    [1,0,1,0],
+                    [0,0,0,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "a_4_iaf_group", name: "", image: "", progress:"",
+            children: [
+              {id: "a_4h", name: "", image: "", progress:"",
+              "modifications":
+              {"categories": {
+                  "Flight performance": {
+                    "grid": [
+                      [1],
+                      [1],
+                      [1],
+                      [1]
+                    ],
+                  },
+                  "Survivability": {
+                    "grid": [
+                      [1],
+                      [1],
+                      [1],
+                      [1]
+                    ],
+                  },
+                  "Weaponry": {
+                    "grid": [
+                      [1,1,1],
+                      [1,1,1],
+                      [1,1,1],
+                      [1,1,0]
+                    ],
+                  }
+                }
+              }},
+              {id: "a_4e_early_iaf", name: "", image: "", progress:"",
+              "modifications":
+              {"categories": {
+                  "Flight performance": {
+                    "grid": [
+                      [1],
+                      [1],
+                      [1],
+                      [1]
+                    ],
+                  },
+                  "Survivability": {
+                    "grid": [
+                      [1],
+                      [1],
+                      [1],
+                      [1]
+                    ],
+                  },
+                  "Weaponry": {
+                    "grid": [
+                      [1,1,1,1],
+                      [1,1,1,1],
+                      [1,1,1,1],
+                      [0,1,1,1]
+                    ],
+                  }
+                }
+              }},
+            ]
+          },
+          3: {id: "so_4050_vautour_iaf_group", name: "", image: "", progress:"",
+            children: [
+              {id: "so_4050_vautour_2a_israel_iaf", name: "", image: "", progress:"",
+              "modifications":
+              {"categories": {
+                  "Flight performance": {
+                    "grid": [
+                      [1,0],
+                      [1,1],
+                      [1,1],
+                      [1,0]
+                    ],
+                  },
+                  "Survivability": {
+                    "grid": [
+                      [0],
+                      [1],
+                      [0],
+                      [1]
+                    ],
+                  },
+                  "Weaponry": {
+                    "grid": [
+                      [1,1,1],
+                      [0,1,1],
+                      [1,1,1],
+                      [0,1,0]
+                    ],
+                  }
+                }
+              }},
+              {id: "so_4050_vautour_2n_iaf", name: "", image: "", progress:"",
+              "modifications":
+              {"categories": {
+                  "Flight performance": {
+                    "grid": [
+                      [1,0],
+                      [1,1],
+                      [1,1],
+                      [1,0]
+                    ],
+                  },
+                  "Survivability": {
+                    "grid": [
+                      [0],
+                      [1],
+                      [0],
+                      [1]
+                    ],
+                  },
+                  "Weaponry": {
+                    "grid": [
+                      [1,1,0],
+                      [0,1,1],
+                      [1,1,1],
+                      [0,1,1]
+                    ],
+                  }
+                }
+              }},
+            ]
+          },
+          4: {id: "f-84f_israel_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,1],
+                    [1,0,1],
+                    [0,1,1]
+                  ],
+                }
+              }
+            }},
+          5: {id: "md_460_iaf_group", name: "", image: "", progress:"",
+            children: [
+              {id: "", name: "", image: "", progress:"",
+              "modifications":
+              {"categories": {
+                  "Flight performance": {
+                    "grid": [
+                      [1,0],
+                      [1,1],
+                      [1,1],
+                      [1,0]
+                    ],
+                  },
+                  "Survivability": {
+                    "grid": [
+                      [0],
+                      [0],
+                      [1],
+                      [1]
+                    ],
+                  },
+                  "Weaponry": {
+                    "grid": [
+                      [1,0],
+                      [0,1],
+                      [1,0],
+                      [0,0]
+                    ],
+                  }
+                }
+              }},
+              {id: "", name: "", image: "", progress:"",
+              "modifications":
+              {"categories": {
+                  "Flight performance": {
+                    "grid": [
+                      [1,0],
+                      [1,1],
+                      [1,1],
+                      [1,0]
+                    ],
+                  },
+                  "Survivability": {
+                    "grid": [
+                      [0],
+                      [0],
+                      [1],
+                      [1]
+                    ],
+                  },
+                  "Weaponry": {
+                    "grid": [
+                      [1,0],
+                      [0,1],
+                      [1,0],
+                      [0,0]
+                    ],
+                  }
+                }
+              }},
+            ]
+          },  
+          6: {id: "a_4n", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [1,0,1,1,1],
+                    [1,1,1,1,1],
+                    [1,0,1,1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id: "a_4e_late_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,0],
+                    [1,1,1,0,0],
+                    [1,1,1,1,0],
+                    [1,0,1,1,1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      {
+        name: "VII",
+        grid: [
+          [1,1,1,1],
+          [1,0,0,1],
+          [0,0,0,1]
+        ],
+        vehicles: {
+          1: {id: "mirage_3cj", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,0],
+                    [0,1,1],
+                    [1,0,0],
+                    [0,1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id: "f-4e_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,0],
+                    [0,1,1,1,1],
+                    [1,1,1,1,1],
+                    [1,1,0,1,1]
+                  ],
+                }
+              }
+            }},
+          3: {id: "nesher", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          4: {id: "kfir_canard", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,0],
+                    [1,1,0,0],
+                    [1,1,1,0],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          5: {id: "kfir_c7", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,0,1],
+                    [1,1,1,1],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},  
+          6: {id: "kfir_c2", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,0,1],
+                    [1,1,1,0],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id: "mig_21_2000_iaf", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,1],
+                    [1,0,1],
+                    [0,0,0]
+                  ],
+                }
+              }
+            }},
+        }
+      }
     ]
   },
 

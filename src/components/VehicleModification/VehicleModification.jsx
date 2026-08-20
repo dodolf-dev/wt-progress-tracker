@@ -1,9 +1,17 @@
 // src/components/VehicleModification/VehicleModification.jsx
-import React, { useState, useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 
 const RpIcon = () => <img src="/assets/img/icons/rp_icon.svg" alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
 const SlIcon = () => <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
 const GeIcon = () => <img src="/assets/img/icons/ge_icon.svg" alt="GE" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '4px' }} />;
+
+// Normalise n'importe quelle valeur reçue en un niveau d'équipage 0-3.
+// Garde la compat avec un éventuel ancien format booléen (true = niveau 1).
+const normalizeCrewLevel = (value) => {
+  if (typeof value === 'number') return Math.max(0, Math.min(3, value));
+  if (value === true) return 1;
+  return 0;
+};
 
 const ModificationCell = ({ modData, isResearched, modRp, onModRpChange, onPurchase, onReset }) => {
   const [editing, setEditing] = useState(false);
@@ -32,10 +40,9 @@ const ModificationCell = ({ modData, isResearched, modRp, onModRpChange, onPurch
   const confirmEdit = () => {
     const num = Number(editValue);
     if (isNaN(num) || editValue.trim() === '') {
-      onModRpChange(modData.id, modRpCost);   // force 100 %
+      onModRpChange(modData.id, modRpCost);
     } else {
-      const val = Math.min(modRpCost, Math.max(0, num));
-      onModRpChange(modData.id, val);
+      onModRpChange(modData.id, Math.min(modRpCost, Math.max(0, num)));
     }
     setEditing(false);
   };
@@ -110,7 +117,10 @@ const VehicleModifications = ({
   vehicle, onClose,
   onRpResearchedChange, onVehiclePurchase,
   onModRpChange, onModPurchase, onModReset, onVehicleReset,
-  onTalismanPurchase
+  onTalismanPurchase,
+  onCrewPurchasedChange,
+  onAutoCompleteAll,
+  onAcesRpResearchedChange
 }) => {
   const isPremium = !!vehicle?.premium;
   const geCost = vehicle?.ge_cost ?? null;
@@ -120,8 +130,25 @@ const VehicleModifications = ({
   const vehicleSlCost = Number(vehicle?.sl_cost) || 0;
   const talismanCostGe = Number(vehicle?.talisman_cost_ge) || 0;
   const talismanPurchased = vehicle?.talisman_purchased || false;
+  const crewTrainingSl = Number(vehicle?.crew_training_sl) || 0;
+  const expertsSl = Number(vehicle?.experts_sl) || 0;
+  const acesGe = Number(vehicle?.aces_ge) || 0;
+  const researchAcesRp = Number(vehicle?.research_aces_rp) || 0;
+
   const [isEditingRp, setIsEditingRp] = useState(false);
   const [inputValue, setInputValue] = useState('');
+
+  // ---- ÉQUIPAGE : entièrement piloté par les props (source de vérité = le parent) ----
+  // On ne garde plus de state local "de secours" : un tel state se réinitialise
+  // à chaque démontage du composant (fermeture de la modale), ce qui provoquait
+  // la perte du niveau d'équipage à la réouverture.
+  const effectiveCrewLevel = normalizeCrewLevel(vehicle?.crewPurchased);
+
+  // ---- RP "as" (aces) : idem, directement dérivé du véhicule fourni par le parent ----
+  const acesRpResearched = Number(vehicle?.acesRpResearched) || 0;
+
+  const [editingAcesRp, setEditingAcesRp] = useState(false);
+  const [acesRpInput, setAcesRpInput] = useState('');
 
   const modificationsData = useMemo(() => vehicle?.modifications?.categories || {}, [vehicle]);
   const modRpValues = vehicle?.modRpValues || {};
@@ -161,6 +188,41 @@ const VehicleModifications = ({
     if (!vehiclePurchased) onVehiclePurchase();
   };
 
+  // Achète le niveau d'équipage suivant. onCrewPurchasedChange DOIT persister
+  // la valeur côté parent (ex: dans le state global des véhicules), sinon la
+  // valeur sera reperdue à la prochaine ouverture.
+  const handleCrewPurchase = () => {
+    if (effectiveCrewLevel >= 3) return;
+    const nextLevel = effectiveCrewLevel + 1;
+    onCrewPurchasedChange?.(nextLevel);
+  };
+
+  const handleCrewReset = () => {
+    onCrewPurchasedChange?.(0);
+    onAcesRpResearchedChange?.(0);
+    setEditingAcesRp(false);
+    setAcesRpInput('');
+  };
+
+  const startAcesRpEdit = () => {
+    setAcesRpInput(String(acesRpResearched));
+    setEditingAcesRp(true);
+  };
+  const handleAcesRpInputChange = (e) => setAcesRpInput(e.target.value);
+  const confirmAcesRpEdit = () => {
+    const num = Number(acesRpInput);
+    const val = (isNaN(num) || acesRpInput.trim() === '')
+      ? researchAcesRp
+      : Math.min(researchAcesRp, Math.max(0, num));
+
+    onAcesRpResearchedChange?.(val);
+
+    if (val >= researchAcesRp && researchAcesRp > 0 && effectiveCrewLevel < 3) {
+      handleCrewPurchase();
+    }
+    setEditingAcesRp(false);
+  };
+
   const vehiclePercent = vehicleRpCost > 0 ? Math.min(100, Math.round((rpResearched / vehicleRpCost) * 100)) : 0;
   const vehicleRpComplete = vehicleRpCost > 0 && rpResearched >= vehicleRpCost && !vehiclePurchased;
 
@@ -177,7 +239,30 @@ const VehicleModifications = ({
     return -1;
   };
 
+  const allModsResearched = useMemo(() => {
+    return Object.values(modificationsData).every(cat =>
+      Object.values(cat.mods || {}).every(mod => researchedMods.has(mod.id) || Number(mod.rp_cost) === 0)
+    );
+  }, [modificationsData, researchedMods]);
+
+  const isAllModsComplete = allModsResearched;
+
+  const handleMainButtonClick = () => {
+    if (!isAllModsComplete) {
+      onAutoCompleteAll();
+    }
+  };
+
   if (!vehicle) return null;
+
+  const crewLevelIcon =
+    effectiveCrewLevel === 1
+      ? '/assets/img/icons/base_crew.png'
+      : effectiveCrewLevel === 2
+        ? '/assets/img/icons/expert_crew.png'
+        : effectiveCrewLevel === 3
+          ? '/assets/img/icons/ace_crew.png'
+          : null;
 
   return (
     <div className="vehicle-modifications-overlay" onClick={onClose}>
@@ -185,9 +270,36 @@ const VehicleModifications = ({
         <button className="close-button" onClick={onClose}>×</button>
 
         <div className="modifications-header">
-          <h2>{vehicle.name}</h2>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <h2>{vehicle.name}</h2>
+            {!isAllModsComplete && (
+              <button
+                onClick={handleMainButtonClick}
+                style={{
+                  width: '32px',
+                  height: '32px',
+                  borderRadius: '50%',
+                  backgroundColor: '#2196F3',
+                  border: 'none',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
+                  padding: 0,
+                }}
+                title="Rechercher et acheter tout"
+              >
+                <img
+                  src="/assets/img/icons/spade_icon.svg"
+                  alt=""
+                  style={{ width: '24px', height: '24px', filter: 'invert(1)' }}
+                />
+              </button>
+            )}
+          </div>
 
-          {/* ---- BOUTON POSSÉDER (véhicules non premium sans RP) ---- */}
+          {/* ---- BOUTON POSSÉDER POUR LES VÉHICULES SANS RP_COST (NON PREMIUM) ---- */}
           {!isPremium && vehicleRpCost === 0 && (
             <div style={{ margin: '8px 0', display: 'flex', alignItems: 'center' }}>
               {vehiclePurchased ? (
@@ -306,6 +418,137 @@ const VehicleModifications = ({
               </div>
             )
           )}
+
+          {/* ===== SECTION ÉQUIPAGE ===== */}
+          <div style={{ marginTop: '15px', padding: '10px', border: '1px solid #ccc', borderRadius: '6px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <h3 style={{ margin: 0 }}>Équipage</h3>
+                {crewLevelIcon && (
+                  <img
+                    src={crewLevelIcon}
+                    alt="Niveau équipage"
+                    style={{ width: '20px', height: '20px', marginLeft: '6px' }}
+                  />
+                )}
+              </div>
+
+              {effectiveCrewLevel > 0 && (
+                <button
+                  onClick={handleCrewReset}
+                  style={{
+                    width: '28px',
+                    height: '28px',
+                    borderRadius: '50%',
+                    backgroundColor: '#d9534f',
+                    border: 'none',
+                    cursor: 'pointer',
+                    padding: 0,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                  title="Remettre l'équipage à zéro"
+                >
+                  <img
+                    src="/assets/img/icons/reset_icon.svg"
+                    alt="Reset"
+                    style={{ width: '65%', height: '65%' }}
+                  />
+                </button>
+              )}
+            </div>
+
+            {effectiveCrewLevel === 0 && (
+              <button
+                onClick={handleCrewPurchase}
+                style={{
+                  padding: '6px 12px',
+                  backgroundColor: '#4caf50',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontWeight: 'bold',
+                  display: 'flex',
+                  alignItems: 'center'
+                }}
+              >
+                Acheter équipage de base ({crewTrainingSl.toLocaleString()} <SlIcon />)
+              </button>
+            )}
+
+            {effectiveCrewLevel === 1 && (
+              <button
+                onClick={handleCrewPurchase}
+                style={{
+                  padding: '6px 12px',
+                  backgroundColor: '#4caf50',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontWeight: 'bold',
+                  display: 'flex',
+                  alignItems: 'center'
+                }}
+              >
+                Acheter équipage expert ({expertsSl.toLocaleString()} <SlIcon />)
+              </button>
+            )}
+
+            {effectiveCrewLevel === 2 && (
+              <div>
+                <div style={{ marginBottom: '8px' }}>
+                  <button
+                    onClick={handleCrewPurchase}
+                    style={{
+                      padding: '6px 12px',
+                      backgroundColor: '#f0ad4e',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '4px',
+                      cursor: 'pointer',
+                      fontWeight: 'bold',
+                      display: 'flex',
+                      alignItems: 'center'
+                    }}
+                  >
+                    Acheter équipage as ({acesGe.toLocaleString()} <GeIcon />)
+                  </button>
+                </div>
+                <div>
+                  <div style={{ display: 'flex', alignItems: 'center', marginBottom: '5px' }}>
+                    <span style={{ marginRight: '5px' }}>Recherche as :</span>
+                    {editingAcesRp ? (
+                      <span>
+                        <input type="text" value={acesRpInput} onChange={handleAcesRpInputChange} onBlur={confirmAcesRpEdit} onKeyDown={(e) => e.key === 'Enter' && confirmAcesRpEdit()} autoFocus style={{ width: '60px', marginLeft: '5px' }} />
+                        <button onClick={confirmAcesRpEdit}>✓</button>
+                      </span>
+                    ) : (
+                      <span onClick={startAcesRpEdit} style={{ cursor: 'pointer', borderBottom: '1px dashed #aaa', marginLeft: '5px' }}>
+                        {acesRpResearched.toLocaleString()} / {researchAcesRp.toLocaleString()} <RpIcon />
+                      </span>
+                    )}
+                  </div>
+                  <div className="progress-container" style={{ marginTop: '4px' }}>
+                    <div className="progress-bar" style={{ height: '12px', backgroundColor: '#333' }}>
+                      <div className="progress-fill" style={{ width: `${researchAcesRp > 0 ? Math.min(100, Math.round((acesRpResearched / researchAcesRp) * 100)) : 0}%`, backgroundColor: '#5a7', height: '100%' }} />
+                    </div>
+                    <span className="progress-text" style={{ fontSize: '0.75em', lineHeight: '12px' }}>
+                      {researchAcesRp > 0 ? Math.min(100, Math.round((acesRpResearched / researchAcesRp) * 100)) : 0}%
+                    </span>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {effectiveCrewLevel === 3 && (
+              <div style={{ fontWeight: 'bold', color: '#4caf50' }}>
+                {/* Rien d'affiché, l'icône à côté du titre suffit */}
+              </div>
+            )}
+          </div>
 
           {/* ---- PROGRESSION TOTALE DES MODIFICATIONS ---- */}
           {Object.keys(modificationsData).length > 0 && totalRpCost > 0 && (

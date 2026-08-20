@@ -2,6 +2,7 @@
   "name": "wt-progress-tracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dodolf-dev.github.io/wt-progress-tracker",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -19,7 +20,9 @@
   "scripts": {
     "update-vehicles": "node scripts/updateProgressTreeWithBackup.js",
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +44,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.0.1",
+    "gh-pages": "^6.3.0",
     "react-scripts": "^5.0.1",
     "vite": "^8.0.10"
   }

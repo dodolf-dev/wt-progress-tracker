@@ -51,7 +51,7 @@ pour le délire des modifs, ce qui serait bien c'est que quand on clique sur la 
 67
 -> pour plus tard faut aussi envisager un ui plus poussé sur le coté du tech tree ca peut etre cool
 implémenter les talismans
--> implémenter les équipages
+implémenter les équipages
 faire l'overhead
 -> refont css
 enlever la possibilité de cliquer sur les talismans dans le techtree
