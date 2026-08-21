@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/wt-progress-tracker/static/js/main.cac8758a.js",
+    "main.js": "/wt-progress-tracker/static/js/main.f8cecfe8.js",
     "index.html": "/wt-progress-tracker/index.html",
-    "main.cac8758a.js.map": "/wt-progress-tracker/static/js/main.cac8758a.js.map"
+    "main.f8cecfe8.js.map": "/wt-progress-tracker/static/js/main.f8cecfe8.js.map"
   },
   "entrypoints": [
-    "static/js/main.cac8758a.js"
+    "static/js/main.f8cecfe8.js"
   ]
 }
