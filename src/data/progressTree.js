@@ -48405,8 +48405,8 @@ export const progressTree = {
           },
           "3": {
             "id": "us_destroyer_bagley_class_helm",
-            "name": "",
-            "image": "",
+            "name": "USS Helm",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_bagley_class_helm.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -48424,7 +48424,41 @@ export const progressTree = {
                     [
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Unsinkability": {
                   "grid": [
@@ -48444,7 +48478,65 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Firepower": {
                   "grid": [
@@ -48468,10 +48560,111 @@ export const progressTree = {
                       1,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "5 inch Common Mk.32",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Firepower_10",
+                      "name": "Torpedo Mode",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/torpedo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Firepower_11",
+                      "name": "Bomb mortar",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_mortar.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 850,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 3400,
+            "experts_sl": 23000,
+            "aces_ge": 180,
+            "research_aces_rp": 380000
           },
           "4": {
             "id": "us_destroyer_mitscher",
@@ -53776,8 +53969,8 @@ export const progressTree = {
           },
           "5": {
             "id": "us_destroyer_forrestsherman_class",
-            "name": "",
-            "image": "",
+            "name": "USS Forrest Sherman",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_forrestsherman_class.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -53795,7 +53988,41 @@ export const progressTree = {
                     [
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 3000,
+                      "sl_cost": 5400,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 2200,
+                      "sl_cost": 4000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6500,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Unsinkability": {
                   "grid": [
@@ -53815,7 +54042,65 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 3000,
+                      "sl_cost": 5400,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 2200,
+                      "sl_cost": 4000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 2200,
+                      "sl_cost": 4000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6500,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6500,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Firepower": {
                   "grid": [
@@ -53839,10 +54124,80 @@ export const progressTree = {
                       0,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "5 inch SP Mk.42 common",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 3000,
+                      "sl_cost": 5400,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "5 inch Mark 41 HC-VT",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "76 mm AA Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3100,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 2200,
+                      "sl_cost": 4000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 2200,
+                      "sl_cost": 4000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Bomb mortar",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_mortar.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6500,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 46000,
+            "sl_cost": 150000,
+            "talisman_cost_ge": 1500,
+            "crew_training_sl": 43000,
+            "experts_sl": 150000,
+            "aces_ge": 940,
+            "research_aces_rp": 480000
           },
           "6": {
             "id": "us_cruiser_fargo_brooklyn_group",
@@ -54858,64 +55213,2361 @@ export const progressTree = {
         ],
         "vehicles": {
           "1": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_cruiser_worcester_class_roanoke",
+            "name": "USS Roanoke",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_cruiser_worcester_class_roanoke.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 4200,
+                      "sl_cost": 7200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 3200,
+                      "sl_cost": 5500,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 4200,
+                      "sl_cost": 7200,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 4200,
+                      "sl_cost": 7200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 3200,
+                      "sl_cost": 5500,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 3200,
+                      "sl_cost": 5500,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 4200,
+                      "sl_cost": 7200,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 4200,
+                      "sl_cost": 7200,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "6 inch Mk.35 AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 4200,
+                      "sl_cost": 7200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 4200,
+                      "sl_cost": 7200,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "6 inch Mk.34 HC (base fuze)",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_base_fuse_tank.png",
+                      "rp_cost": 3200,
+                      "sl_cost": 5500,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 3200,
+                      "sl_cost": 5500,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "76 mm AA Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 3200,
+                      "sl_cost": 5500,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 4200,
+                      "sl_cost": 7200,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 4200,
+                      "sl_cost": 7200,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "6 inch Mk.34 HC-VT",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 90000,
+            "sl_cost": 280000,
+            "talisman_cost_ge": 1900,
+            "crew_training_sl": 80000,
+            "experts_sl": 280000,
+            "aces_ge": 1400,
+            "research_aces_rp": 620000
           },
           "2": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_battleship_north_dakota",
+            "name": "USS North Dakota",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_north_dakota.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 4400,
+                      "sl_cost": 7600,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 8200,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 9300,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 4400,
+                      "sl_cost": 7600,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 8200,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 9300,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 9300,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 4400,
+                      "sl_cost": 7600,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "12-inch Mk.7 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_base_fuse_tank.png",
+                      "rp_cost": 4400,
+                      "sl_cost": 7600,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5-inch APC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 4400,
+                      "sl_cost": 7600,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 8200,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 9300,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 9300,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 110000,
+            "sl_cost": 340000,
+            "talisman_cost_ge": 2000,
+            "crew_training_sl": 97000,
+            "experts_sl": 340000,
+            "aces_ge": 1500,
+            "research_aces_rp": 670000
           },
           "3": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_cruiser_baltimore_class_pittsburgh",
+            "name": "USS Pittsburgh",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_cruiser_baltimore_class_pittsburgh.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 9300,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 4100,
+                      "sl_cost": 7100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 4500,
+                      "sl_cost": 7700,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 9300,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 4100,
+                      "sl_cost": 7100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 4100,
+                      "sl_cost": 7100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 4500,
+                      "sl_cost": 7700,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 4500,
+                      "sl_cost": 7700,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "8 inch Mk.21 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 9300,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 9300,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "8 inch Mk.25 HC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 4100,
+                      "sl_cost": 7100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 4100,
+                      "sl_cost": 7100,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 4100,
+                      "sl_cost": 7100,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 4500,
+                      "sl_cost": 7700,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 4500,
+                      "sl_cost": 7700,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 4500,
+                      "sl_cost": 7700,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "8 inch Mk.17 SP common",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_base_fuse_tank.png",
+                      "rp_cost": 8800,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 110000,
+            "sl_cost": 340000,
+            "talisman_cost_ge": 2000,
+            "crew_training_sl": 97000,
+            "experts_sl": 340000,
+            "aces_ge": 1500,
+            "research_aces_rp": 670000
           },
           "4": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_cruiser_baltimore_class",
+            "name": "USS Baltimore",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_cruiser_baltimore_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 8300,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 6900,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 8300,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 6900,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 6900,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "8 inch Mk.21 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 8300,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 8300,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "8 inch Mk.25 HC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 6900,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 6900,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 6900,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "8 inch Mk.17 SP common",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_base_fuse_tank.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Firepower_10",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2200,
+            "crew_training_sl": 155000,
+            "experts_sl": 540000,
+            "aces_ge": 1800,
+            "research_aces_rp": 780000
           },
           "5": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_cruiser_des_moines_class_newport_news",
+            "name": "USS Newport News",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_cruiser_des_moines_class_newport_news.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "8 inch Mk.21 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "8 inch Mk.25 HC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "8 inch Mk.17 SP common",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_base_fuse_tank.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 125000,
+            "experts_sl": 440000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
           },
           "6": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_battleship_texas",
+            "name": "USS Texas",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_texas.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 6700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 8300,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 6700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 8300,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 8300,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 6700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "14 inch Mk.8 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 6700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch APC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 6700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 8300,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 8300,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 180000,
+            "sl_cost": 540000,
+            "talisman_cost_ge": 2200,
+            "crew_training_sl": 155000,
+            "experts_sl": 540000,
+            "aces_ge": 1800,
+            "research_aces_rp": 780000
           },
           "7": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_battleship_wyoming_class",
+            "name": "USS Wyoming",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_wyoming_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 5500,
+                      "sl_cost": 9400,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 5500,
+                      "sl_cost": 9400,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 5500,
+                      "sl_cost": 9400,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "12 inch Mk.15 APC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 5500,
+                      "sl_cost": 9400,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch APC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 5500,
+                      "sl_cost": 9400,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 145000,
+            "sl_cost": 440000,
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 125000,
+            "experts_sl": 440000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
           },
           "8": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_cruiser_oregon_class",
+            "name": "USS Oregon City",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_cruiser_oregon_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 8900,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 8900,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 8900,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "8 inch Mk.21 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 6800,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "8 inch Mk.25 HC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 5100,
+                      "sl_cost": 8700,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 9700,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "8 inch Mk.17 SP common",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_base_fuse_tank.png",
+                      "rp_cost": 8900,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Firepower_10",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 8900,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 145000,
+            "sl_cost": 440000,
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 125000,
+            "experts_sl": 440000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
           },
           "9": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_battleship_arkansas",
+            "name": "USS Arkansas",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_arkansas.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "12 inch Mk.15 APC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch APC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 550000,
+            "aces_ge": 1500,
+            "research_aces_rp": 1340000
           },
           "10": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
+            "id": "us_cruiser_des_moines_class",
+            "name": "USS Des Moines",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_cruiser_des_moines_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Unsinkability_7",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "8 inch Mk.21 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "8 inch Mk.25 HC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "8 inch Mk.17 SP common",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_base_fuse_tank.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 8020,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 550000,
+            "aces_ge": 1500,
+            "research_aces_rp": 1380000
           }
         }
       },
@@ -54939,78 +57591,9 @@ export const progressTree = {
         ],
         "vehicles": {
           "1": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
-          },
-          "2": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
-          },
-          "3": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
-          },
-          "4": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
-          },
-          "5": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
-          },
-          "6": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
-          },
-          "7": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
-          },
-          "8": {
-            "id": "",
-            "name": "",
-            "image": "",
-            "progress": ""
-          }
-        }
-      },
-      {
-        "name": "VII",
-        "grid": [
-          [
-            0,
-            1,
-            0,
-            0,
-            0
-          ],
-          [
-            0,
-            1,
-            0,
-            0,
-            0
-          ]
-        ],
-        "vehicles": {
-          "1": {
-            "id": "us_battleship_south_dakota",
-            "name": "",
-            "image": "",
+            "id": "us_battleship_arizona_1931",
+            "name": "USS Arizona",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_arizona_1931.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -55028,7 +57611,41 @@ export const progressTree = {
                     [
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 34000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 36000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Unsinkability": {
                   "grid": [
@@ -55048,7 +57665,1948 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 34000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 36000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 36000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "14 inch Mk.8 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch APC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 34000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 36000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 300000,
+            "sl_cost": 900000,
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 260000,
+            "experts_sl": 900000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
+          },
+          "2": {
+            "id": "us_battleship_nevada",
+            "name": "USS Nevada",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_nevada.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 9100,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 9100,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "5 inch Common Mk.32",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 9100,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 9100,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "14 inch Mk.8 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 9100,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 260000,
+            "sl_cost": 780000,
+            "talisman_cost_ge": 2400,
+            "crew_training_sl": 220000,
+            "experts_sl": 780000,
+            "aces_ge": 2200,
+            "research_aces_rp": 890000
+          },
+          "3": {
+            "id": "us_battlecruiser_alaska_class",
+            "name": "USS Alaska",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battlecruiser_alaska_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 8100,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 8100,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 8100,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "5 inch Common Mk.32",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "12-inch Mk.18 AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 8100,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 8100,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 8100,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 220000,
+            "sl_cost": 660000,
+            "talisman_cost_ge": 2300,
+            "crew_training_sl": 190000,
+            "experts_sl": 660000,
+            "aces_ge": 2000,
+            "research_aces_rp": 830000
+          },
+          "4": {
+            "id": "us_battleship_mississippi",
+            "name": "USS Mississippi",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_mississippi.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 29000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 29000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "14 inch Mk.16 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 29000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "5 inch Mk.28 AAC-VT",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 9400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2400,
+            "crew_training_sl": 220000,
+            "experts_sl": 780000,
+            "aces_ge": 2200,
+            "research_aces_rp": 890000
+          },
+          "5": {
+            "id": "us_battleship_oklahoma",
+            "name": "USS Oklahoma",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_oklahoma.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "14 inch Mk.8 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch APC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 7800,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 2300,
+            "crew_training_sl": 190000,
+            "experts_sl": 660000,
+            "aces_ge": 2000,
+            "research_aces_rp": 830000
+          },
+          "6": {
+            "id": "us_battleship_colorado_class_colorado",
+            "name": "USS Colorado",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_colorado_class_colorado.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "406 mm Mk.3 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch APC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "406 mm Mk.5 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 350000,
+            "sl_cost": 1050000,
+            "talisman_cost_ge": 2700,
+            "crew_training_sl": 300000,
+            "experts_sl": 1050000,
+            "aces_ge": 2600,
+            "research_aces_rp": 1010000
+          },
+          "7": {
+            "id": "us_battleship_tennessee",
+            "name": "USS Tennessee",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_tennessee.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 36000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 36000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 36000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "14 inch Mk.16 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch Common Mk.32",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 36000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 300000,
+            "sl_cost": 900000,
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 260000,
+            "experts_sl": 900000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
+          },
+          "8": {
+            "id": "us_battleship_colorado_class_maryland",
+            "name": "USS Maryland",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_colorado_class_maryland.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "5 inch Common Mk.32",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "406 mm Mk.3 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "406 mm Mk.5 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Firepower_10",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1270000,
+            "aces_ge": 2200,
+            "research_aces_rp": 1780000
+          }
+        }
+      },
+      {
+        "name": "VII",
+        "grid": [
+          [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "us_battleship_north_carolina_class",
+            "name": "USS North Carolina",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_north_carolina_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 42000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 42000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 42000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Firepower": {
                   "grid": [
@@ -55072,12 +59630,322 @@ export const progressTree = {
                       0,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "16 inch Mk.8 Mod.0 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 42000,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1150000,
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 330000,
+            "experts_sl": 1150000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           },
           "2": {
+            "id": "us_battleship_south_dakota",
+            "name": "USS South Dakota",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_south_dakota.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 42000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Shrapnel Protection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "Ventilation",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Unsinkability_5",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 42000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Unsinkability_6",
+                      "name": "Ammo Wetting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 42000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "16 inch Mk.8 Mod.0 APCBC",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Hydroplane",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 42000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1150000,
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 330000,
+            "experts_sl": 1150000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
+          },
+          "3": {
             "id": "us_battleship_iowa_class_iowa",
             "name": "USS Iowa",
             "image": "https://static.encyclopedia.warthunder.com/slots/us_battleship_iowa_class_iowa.png",
@@ -55532,26 +60400,24 @@ export const progressTree = {
             "name": "PT-20",
             "image": "https://static.encyclopedia.warthunder.com/slots/us_elco_77ft_pt20.png",
             "progress": "",
-            "premium": false,
-            "squadron": false,
-            "event": false,
-            "rp_cost": 2900,
-            "sl_cost": 700,
-            "talisman_cost_ge": 190,
-            "crew_training_sl": 200,
-            "experts_sl": 1000,
-            "aces_ge": 20,
-            "research_aces_rp": 96000,
             "modifications": {
               "categories": {
                 "Seakeeping": {
                   "grid": [
                     [
                       1,
+                      0
+                    ],
+                    [
+                      0,
                       1
                     ],
                     [
                       1,
+                      0
+                    ],
+                    [
+                      0,
                       1
                     ]
                   ],
@@ -55594,11 +60460,19 @@ export const progressTree = {
                   "grid": [
                     [
                       1,
-                      1
+                      0
                     ],
                     [
                       1,
                       1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
                     ]
                   ],
                   "mods": {
@@ -55640,10 +60514,18 @@ export const progressTree = {
                   "grid": [
                     [
                       1,
+                      0
+                    ],
+                    [
+                      0,
                       1
                     ],
                     [
                       1,
+                      0
+                    ],
+                    [
+                      0,
                       1
                     ]
                   ],
@@ -55685,7 +60567,17 @@ export const progressTree = {
               },
               "availableRP": 0,
               "researchedMods": []
-            }
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 2900,
+            "sl_cost": 700,
+            "talisman_cost_ge": 190,
+            "crew_training_sl": 200,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 96000
           },
           "3": {
             "id": "us_pt3",
@@ -56317,70 +61209,6 @@ export const progressTree = {
             "experts_sl": 2100,
             "aces_ge": 45,
             "research_aces_rp": 110000
-          },
-          "modifications": {
-            "categories": {
-              "Seakeeping": {
-                "grid": [
-                  [
-                    1,
-                    0
-                  ],
-                  [
-                    0,
-                    1
-                  ],
-                  [
-                    1,
-                    0
-                  ],
-                  [
-                    0,
-                    1
-                  ]
-                ]
-              },
-              "Unsinkability": {
-                "grid": [
-                  [
-                    1,
-                    0
-                  ],
-                  [
-                    1,
-                    1
-                  ],
-                  [
-                    0,
-                    0
-                  ],
-                  [
-                    1,
-                    0
-                  ]
-                ]
-              },
-              "Firepower": {
-                "grid": [
-                  [
-                    1,
-                    0
-                  ],
-                  [
-                    0,
-                    1
-                  ],
-                  [
-                    1,
-                    0
-                  ],
-                  [
-                    0,
-                    1
-                  ]
-                ]
-              }
-            }
           }
         }
       },
@@ -64135,6 +68963,9389 @@ export const progressTree = {
       }
     ]
   },
+  "China_Helico": {
+    "name": "Helicoptère Chine",
+    "ranks": [
+      {
+        "name": "V",
+        "grid": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "z_11wa",
+            "name": "Z-11WA",
+            "image": "https://static.encyclopedia.warthunder.com/slots/z_11wa.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 24000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 24000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 19000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "HF-7D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "HJ-8A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 390000,
+            "sl_cost": 390000,
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 110000,
+            "experts_sl": 390000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
+          },
+          "2": {
+            "id": "sa_342l_china",
+            "name": "SA.342L Gazelle",
+            "image": "https://static.encyclopedia.warthunder.com/slots/sa_342l_china.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 22000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 87000,
+                      "sl_cost": 135000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "HJ-8A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "HF-7D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "HJ-8E",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 31000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 22000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 150000,
+            "sl_cost": 490000,
+            "talisman_cost_ge": 2200,
+            "crew_training_sl": 140000,
+            "experts_sl": 490000,
+            "aces_ge": 1800,
+            "research_aces_rp": 780000
+          }
+        }
+      },
+      {
+        "name": "VI",
+        "grid": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "z_9w",
+            "name": "Z-9W",
+            "image": "https://static.encyclopedia.warthunder.com/slots/z_9w.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "HF-6",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "HJ-8A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "Offensive 23 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "HJ-8C",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "New 23 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "HJ-8E",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 360000,
+            "sl_cost": 980000,
+            "talisman_cost_ge": 2300,
+            "crew_training_sl": 280000,
+            "experts_sl": 980000,
+            "aces_ge": 2000,
+            "research_aces_rp": 830000
+          },
+          "2": {
+            "id": "oh_58d_china",
+            "name": "␗OH-58D",
+            "image": "https://static.encyclopedia.warthunder.com/slots/oh_58d_china.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 29000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 32000,
+                      "sl_cost": 47000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 29000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "IRCM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/countermeasures.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 32000,
+                      "sl_cost": 47000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "GP-19 gun pod",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 29000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "APKWS II",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "AGM-114",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "AIM-92 Stinger",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 32000,
+                      "sl_cost": 47000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 380000,
+            "sl_cost": 1000000,
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 290000,
+            "experts_sl": 1000000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
+          },
+          "3": {
+            "id": "mi_35m_pakistan",
+            "name": "▄Mi-35M",
+            "image": "https://static.encyclopedia.warthunder.com/slots/mi_35m_pakistan.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS(a)",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 23 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "B-13L",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "HIRSS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_screen_exhaust_device.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "New 23 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "APU-8/4-U 4 Shturm",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "UPK-23-250 gun pod",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "APU-8/4-U 8 Shturm",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "IRCM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/countermeasures.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "9M39",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "APU-8/4-U 4 Ataka",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 9090,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1660000,
+            "aces_ge": 2600,
+            "research_aces_rp": 2020000
+          },
+          "4": {
+            "id": "z_9wa",
+            "name": "Z-9WA",
+            "image": "https://static.encyclopedia.warthunder.com/slots/z_9wa.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "HF-6",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "HJ-8E",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "Offensive 23 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "HJ-8H",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "New 23 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "AKD-9",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "TY-90",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 380000,
+            "sl_cost": 1000000,
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 290000,
+            "experts_sl": 1000000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
+          },
+          "5": {
+            "id": "ah_1w_china",
+            "name": "␗AH-1W",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_1w_china.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "IRCM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/countermeasures.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Survivability_5",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Survivability_6",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Survivability_7",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "TOW-2 4",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "LAU-10/A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "AGM-114",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "GPU-2/A. gun pod",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "AIM-9L",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "AGM-114 2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 390000,
+            "sl_cost": 1010000,
+            "talisman_cost_ge": 2700,
+            "crew_training_sl": 290000,
+            "experts_sl": 1010000,
+            "aces_ge": 2600,
+            "research_aces_rp": 1010000
+          },
+          "6": {
+            "id": "z_19e",
+            "name": "Z-19E",
+            "image": "https://static.encyclopedia.warthunder.com/slots/z_19e.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "HF-7D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "BA-9",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "TY-90",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 8560,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1600000,
+            "aces_ge": 2000,
+            "research_aces_rp": 1710000
+          },
+          "7": {
+            "id": "z_19",
+            "name": "Z-19",
+            "image": "https://static.encyclopedia.warthunder.com/slots/z_19.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 22000,
+                      "sl_cost": 32000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 22000,
+                      "sl_cost": 32000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 32000,
+                      "sl_cost": 47000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "HF-7D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 22000,
+                      "sl_cost": 32000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "AKD-9",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 32000,
+                      "sl_cost": 47000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "TY-90",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 32000,
+                      "sl_cost": 47000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 390000,
+            "sl_cost": 1010000,
+            "talisman_cost_ge": 2700,
+            "crew_training_sl": 290000,
+            "experts_sl": 1010000,
+            "aces_ge": 2600,
+            "research_aces_rp": 1010000
+          }
+        }
+      },
+      {
+        "name": "VII",
+        "grid": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "z_10",
+            "name": "Z-10",
+            "image": "https://static.encyclopedia.warthunder.com/slots/z_10.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 23 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "AKD-9",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "HF-7D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "New 23 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "EFS(a)",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "AKD-10",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 33000,
+                      "sl_cost": 48000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 33000,
+                      "sl_cost": 48000,
+                      "progress": 0
+                    },
+                    "12": {
+                      "id": "mod_Weaponry_12",
+                      "name": "TY-90",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 33000,
+                      "sl_cost": 48000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1020000,
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 290000,
+            "experts_sl": 1020000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
+          },
+          "2": {
+            "id": "ah_64e_china",
+            "name": "␗AH-64E",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_64e_china.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Survivability_5",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Survivability_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "New 30 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "AGM-114 2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "APKWS II",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "AGM-179 (SAL)",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "AIM-92 Stinger",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "AGM-179 (IR)",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1030000,
+            "talisman_cost_ge": 2900,
+            "crew_training_sl": 300000,
+            "experts_sl": 1030000,
+            "aces_ge": 3000,
+            "research_aces_rp": 1140000
+          },
+          "3": {
+            "id": "z_10a",
+            "name": "Z-10A",
+            "image": "https://static.encyclopedia.warthunder.com/slots/z_10a.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 23 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "AKD-9",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "HF-7D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "New 23 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "EFS(a)",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "AKD-10",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 33000,
+                      "sl_cost": 48000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 33000,
+                      "sl_cost": 48000,
+                      "progress": 0
+                    },
+                    "12": {
+                      "id": "mod_Weaponry_12",
+                      "name": "TY-90",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 33000,
+                      "sl_cost": 48000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": true,
+            "event": false,
+            "sl_cost": 1070000,
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 290000,
+            "experts_sl": 1020000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
+          },
+          "4": {
+            "id": "z_10me",
+            "name": "Z-10ME",
+            "image": "https://static.encyclopedia.warthunder.com/slots/z_10me.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "HF-7D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "Offensive 23 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "AKD-9",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "New 23 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "AKD-10",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "EFS(a)",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "Offensive 12.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "CM-502KG",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    },
+                    "12": {
+                      "id": "mod_Weaponry_12",
+                      "name": "New 12.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    },
+                    "13": {
+                      "id": "mod_Weaponry_13",
+                      "name": "BA-11A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    },
+                    "14": {
+                      "id": "mod_Weaponry_14",
+                      "name": "TY-90",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 25000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1030000,
+            "talisman_cost_ge": 2900,
+            "crew_training_sl": 300000,
+            "experts_sl": 1030000,
+            "aces_ge": 3000,
+            "research_aces_rp": 1140000
+          }
+        }
+      }
+    ]
+  },
+  "France_Cotier": {
+    "name": "Bateau côtier France",
+    "ranks": [
+      {
+        "name": "I",
+        "grid": [
+          [
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "fr_vtb_group",
+            "name": "Fr Vtb",
+            "image": "https://static.encyclopedia.warthunder.com/slots/fr_vtb_group.png",
+            "progress": "",
+            "children": [
+              {
+                "id": "fr_vtb8",
+                "name": "VTB-8",
+                "image": "https://static.encyclopedia.warthunder.com/slots/fr_vtb8.png",
+                "progress": "",
+                "modifications": {
+                  "categories": {
+                    "Seakeeping": {
+                      "grid": [
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          0,
+                          1
+                        ],
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          0,
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Seakeeping_1",
+                          "name": "Dry-Docking",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Seakeeping_2",
+                          "name": "Rudder Replacement",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Seakeeping_3",
+                          "name": "Propeller Replacement",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                          "rp_cost": 370,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Seakeeping_4",
+                          "name": "Engine Maintenance",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                          "rp_cost": 320,
+                          "sl_cost": 95,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Unsinkability": {
+                      "grid": [
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          0
+                        ],
+                        [
+                          1,
+                          0
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Unsinkability_1",
+                          "name": "Damage Control Division",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Unsinkability_2",
+                          "name": "Fire Division",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Unsinkability_3",
+                          "name": "Smokescreen",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Unsinkability_4",
+                          "name": "New Pumps",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                          "rp_cost": 320,
+                          "sl_cost": 95,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Firepower": {
+                      "grid": [
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Firepower_1",
+                          "name": "7.7 mm AP",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Firepower_2",
+                          "name": "7.7 mm API",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Firepower_3",
+                          "name": "Primary Armament Targeting",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                          "rp_cost": 370,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Firepower_4",
+                          "name": "Artillery Support",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                          "rp_cost": 320,
+                          "sl_cost": 95,
+                          "progress": 0
+                        }
+                      }
+                    }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": true,
+                "rp_cost": 0,
+                "sl_cost": 0,
+                "talisman_cost_ge": 190,
+                "crew_training_sl": 200,
+                "experts_sl": 1000,
+                "aces_ge": 20,
+                "research_aces_rp": 96000
+              },
+              {
+                "id": "fr_vtb11",
+                "name": "VTB-11",
+                "image": "https://static.encyclopedia.warthunder.com/slots/fr_vtb11.png",
+                "progress": "",
+                "modifications": {
+                  "categories": {
+                    "Seakeeping": {
+                      "grid": [
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          0,
+                          1
+                        ],
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          0,
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Seakeeping_1",
+                          "name": "Dry-Docking",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Seakeeping_2",
+                          "name": "Rudder Replacement",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Seakeeping_3",
+                          "name": "Propeller Replacement",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                          "rp_cost": 370,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Seakeeping_4",
+                          "name": "Engine Maintenance",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                          "rp_cost": 320,
+                          "sl_cost": 95,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Unsinkability": {
+                      "grid": [
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          0
+                        ],
+                        [
+                          1,
+                          0
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Unsinkability_1",
+                          "name": "Damage Control Division",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Unsinkability_2",
+                          "name": "Fire Division",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Unsinkability_3",
+                          "name": "Smokescreen",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Unsinkability_4",
+                          "name": "New Pumps",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                          "rp_cost": 320,
+                          "sl_cost": 95,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Firepower": {
+                      "grid": [
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Firepower_1",
+                          "name": "7.7 mm AP",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Firepower_2",
+                          "name": "7.7 mm API",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Firepower_3",
+                          "name": "Primary Armament Targeting",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                          "rp_cost": 370,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Firepower_4",
+                          "name": "Artillery Support",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                          "rp_cost": 320,
+                          "sl_cost": 95,
+                          "progress": 0
+                        }
+                      }
+                    }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": true,
+                "rp_cost": 0,
+                "sl_cost": 0,
+                "talisman_cost_ge": 190,
+                "crew_training_sl": 200,
+                "experts_sl": 1000,
+                "aces_ge": 20,
+                "research_aces_rp": 96000
+              },
+              {
+                "id": "fr_vtb14",
+                "name": "VTB-14",
+                "image": "https://static.encyclopedia.warthunder.com/slots/fr_vtb14.png",
+                "progress": "",
+                "modifications": {
+                  "categories": {
+                    "Seakeeping": {
+                      "grid": [
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          0,
+                          1
+                        ],
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          0,
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Seakeeping_1",
+                          "name": "Dry-Docking",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Seakeeping_2",
+                          "name": "Rudder Replacement",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Seakeeping_3",
+                          "name": "Propeller Replacement",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                          "rp_cost": 370,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Seakeeping_4",
+                          "name": "Engine Maintenance",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                          "rp_cost": 320,
+                          "sl_cost": 95,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Unsinkability": {
+                      "grid": [
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          0
+                        ],
+                        [
+                          1,
+                          0
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Unsinkability_1",
+                          "name": "Damage Control Division",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Unsinkability_2",
+                          "name": "Fire Division",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Unsinkability_3",
+                          "name": "Smokescreen",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Unsinkability_4",
+                          "name": "New Pumps",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                          "rp_cost": 320,
+                          "sl_cost": 95,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Firepower": {
+                      "grid": [
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Firepower_1",
+                          "name": "7.7 mm AP",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                          "rp_cost": 200,
+                          "sl_cost": 60,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Firepower_2",
+                          "name": "7.7 mm API",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                          "rp_cost": 165,
+                          "sl_cost": 50,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Firepower_3",
+                          "name": "Primary Armament Targeting",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                          "rp_cost": 370,
+                          "sl_cost": 110,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Firepower_4",
+                          "name": "Artillery Support",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                          "rp_cost": 320,
+                          "sl_cost": 95,
+                          "progress": 0
+                        }
+                      }
+                    }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": true,
+                "rp_cost": 0,
+                "sl_cost": 0,
+                "talisman_cost_ge": 190,
+                "crew_training_sl": 200,
+                "experts_sl": 1000,
+                "aces_ge": 20,
+                "research_aces_rp": 96000
+              }
+            ]
+          },
+          "2": {
+            "id": "fr_vtb13",
+            "name": "VTB-13",
+            "image": "https://static.encyclopedia.warthunder.com/slots/fr_vtb13.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 220,
+                      "sl_cost": 135,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 165,
+                      "sl_cost": 100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 560,
+                      "sl_cost": 340,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 480,
+                      "sl_cost": 290,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 220,
+                      "sl_cost": 135,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 165,
+                      "sl_cost": 100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 165,
+                      "sl_cost": 100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 480,
+                      "sl_cost": 290,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 220,
+                      "sl_cost": 135,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "7.7 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 220,
+                      "sl_cost": 135,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 165,
+                      "sl_cost": 100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 165,
+                      "sl_cost": 100,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "7.7 mm API",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 165,
+                      "sl_cost": 100,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 560,
+                      "sl_cost": 340,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 480,
+                      "sl_cost": 290,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 4000,
+            "sl_cost": 2100,
+            "talisman_cost_ge": 300,
+            "crew_training_sl": 600,
+            "experts_sl": 2100,
+            "aces_ge": 45,
+            "research_aces_rp": 110000
+          },
+          "3": {
+            "id": "fr_vtb10",
+            "name": "VTB-10",
+            "image": "https://static.encyclopedia.warthunder.com/slots/fr_vtb10.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 600,
+                      "sl_cost": 60,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 1100,
+                      "sl_cost": 110,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 960,
+                      "sl_cost": 95,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 500,
+                      "sl_cost": 50,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 600,
+                      "sl_cost": 60,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 500,
+                      "sl_cost": 50,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 960,
+                      "sl_cost": 95,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 250,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 150,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 145000
+          },
+          "4": {
+            "id": "fr_vtb12_mod",
+            "name": "VTB-12",
+            "image": "https://static.encyclopedia.warthunder.com/slots/fr_vtb12_mod.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 440,
+                      "sl_cost": 19,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 810,
+                      "sl_cost": 35,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 720,
+                      "sl_cost": 35,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 380,
+                      "sl_cost": 17,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "13 mm HEI-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 440,
+                      "sl_cost": 19,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "13 mm AP-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 380,
+                      "sl_cost": 17,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 720,
+                      "sl_cost": 35,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 190,
+            "crew_training_sl": null,
+            "experts_sl": 1000,
+            "aces_ge": 10,
+            "research_aces_rp": 80000
+          },
+          "5": {
+            "id": "fr_vtb9",
+            "name": "VTB-9",
+            "image": "https://static.encyclopedia.warthunder.com/slots/fr_vtb9.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "7.7 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "7.7 mm API",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 400,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 450,
+            "experts_sl": 3000,
+            "aces_ge": 45,
+            "research_aces_rp": 220000
+          },
+          "6": {
+            "id": "fr_vtb18",
+            "name": "VTB-18",
+            "image": "https://static.encyclopedia.warthunder.com/slots/fr_vtb18.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 200,
+                      "sl_cost": 60,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 165,
+                      "sl_cost": 50,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 370,
+                      "sl_cost": 110,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 240,
+                      "sl_cost": 75,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 200,
+                      "sl_cost": 60,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 165,
+                      "sl_cost": 50,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 165,
+                      "sl_cost": 50,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 240,
+                      "sl_cost": 75,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "13 mm HEI-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 200,
+                      "sl_cost": 60,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "13 mm AP-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 165,
+                      "sl_cost": 50,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 370,
+                      "sl_cost": 110,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 240,
+                      "sl_cost": 75,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Torpedo Mode",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/torpedo.png",
+                      "rp_cost": 240,
+                      "sl_cost": 75,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 2900,
+            "sl_cost": 700,
+            "talisman_cost_ge": 190,
+            "crew_training_sl": 200,
+            "experts_sl": 1000,
+            "aces_ge": 20,
+            "research_aces_rp": 96000
+          }
+        }
+      },
+      {
+        "name": "II",
+        "grid": [
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "",
+            "name": "",
+            "image": "",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ]
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ]
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ]
+                }
+              }
+            }
+          },
+          "2": {
+            "id": "",
+            "name": "",
+            "image": "",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ]
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ]
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ]
+                }
+              }
+            }
+          },
+          "3": {
+            "id": "",
+            "name": "",
+            "image": "",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ]
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ]
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "III",
+        "grid": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "us_elco_80ft_pt_boat_mod01",
+            "name": "PT-314",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_elco_80ft_pt_boat_mod01.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 790,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 740,
+                      "sl_cost": 1200,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 2500,
+                      "sl_cost": 4100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 2100,
+                      "sl_cost": 3400,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 790,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 740,
+                      "sl_cost": 1200,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 740,
+                      "sl_cost": 1200,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 2100,
+                      "sl_cost": 3400,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 790,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 790,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 790,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 740,
+                      "sl_cost": 1200,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 740,
+                      "sl_cost": 1200,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 740,
+                      "sl_cost": 1200,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 2500,
+                      "sl_cost": 4100,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 2100,
+                      "sl_cost": 3400,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 18000,
+            "sl_cost": 47000,
+            "talisman_cost_ge": 980,
+            "crew_training_sl": 13000,
+            "experts_sl": 47000,
+            "aces_ge": 400,
+            "research_aces_rp": 280000
+          },
+          "2": {
+            "id": "us_higgins_78ft_pt625",
+            "name": "PT-200",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_higgins_78ft_pt625.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 1100,
+                      "sl_cost": 2100,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 1000,
+                      "sl_cost": 1900,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 2200,
+                      "sl_cost": 4100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 2900,
+                      "sl_cost": 5400,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 1100,
+                      "sl_cost": 2100,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 1000,
+                      "sl_cost": 1900,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 1000,
+                      "sl_cost": 1900,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 2900,
+                      "sl_cost": 5400,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1100,
+                      "sl_cost": 2100,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1100,
+                      "sl_cost": 2100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 1100,
+                      "sl_cost": 2100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1000,
+                      "sl_cost": 1900,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1000,
+                      "sl_cost": 1900,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 1000,
+                      "sl_cost": 1900,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Rocket Launcher",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/rocket_launcher.png",
+                      "rp_cost": 2200,
+                      "sl_cost": 4100,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 2200,
+                      "sl_cost": 4100,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 2900,
+                      "sl_cost": 5400,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 26000,
+            "sl_cost": 76000,
+            "talisman_cost_ge": 1100,
+            "crew_training_sl": 22000,
+            "experts_sl": 76000,
+            "aces_ge": 500,
+            "research_aces_rp": 320000
+          },
+          "3": {
+            "id": "us_pgm_59_class",
+            "name": "Kim Qui",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_pgm_59_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 1800,
+                      "sl_cost": 3900,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 3800,
+                      "sl_cost": 8100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 7400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 1800,
+                      "sl_cost": 3900,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 7400,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1800,
+                      "sl_cost": 3900,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1800,
+                      "sl_cost": 3900,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 1800,
+                      "sl_cost": 3900,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 3800,
+                      "sl_cost": 8100,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 3800,
+                      "sl_cost": 8100,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 48000,
+            "sl_cost": 180000,
+            "talisman_cost_ge": 1300,
+            "crew_training_sl": 52000,
+            "experts_sl": 180000,
+            "aces_ge": 700,
+            "research_aces_rp": 390000
+          },
+          "4": {
+            "id": "us_lcm_zippo",
+            "name": "LCM(6) Zippo",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_lcm_zippo.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 115000,
+            "aces_ge": 500,
+            "research_aces_rp": 640000
+          },
+          "5": {
+            "id": "us_higgins_78ft_pt658",
+            "name": "PT-658",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_higgins_78ft_pt658.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Depth Charges",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/depth_charge.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Rocket Launcher",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/rocket_launcher.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Firepower_10",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 115000,
+            "aces_ge": 500,
+            "research_aces_rp": 640000
+          },
+          "6": {
+            "id": "us_elco_80ft_pt_boat_mod02",
+            "name": "PT-565",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_elco_80ft_pt_boat_mod02.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 1400,
+                      "sl_cost": 3000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 1300,
+                      "sl_cost": 2800,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 3000,
+                      "sl_cost": 6500,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 3900,
+                      "sl_cost": 8500,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 1400,
+                      "sl_cost": 3000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 1300,
+                      "sl_cost": 2800,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 1300,
+                      "sl_cost": 2800,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 3900,
+                      "sl_cost": 8500,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1400,
+                      "sl_cost": 3000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1400,
+                      "sl_cost": 3000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 1400,
+                      "sl_cost": 3000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1300,
+                      "sl_cost": 2800,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1300,
+                      "sl_cost": 2800,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 1300,
+                      "sl_cost": 2800,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Rocket Launcher",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/rocket_launcher.png",
+                      "rp_cost": 3000,
+                      "sl_cost": 6500,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 3000,
+                      "sl_cost": 6500,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 3900,
+                      "sl_cost": 8500,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 36000,
+            "sl_cost": 115000,
+            "talisman_cost_ge": 1200,
+            "crew_training_sl": 33000,
+            "experts_sl": 115000,
+            "aces_ge": 590,
+            "research_aces_rp": 360000
+          },
+          "7": {
+            "id": "us_elco_77ft_pt59",
+            "name": "PT-59",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_elco_77ft_pt59.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 2300,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 4900,
+                      "sl_cost": 10000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 2300,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 4900,
+                      "sl_cost": 10000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 2300,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": ".50 AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 2300,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": ".50 API-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3600,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 5700,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 4900,
+                      "sl_cost": 10000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 48000,
+            "sl_cost": 180000,
+            "talisman_cost_ge": 1300,
+            "crew_training_sl": 52000,
+            "experts_sl": 180000,
+            "aces_ge": 700,
+            "research_aces_rp": 390000
+          },
+          "8": {
+            "id": "us_elco_80ft_pt_boat_thunderbolt",
+            "name": "Thunderbolt (PT-556)",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_elco_80ft_pt_boat_thunderbolt.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "37 mm AP-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 1600,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 180000,
+            "aces_ge": 590,
+            "research_aces_rp": 710000
+          },
+          "9": {
+            "id": "us_flagstaff_pgh1",
+            "name": "USS Flagstaff",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_flagstaff_pgh1.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": ".50 AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": ".50 API-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "40 mm/60 Bofors",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_type_boat.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 400000,
+            "aces_ge": 940,
+            "research_aces_rp": 960000
+          }
+        }
+      },
+      {
+        "name": "IV",
+        "grid": [
+          [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "us_tucumcari_pgh2",
+            "name": "USS Tucumcari",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_tucumcari_pgh2.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": ".50 AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": ".50 API-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 89000,
+            "sl_cost": 300000,
+            "talisman_cost_ge": 1700,
+            "crew_training_sl": 87000,
+            "experts_sl": 300000,
+            "aces_ge": 1100,
+            "research_aces_rp": 520000
+          },
+          "2": {
+            "id": "us_ashville_class",
+            "name": "USS Asheville",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_ashville_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 2700,
+                      "sl_cost": 5200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 2500,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 5600,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 2700,
+                      "sl_cost": 5200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 2500,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 2500,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "76 mm APHE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/apcbc_tank.png",
+                      "rp_cost": 2700,
+                      "sl_cost": 5200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 2700,
+                      "sl_cost": 5200,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 2700,
+                      "sl_cost": 5200,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "76 mm AA Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 2500,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 2500,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 2500,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 5600,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 5600,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 75000,
+            "sl_cost": 250000,
+            "talisman_cost_ge": 1500,
+            "crew_training_sl": 72000,
+            "experts_sl": 250000,
+            "aces_ge": 940,
+            "research_aces_rp": 480000
+          },
+          "3": {
+            "id": "us_pgm_9_class",
+            "name": "PGM-9",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_pgm_9_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "76 mm AP Mk.29",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/apcbc_tank.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "76 mm AA Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 89000,
+            "sl_cost": 300000,
+            "talisman_cost_ge": 1700,
+            "crew_training_sl": 87000,
+            "experts_sl": 300000,
+            "aces_ge": 1100,
+            "research_aces_rp": 520000
+          },
+          "4": {
+            "id": "us_pt811",
+            "name": "PT-811",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_pt811.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 580000,
+            "aces_ge": 1200,
+            "research_aces_rp": 1180000
+          },
+          "5": {
+            "id": "us_pt812",
+            "name": "PT-812",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_pt812.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 6600,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 10000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 30000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 6600,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 10000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 10000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 30000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 6600,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 6600,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 6600,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 10000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 10000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 6200,
+                      "sl_cost": 10000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 21000,
+                      "sl_cost": 35000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 30000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 120000,
+            "sl_cost": 360000,
+            "talisman_cost_ge": 1800,
+            "crew_training_sl": 105000,
+            "experts_sl": 360000,
+            "aces_ge": 1200,
+            "research_aces_rp": 570000
+          },
+          "6": {
+            "id": "us_admirable_class",
+            "name": "USS Candid",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_admirable_class.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 5600,
+                      "sl_cost": 9600,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "76 mm AP Mk.29",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/apcbc_tank.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 3600,
+                      "sl_cost": 6200,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "76 mm AA Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 3400,
+                      "sl_cost": 5800,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Depth Charges",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/depth_charge.png",
+                      "rp_cost": 5600,
+                      "sl_cost": 9600,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 5600,
+                      "sl_cost": 9600,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 5600,
+                      "sl_cost": 9600,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Firepower_10",
+                      "name": "Bomb mortar",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_mortar.png",
+                      "rp_cost": 9800,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 89000,
+            "sl_cost": 300000,
+            "talisman_cost_ge": 1700,
+            "crew_training_sl": 87000,
+            "experts_sl": 300000,
+            "aces_ge": 1100,
+            "research_aces_rp": 520000
+          },
+          "7": {
+            "id": "us_ashville_class_douglas",
+            "name": "USS Douglas",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_ashville_class_douglas.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "76 mm APHE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/apcbc_tank.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": ".50 AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "76 mm AA Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": ".50 API-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 6090,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 580000,
+            "aces_ge": 1200,
+            "research_aces_rp": 1140000
+          }
+        }
+      },
+      {
+        "name": "V",
+        "grid": [
+          [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "us_pt810",
+            "name": "PT-810",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_pt810.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 7000,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 32000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 7000,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 7000,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 32000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "20 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 7000,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "20 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 7000,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 7000,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Depth Charges",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/depth_charge.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 20000,
+                      "sl_cost": 32000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 220000,
+            "sl_cost": 640000,
+            "talisman_cost_ge": 1900,
+            "crew_training_sl": 185000,
+            "experts_sl": 640000,
+            "aces_ge": 1400,
+            "research_aces_rp": 620000
+          },
+          "2": {
+            "id": "us_lcs_l_3",
+            "name": "LCS(L)(3)",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_lcs_l_3.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 34000,
+                      "sl_cost": 54000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 34000,
+                      "sl_cost": 54000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "76 mm AP Mk.29",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/apcbc_tank.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "76 mm AA Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 250000,
+            "sl_cost": 700000,
+            "talisman_cost_ge": 2000,
+            "crew_training_sl": 200000,
+            "experts_sl": 700000,
+            "aces_ge": 1500,
+            "research_aces_rp": 670000
+          },
+          "3": {
+            "id": "us_cyclone_class_cyclone",
+            "name": "USS Cyclone",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_cyclone_class_cyclone.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "25 mm HEI-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": ".50 AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "25 mm APDS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": ".50 API-T",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_art_support.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 250000,
+            "sl_cost": 700000,
+            "talisman_cost_ge": 2000,
+            "crew_training_sl": 200000,
+            "experts_sl": 700000,
+            "aces_ge": 1500,
+            "research_aces_rp": 670000
+          },
+          "4": {
+            "id": "us_frigate_tacoma",
+            "name": "USS Hoquiam",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_frigate_tacoma.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "76 mm AP Mk.29",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/apcbc_tank.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 8400,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "76 mm AA Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 7900,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Depth Charges",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/depth_charge.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Firepower_10",
+                      "name": "Bomb mortar",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_mortar.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 250000,
+            "sl_cost": 700000,
+            "talisman_cost_ge": 2000,
+            "crew_training_sl": 200000,
+            "experts_sl": 700000,
+            "aces_ge": 1500,
+            "research_aces_rp": 670000
+          },
+          "5": {
+            "id": "us_frigate_buckley_class_coolbaugh",
+            "name": "USS Coolbaugh",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_frigate_buckley_class_coolbaugh.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "5 inch Common Mk.32",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "40 mm HE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Anti-Air Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "5 inch SP Common Mk.46",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "40 mm AP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Auxiliary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "5 inch AAVT Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Firepower_9",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Firepower_10",
+                      "name": "Bomb mortar",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_mortar.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 280000,
+            "sl_cost": 780000,
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 220000,
+            "experts_sl": 780000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
+          },
+          "6": {
+            "id": "us_frigate_dealey",
+            "name": "USS Dealey",
+            "image": "https://static.encyclopedia.warthunder.com/slots/us_frigate_dealey.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Seakeeping": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Seakeeping_1",
+                      "name": "Dry-Docking",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Seakeeping_2",
+                      "name": "Rudder Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Seakeeping_3",
+                      "name": "Propeller Replacement",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Seakeeping_4",
+                      "name": "Engine Maintenance",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Unsinkability": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Unsinkability_1",
+                      "name": "Damage Control Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Unsinkability_2",
+                      "name": "Fire Division",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Unsinkability_3",
+                      "name": "Smokescreen",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Unsinkability_4",
+                      "name": "New Pumps",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "76 mm APHE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/apcbc_tank.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "76 mm AA Mk.31",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Depth Charges",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/depth_charge.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Primary Armament Targeting",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Improved Rangefinder",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Bomb mortar",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ship_mortar.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 280000,
+            "sl_cost": 780000,
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 220000,
+            "experts_sl": 780000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
+          }
+        }
+      }
+    ]
+  },
   "Israel_Avion": {
     "name": "Aviation Israel",
     "ranks": [
@@ -65444,8 +79655,8 @@ export const progressTree = {
           },
           "7": {
             "id": "spitfire_lf_mk9c_cw_greece",
-            "name": "",
-            "image": "",
+            "name": "▃Spitfire LF Mk IXc (CW)",
+            "image": "https://static.encyclopedia.warthunder.com/slots/spitfire_lf_mk9c_cw_greece.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -65467,7 +79678,65 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Radiator",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "150 octane fuel",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/oil.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine injection",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Survivability": {
                   "grid": [
@@ -65483,7 +79752,25 @@ export const progressTree = {
                     [
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Weaponry": {
                   "grid": [
@@ -65507,10 +79794,94 @@ export const progressTree = {
                       0,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 7.7 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "New 7.7 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "SMBC mk.2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "SMBC mk.3",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "Mk.II year 1942",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/gun_camora_mod.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "MBC mk.2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "Mk.II year 1943",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/gun_camora_mod.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 320000,
+            "aces_ge": 1100,
+            "research_aces_rp": 1050000
           }
         }
       },
@@ -67883,9 +82254,9 @@ export const progressTree = {
             "progress": "",
             "children": [
               {
-                "id": "",
-                "name": "",
-                "image": "",
+                "id": "md_460_sambad",
+                "name": "Sambad",
+                "image": "https://static.encyclopedia.warthunder.com/slots/md_460_sambad.png",
                 "progress": "",
                 "modifications": {
                   "categories": {
@@ -67893,7 +82264,7 @@ export const progressTree = {
                       "grid": [
                         [
                           1,
-                          0
+                          1
                         ],
                         [
                           1,
@@ -67907,7 +82278,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 4800,
+                          "sl_cost": 7600,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 4800,
+                          "sl_cost": 7600,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -67918,40 +82347,144 @@ export const progressTree = {
                           0
                         ],
                         [
-                          1
+                          0
                         ],
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
                         [
                           1,
-                          0
-                        ],
-                        [
-                          0,
+                          1,
+                          1,
                           1
                         ],
                         [
+                          0,
+                          1,
                           1,
                           0
                         ],
                         [
+                          1,
+                          1,
                           0,
                           0
+                        ],
+                        [
+                          0,
+                          0,
+                          1,
+                          0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 30 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 4800,
+                          "sl_cost": 7600,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "100/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 4800,
+                          "sl_cost": 7600,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Matra Type 61",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 4800,
+                          "sl_cost": 7600,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Mk2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 4800,
+                          "sl_cost": 7600,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "250/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Matra Type 116",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 8100,
+                          "sl_cost": 13000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "New 30 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "500/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 9000,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "Shafrir",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
-                }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": false,
+                "rp_cost": 170000,
+                "sl_cost": 480000,
+                "talisman_cost_ge": 2600,
+                "crew_training_sl": 135000,
+                "experts_sl": 480000,
+                "aces_ge": 2400,
+                "research_aces_rp": 950000
               },
               {
-                "id": "",
-                "name": "",
-                "image": "",
+                "id": "md_460_saar",
+                "name": "Sa'ar",
+                "image": "https://static.encyclopedia.warthunder.com/slots/md_460_saar.png",
                 "progress": "",
                 "modifications": {
                   "categories": {
@@ -67959,7 +82492,7 @@ export const progressTree = {
                       "grid": [
                         [
                           1,
-                          0
+                          1
                         ],
                         [
                           1,
@@ -67973,7 +82506,65 @@ export const progressTree = {
                           1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 8300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 8300,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 8900,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 8900,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 7900,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 7900,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Survivability": {
                       "grid": [
@@ -67984,35 +82575,155 @@ export const progressTree = {
                           0
                         ],
                         [
-                          1
+                          0
                         ],
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Weaponry": {
                       "grid": [
                         [
                           1,
-                          0
-                        ],
-                        [
-                          0,
+                          1,
+                          1,
                           1
                         ],
                         [
+                          0,
+                          1,
+                          1,
+                          0
+                        ],
+                        [
+                          1,
+                          1,
                           1,
                           0
                         ],
                         [
                           0,
+                          1,
+                          1,
                           0
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 30 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 8300,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "100/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 8300,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "LAU-32",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 8300,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Mk2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 5300,
+                          "sl_cost": 8300,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "250/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 8900,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "LAU-3/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 8900,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "New 30 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 7900,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "360/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 7900,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "LAU-10/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                          "rp_cost": 7900,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "500/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "Shafrir 2",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
-                }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": false,
+                "rp_cost": 96000,
+                "sl_cost": 530000,
+                "talisman_cost_ge": 2700,
+                "crew_training_sl": 150000,
+                "experts_sl": 530000,
+                "aces_ge": 2600,
+                "research_aces_rp": 1010000
               }
             ]
           },
@@ -70121,8 +84832,8 @@ export const progressTree = {
           },
           "7": {
             "id": "mig_21_2000_iaf",
-            "name": "",
-            "image": "",
+            "name": "MiG-21 2000",
+            "image": "https://static.encyclopedia.warthunder.com/slots/mig_21_2000_iaf.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -70144,7 +84855,65 @@ export const progressTree = {
                       1,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 7300,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 7300,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "New boosters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 35000,
+                      "sl_cost": 54000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Survivability": {
                   "grid": [
@@ -70160,7 +84929,33 @@ export const progressTree = {
                     [
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 7300,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 35000,
+                      "sl_cost": 54000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Weaponry": {
                   "grid": [
@@ -70184,22 +84979,85 @@ export const progressTree = {
                       0,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 23 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 7300,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "LITENING II",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 7300,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "R-60MK",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 7300,
+                      "sl_cost": 11000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "GBU-12",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "New 23 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "Python 3",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": true,
+            "event": false,
+            "sl_cost": 750000,
+            "talisman_cost_ge": 3000,
+            "crew_training_sl": 200000,
+            "experts_sl": 720000,
+            "aces_ge": 3200,
+            "research_aces_rp": 1210000
           }
         }
-      }
-    ]
-  },
-  "default": {
-    "name": "Arbre de progression",
-    "ranks": [
+      },
       {
-        "name": "I",
+        "name": "VIII",
         "grid": [
           [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
             1,
             1,
             1
@@ -70207,19 +85065,2596 @@ export const progressTree = {
         ],
         "vehicles": {
           "1": {
-            "name": "Véhicule de base",
-            "image": "/assets/vehicles/default.png",
-            "progress": 0
+            "id": "f_16a_block_10_iaf",
+            "name": "Netz",
+            "image": "https://static.encyclopedia.warthunder.com/slots/f_16a_block_10_iaf.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 8000,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 8000,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "New boosters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 8000,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      0,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 8000,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "BLU-27/B",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                      "rp_cost": 8000,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "AIM-9P",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 8000,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "Mk82",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "LAU-3/A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "AIM-9L",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 9000,
+                      "sl_cost": 14000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "Mk84",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "AGM-65B",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "Python 3",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 290000,
+            "sl_cost": 780000,
+            "talisman_cost_ge": 3100,
+            "crew_training_sl": 220000,
+            "experts_sl": 780000,
+            "aces_ge": 3400,
+            "research_aces_rp": 1280000
           },
           "2": {
-            "name": "Véhicule intermédiaire",
-            "image": "/assets/vehicles/default.png",
-            "progress": 0
+            "id": "f_4e_f_15_iaf_group",
+            "name": "F 4e F 15 Iaf",
+            "image": "https://static.encyclopedia.warthunder.com/slots/f_4e_f_15_iaf_group.png",
+            "progress": "",
+            "children": [
+              {
+                "id": "f-4e_kurnass_2000",
+                "name": "Kurnass 2000",
+                "image": "https://static.encyclopedia.warthunder.com/slots/f-4e_kurnass_2000.png",
+                "progress": "",
+                "modifications": {
+                  "categories": {
+                    "Flight performance": {
+                      "grid": [
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 7700,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Survivability": {
+                      "grid": [
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 7700,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Survivability_3",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Survivability_4",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Weaponry": {
+                      "grid": [
+                        [
+                          1,
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          0,
+                          1,
+                          1,
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "AIM-9G",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "M117",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 8000,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "AIM-9L",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 7700,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 7700,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "GBU-12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                          "rp_cost": 7700,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "Mk83",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 7700,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "LAU-3/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                          "rp_cost": 7700,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "Python 3",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "SUU-23/A. gun pod",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "Mk84",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "13": {
+                          "id": "mod_Weaponry_13",
+                          "name": "LAU-10/A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                          "rp_cost": 10000,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "14": {
+                          "id": "mod_Weaponry_14",
+                          "name": "GBU-10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        },
+                        "15": {
+                          "id": "mod_Weaponry_15",
+                          "name": "GBU-15",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        },
+                        "16": {
+                          "id": "mod_Weaponry_16",
+                          "name": "AGM-65D",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                          "rp_cost": 16000,
+                          "sl_cost": 25000,
+                          "progress": 0
+                        }
+                      }
+                    }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": false,
+                "rp_cost": 290000,
+                "sl_cost": 780000,
+                "talisman_cost_ge": 3100,
+                "crew_training_sl": 220000,
+                "experts_sl": 780000,
+                "aces_ge": 3400,
+                "research_aces_rp": 1280000
+              },
+              {
+                "id": "f_15a_iaf",
+                "name": "Baz",
+                "image": "https://static.encyclopedia.warthunder.com/slots/f_15a_iaf.png",
+                "progress": "",
+                "modifications": {
+                  "categories": {
+                    "Flight performance": {
+                      "grid": [
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          0
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 8800,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 8800,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 21000,
+                          "sl_cost": 32000,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Survivability": {
+                      "grid": [
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          0
+                        ],
+                        [
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 8800,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Survivability_3",
+                          "name": "EFS",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                          "rp_cost": 21000,
+                          "sl_cost": 32000,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Weaponry": {
+                      "grid": [
+                        [
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          1,
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 8800,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "BLU-27/B",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png",
+                          "rp_cost": 8800,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "AIM-9L",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 8800,
+                          "sl_cost": 14000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "Mk82",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "AIM-7M",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 18000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "Mk84",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "Python 3",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 13000,
+                          "sl_cost": 20000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "GBU-8",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                          "rp_cost": 21000,
+                          "sl_cost": 32000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "AIM-9M",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 21000,
+                          "sl_cost": 32000,
+                          "progress": 0
+                        }
+                      }
+                    }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": false,
+                "rp_cost": 160000,
+                "sl_cost": 860000,
+                "talisman_cost_ge": 3200,
+                "crew_training_sl": 250000,
+                "experts_sl": 860000,
+                "aces_ge": 3600,
+                "research_aces_rp": 1350000
+              }
+            ]
           },
           "3": {
-            "name": "Véhicule avancé",
-            "image": "/assets/vehicles/default.png",
-            "progress": 0
+            "id": "f_16d_iaf_group",
+            "name": "F 16d Iaf",
+            "image": "https://static.encyclopedia.warthunder.com/slots/f_16d_iaf_group.png",
+            "progress": "",
+            "children": [
+              {
+                "id": "f_16d_block_40_barak_2",
+                "name": "F-16D Barak II",
+                "image": "https://static.encyclopedia.warthunder.com/slots/f_16d_block_40_barak_2.png",
+                "progress": "",
+                "modifications": {
+                  "categories": {
+                    "Flight performance": {
+                      "grid": [
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          0
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 7500,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 7500,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Flight_performance_7",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Survivability": {
+                      "grid": [
+                        [
+                          1
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          0
+                        ],
+                        [
+                          0
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Flares/Chaff",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                          "rp_cost": 7500,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Weaponry": {
+                      "grid": [
+                        [
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          0,
+                          1
+                        ],
+                        [
+                          1,
+                          0,
+                          0,
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Mk82/GBU-39",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_glide_little.png",
+                          "rp_cost": 7500,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "LITENING II",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                          "rp_cost": 7500,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Offensive 20 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 7500,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "AIM-9L",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 7500,
+                          "sl_cost": 12000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "GBU-31/64 JDAM",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "GBU-12",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "AIM-7M",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                          "rp_cost": 9900,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "SPICE 1000",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "GBU-16",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "10": {
+                          "id": "mod_Weaponry_10",
+                          "name": "New 20 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "11": {
+                          "id": "mod_Weaponry_11",
+                          "name": "AIM-9M",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 11000,
+                          "sl_cost": 17000,
+                          "progress": 0
+                        },
+                        "12": {
+                          "id": "mod_Weaponry_12",
+                          "name": "SPICE 2000",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        },
+                        "13": {
+                          "id": "mod_Weaponry_13",
+                          "name": "GBU-10",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        }
+                      }
+                    }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": false,
+                "rp_cost": 320000,
+                "sl_cost": 860000,
+                "talisman_cost_ge": 3200,
+                "crew_training_sl": 250000,
+                "experts_sl": 860000,
+                "aces_ge": 3600,
+                "research_aces_rp": 1350000
+              },
+              {
+                "id": "so_4050_vautour_2n_iaf",
+                "name": "Vautour IIN",
+                "image": "https://static.encyclopedia.warthunder.com/slots/so_4050_vautour_2n_iaf.png",
+                "progress": "",
+                "modifications": {
+                  "categories": {
+                    "Flight performance": {
+                      "grid": [
+                        [
+                          1,
+                          0
+                        ],
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          0
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Flight_performance_1",
+                          "name": "Fuselage repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Flight_performance_2",
+                          "name": "New boosters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Flight_performance_3",
+                          "name": "Compressor",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Flight_performance_4",
+                          "name": "Wings repair",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Flight_performance_5",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Flight_performance_6",
+                          "name": "G-suit",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Survivability": {
+                      "grid": [
+                        [
+                          0
+                        ],
+                        [
+                          1
+                        ],
+                        [
+                          0
+                        ],
+                        [
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Survivability_1",
+                          "name": "Airframe",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Survivability_2",
+                          "name": "Cover",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        }
+                      }
+                    },
+                    "Weaponry": {
+                      "grid": [
+                        [
+                          1,
+                          1,
+                          0
+                        ],
+                        [
+                          0,
+                          1,
+                          1
+                        ],
+                        [
+                          1,
+                          1,
+                          1
+                        ],
+                        [
+                          0,
+                          1,
+                          1
+                        ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Weaponry_1",
+                          "name": "Offensive 30 mm belts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Weaponry_2",
+                          "name": "Matra Type 61",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 9600,
+                          "sl_cost": 15000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Weaponry_3",
+                          "name": "Matra Type 104A",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Weaponry_4",
+                          "name": "250/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 6500,
+                          "sl_cost": 10000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Weaponry_5",
+                          "name": "New 30 mm cannons",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Weaponry_6",
+                          "name": "Matra Type 116",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_rocket.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "7": {
+                          "id": "mod_Weaponry_7",
+                          "name": "360/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 7200,
+                          "sl_cost": 11000,
+                          "progress": 0
+                        },
+                        "8": {
+                          "id": "mod_Weaponry_8",
+                          "name": "Shafrir",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        },
+                        "9": {
+                          "id": "mod_Weaponry_9",
+                          "name": "500/50 G.P.",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                          "rp_cost": 12000,
+                          "sl_cost": 19000,
+                          "progress": 0
+                        }
+                      }
+                    }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": false,
+                "rp_cost": 86000,
+                "sl_cost": 480000,
+                "talisman_cost_ge": 2600,
+                "crew_training_sl": 135000,
+                "experts_sl": 480000,
+                "aces_ge": 2400,
+                "research_aces_rp": 950000
+              }
+            ]
+          },
+          "4": {
+            "id": "f_16a_block_10_netz_mod",
+            "name": "Netz (Mod)",
+            "image": "https://static.encyclopedia.warthunder.com/slots/f_16a_block_10_netz_mod.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "New boosters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "AIM-9L",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "Python 3",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "GBU-31 JDAM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "AGM-65B",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1280000,
+            "aces_ge": 3400,
+            "research_aces_rp": 2560000
+          },
+          "5": {
+            "id": "f_16c_block_40_barak_2",
+            "name": "F-16C Barak II",
+            "image": "https://static.encyclopedia.warthunder.com/slots/f_16c_block_40_barak_2.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "New boosters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Mk82/GBU-39",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_glide_little.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "LITENING II",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "AIM-9L",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "GBU-31/64 JDAM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "GBU-12",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "SPICE 1000",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "GBU-16",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "AIM-9M",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "Derby",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "12": {
+                      "id": "mod_Weaponry_12",
+                      "name": "SPICE 2000",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    },
+                    "13": {
+                      "id": "mod_Weaponry_13",
+                      "name": "GBU-10",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    },
+                    "14": {
+                      "id": "mod_Weaponry_14",
+                      "name": "AIM-120A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 350000,
+            "sl_cost": 940000,
+            "talisman_cost_ge": 3300,
+            "crew_training_sl": 270000,
+            "experts_sl": 940000,
+            "aces_ge": 3700,
+            "research_aces_rp": 1380000
+          },
+          "6": {
+            "id": "f_15c_baz_msip",
+            "name": "Baz Meshupar",
+            "image": "https://static.encyclopedia.warthunder.com/slots/f_15c_baz_msip.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "New boosters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "JDAM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "AIM-9L",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 10000,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "GBU-8",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "AIM-7M",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 20000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "SPICE 1000",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "Python 3",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "AIM-9M",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "SPICE 2000",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "AIM-120A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 24000,
+                      "sl_cost": 37000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 350000,
+            "sl_cost": 940000,
+            "talisman_cost_ge": 3300,
+            "crew_training_sl": 270000,
+            "experts_sl": 940000,
+            "aces_ge": 3700,
+            "research_aces_rp": 1380000
+          },
+          "7": {
+            "id": "f_15i_raam",
+            "name": "F-15I Ra’am",
+            "image": "https://static.encyclopedia.warthunder.com/slots/f_15i_raam.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "New boosters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "AIM-9L",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "LANTIRN",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "JDAM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                      "rp_cost": 8600,
+                      "sl_cost": 13000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "AIM-7M",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "LGBU",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "LJDAM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png",
+                      "rp_cost": 9600,
+                      "sl_cost": 15000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "AGM-65D",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "AIM-9M",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "GBU-15",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 23000,
+                      "progress": 0
+                    },
+                    "12": {
+                      "id": "mod_Weaponry_12",
+                      "name": "SPICE 250",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "13": {
+                      "id": "mod_Weaponry_13",
+                      "name": "AIM-120B",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "14": {
+                      "id": "mod_Weaponry_14",
+                      "name": "AIM-120C",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "15": {
+                      "id": "mod_Weaponry_15",
+                      "name": "SPICE 1000/2000",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 350000,
+            "sl_cost": 940000,
+            "talisman_cost_ge": 3300,
+            "crew_training_sl": 270000,
+            "experts_sl": 940000,
+            "aces_ge": 3700,
+            "research_aces_rp": 1380000
+          },
+          "8": {
+            "id": "kfir_c10_colombia",
+            "name": "◡Kfir C.10",
+            "image": "https://static.encyclopedia.warthunder.com/slots/kfir_c10_colombia.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Fuselage repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "New boosters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Flight_performance_4",
+                      "name": "Airframe",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Flight_performance_5",
+                      "name": "Wings repair",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Flight_performance_6",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Flight_performance_7",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Flight_performance_8",
+                      "name": "G-suit",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 30 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "Mk82",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "LAU-3/A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "LITENING III",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 7500,
+                      "sl_cost": 12000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "New 30 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "M117",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "Python 3",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "SUU-23/A. gun pod",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "Mk83",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "LAU-10/A",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket_large.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "12": {
+                      "id": "mod_Weaponry_12",
+                      "name": "GBU-12/49",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "13": {
+                      "id": "mod_Weaponry_13",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "14": {
+                      "id": "mod_Weaponry_14",
+                      "name": "Mk84",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "15": {
+                      "id": "mod_Weaponry_15",
+                      "name": "Mk118",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "16": {
+                      "id": "mod_Weaponry_16",
+                      "name": "Derby",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "17": {
+                      "id": "mod_Weaponry_17",
+                      "name": "SPICE 1000",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": true,
+            "rp_cost": 0,
+            "sl_cost": 0,
+            "talisman_cost_ge": 3200,
+            "crew_training_sl": 250000,
+            "experts_sl": 860000,
+            "aces_ge": 3600,
+            "research_aces_rp": 1350000
           }
         }
       }

@@ -3,25 +3,27 @@ import React, { useState } from 'react';
 import ProgressTree from '../ProgressTree/ProgressTree';
 import { progressTree } from '../../data/progressTree';
 
+const asset = (path) => `${process.env.PUBLIC_URL}${path}`;
+
 const countries = [
-  { name: "USA", flag: "/assets/img/flag/country_usa.svg" },
-  { name: "Germany", flag: "/assets/img/flag/country_germany.svg" },
-  { name: "USSR", flag: "/assets/img/flag/country_ussr.svg" },
-  { name: "Great Britain", flag: "/assets/img/flag/country_britain.svg" },
-  { name: "Japan", flag: "/assets/img/flag/country_japan.svg" },
-  { name: "China", flag: "/assets/img/flag/country_china.svg" },
-  { name: "Italy", flag: "/assets/img/flag/country_italy.svg" },
-  { name: "France", flag: "/assets/img/flag/country_france.svg" },
-  { name: "Sweden", flag: "/assets/img/flag/country_sweden.svg" },
-  { name: "Israel", flag: "/assets/img/flag/country_israel.svg" }
+  { name: "USA", flag: asset("/assets/img/flag/country_usa.svg") },
+  { name: "Germany", flag: asset("/assets/img/flag/country_germany.svg") },
+  { name: "USSR", flag: asset("/assets/img/flag/country_ussr.svg") },
+  { name: "Great Britain", flag: asset("/assets/img/flag/country_britain.svg") },
+  { name: "Japan", flag: asset("/assets/img/flag/country_japan.svg") },
+  { name: "China", flag: asset("/assets/img/flag/country_china.svg") },
+  { name: "Italy", flag: asset("/assets/img/flag/country_italy.svg") },
+  { name: "France", flag: asset("/assets/img/flag/country_france.svg") },
+  { name: "Sweden", flag: asset("/assets/img/flag/country_sweden.svg") },
+  { name: "Israel", flag: asset("/assets/img/flag/country_israel.svg") }
 ];
 
 const allVehicleTypes = [
-  { type: "Avion", icon: "/assets/img/icons/avion_icon.svg" },
-  { type: "Helico", icon: "/assets/img/icons/helico_icon.svg" },
-  { type: "Tank", icon: "/assets/img/icons/tank_icon.svg" },
-  { type: "Bateau", icon: "/assets/img/icons/bateau_icon.svg" },
-  { type: "Cotier", icon: "/assets/img/icons/cotier_icon.svg" }
+  { type: "Avion", icon: asset("/assets/img/icons/avion_icon.svg") },
+  { type: "Helico", icon: asset("/assets/img/icons/helico_icon.svg") },
+  { type: "Tank", icon: asset("/assets/img/icons/tank_icon.svg") },
+  { type: "Bateau", icon: asset("/assets/img/icons/bateau_icon.svg") },
+  { type: "Cotier", icon: asset("/assets/img/icons/cotier_icon.svg") }
 ];
 
 const CountryVehicleSelector = () => {
@@ -31,7 +33,7 @@ const CountryVehicleSelector = () => {
 
   const handleCountrySelect = (country) => {
     setSelectedCountry(country);
-    setSelectedVehicle(null); // reset véhicule si pays change
+    setSelectedVehicle(null);
   };
 
   const handleVehicleSelect = (vehicle) => {
@@ -50,7 +52,6 @@ const CountryVehicleSelector = () => {
     setSelectedVehicle(null);
   };
 
-  // Types disponibles pour le pays sélectionné
   const availableTypes = selectedCountry
     ? allVehicleTypes.filter(v => progressTree[`${selectedCountry.name}_${v.type}`])
     : [];
@@ -58,24 +59,47 @@ const CountryVehicleSelector = () => {
   if (isValidated) {
     return (
       <div className="validated-container">
-        <ProgressTree
-          country={selectedCountry}
-          vehicle={selectedVehicle}
-        />
-        <button className="new-selection-button" onClick={handleNewSelection}>
-          ← Nouvelle sélection
-        </button>
+        <ProgressTree country={selectedCountry} vehicle={selectedVehicle} />
+
+        {/* Bouton sticky en bas à gauche */}
+        <div
+          style={{
+            position: 'sticky',
+            bottom: '20px',
+            display: 'flex',
+            justifyContent: 'flex-start',
+            pointerEvents: 'none',
+            marginTop: '20px',
+            zIndex: 100,
+          }}
+        >
+          <button
+            className="new-selection-button"
+            onClick={handleNewSelection}
+            style={{
+              pointerEvents: 'auto',
+              padding: '10px 20px',
+              backgroundColor: '#2196f3',
+              color: 'white',
+              border: 'none',
+              borderRadius: '30px',
+              fontSize: '1em',
+              fontWeight: 'bold',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
+              cursor: 'pointer',
+              marginLeft: '20px',
+            }}
+          >
+            ← Nouvelle sélection
+          </button>
+        </div>
       </div>
     );
   }
 
   return (
     <div className="selector-container">
-      {/* Section pays */}
       <div className="section">
-        <h2 className="section-title">
-          {selectedCountry ? `Pays : ${selectedCountry.name}` : "Choisissez un pays"}
-        </h2>
         <div className="countries-grid">
           {countries.map((country, index) => (
             <button
@@ -83,18 +107,13 @@ const CountryVehicleSelector = () => {
               className={`country-button ${selectedCountry?.name === country.name ? 'selected' : ''}`}
               onClick={() => handleCountrySelect(country)}
             >
-              <img
-                src={country.flag}
-                alt={country.name}
-                className="country-flag"
-              />
+              <img src={country.flag} alt={country.name} className="country-flag" />
               <span>{country.name}</span>
             </button>
           ))}
         </div>
       </div>
 
-      {/* Section véhicules (uniquement si un pays est sélectionné) */}
       {selectedCountry && (
         <div className="section">
           <div className="vehicles-grid">
@@ -117,15 +136,11 @@ const CountryVehicleSelector = () => {
         </div>
       )}
 
-      {/* Bouton Valider */}
       {selectedCountry && selectedVehicle && (
         <div className="validation-section">
           <button className="validate-button" onClick={handleValidate}>
             ✅ Voir l'arbre de progression
           </button>
-          <p className="selection-preview">
-            {selectedCountry.name} - {selectedVehicle.type}
-          </p>
         </div>
       )}
     </div>

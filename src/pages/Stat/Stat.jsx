@@ -2,25 +2,26 @@
 import React, { useState, useEffect } from 'react';
 import { progressTree } from '../../data/progressTree';
 
+const asset = (path) => `${process.env.PUBLIC_URL}${path}`;
 const COUNTRIES = [
-  { name: "USA", flag: "/assets/img/flag/country_usa.svg" },
-  { name: "Germany", flag: "/assets/img/flag/country_germany.svg" },
-  { name: "USSR", flag: "/assets/img/flag/country_ussr.svg" },
-  { name: "Great Britain", flag: "/assets/img/flag/country_britain.svg" },
-  { name: "Japan", flag: "/assets/img/flag/country_japan.svg" },
-  { name: "China", flag: "/assets/img/flag/country_china.svg" },
-  { name: "Italy", flag: "/assets/img/flag/country_italy.svg" },
-  { name: "France", flag: "/assets/img/flag/country_france.svg" },
-  { name: "Sweden", flag: "/assets/img/flag/country_sweden.svg" },
-  { name: "Israel", flag: "/assets/img/flag/country_israel.svg" }
+  { name: "USA", flag: asset("/assets/img/flag/country_usa.svg") },
+  { name: "Germany", flag: asset("/assets/img/flag/country_germany.svg") },
+  { name: "USSR", flag: asset("/assets/img/flag/country_ussr.svg") },
+  { name: "Great Britain", flag: asset("/assets/img/flag/country_britain.svg") },
+  { name: "Japan", flag: asset("/assets/img/flag/country_japan.svg") },
+  { name: "China", flag: asset("/assets/img/flag/country_china.svg") },
+  { name: "Italy", flag: asset("/assets/img/flag/country_italy.svg") },
+  { name: "France", flag: asset("/assets/img/flag/country_france.svg") },
+  { name: "Sweden", flag: asset("/assets/img/flag/country_sweden.svg") },
+  { name: "Israel", flag: asset("/assets/img/flag/country_israel.svg") }
 ];
 
 const VEHICLE_TYPES = [
-  { type: "Avion", key: "Avion", icon: "/assets/img/icons/avion_icon.svg" },
-  { type: "Helico", key: "Helico", icon: "/assets/img/icons/helico_icon.svg" },
-  { type: "Tank", key: "Tank", icon: "/assets/img/icons/tank_icon.svg" },
-  { type: "Bateau", key: "Bateau", icon: "/assets/img/icons/bateau_icon.svg" },
-  { type: "Cotier", key: "Cotier", icon: "/assets/img/icons/cotier_icon.svg" }
+  { type: "Avion", key: "Avion", icon: asset("/assets/img/icons/avion_icon.svg") },
+  { type: "Helico", key: "Helico", icon: asset("/assets/img/icons/helico_icon.svg") },
+  { type: "Tank", key: "Tank", icon: asset("/assets/img/icons/tank_icon.svg") },
+  { type: "Bateau", key: "Bateau", icon: asset("/assets/img/icons/bateau_icon.svg") },
+  { type: "Cotier", key: "Cotier", icon: asset("/assets/img/icons/cotier_icon.svg") }
 ];
 
 const STORAGE_KEY = 'wt-progress-tracker-progress';
@@ -31,16 +32,16 @@ const EXCLUDED_EVENT_IDS = new Set([
 ]);
 
 const RpIcon = ({ size = '1em' }) => (
-  <img src="/assets/img/icons/rp_icon.svg" alt="RP" style={{ height: size, width: size, verticalAlign: 'middle', marginLeft: '4px' }} />
+  <img src={asset("/assets/img/icons/rp_icon.svg")} alt="RP" style={{ height: size, width: size, verticalAlign: 'middle', marginLeft: '4px' }} />
 );
 
 const SlIcon = ({ size = '1em' }) => (
-  <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ height: size, width: size, verticalAlign: 'middle', marginLeft: '4px' }} />
+  <img src={asset("/assets/img/icons/sl_icon.svg")} alt="SL" style={{ height: size, width: size, verticalAlign: 'middle', marginLeft: '4px' }} />
 );
 
 // Ajout du composant GeIcon
 const GeIcon = ({ size = '1em' }) => (
-  <img src="/assets/img/icons/ge_icon.svg" alt="GE" style={{ height: size, width: size, verticalAlign: 'middle', marginLeft: '4px' }} />
+  <img src={asset("/assets/img/icons/ge_icon.svg")} alt="GE" style={{ height: size, width: size, verticalAlign: 'middle', marginLeft: '4px' }} />
 );
 
 // Copie locale de la fonction pour vérifier si toutes les modifications sont complètes
@@ -200,10 +201,8 @@ const Stat = () => {
       if (!v.id) return;
       const prog = progressData[v.id] || {};
       const purchased = prog.purchased || false;
-      const slCost = Number(v.sl_cost) || 0;
       const isSpecial = !EXCLUDED_EVENT_IDS.has(v.id) && (v.premium || v.squadron || v.event);
-      const owned = isSpecial ? purchased : (purchased || slCost === 0);
-
+      const owned = purchased;
       stats.total++;
       if (isSpecial) {
         stats.specialTotal++;

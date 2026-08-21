@@ -1,9 +1,9 @@
 // src/components/VehicleModification/VehicleModification.jsx
 import React, { useMemo, useState } from 'react';
-
-const RpIcon = () => <img src="/assets/img/icons/rp_icon.svg" alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
-const SlIcon = () => <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
-const GeIcon = () => <img src="/assets/img/icons/ge_icon.svg" alt="GE" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '4px' }} />;
+const asset = (path) => `${process.env.PUBLIC_URL}${path}`;
+const RpIcon = () => <img src={asset("/assets/img/icons/rp_icon.svg")} alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
+const SlIcon = () => <img src={asset("/assets/img/icons/sl_icon.svg")} alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
+const GeIcon = () => <img src={asset("/assets/img/icons/ge_icon.svg")} alt="GE" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '4px' }} />;
 
 // Normalise n'importe quelle valeur reçue en un niveau d'équipage 0-3.
 // Garde la compat avec un éventuel ancien format booléen (true = niveau 1).
@@ -106,7 +106,7 @@ const ModificationCell = ({ modData, isResearched, modRp, onModRpChange, onPurch
           style={{ marginTop: '4px', width: '24px', height: '24px', borderRadius: '50%', backgroundColor: '#d9534f', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           title="Remettre à zéro"
         >
-          <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '60%', height: '60%' }} />
+          <img src={asset('/assets/img/icons/reset_icon.svg')} alt="Reset" style={{ width: '60%', height: '60%' }} />
         </button>
       )}
     </div>
@@ -291,7 +291,7 @@ const VehicleModifications = ({
                 title="Rechercher et acheter tout"
               >
                 <img
-                  src="/assets/img/icons/spade_icon.svg"
+                  src={asset('/assets/img/icons/spade_icon.svg')}
                   alt=""
                   style={{ width: '24px', height: '24px', filter: 'invert(1)' }}
                 />
@@ -306,7 +306,7 @@ const VehicleModifications = ({
                 <>
                   <span style={{ fontWeight: 'bold', color: '#4caf50', marginRight: '8px' }}>Possédé</span>
                   <button onClick={onVehicleReset} style={{ width: '24px', height: '24px', borderRadius: '50%', backgroundColor: '#d9534f', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }} title="Remettre à zéro">
-                    <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '60%', height: '60%' }} />
+                    <img src={asset('/assets/img/icons/reset_icon.svg')} alt="Reset" style={{ width: '60%', height: '60%' }} />
                   </button>
                 </>
               ) : (
@@ -333,7 +333,7 @@ const VehicleModifications = ({
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
                   <span style={{ fontWeight: 'bold', color: '#4caf50', marginRight: '8px' }}>Possédé</span>
                   <button onClick={onVehicleReset} style={{ width: '28px', height: '28px', borderRadius: '50%', backgroundColor: '#d9534f', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }} title="Remettre à zéro">
-                    <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '65%', height: '65%' }} />
+                    <img src={asset('/assets/img/icons/reset_icon.svg')} alt="Reset" style={{ width: '65%', height: '65%' }} />
                   </button>
                 </div>
               )}
@@ -347,7 +347,7 @@ const VehicleModifications = ({
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
                   <span style={{ fontWeight: 'bold', color: '#4caf50', marginRight: '8px' }}>Possédé</span>
                   <button onClick={onVehicleReset} style={{ width: '28px', height: '28px', borderRadius: '50%', backgroundColor: '#d9534f', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }} title="Remettre à zéro">
-                    <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '65%', height: '65%' }} />
+                    <img src={asset('/assets/img/icons/reset_icon.svg')} alt="Reset" style={{ width: '65%', height: '65%' }} />
                   </button>
                 </div>
               ) : (
@@ -382,7 +382,7 @@ const VehicleModifications = ({
 
                   {vehicleRpComplete && (
                     <button onClick={onVehicleReset} style={{ marginTop: '8px', width: '28px', height: '28px', borderRadius: '50%', backgroundColor: '#d9534f', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }} title="Remettre à zéro">
-                      <img src="/assets/img/icons/reset_icon.svg" alt="Reset" style={{ width: '65%', height: '65%' }} />
+                      <img src={asset("/assets/img/icons/reset_icon.svg")} alt="Reset" style={{ width: '65%', height: '65%' }} />
                     </button>
                   )}
                 </>
@@ -395,13 +395,13 @@ const VehicleModifications = ({
             <div style={{ marginTop: '10px' }}>
               {talismanPurchased ? (
                 <div style={{ display: 'flex', alignItems: 'center', color: '#4caf50', fontWeight: 'bold' }}>
-                  <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ height: '1.5em', marginRight: '6px' }} />
+                  <img src={asset("/assets/img/icons/talisman_icon.svg")} alt="Talisman" style={{ height: '1.5em', marginRight: '6px' }} />
                   <span>Talisman possédé</span>
                 </div>
               ) : (
                 <div>
                   <button onClick={() => onTalismanPurchase && onTalismanPurchase(vehicle.id)} style={{ padding: '6px 12px', backgroundColor: '#f7d358', border: '1px solid #e0b42c', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', display: 'flex', alignItems: 'center' }}>
-                    <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ height: '1.2em', marginRight: '6px' }} />
+                    <img src={asset("/assets/img/icons/talisman_icon.svg")} alt="Talisman" style={{ height: '1.2em', marginRight: '6px' }} />
                     <span>Talisman</span>
                   </button>
                   <div style={{ marginTop: '4px', display: 'flex', alignItems: 'center', fontSize: '0.9em' }}>
@@ -414,7 +414,7 @@ const VehicleModifications = ({
           ) : (
             vehiclePurchased && (
               <div style={{ marginTop: '10px', display: 'flex', alignItems: 'center', color: '#666' }}>
-                <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ height: '1.5em', marginRight: '6px' }} />
+                <img src={asset("/assets/img/icons/talisman_icon.svg")} alt="Talisman" style={{ height: '1.5em', marginRight: '6px' }} />
               </div>
             )
           )}
@@ -426,7 +426,7 @@ const VehicleModifications = ({
                 <h3 style={{ margin: 0 }}>Équipage</h3>
                 {crewLevelIcon && (
                   <img
-                    src={crewLevelIcon}
+                    src={asset(crewLevelIcon)}
                     alt="Niveau équipage"
                     style={{ width: '20px', height: '20px', marginLeft: '6px' }}
                   />
@@ -451,7 +451,7 @@ const VehicleModifications = ({
                   title="Remettre l'équipage à zéro"
                 >
                   <img
-                    src="/assets/img/icons/reset_icon.svg"
+                    src={asset("/assets/img/icons/reset_icon.svg")}
                     alt="Reset"
                     style={{ width: '65%', height: '65%' }}
                   />

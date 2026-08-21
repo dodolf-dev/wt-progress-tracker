@@ -430006,5 +430006,1059 @@
     "vehicule_group_id": "f-86_group",
     "vehicule_group_icon": "https://static.encyclopedia.warthunder.com/slots/f-86_group.png",
     "fetched_at": "2026-08-20T13:30:41.535Z"
+  },
+  {
+    "vehicule_id": "spitfire_lf_mk9c_cw_greece",
+    "vehicule_name": "▃Spitfire LF Mk IXc (CW)",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/spitfire_lf_mk9c_cw_greece.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/spitfire_lf_mk9c_cw_greece.png",
+    "vehicule_premium": 1,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "5.3",
+      "rb": "5.7",
+      "sb": "5.0"
+    },
+    "rank": "IV",
+    "economy": {
+      "crew_training_sl": "10000",
+      "experts_sl": "320000",
+      "aces_ge": "1100",
+      "research_aces_rp": "1050000"
+    },
+    "modifications_by_group": {
+      "Flight performance": [
+        {
+          "name": "Fuselage repair",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png"
+        },
+        {
+          "name": "Radiator",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png"
+        },
+        {
+          "name": "Compressor",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png"
+        },
+        {
+          "name": "Wings repair",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png"
+        },
+        {
+          "name": "Engine",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png"
+        },
+        {
+          "name": "150 octane fuel",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/oil.png"
+        },
+        {
+          "name": "Engine injection",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png"
+        }
+      ],
+      "Survivability": [
+        {
+          "name": "Airframe",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png"
+        },
+        {
+          "name": "Cover",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png"
+        }
+      ],
+      "Weaponry": [
+        {
+          "name": "Offensive 7.7 mm belts",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "Offensive 20 mm belts",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "New 7.7 mm MGs",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png"
+        },
+        {
+          "name": "New 20 mm cannons",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png"
+        },
+        {
+          "name": "SMBC mk.2",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png"
+        },
+        {
+          "name": "SMBC mk.3",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png"
+        },
+        {
+          "name": "Mk.II year 1942",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/gun_camora_mod.png"
+        },
+        {
+          "name": "MBC mk.2",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png"
+        },
+        {
+          "name": "Mk.II year 1943",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/gun_camora_mod.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 0,
+      "total_sl": 0,
+      "total_ge": 0
+    },
+    "fetched_at": "2026-08-20T20:36:37.760Z"
+  },
+  {
+    "vehicule_id": "mig_21_2000_iaf",
+    "vehicule_name": "MiG-21 2000",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/mig_21_2000_iaf.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/mig_21_2000_iaf.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 1,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "12.0",
+      "rb": "11.7",
+      "sb": "12.0"
+    },
+    "rank": "VII",
+    "purchase": {
+      "research_cost_rp_squadron": "550000",
+      "purchase_cost_sl": "750000",
+      "talisman_cost_ge": "3000"
+    },
+    "economy": {
+      "crew_training_sl": "200000",
+      "experts_sl": "720000",
+      "aces_ge": "3200",
+      "research_aces_rp": "1210000"
+    },
+    "modifications_by_group": {
+      "Flight performance": [
+        {
+          "name": "Compressor",
+          "rp_cost": "7300",
+          "sl_cost": "11000",
+          "ge_cost": "260",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png"
+        },
+        {
+          "name": "Fuselage repair",
+          "rp_cost": "7300",
+          "sl_cost": "11000",
+          "ge_cost": "260",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png"
+        },
+        {
+          "name": "New boosters",
+          "rp_cost": "16000",
+          "sl_cost": "25000",
+          "ge_cost": "580",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png"
+        },
+        {
+          "name": "Airframe",
+          "rp_cost": "16000",
+          "sl_cost": "25000",
+          "ge_cost": "580",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png"
+        },
+        {
+          "name": "Wings repair",
+          "rp_cost": "11000",
+          "sl_cost": "17000",
+          "ge_cost": "400",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png"
+        },
+        {
+          "name": "Cover",
+          "rp_cost": "11000",
+          "sl_cost": "17000",
+          "ge_cost": "400",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png"
+        },
+        {
+          "name": "Engine",
+          "rp_cost": "35000",
+          "sl_cost": "54000",
+          "ge_cost": "1300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png"
+        }
+      ],
+      "Survivability": [
+        {
+          "name": "Flares/Chaff",
+          "rp_cost": "7300",
+          "sl_cost": "11000",
+          "ge_cost": "260",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png"
+        },
+        {
+          "name": "G-suit",
+          "rp_cost": "11000",
+          "sl_cost": "17000",
+          "ge_cost": "400",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png"
+        },
+        {
+          "name": "EFS",
+          "rp_cost": "35000",
+          "sl_cost": "54000",
+          "ge_cost": "1300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png"
+        }
+      ],
+      "Weaponry": [
+        {
+          "name": "Offensive 23 mm belts",
+          "rp_cost": "7300",
+          "sl_cost": "11000",
+          "ge_cost": "260",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "LITENING II",
+          "rp_cost": "7300",
+          "sl_cost": "11000",
+          "ge_cost": "260",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png"
+        },
+        {
+          "name": "R-60MK",
+          "rp_cost": "7300",
+          "sl_cost": "11000",
+          "ge_cost": "260",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png"
+        },
+        {
+          "name": "GBU-12",
+          "rp_cost": "16000",
+          "sl_cost": "25000",
+          "ge_cost": "580",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png"
+        },
+        {
+          "name": "New 23 mm cannons",
+          "rp_cost": "11000",
+          "sl_cost": "17000",
+          "ge_cost": "400",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png"
+        },
+        {
+          "name": "Python 3",
+          "rp_cost": "11000",
+          "sl_cost": "17000",
+          "ge_cost": "400",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 216800,
+      "total_sl": 334000,
+      "total_ge": 7900
+    },
+    "fetched_at": "2026-08-20T20:42:13.297Z"
+  },
+  {
+    "vehicule_group_id": "f_4e_f_15_iaf_group",
+    "vehicule_group_icon": "https://static.encyclopedia.warthunder.com/slots/f_4e_f_15_iaf_group.png",
+    "fetched_at": "2026-08-21T10:50:21.805Z"
+  },
+  {
+    "vehicule_group_id": "f_16d_iaf_group",
+    "vehicule_group_icon": "https://static.encyclopedia.warthunder.com/slots/f_16d_iaf_group.png",
+    "fetched_at": "2026-08-21T10:51:42.364Z"
+  },
+  {
+    "vehicule_id": "us_battleship_north_carolina_class",
+    "vehicule_name": "USS North Carolina",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/us_battleship_north_carolina_class.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/us_battleship_north_carolina_class.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "8.3",
+      "rb": "8.3"
+    },
+    "rank": "VII",
+    "purchase": {
+      "research_cost_rp": "400000",
+      "purchase_cost_sl": "1150000",
+      "talisman_cost_ge": "2800"
+    },
+    "economy": {
+      "crew_training_sl": "330000",
+      "experts_sl": "1150000",
+      "aces_ge": "2800",
+      "research_aces_rp": "1080000"
+    },
+    "modifications_by_group": {
+      "Seakeeping": [
+        {
+          "name": "Dry-Docking",
+          "rp_cost": "15000",
+          "sl_cost": "25000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png"
+        },
+        {
+          "name": "Rudder Replacement",
+          "rp_cost": "17000",
+          "sl_cost": "28000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png"
+        },
+        {
+          "name": "Propeller Replacement",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png"
+        },
+        {
+          "name": "Engine Maintenance",
+          "rp_cost": "25000",
+          "sl_cost": "42000",
+          "ge_cost": "660",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png"
+        }
+      ],
+      "Unsinkability": [
+        {
+          "name": "Damage Control Division",
+          "rp_cost": "15000",
+          "sl_cost": "25000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png"
+        },
+        {
+          "name": "Fire Division",
+          "rp_cost": "17000",
+          "sl_cost": "28000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png"
+        },
+        {
+          "name": "Shrapnel Protection",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png"
+        },
+        {
+          "name": "Ventilation",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png"
+        },
+        {
+          "name": "New Pumps",
+          "rp_cost": "25000",
+          "sl_cost": "42000",
+          "ge_cost": "660",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png"
+        },
+        {
+          "name": "Ammo Wetting",
+          "rp_cost": "25000",
+          "sl_cost": "42000",
+          "ge_cost": "660",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png"
+        }
+      ],
+      "Firepower": [
+        {
+          "name": "16 inch Mk.8 Mod.0 APCBC",
+          "rp_cost": "15000",
+          "sl_cost": "25000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "Anti-Air Armament Targeting",
+          "rp_cost": "15000",
+          "sl_cost": "25000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png"
+        },
+        {
+          "name": "5 inch SP Common Mk.46",
+          "rp_cost": "17000",
+          "sl_cost": "28000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "Auxiliary Armament Targeting",
+          "rp_cost": "17000",
+          "sl_cost": "28000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png"
+        },
+        {
+          "name": "5 inch AAVT Mk.31",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png"
+        },
+        {
+          "name": "Primary Armament Targeting",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png"
+        },
+        {
+          "name": "Improved Rangefinder",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png"
+        },
+        {
+          "name": "Hydroplane",
+          "rp_cost": "25000",
+          "sl_cost": "42000",
+          "ge_cost": "660",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 306000,
+      "total_sl": 512000,
+      "total_ge": 8040
+    },
+    "fetched_at": "2026-08-21T11:57:32.401Z"
+  },
+  {
+    "vehicule_id": "us_battleship_south_dakota",
+    "vehicule_name": "USS South Dakota",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/us_battleship_south_dakota.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/us_battleship_south_dakota.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 1,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "8.3",
+      "rb": "8.3"
+    },
+    "rank": "VII",
+    "purchase": {
+      "research_cost_rp": "400000",
+      "purchase_cost_sl": "1150000",
+      "talisman_cost_ge": "2800"
+    },
+    "economy": {
+      "crew_training_sl": "330000",
+      "experts_sl": "1150000",
+      "aces_ge": "2800",
+      "research_aces_rp": "1080000"
+    },
+    "modifications_by_group": {
+      "Seakeeping": [
+        {
+          "name": "Dry-Docking",
+          "rp_cost": "15000",
+          "sl_cost": "25000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png"
+        },
+        {
+          "name": "Rudder Replacement",
+          "rp_cost": "17000",
+          "sl_cost": "28000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png"
+        },
+        {
+          "name": "Propeller Replacement",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png"
+        },
+        {
+          "name": "Engine Maintenance",
+          "rp_cost": "25000",
+          "sl_cost": "42000",
+          "ge_cost": "660",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png"
+        }
+      ],
+      "Unsinkability": [
+        {
+          "name": "Damage Control Division",
+          "rp_cost": "15000",
+          "sl_cost": "25000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png"
+        },
+        {
+          "name": "Fire Division",
+          "rp_cost": "17000",
+          "sl_cost": "28000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png"
+        },
+        {
+          "name": "Shrapnel Protection",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png"
+        },
+        {
+          "name": "Ventilation",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png"
+        },
+        {
+          "name": "New Pumps",
+          "rp_cost": "25000",
+          "sl_cost": "42000",
+          "ge_cost": "660",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png"
+        },
+        {
+          "name": "Ammo Wetting",
+          "rp_cost": "25000",
+          "sl_cost": "42000",
+          "ge_cost": "660",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png"
+        }
+      ],
+      "Firepower": [
+        {
+          "name": "16 inch Mk.8 Mod.0 APCBC",
+          "rp_cost": "15000",
+          "sl_cost": "25000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "Anti-Air Armament Targeting",
+          "rp_cost": "15000",
+          "sl_cost": "25000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png"
+        },
+        {
+          "name": "5 inch SP Common Mk.46",
+          "rp_cost": "17000",
+          "sl_cost": "28000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "Auxiliary Armament Targeting",
+          "rp_cost": "17000",
+          "sl_cost": "28000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png"
+        },
+        {
+          "name": "5 inch AAVT Mk.31",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png"
+        },
+        {
+          "name": "Primary Armament Targeting",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png"
+        },
+        {
+          "name": "Improved Rangefinder",
+          "rp_cost": "13000",
+          "sl_cost": "22000",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png"
+        },
+        {
+          "name": "Hydroplane",
+          "rp_cost": "25000",
+          "sl_cost": "42000",
+          "ge_cost": "660",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 306000,
+      "total_sl": 512000,
+      "total_ge": 8040
+    },
+    "fetched_at": "2026-08-21T11:58:30.898Z"
+  },
+  {
+    "vehicule_id": "us_battleship_oklahoma",
+    "vehicule_name": "USS Oklahoma",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/us_battleship_oklahoma.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/us_battleship_oklahoma.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 1,
+    "battle_rating": {
+      "ab": "7.0",
+      "rb": "7.0"
+    },
+    "rank": "VI",
+    "purchase": {
+      "research_cost_rp": "0",
+      "purchase_cost_sl": "0",
+      "talisman_cost_ge": "2300"
+    },
+    "economy": {
+      "crew_training_sl": "190000",
+      "experts_sl": "660000",
+      "aces_ge": "2000",
+      "research_aces_rp": "830000"
+    },
+    "modifications_by_group": {
+      "Seakeeping": [
+        {
+          "name": "Dry-Docking",
+          "rp_cost": "7800",
+          "sl_cost": "13000",
+          "ge_cost": "250",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png"
+        },
+        {
+          "name": "Rudder Replacement",
+          "rp_cost": "15000",
+          "sl_cost": "26000",
+          "ge_cost": "480",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png"
+        },
+        {
+          "name": "Propeller Replacement",
+          "rp_cost": "9800",
+          "sl_cost": "17000",
+          "ge_cost": "310",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png"
+        },
+        {
+          "name": "Engine Maintenance",
+          "rp_cost": "16000",
+          "sl_cost": "27000",
+          "ge_cost": "510",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png"
+        }
+      ],
+      "Unsinkability": [
+        {
+          "name": "Damage Control Division",
+          "rp_cost": "7800",
+          "sl_cost": "13000",
+          "ge_cost": "250",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png"
+        },
+        {
+          "name": "Fire Division",
+          "rp_cost": "15000",
+          "sl_cost": "26000",
+          "ge_cost": "480",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png"
+        },
+        {
+          "name": "Shrapnel Protection",
+          "rp_cost": "9800",
+          "sl_cost": "17000",
+          "ge_cost": "310",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png"
+        },
+        {
+          "name": "Ventilation",
+          "rp_cost": "9800",
+          "sl_cost": "17000",
+          "ge_cost": "310",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png"
+        },
+        {
+          "name": "New Pumps",
+          "rp_cost": "16000",
+          "sl_cost": "27000",
+          "ge_cost": "510",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png"
+        },
+        {
+          "name": "Ammo Wetting",
+          "rp_cost": "16000",
+          "sl_cost": "27000",
+          "ge_cost": "510",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png"
+        }
+      ],
+      "Firepower": [
+        {
+          "name": "Anti-Air Armament Targeting",
+          "rp_cost": "7800",
+          "sl_cost": "13000",
+          "ge_cost": "250",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png"
+        },
+        {
+          "name": "14 inch Mk.8 APCBC",
+          "rp_cost": "7800",
+          "sl_cost": "13000",
+          "ge_cost": "250",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "5 inch APC",
+          "rp_cost": "7800",
+          "sl_cost": "13000",
+          "ge_cost": "250",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "Auxiliary Armament Targeting",
+          "rp_cost": "15000",
+          "sl_cost": "26000",
+          "ge_cost": "480",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png"
+        },
+        {
+          "name": "Primary Armament Targeting",
+          "rp_cost": "9800",
+          "sl_cost": "17000",
+          "ge_cost": "310",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png"
+        },
+        {
+          "name": "Improved Rangefinder",
+          "rp_cost": "9800",
+          "sl_cost": "17000",
+          "ge_cost": "310",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png"
+        },
+        {
+          "name": "Hydroplane",
+          "rp_cost": "16000",
+          "sl_cost": "27000",
+          "ge_cost": "510",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/shipsupportplane.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 197000,
+      "total_sl": 336000,
+      "total_ge": 6280
+    },
+    "fetched_at": "2026-08-21T11:59:41.684Z"
+  },
+  {
+    "vehicule_id": "us_destroyer_forrestsherman_class",
+    "vehicule_name": "USS Forrest Sherman",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_forrestsherman_class.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/us_destroyer_forrestsherman_class.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "5.3",
+      "rb": "5.3"
+    },
+    "rank": "IV",
+    "purchase": {
+      "research_cost_rp": "46000",
+      "purchase_cost_sl": "150000",
+      "talisman_cost_ge": "1500"
+    },
+    "economy": {
+      "crew_training_sl": "43000",
+      "experts_sl": "150000",
+      "aces_ge": "940",
+      "research_aces_rp": "480000"
+    },
+    "modifications_by_group": {
+      "Seakeeping": [
+        {
+          "name": "Dry-Docking",
+          "rp_cost": "3000",
+          "sl_cost": "5400",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png"
+        },
+        {
+          "name": "Rudder Replacement",
+          "rp_cost": "1700",
+          "sl_cost": "3100",
+          "ge_cost": "160",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png"
+        },
+        {
+          "name": "Propeller Replacement",
+          "rp_cost": "2200",
+          "sl_cost": "4000",
+          "ge_cost": "210",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png"
+        },
+        {
+          "name": "Engine Maintenance",
+          "rp_cost": "3600",
+          "sl_cost": "6500",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png"
+        }
+      ],
+      "Unsinkability": [
+        {
+          "name": "Damage Control Division",
+          "rp_cost": "3000",
+          "sl_cost": "5400",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png"
+        },
+        {
+          "name": "Fire Division",
+          "rp_cost": "1700",
+          "sl_cost": "3100",
+          "ge_cost": "160",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png"
+        },
+        {
+          "name": "Smokescreen",
+          "rp_cost": "1700",
+          "sl_cost": "3100",
+          "ge_cost": "160",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png"
+        },
+        {
+          "name": "Shrapnel Protection",
+          "rp_cost": "2200",
+          "sl_cost": "4000",
+          "ge_cost": "210",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png"
+        },
+        {
+          "name": "Ventilation",
+          "rp_cost": "2200",
+          "sl_cost": "4000",
+          "ge_cost": "210",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png"
+        },
+        {
+          "name": "New Pumps",
+          "rp_cost": "3600",
+          "sl_cost": "6500",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png"
+        },
+        {
+          "name": "Ammo Wetting",
+          "rp_cost": "3600",
+          "sl_cost": "6500",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png"
+        }
+      ],
+      "Firepower": [
+        {
+          "name": "5 inch SP Mk.42 common",
+          "rp_cost": "3000",
+          "sl_cost": "5400",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "5 inch Mark 41 HC-VT",
+          "rp_cost": "1700",
+          "sl_cost": "3100",
+          "ge_cost": "160",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png"
+        },
+        {
+          "name": "76 mm AA Mk.31",
+          "rp_cost": "1700",
+          "sl_cost": "3100",
+          "ge_cost": "160",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png"
+        },
+        {
+          "name": "Auxiliary Armament Targeting",
+          "rp_cost": "1700",
+          "sl_cost": "3100",
+          "ge_cost": "160",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png"
+        },
+        {
+          "name": "Improved Rangefinder",
+          "rp_cost": "2200",
+          "sl_cost": "4000",
+          "ge_cost": "210",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png"
+        },
+        {
+          "name": "Primary Armament Targeting",
+          "rp_cost": "2200",
+          "sl_cost": "4000",
+          "ge_cost": "210",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png"
+        },
+        {
+          "name": "Bomb mortar",
+          "rp_cost": "3600",
+          "sl_cost": "6500",
+          "ge_cost": "340",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_mortar.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 44600,
+      "total_sl": 80800,
+      "total_ge": 4240
+    },
+    "fetched_at": "2026-08-21T12:01:30.552Z"
+  },
+  {
+    "vehicule_id": "us_destroyer_bagley_class_helm",
+    "vehicule_name": "USS Helm",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_bagley_class_helm.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/us_destroyer_bagley_class_helm.png",
+    "vehicule_premium": 1,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "4.0",
+      "rb": "4.0"
+    },
+    "rank": "II",
+    "purchase": {
+      "purchase_cost_ge": "850"
+    },
+    "economy": {
+      "crew_training_sl": "3400",
+      "experts_sl": "23000",
+      "aces_ge": "180",
+      "research_aces_rp": "380000"
+    },
+    "modifications_by_group": {
+      "Seakeeping": [
+        {
+          "name": "Dry-Docking",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_hull.png"
+        },
+        {
+          "name": "Rudder Replacement",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_rudder.png"
+        },
+        {
+          "name": "Propeller Replacement",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_screw.png"
+        },
+        {
+          "name": "Engine Maintenance",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_engine.png"
+        }
+      ],
+      "Unsinkability": [
+        {
+          "name": "Damage Control Division",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_damage_control_crew.png"
+        },
+        {
+          "name": "Fire Division",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_fire_control_crew.png"
+        },
+        {
+          "name": "Smokescreen",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/engine_smoke_screen_system.png"
+        },
+        {
+          "name": "Shrapnel Protection",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_anti_fragmentation_protection.png"
+        },
+        {
+          "name": "Ventilation",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_venting.png"
+        },
+        {
+          "name": "New Pumps",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_ship_pumps.png"
+        },
+        {
+          "name": "Ammo Wetting",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_ammo_wetting.png"
+        }
+      ],
+      "Firepower": [
+        {
+          "name": "5 inch Common Mk.32",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "40 mm HE",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "Anti-Air Armament Targeting",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_aa_caliber_turrets.png"
+        },
+        {
+          "name": "5 inch SP Common Mk.46",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "40 mm AP",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "Auxiliary Armament Targeting",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_aux_caliber_turrets.png"
+        },
+        {
+          "name": "5 inch AAVT Mk.31",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/he_frag_proxi_fuze_ship.png"
+        },
+        {
+          "name": "Improved Rangefinder",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_rangefinder.png"
+        },
+        {
+          "name": "Primary Armament Targeting",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_main_caliber_turrets.png"
+        },
+        {
+          "name": "Torpedo Mode",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/torpedo.png"
+        },
+        {
+          "name": "Bomb mortar",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ship_mortar.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 0,
+      "total_sl": 0,
+      "total_ge": 0
+    },
+    "fetched_at": "2026-08-21T12:03:01.197Z"
   }
 ]

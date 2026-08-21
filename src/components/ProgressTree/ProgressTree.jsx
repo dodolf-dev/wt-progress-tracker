@@ -17,10 +17,10 @@ const areAllModsCompleted = (vehicleData, progressEntry) => {
   }
   return true;
 };
-
-const RpIcon = () => <img src="/assets/img/icons/rp_icon.svg" alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
-const SlIcon = () => <img src="/assets/img/icons/sl_icon.svg" alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
-const GeIcon = () => <img src="/assets/img/icons/ge_icon.svg" alt="GE" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '4px' }} />;
+const asset = (path) => `${process.env.PUBLIC_URL}${path}`;
+const RpIcon = () => <img src={asset("/assets/img/icons/rp_icon.svg")} alt="RP" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
+const SlIcon = () => <img src={asset("/assets/img/icons/sl_icon.svg")} alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
+const GeIcon = () => <img src={asset("/assets/img/icons/ge_icon.svg")} alt="GE" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '4px' }} />;
 
 const ProgressTree = ({ country, vehicle }) => {
   const treeKey = `${country.name}_${vehicle.type}`;
@@ -112,9 +112,7 @@ const ProgressTree = ({ country, vehicle }) => {
   const handleVehiclePurchase = (vehicleId) => updateVehicleProgress(vehicleId, { purchased: true });
   const handleTalismanPurchase = (vehicleId) => updateVehicleProgress(vehicleId, { talisman_purchased: true });
 
-  // Équipage : nombre 0,1,2,3
   const handleCrewPurchasedChange = (vehicleId, value) => updateVehicleProgress(vehicleId, { crewPurchased: value });
-  // RP de l'as : valeur numérique
   const handleAcesRpResearchedChange = (vehicleId, value) => updateVehicleProgress(vehicleId, { acesRpResearched: value });
 
   const handleModRpChange = (vehicleId, modId, newValue) => {
@@ -158,7 +156,6 @@ const ProgressTree = ({ country, vehicle }) => {
     researchedMods: [],
   });
 
-  // ---- AUTO-COMPLETE ----
   const handleAutoCompleteAll = (vehicleId) => {
     const vData = selectedVehicle;
     if (!vData) return;
@@ -186,7 +183,6 @@ const ProgressTree = ({ country, vehicle }) => {
     }));
   };
 
-  // ---- RESET MODIFICATIONS ET ÉQUIPAGE ----
   const handleResetAllMods = (vehicleId) => {
     setVehicleProgress(prev => ({
       ...prev,
@@ -240,6 +236,8 @@ const ProgressTree = ({ country, vehicle }) => {
     });
   };
 
+  // ... renderCell (inchangé mais il faut garder le code existant)
+
   const renderCell = (hasContent, rank, rowIndex, colIndex) => {
     if (!hasContent) {
       return <div key={`cell-${rowIndex}-${colIndex}`} className="grid-cell empty" />;
@@ -285,9 +283,9 @@ const ProgressTree = ({ country, vehicle }) => {
 
     const crewLevel = Number(progress.crewPurchased) || 0;
     let crewIcon = null;
-    if (crewLevel === 1) crewIcon = '/assets/img/icons/base_crew.png';
-    else if (crewLevel === 2) crewIcon = '/assets/img/icons/expert_crew.png';
-    else if (crewLevel === 3) crewIcon = '/assets/img/icons/ace_crew.png';
+    if (crewLevel === 1) crewIcon = asset('/assets/img/icons/base_crew.png');
+    else if (crewLevel === 2) crewIcon = asset('/assets/img/icons/expert_crew.png');
+    else if (crewLevel === 3) crewIcon = asset('/assets/img/icons/ace_crew.png');
 
     let isEffectivelyPurchased = false;
     let rpComplete = false;
@@ -340,10 +338,10 @@ const ProgressTree = ({ country, vehicle }) => {
       >
         <div style={{ position: 'relative', display: 'inline-block' }}>
           {allModsDone && (
-            <img src="/assets/img/icons/spade_icon.svg" alt="" style={{ position: 'absolute', top: '65%', left: '50%', transform: 'translate(-50%, -50%) rotate(25deg)', width: '250%', height: '250%', opacity: 0.3, pointerEvents: 'none', zIndex: 0 }} />
+            <img src={asset('/assets/img/icons/spade_icon.svg')} alt="" style={{ position: 'absolute', top: '65%', left: '50%', transform: 'translate(-50%, -50%) rotate(25deg)', width: '250%', height: '250%', opacity: 0.3, pointerEvents: 'none', zIndex: 0 }} />
           )}
           {talismanActive && (
-            <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ position: 'absolute', top: '-10px', right: '-20px', width: '28px', height: '28px', zIndex: 2 }} />
+            <img src={asset('/assets/img/icons/talisman_icon.svg')} alt="Talisman" style={{ position: 'absolute', top: '-10px', right: '-20px', width: '28px', height: '28px', zIndex: 2 }} />
           )}
           {crewIcon && (
             <img
@@ -507,37 +505,49 @@ const ProgressTree = ({ country, vehicle }) => {
   };
 
   const renderRank = (rank) => {
-    const isCollapsed = collapsedRanks.has(rank.name);
+  const isCollapsed = collapsedRanks.has(rank.name);
 
-    return (
-      <div key={`rank-${rank.name}`} className="rank-container">
-        <div className="rank-header">
-          <h3 className="rank-title">Rank {rank.name}</h3>
-          <button
-            onClick={() => toggleRankCollapse(rank.name)}
-            style={{
-              marginLeft: '10px',
-              background: 'none',
-              border: '1px solid #aaa',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              fontSize: '0.9em',
-              padding: '2px 8px',
-              color: 'inherit',
-            }}
-            title={isCollapsed ? 'Afficher le rang' : 'Masquer le rang'}
-          >
-            {isCollapsed ? 'Afficher' : 'Masquer'}
-          </button>
-        </div>
-        {!isCollapsed && (
-          <div className="rank-rows">
-            {rank.grid.map((row, rowIndex) => renderRow(row, rowIndex, rank))}
-          </div>
-        )}
+  return (
+    <div key={`rank-${rank.name}`} className="rank-container">
+      <div className="rank-header">
+        <h3 className="rank-title">Rank {rank.name}</h3>
+        <button
+          onClick={() => toggleRankCollapse(rank.name)}
+          style={{
+            marginLeft: '10px',
+            background: 'none',
+            border: '1px solid #aaa',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontSize: '0.9em',
+            padding: '2px 8px',
+            color: 'inherit',
+            transition: 'all 0.3s ease',
+            boxShadow: isCollapsed ? 'inset 0 0 0 1px #aaa' : 'none',
+          }}
+          title={isCollapsed ? 'Afficher le rang' : 'Masquer le rang'}
+        >
+          {isCollapsed ? 'Afficher' : 'Masquer'}
+        </button>
       </div>
-    );
-  };
+
+      {/* Le contenu reste monté, seule la hauteur change */}
+      <div
+        style={{
+          maxHeight: isCollapsed ? '0px' : '2000px', // hauteur max suffisante pour l'animation
+          overflow: 'hidden',
+          transition: 'max-height 0.6s ease-in-out', // transition identique dans les deux sens
+          opacity: isCollapsed ? 0 : 1,
+          transitionProperty: 'max-height, opacity',
+        }}
+      >
+        <div className="rank-rows">
+          {rank.grid.map((row, rowIndex) => renderRow(row, rowIndex, rank))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
   const totalVehicles = treeData.ranks.reduce((sum, rank) => {
     return sum + Object.values(rank.vehicles).reduce((s, v) => {
