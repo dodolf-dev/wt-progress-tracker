@@ -152,8 +152,11 @@ const VehicleModifications = ({
 
   const modificationsData = useMemo(() => vehicle?.modifications?.categories || {}, [vehicle]);
   const modRpValues = vehicle?.modRpValues || {};
-  const researchedMods = new Set(vehicle?.researchedMods || []);
-
+  const researchedMods = useMemo(
+  () => new Set(vehicle?.researchedMods || []),
+  [vehicle?.researchedMods]
+  );
+  
   const allMods = useMemo(() => {
     const mods = [];
     Object.values(modificationsData).forEach(cat => Object.values(cat.mods || {}).forEach(m => mods.push(m)));
