@@ -324,6 +324,9 @@ const Stat = () => {
 
       const prog = progressData?.[vehicle.id] || {};
       const purchased = prog.purchased === true;
+      if (purchased && areAllModsCompleted(vehicle, prog)) {
+      stats.modsComplete++;
+      }
 
       const isSpecial =
         !EXCLUDED_EVENT_IDS.has(vehicle.id) &&
@@ -416,37 +419,6 @@ const Stat = () => {
     return calculateVehicleStats(vehicles);
   };
 
-  /*
-   * Calcule les statistiques d'un pays avec les filtres appliqués
-   */
-  const getCountryStats = (countryName) => {
-    const vehicles = [];
-
-    getAvailableTypes(countryName).forEach((vt) => {
-      // Filtre type
-      if (filterType !== 'all' && vt.key !== filterType) {
-        return;
-      }
-
-      const tree = progressTree[`${countryName}_${vt.key}`];
-
-      Object.values(tree?.ranks || {}).forEach((rank) => {
-        // Filtre rang
-        if (filterRank !== 'all' && String(rank.name) !== String(filterRank)) {
-          return;
-        }
-
-        const rankVehicles = getRankVehicles(rank);
-        rankVehicles.forEach((vehicle) => {
-          if (shouldIncludeVehicle(vehicle, countryName, vt.key, rank.name)) {
-            vehicles.push(vehicle);
-          }
-        });
-      });
-    });
-
-    return calculateVehicleStats(vehicles);
-  };
 
   /*
    * Calcule les totaux SL/RP pour un pays et un type avec les filtres
@@ -700,9 +672,9 @@ const Stat = () => {
         if (crewLevel >= 2) stats.expertCrew++;
         if (crewLevel >= 3) stats.aceCrew++;
 
-        if (areAllModsCompleted(v, prog)) {
-          stats.modsComplete++;
-        }
+        if (purchased && areAllModsCompleted(v, prog)) {
+  stats.modsComplete++;
+}
       }
     };
 
@@ -799,8 +771,8 @@ const Stat = () => {
             }
 
             // Modifications complètes
-            if (areAllModsCompleted(v, prog)) {
-              stats.modsComplete++;
+            if (purchased && areAllModsCompleted(v, prog)) {
+            stats.modsComplete++;
             }
 
             // Équipage expert (cumulatif)
@@ -1564,7 +1536,7 @@ const Stat = () => {
             Tous
           </button>
 
-          {['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'].map(
+          {['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII','IX'].map(
             (rank) => (
               <button
                 key={rank}
@@ -1711,9 +1683,9 @@ const Stat = () => {
             style={{
               display: 'grid',
               gridTemplateColumns:
-                'minmax(130px, 1.5fr) repeat(8, minmax(55px, 1fr))',
+                'minmax(130px, 1.5fr) repeat(9, minmax(55px, 1fr))',
               gap: '4px',
-              minWidth: '650px',
+              minWidth: '700px',
             }}
           >
             {/* En-tête */}
@@ -1730,7 +1702,7 @@ const Stat = () => {
               Pays
             </div>
 
-            {['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'].map(
+            {['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'].map(
               (rank) => (
                 <div
                   key={rank}
@@ -1789,6 +1761,7 @@ const Stat = () => {
                     'VI',
                     'VII',
                     'VIII',
+                    'IX',
                   ].map((rank) => {
                     const percentage = getRankCompletion(
                       country.name,

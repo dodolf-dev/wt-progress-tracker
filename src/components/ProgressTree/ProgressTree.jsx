@@ -298,7 +298,7 @@ const ProgressTree = ({ country, vehicle }) => {
       // allModsDone = allModsDone && parentEffectivePurchased;
     } else {
       // Véhicule standard (sans enfant)
-      allModsDone = areAllModsCompleted(vehicleData, progress);
+        allModsDone =purchased &&areAllModsCompleted(vehicleData, progress);
     }
     // ----- FIN MODIFICATION -----
 

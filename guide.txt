@@ -49,23 +49,59 @@ il faut faire la mm avec les modifs, et mettre une barre de progression en desso
 pour le délire des modifs, ce qui serait bien c'est que quand on clique sur la valeur qu'on puisse edit. et que quand ca atteint 100% la valeur en sl s'affiche, et juste avec un clique sur la box pour l'acheter
 
 67
--> pour plus tard faut aussi envisager un ui plus poussé sur le coté du tech tree ca peut etre cool
+pour plus tard faut aussi envisager un ui plus poussé sur le coté du tech tree ca peut etre cool
 implémenter les talismans
 implémenter les équipages
 faire l'overhead
--> refont css
+refont css
 enlever la possibilité de cliquer sur les talismans dans le techtree
--> mettre en place un système de localstorage
--> mettre un bouton pour désactiver le localstorage
--> implémenter un système de backup en json
--> implémenter un moyen d'intégrer la backup json dans le site
+mettre en place un système de localstorage
+mettre un bouton pour désactiver le localstorage
+implémenter un système de backup en json
+implémenter un moyen d'intégrer la backup json dans le site
 enlever le texte "Talisman automatique" dans les modifs
--> mettre un bouton pour max le véhicule (modifs et achat de l'avion + equipage standard)
--> quand le bouton est recliquer, supprimer tout (modifs et achat de l'avion + equipage standard)
+mettre un bouton pour max le véhicule (modifs et achat de l'avion + equipage standard)
+quand le bouton est recliquer, supprimer tout (modifs et achat de l'avion + equipage standard)
 faire en sorte que l'overhead reste meme si l'utilisateur scroll vers le bas
 mettre le logo de war thunder a gauche dans l'overhead
 mettre un bouton pour réduire les véhicules par rang
 supprimer le nombre total de véhicules a chaque rang
--> faire la page statistiques
+faire la page statistiques
 faire en sorte que si un caractère different d'un chiffre est ajouté dans la zone d'inserstion des valeurs, considérer la valeur comme 100%
--> faire un bouton pour retract et etendre les rang, avec une animation qui rend le visuel plus agreable
+faire un bouton pour retract et etendre les rang, avec une animation qui rend le visuel plus agreable
+
+
+
+Nouveau devlog:
+
+--liste des commandes a retenir:
+-npm start (lancer le server local)
+-npm run deploy (mettre a jour le serveur en ligne)
+
+-cd scripts
+-> node updateProgressTreeWithBackup.js (ces 2 commandes permettent d'éxcecuter le fichier pour mettre a jour le progresstree)
+important: si tu veux mettre a jour le progresstree, écrit dans progresstree_manual_backup.js, il est moins lourd car il ne contient pas toute les données, une fois que
+t'as finis, copie le dans src\data\progressTree.js et éxcecute la commande.
+
+-$env:VEHICLE_LIST = 'vehicule_id1,vehicule_id2'; node D:\wt-progress-tracker\server.js  (cette commande met a jour/ajoute les véhicules dans le fichier server-response.js)
+important: il écrit sur le fichier extérieur, il ne faut pas oublier de le copier dans src\data\server-response.json
+            N'oublie pas aussi d'ajouter le nouveau id de véhicule dans véhicule-list.sql
+
+
+Nouvelle liste des choses a faire:
+->finir les ârbres de recherches, c'est long mais nécessaire urgemment
+->changer l'icone talisman et équipage dans la page stat
+->changer l'icone des modifications et des véhicules dans la page des stats
+-> mettre correctement les icones d'équipages et talisman dans les bloc de véhicule
+->faire fonctionner les logos (crew/spade/talisman) pour les children
+->ajoute un moyen de naviguer entre les differents types de véhicules d'une nation
+-rendre le fond des children opaque
+->rendre le site utilisable sur mobile
+->faire une barre de recherche pour être directement rediriger sur le véhicule souhaiter
+->ajouter un systeme de véhicule en cours de recherche, en incluant les mods
+->faire un systeme d'avancement automatique en copiant les résultats d'une bataille dans le site
+->faire une zone pour voir: les véhicules a acheter, les véhicules en cours de recherche, les véhicules non spade.
+->refaire le css des modifications
+->si le systeme d'avancement automatique est ajouter, penser a faire une page avec des graphiques de progression par bataille.
+->mettre en place supabase pour les comptes personnel
+->faire fonctionner les véhicules d'escadron avec leur progression détaillé

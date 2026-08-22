@@ -13161,6 +13161,3087 @@ export const progressTree = {
     ]
   },
 
+  "Suede_Helico": { //ok
+    name: "Helicoptère Suédois",
+    ranks: [
+      {
+        name: "V",
+        grid: [
+          [1,0],
+          [1,0],
+        ],
+        vehicles: {
+          1: {id: "hkp3c", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          2: {id: "hkp2", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+     {
+        name: "VI",
+        grid: [
+          [1,1],
+          [1,0],
+        ],
+        vehicles: {
+          1: {id: "hkp9a_cb2", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "mi_28a_sweden", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          3: {id: "hkp9a_cb3_fc", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,1],
+                    [0,0]
+                  ],
+                }
+              }
+            }}
+        }
+      },
+    {
+        name: "VII",
+        grid: [
+          [1,0],
+        ],
+        vehicles: {
+          1: {id: "ahs", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [0,1,1],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }}
+        }
+      },
+    ]
+  },
+
+  "Sweden_Tank": { //ok 
+    name: "Char Suédois",
+    ranks: [
+      //Rank I (ok)
+      {
+        name: "I",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [1, 1,0, 1, 1, 1, 1],
+        ],
+        vehicles: {
+          1: {id:"sw_strv_m31", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,0,0],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"sw_strv_m38", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,0,0],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"sw_pvlvv_fm42", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"sw_ikv_72", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          5: {id:"sw_vickers_mk_e_37", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ]
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          6: {id:"sw_strv_m39", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,0,0],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id:"sw_strv_m39_td", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,0,0],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          8: {id:"sw_bt_42", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          9: {id:"sw_strv_m40l", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,0,0],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          10: {id:"sw_sav_m43_1944", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          11: {id:"sw_vickers_mk_e_45", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          12: {id:"sw_t_28", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          13: {id:"sw_pbil_m40", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      //rank II (ok)
+      {
+        name: "II",
+        grid: [
+          [1,1,1,1,0,1,1],
+          [1,1,1,1,0,1,0]
+        ],
+        vehicles: {
+          1: {id:"sw_strv_m41_s2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"sw_lago_1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"sw_pbv_301", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"sw_stormpjas_fm43_44", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          5: {id:"sw_strv_m41_s1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          6: {id:"sw_t_50_fin", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [0,1,1],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          7: {id:"sw_pvkv_III", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          8: {id:"sw_strv_m42_eh", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          9: {id:"sw_tgdgb_m40_lv", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          10: {id:"sw_sav_m43_1946", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          11: {id:"sw_ikv_73", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }}
+        }
+      },
+      // Rank III (ok)
+      {
+        name: "III",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [1, 1, 1, 1, 1, 1,0]
+        ],
+        vehicles: {
+          1: {id:"sw_m24_chaffee_dk", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"sw_pvkv_iv", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"sw_l_62_anti_II", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"sw_pvkv_ikv_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_pvkv_m43_1946", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+              {id:"sw_ikv_103", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          5: {id:"sw_t_34_pz_4_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_t_34_1941", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+            {id:"sw_pzkpfw_IV_ausf_J", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          6: {id:"sw_sav_fm48", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          7: {id:"sw_kv_1_1942_fin", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          8: {id:"sw_pvkv_II", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          9: {id:"sw_strv_m42_delat_torn", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          10: {id:"sw_lvkv_42", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          11: {id:"sw_pvkv_m43_1963", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          12: {id:"sw_pt_76_comet_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_pt_76b", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"sw_a_34_comet", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          13: {id:"sw_sherman_3_4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      // Rank IV (ok)
+      {
+        name: "IV",
+        grid: [
+          [1,1,1,1,1,1,0],
+          [0,0,0,0,1,0,0],
+        ],
+        vehicles: {
+          1: {id:"sw_pbv_501", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"sw_strv_74", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"sw_landsverk_ush_204_gk", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"sw_bkan_1c", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          5: {id:"sw_t_34_85_zis_53", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          6: {id:"sw_kungstiger", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id:"sw_charioteer_mk_7", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }}
+        }
+      },
+      // Rank V (ok)
+      {
+        name: "V",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [1, 1, 1, 0, 0, 1, 0],
+        ],
+        vehicles: {
+          1: {id:"sw_ikv_91", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"sw_strv_81", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"sw_zsu_57_2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"sw_pvrbv_551", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          5: {id:"sw_t_54_1951", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          6: {id:"sw_strv_81_rb52", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id:"sw_k9_vidar", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,0,0],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          8: {id:"sw_landsverk_ush_405", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          9: {id:"sw_strv_101_103a_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_strv_101", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+              {id:"sw_strv_103a", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [0,0,0],
+                    [1,1,0],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          10: {id:"sw_veak_40", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          11: {id:"sw_strv_103_0", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [0,0,0],
+                    [1,1,0],
+                    [1,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      //Rank VI
+      {
+        name: "VI",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [1, 1, 1, 0, 1, 1, 0],
+          [1, 0, 0, 0, 0, 0, 0],
+        ],
+        vehicles: {
+          1: {id:"sw_cv_90105", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,0,0],
+                    [1,1,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+          2: {id:"sw_strv_104_103c_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_strv_104", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+            {id:"sw_strv_103c", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [0,0,0],
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          3: {id:"sw_itpsv_90", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,0],
+                    [0,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"sw_udes_pbv_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_udes_33", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+            {id:"sw_pbv_302_bill", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          5:{id:"sw_pbv_302_bill", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          6: {id:"sw_leopard_1a5no", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id:"sw_bmp_2md", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          8: {id:"sw_ikv_91_105", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          9: {id:"sw_strv_105", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          10: {id:"sw_lvrbv_701", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          11: {id:"sw_t_72m1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          12: {id:"sw_cv_9035_dk", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          13: {id:"sw_cv_90_ifv_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_cv_9030_fin", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1,0],
+                    [1,1,0,0],
+                    [1,1,1,1],
+                    [1,1,0,0]
+                  ],
+                }
+              }
+            }},
+            {id:"sw_strf_90b", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+        }
+      },
+      //Rank VII
+      {
+        name: "VII",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [0, 0, 0, 0, 0, 1, 0],
+        ],
+        vehicles: {
+          1: {id:"sw_strf_90c", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"sw_strv_121", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"sw_lvkv_asrad_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_lvkv_90c", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"sw_asrad_r", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          4: {id:"sw_strf_9056", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          5: {id:"sw_leopard_2a4_fin", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,0,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          6: {id:"sw_cv_90105_tml", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,1,0],
+                    [1,1,1,0],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id:"sw_patria_amv_ctcv_105", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1,0],
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+          8: {id:"sw_strv121b_christian2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      //Rank VIII
+      {
+        name: "VIII",
+        grid: [
+          [1,1,1,1,1,1,0],
+          [0,1,1,0,0,0,0],
+          [0,0,1,0,0,0,0]
+        ],
+        vehicles: {
+          1: {id:"sw_cv_90120", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"sw_strv_122_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_strv_122", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"sw_strv_122b_plss", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          3: {id:"sw_crotale_ng", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"sw_cv_90_mk4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,1,1,0],
+                    [1,1,0,0],
+                    [1,1,1,1],
+                    [1,1,0,0]
+                  ],
+                }
+              }
+            }},
+          5: {id:"sw_leopard_2a6nl", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,0,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          6: {id:"sw_t_80u", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          7: {id:"sw_strv_122b_plus", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          8: {id:"sw_eldenhet_nomads_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sw_eldenhet_98", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [0,0],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+            {id:"sw_nomads", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0,0],
+                    [1,0,0],
+                    [0,0,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          9: {id:"sw_nasams_fcs", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Mobility": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Protection": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Firepower": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+        }
+      }
+    ]
+  },
+
   //Israel
   "Israel_Avion": { //ok
     name: "Aviation Israel",
