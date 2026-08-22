@@ -279,7 +279,28 @@ const ProgressTree = ({ country, vehicle }) => {
     const rpCost = Number(vehicleData.rp_cost) || 0;
     const slCost = Number(vehicleData.sl_cost) || 0;
     const percent = rpCost > 0 ? Math.min(100, Math.round((rpResearched / rpCost) * 100)) : 0;
-    const allModsDone = areAllModsCompleted(vehicleData, progress);
+    
+    // ----- MODIFICATION : allModsDone pour parent basé sur les enfants -----
+    let allModsDone = false;
+    if (hasChildren) {
+      // Un parent est spadé si TOUS ses enfants sont achetés ET spadés
+      allModsDone = vehicleData.children.every(child => {
+        const childProg = vehicleProgress[child.id] || {};
+        const childPurchased = childProg.purchased || false;
+        const childSlCost = Number(child.sl_cost) || 0;
+        const childEffectivelyPurchased = childPurchased || childSlCost === 0;
+        return childEffectivelyPurchased && areAllModsCompleted(child, childProg);
+      });
+      // Option : exiger aussi que le parent soit acheté (si son coût RP > 0)
+      // const parentRpCost = Number(vehicleData.rp_cost) || 0;
+      // const parentPurchased = progress.purchased || false;
+      // const parentEffectivePurchased = parentPurchased || parentRpCost === 0;
+      // allModsDone = allModsDone && parentEffectivePurchased;
+    } else {
+      // Véhicule standard (sans enfant)
+      allModsDone = areAllModsCompleted(vehicleData, progress);
+    }
+    // ----- FIN MODIFICATION -----
 
     const crewLevel = Number(progress.crewPurchased) || 0;
     let crewIcon = null;
@@ -505,49 +526,48 @@ const ProgressTree = ({ country, vehicle }) => {
   };
 
   const renderRank = (rank) => {
-  const isCollapsed = collapsedRanks.has(rank.name);
+    const isCollapsed = collapsedRanks.has(rank.name);
 
-  return (
-    <div key={`rank-${rank.name}`} className="rank-container">
-      <div className="rank-header">
-        <h3 className="rank-title">Rank {rank.name}</h3>
-        <button
-          onClick={() => toggleRankCollapse(rank.name)}
+    return (
+      <div key={`rank-${rank.name}`} className="rank-container">
+        <div className="rank-header">
+          <h3 className="rank-title">Rank {rank.name}</h3>
+          <button
+            onClick={() => toggleRankCollapse(rank.name)}
+            style={{
+              marginLeft: '10px',
+              background: 'none',
+              border: '1px solid #aaa',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '0.9em',
+              padding: '2px 8px',
+              color: 'inherit',
+              transition: 'all 0.3s ease',
+              boxShadow: isCollapsed ? 'inset 0 0 0 1px #aaa' : 'none',
+            }}
+            title={isCollapsed ? 'Afficher le rang' : 'Masquer le rang'}
+          >
+            {isCollapsed ? 'Afficher' : 'Masquer'}
+          </button>
+        </div>
+
+        {/* Le contenu reste monté, seule la hauteur change */}
+        <div
           style={{
-            marginLeft: '10px',
-            background: 'none',
-            border: '1px solid #aaa',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '0.9em',
-            padding: '2px 8px',
-            color: 'inherit',
-            transition: 'all 0.3s ease',
-            boxShadow: isCollapsed ? 'inset 0 0 0 1px #aaa' : 'none',
+            maxHeight: isCollapsed ? '0px' : '2000px', // hauteur max suffisante pour l'animation
+            transition: 'max-height 0.6s ease-in-out', // transition identique dans les deux sens
+            opacity: isCollapsed ? 0 : 1,
+            transitionProperty: 'max-height, opacity',
           }}
-          title={isCollapsed ? 'Afficher le rang' : 'Masquer le rang'}
         >
-          {isCollapsed ? 'Afficher' : 'Masquer'}
-        </button>
-      </div>
-
-      {/* Le contenu reste monté, seule la hauteur change */}
-      <div
-        style={{
-          maxHeight: isCollapsed ? '0px' : '2000px', // hauteur max suffisante pour l'animation
-          overflow: 'hidden',
-          transition: 'max-height 0.6s ease-in-out', // transition identique dans les deux sens
-          opacity: isCollapsed ? 0 : 1,
-          transitionProperty: 'max-height, opacity',
-        }}
-      >
-        <div className="rank-rows">
-          {rank.grid.map((row, rowIndex) => renderRow(row, rowIndex, rank))}
+          <div className="rank-rows">
+            {rank.grid.map((row, rowIndex) => renderRow(row, rowIndex, rank))}
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
   const totalVehicles = treeData.ranks.reduce((sum, rank) => {
     return sum + Object.values(rank.vehicles).reduce((s, v) => {

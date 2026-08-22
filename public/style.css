@@ -1,27 +1,99 @@
-/* CountryVehicleSelector.css */
+/* =========================================================
+   GLOBAL / THEME
+   ========================================================= */
+
+:root {
+  --bg-main: #10151c;
+  --bg-secondary: #151c25;
+  --bg-panel: #1a222d;
+  --bg-panel-light: #202a36;
+  --bg-card: #1d2733;
+  --bg-card-hover: #263240;
+
+  --border: #303c4a;
+  --border-light: #3b4857;
+
+  --text: #f1f3f5;
+  --text-secondary: #aeb8c4;
+  --text-muted: #74808d;
+
+  --accent: #f0a72b;
+  --accent-light: #ffc45c;
+  --accent-dark: #c77d0b;
+
+  --success: #36b66b;
+  --success-light: #4ed783;
+
+  --warning: #e89b32;
+  --danger: #d9534f;
+
+  --shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.35);
+
+  --radius: 10px;
+}
+
+
+/* ---------------------------------------------------------
+   IMPORTANT :
+   Empêche les bandes blanches autour de l'application
+   --------------------------------------------------------- */
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--bg-main);
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   COUNTRY VEHICLE SELECTOR
+   ========================================================= */
+
 .selector-container {
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
+  color: var(--text);
 }
 
 .section {
   margin-bottom: 30px;
   padding: 20px;
-  border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  background-color: #f8f9fa;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-panel);
+  box-shadow: var(--shadow);
 }
 
 .section-title {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--text);
   font-size: 1.2em;
 }
 
-/* Grille des pays */
+
+/* =========================================================
+   GRILLE DES PAYS
+   ========================================================= */
+
 .countries-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -33,25 +105,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding: 15px 10px;
-  border: 2px solid #ddd;
+
+  border: 1px solid var(--border);
   border-radius: 8px;
-  background: white;
+
+  background: var(--bg-card);
+  color: var(--text);
+
   cursor: pointer;
-  transition: all 0.3s ease;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
   min-width: 100px;
 }
 
 .country-button:hover {
-  border-color: #007bff;
+  border-color: var(--accent);
+  background: var(--bg-card-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-hover);
 }
 
 .country-button.selected {
-  border-color: #007bff;
-  background-color: #e7f3ff;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  border-color: var(--accent);
+  background: rgba(240, 167, 43, 0.12);
+  box-shadow: 0 0 0 2px rgba(240, 167, 43, 0.15);
 }
 
 .country-flag {
@@ -59,16 +143,20 @@
   height: 30px;
   object-fit: cover;
   margin-bottom: 8px;
-  border: 1px solid #eee;
+  border: 1px solid var(--border);
 }
 
 .country-name {
   font-size: 0.9em;
   font-weight: 500;
-  color: #333;
+  color: var(--text);
 }
 
-/* Grille des véhicules */
+
+/* =========================================================
+   GRILLE DES VEHICULES
+   ========================================================= */
+
 .vehicles-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -80,71 +168,69 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding: 15px 10px;
-  border: 2px solid #ddd;
+
+  border: 1px solid var(--border);
   border-radius: 8px;
-  background: white;
+
+  background: var(--bg-card);
+  color: var(--text);
+
   cursor: pointer;
-  transition: all 0.3s ease;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
   min-width: 90px;
 }
 
 .vehicle-button:hover {
-  border-color: #28a745;
+  border-color: var(--success);
+  background: var(--bg-card-hover);
   transform: translateY(-2px);
 }
 
 .vehicle-button.selected {
-  border-color: #28a745;
-  background-color: #f0fff4;
-  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.25);
+  border-color: var(--success);
+  background: rgba(54, 182, 107, 0.12);
+  box-shadow: 0 0 0 2px rgba(54, 182, 107, 0.15);
 }
 
 .vehicle-icon {
-  width: 35px;
-  height: 35px;
+  font-size: 24px;
   margin-bottom: 8px;
-  object-fit: contain;
 }
 
 .vehicle-name {
   font-size: 0.85em;
   font-weight: 500;
-  color: #333;
+  color: var(--text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
 }
 
-/* Résumé de sélection */
+
+/* =========================================================
+   RESUME DE SELECTION
+   ========================================================= */
+
 .selection-summary {
   text-align: center;
   padding: 20px;
-  background-color: #fff3cd;
-  border: 1px solid #ffeaa7;
+
+  background: rgba(240, 167, 43, 0.1);
+  border: 1px solid rgba(240, 167, 43, 0.35);
+
   border-radius: 8px;
   margin-top: 20px;
-}
 
-.reset-button {
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Styles pour les nouveaux boutons */
-.selection-summary {
-  text-align: center;
-  padding: 20px;
-  background-color: #fff3cd;
-  border: 1px solid #ffeaa7;
-  border-radius: 8px;
-  margin-top: 20px;
+  color: var(--text);
 }
 
 .action-buttons {
@@ -156,84 +242,135 @@
 
 .validate-button {
   padding: 12px 24px;
-  background-color: #218838;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(192, 192, 192, 0.3);
+
+  background: var(--success);
   color: white;
+
   border: none;
   border-radius: 6px;
+
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease;
+
+  transition: all 0.25s ease;
 }
 
 .validate-button:hover {
-  background-color: #5a6268;
+  background: var(--success-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(54, 182, 107, 0.25);
 }
 
 .reset-button {
   padding: 12px 24px;
-  background-color: #c82333;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(192, 192, 192, 0.3);
+
+  background: var(--danger);
   color: white;
+
   border: none;
   border-radius: 6px;
+
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease;
+
+  transition: all 0.25s ease;
 }
 
 .reset-button:hover {
-  background-color: #5a6268;
+  background: #ed6863;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 83, 79, 0.25);
 }
 
 .validated-container {
   text-align: left;
   padding: 20px;
+  color: var(--text);
 }
 
 .new-selection-button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+
+  background: var(--accent);
+  color: #111;
+
   border: none;
   border-radius: 6px;
+
   cursor: pointer;
-  transition: all 0.3s ease;
+
+  transition: all 0.25s ease;
 }
 
 .new-selection-button:hover {
-  background-color: #0056b3;
+  background: var(--accent-light);
+  transform: translateY(-2px);
 }
 
-/* Correction pour les icônes de véhicules (utilisation d'emoji) */
-.vehicle-icon {
-  font-size: 24px;
-  margin-bottom: 8px;
-}
+
+/* =========================================================
+   PROGRESS TREE
+   ========================================================= */
 
 .progress-tree {
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
   position: relative;
+  color: var(--text);
+  overflow: visible;
 }
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .tree-header {
   text-align: center;
   margin-bottom: 30px;
   padding: 25px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #151c25 0%,
+      #202a36 100%
+    );
+
+  color: var(--text);
+
+  border: 1px solid var(--border);
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  box-shadow: var(--shadow);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.tree-header::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 3px;
+
+  background: var(--accent);
 }
 
 .tree-header h2 {
   margin: 0 0 15px 0;
+
+  color: var(--text);
+
   font-size: 2.2em;
   font-weight: 700;
 }
@@ -242,7 +379,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 15px;
+
   font-size: 1.3em;
   margin-bottom: 10px;
 }
@@ -250,12 +389,9 @@
 .country-flag-small {
   width: 32px;
   height: 21px;
-  border-radius: 3px;
-  border: 2px solid white;
-}
 
-.vehicle-icon {
-  font-size: 1.6em;
+  border-radius: 3px;
+  border: 1px solid var(--border);
 }
 
 .selection-text {
@@ -266,62 +402,96 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+
   font-size: 0.9em;
-  opacity: 0.9;
+
+  color: var(--text-secondary);
 }
 
 .stat {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+
   padding: 4px 12px;
   border-radius: 20px;
 }
 
+
+/* =========================================================
+   CONTENU PRINCIPAL
+   ========================================================= */
+
 .tree-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  overflow: visible;
 }
 
+
+/* =========================================================
+   RANG
+   ========================================================= */
+
 .rank-container {
-  background: white;
+  background: var(--bg-panel);
   padding: 25px;
   border-radius: 12px;
-  border: 2px solid #e9ecef;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: visible;
 }
 
 .rank-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #f1f3f4;
+
+  border-bottom: 1px solid var(--border);
 }
 
 .rank-title {
-  color: #495057;
+  color: var(--text);
+
   font-size: 1.4em;
   font-weight: 600;
+
   margin: 0;
 }
 
 .rank-stats {
   font-size: 0.9em;
-  color: #6c757d;
-  background: #f8f9fa;
+
+  color: var(--text-secondary);
+
+  background: var(--bg-card);
+
+  border: 1px solid var(--border);
+
   padding: 4px 12px;
+
   border-radius: 15px;
+
   font-weight: 600;
 }
 
-/* CORRECTION PRINCIPALE : Utilisation de flexbox au lieu de grid */
+
+/* =========================================================
+   LIGNES DE VEHICULES
+   ========================================================= */
+
 .rank-rows {
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
   width: 100%;
+  overflow: visible;
 }
 
 .rank-row {
@@ -330,265 +500,412 @@
   flex-wrap: nowrap;
   justify-content: center;
   width: 100%;
-  min-height: 160px; /* Hauteur fixe pour toutes les lignes */
+  min-height: 160px;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
 }
+
+.rank-row:has(.grid-cell.expanded) {
+  z-index: 100;
+}
+
+/* =========================================================
+   CELLULE VEHICULE
+   ========================================================= */
 
 .grid-cell {
   width: 140px;
   height: 160px;
-  border: 3px solid #adb5bd;
+  border: 2px solid var(--border-light);
   border-radius: 10px;
-  background: white;
+  background: var(--bg-card);
+  color: var(--text);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 12px;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   position: relative;
   flex-shrink: 0;
-  box-sizing: border-box; /* Inclure border dans les dimensions */
+  box-sizing: border-box;
 }
 
 .grid-cell:hover {
-  border-color: #007bff;
+  border-color: var(--accent);
+
+  background: var(--bg-card-hover);
+
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+  box-shadow: var(--shadow-hover);
 }
+
+
+/* =========================================================
+   CASE VIDE / RANG NON DISPONIBLE
+   ========================================================= */
+
+/*
+   Important :
+   Les cases sans véhicule restent visibles.
+   Elles deviennent grises afin de distinguer :
+
+   - rang réellement disponible mais vide
+   - rang non applicable / aucun véhicule
+*/
 
 .grid-cell.empty {
-  border: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
   background: transparent !important;
-  visibility: hidden; /* Rendre invisible */
-  pointer-events: none; /* Désactiver les interactions */
-}
-
-.grid-cell.empty:hover {
-  border: none !important;
-  background: transparent !important;
-  transform: none !important;
+  border-color: transparent !important;
   box-shadow: none !important;
+  pointer-events: none !important;
   cursor: default !important;
 }
 
+.grid-cell.empty:hover {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+
+/* =========================================================
+   ERREUR
+   ========================================================= */
+
 .grid-cell.error {
-  border-color: #dc3545;
-  background: #f8d7da;
+  border-color: var(--danger);
+
+  background: rgba(217, 83, 79, 0.12);
 }
 
 .error-message {
-  color: #dc3545;
+  color: var(--danger);
+
   font-size: 0.7em;
+
   text-align: center;
+
   font-weight: 600;
 }
+
+
+/* =========================================================
+   VEHICULE
+   ========================================================= */
 
 .vehicle-image {
   width: 80px;
   height: 50px;
+
   object-fit: contain;
+
   margin-bottom: 8px;
 }
 
 .vehicle-name {
   font-size: 0.8em;
+
   text-align: center;
+
   margin: 0;
+
   font-weight: 600;
-  color: #333;
+
+  color: var(--text);
+
   line-height: 1.3;
+
   height: 2.6em;
+
   overflow: hidden;
+
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+
+
   -webkit-box-orient: vertical;
 }
 
+
+/* =========================================================
+   PROGRESSION
+   ========================================================= */
+
 .progress-container {
   width: 100%;
+
   display: flex;
   flex-direction: column;
+
   align-items: center;
+
   gap: 4px;
 }
 
 .progress-bar {
   width: 100%;
+
   height: 8px;
+
+  background: #303945;
+
   border-radius: 4px;
+
   overflow: hidden;
 }
 
 .progress-bar::-webkit-progress-bar {
-  background: #e9ecef;
+  background: #303945;
   border-radius: 4px;
 }
 
 .progress-bar::-webkit-progress-value {
-  background: linear-gradient(90deg, #28a745, #20c997);
+  background: linear-gradient(
+    90deg,
+    var(--success),
+    var(--success-light)
+  );
+
+  border-radius: 4px;
+}
+
+.progress-bar::-moz-progress-bar {
+  background: var(--success);
   border-radius: 4px;
 }
 
 .progress-text {
   font-size: 0.75em;
-  color: #666;
+
+  color: var(--text-secondary);
+
   font-weight: 600;
 }
+
+
+/* =========================================================
+   BADGE VEHICULE
+   ========================================================= */
 
 .vehicle-badge {
   position: absolute;
+
   top: 5px;
   right: 5px;
-  background: #0080ff;
-  color: white;
+
+  background: var(--accent);
+
+  color: #111;
+
   font-size: 0.55em;
+
   padding: 2px 6px;
+
   border-radius: 8px;
-  font-weight: 600;
+
+  font-weight: 700;
 }
+
+
+/* =========================================================
+   MESSAGE DEVELOPPEMENT
+   ========================================================= */
 
 .development-notice {
   text-align: center;
+
   padding: 15px;
-  background: #fff3cd;
-  border: 1px solid #ffeaa7;
+
+  background: rgba(240, 167, 43, 0.1);
+
+  border: 1px solid rgba(240, 167, 43, 0.35);
+
   border-radius: 8px;
-  color: #856404;
+
+  color: var(--accent-light);
+
   margin-top: 20px;
+
   font-weight: 600;
 }
 
-.offset-1, .offset-2, .offset-3, .offset-4, .offset-5 {
+
+/* =========================================================
+   OFFSETS
+   ========================================================= */
+
+.offset-1,
+.offset-2,
+.offset-3,
+.offset-4,
+.offset-5 {
   margin-left: 0 !important;
 }
 
-/* Responsive */
-@media (max-width: 1200px) {
-  .grid-cell {
-    width: 130px;
-    height: 150px;
-  }
-}
 
-@media (max-width: 768px) {
-  .grid-cell {
-    width: 110px;
-    height: 130px;
-  }
-  
-  .vehicle-image {
-    width: 60px;
-    height: 40px;
-  }
-}
+/* =========================================================
+   VEHICULES AVEC ENFANTS
+   ========================================================= */
 
-@media (max-width: 480px) {
-  .grid-cell {
-    width: 100px;
-    height: 120px;
-  }
-  
-  /* Pour les très petits écrans, permettre le wrapping */
-  .rank-row {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-/* Styles pour les cases avec enfants */
 .grid-cell.has-children {
   cursor: pointer;
   position: relative;
 }
 
 .grid-cell.has-children:hover {
-  border-color: #007bff !important;
-  background-color: #ffffff;
+  border-color: var(--accent) !important;
 }
 
 .grid-cell.has-children.expanded {
-  background-color: #fffaf0;
-  z-index: 10;
+  z-index: 1000;
+  background: var(--bg-card);
 }
 
-/* Indicateur d'expansion */
+
+/* =========================================================
+   INDICATEUR EXPANSION
+   ========================================================= */
+
 .expand-indicator {
   position: absolute;
+
   bottom: 5px;
   left: 5px;
-  color: white;
+
+  color: #111;
+
+  background: var(--accent);
+
   width: 16px;
   height: 16px;
+
   border-radius: 50%;
+
   display: flex;
+
   align-items: center;
   justify-content: center;
+
   font-size: 10px;
+
   font-weight: bold;
 }
 
-/* Conteneur des enfants */
+
+/* =========================================================
+   CONTENEUR DES ENFANTS
+   ========================================================= */
+
 .children-container {
   position: absolute;
   top: 100%;
   left: 0;
+
   display: flex;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.95);
+
+  /* Fond complètement opaque */
+  background: #151c25;
+
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 8px;
-  z-index: 20;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin-top: 5px;
+
   min-width: max-content;
+
+  z-index: 1001;
+
+  box-shadow: var(--shadow-hover);
+
+  /* Important */
+  opacity: 1;
 }
 
-/* Cases enfants */
+
+/* =========================================================
+   CASES ENFANTS
+   ========================================================= */
+
 .child-cell {
   width: 120px;
   height: 140px;
-  border: 2px solid #ddd;
+
+  border: 1px solid var(--border);
+
   border-radius: 6px;
-  background: white;
+
+  background: var(--bg-card);
+
+  color: var(--text);
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   justify-content: space-between;
+
   padding: 8px;
+
   position: relative;
+
   flex-shrink: 0;
 }
 
 .child-cell:hover {
-  border-color: #007bff;
+  border-color: var(--accent);
+
+  background: var(--bg-card-hover);
+
   transform: translateY(-2px);
 }
 
 .child-cell .vehicle-image {
   width: 60px;
   height: 40px;
+
   object-fit: contain;
 }
 
 .child-cell .vehicle-name {
   font-size: 0.7em;
+
   text-align: center;
+
   margin: 0;
+
   font-weight: 600;
-  color: #333;
+
+  color: var(--text);
+
   line-height: 1.2;
+
   height: 2.4em;
+
   overflow: hidden;
+
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+
   -webkit-box-orient: vertical;
 }
 
 .child-cell .progress-container {
   width: 100%;
+
   display: flex;
   flex-direction: column;
+
   align-items: center;
+
   gap: 2px;
 }
 
@@ -603,219 +920,385 @@
 
 .child-cell .vehicle-badge {
   position: absolute;
+
   top: 3px;
   right: 3px;
-  background: #28a745;
+
+  background: var(--success);
+
   color: white;
+
   font-size: 0.5em;
+
   padding: 1px 4px;
+
   border-radius: 6px;
+
   font-weight: 600;
 }
 
-/* Responsive pour les enfants */
-@media (max-width: 768px) {
-  .children-container {
-    flex-direction: column;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 90vw;
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-  
-  .child-cell {
-    width: 100px;
-    height: 120px;
-  }
+
+/* =========================================================
+   THEMES VEHICULES
+   ========================================================= */
+
+.grid-cell.theme-premium,
+.child-cell.theme-premium {
+  background: rgba(240, 167, 43, 0.13);
+
+  border-color: rgba(240, 167, 43, 0.45);
 }
-/* VehicleModifications.css - Version plus large */
+
+.grid-cell.theme-premium:hover,
+.child-cell.theme-premium:hover {
+  background: rgba(240, 167, 43, 0.22);
+}
+
+.grid-cell.theme-squadron,
+.child-cell.theme-squadron {
+  background: rgba(54, 182, 107, 0.12);
+
+  border-color: rgba(54, 182, 107, 0.4);
+}
+
+.grid-cell.theme-squadron:hover,
+.child-cell.theme-squadron:hover {
+  background: rgba(54, 182, 107, 0.2);
+}
+
+.grid-cell.theme-normal,
+.child-cell.theme-normal {
+  background: rgba(33, 113, 181, 0.12);
+
+  border-color: rgba(33, 113, 181, 0.4);
+}
+
+.grid-cell.theme-normal:hover,
+.child-cell.theme-normal:hover {
+  background: rgba(33, 113, 181, 0.2);
+}
+
+.grid-cell.theme-group {
+  background: rgba(120, 170, 200, 0.08);
+
+  border-color: rgba(120, 170, 200, 0.35);
+}
+
+.grid-cell.theme-group:hover {
+  background: rgba(120, 170, 200, 0.14);
+}
+
+
+/* =========================================================
+   VEHICLE MODIFICATIONS
+   ========================================================= */
+
 .vehicle-modifications-overlay {
   position: fixed;
+
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
+
+  background: rgba(0, 0, 0, 0.82);
+
   display: flex;
+
   justify-content: center;
   align-items: center;
+
   z-index: 1000;
+
   padding: 20px;
+
+  box-sizing: border-box;
 }
 
 .vehicle-modifications-container {
-  background: white;
+  background: var(--bg-panel);
+
+  border: 1px solid var(--border);
+
+  color: var(--text);
+
   border-radius: 12px;
+
   padding: 30px;
-  width: 95vw; /* Prend 95% de la largeur de la fenêtre */
-  max-width: 1400px; /* Largeur maximale augmentée */
-  max-height: 85vh; /* Hauteur réduite pour accentuer l'effet largeur */
+
+  width: 95vw;
+
+  max-width: 1400px;
+
+  max-height: 85vh;
+
   overflow-y: auto;
+
   position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
 }
+
+
+/* =========================================================
+   BOUTON FERMER
+   ========================================================= */
 
 .close-button {
   position: absolute;
+
   top: 15px;
   right: 20px;
-  background: none;
+
+  background: transparent;
+
   border: none;
+
   font-size: 2em;
+
   cursor: pointer;
-  color: #666;
+
+  color: var(--text-secondary);
+
   width: 40px;
   height: 40px;
+
   display: flex;
+
   align-items: center;
   justify-content: center;
+
   border-radius: 50%;
+
   z-index: 10;
+
+  transition: all 0.2s ease;
 }
 
 .close-button:hover {
-  background: #f0f0f0;
-  color: #333;
+  background: var(--bg-card);
+
+  color: var(--text);
 }
 
+
+/* =========================================================
+   HEADER MODIFICATIONS
+   ========================================================= */
+
 .modifications-header {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-bottom: 25px;
-    border-bottom: 2px solid #e9ecef;
-    gap: 50px;
+  display: flex;
+
+  justify-content: flex-start;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid var(--border);
+
+  gap: 50px;
 }
 
 .modifications-header h2 {
   margin: 0;
-  color: #333;
+
+  color: var(--text);
+
   font-size: 1.8em;
 }
 
-/* MODIFICATIONS PRINCIPALES POUR LA LARGEUR */
+
+/* =========================================================
+   CONTENU MODIFICATIONS
+   ========================================================= */
+
 .modifications-content {
   display: flex;
-  align-items: center;      /* centre horizontalement chaque catégorie */
-  gap: 12px;                /* espacement régulier entre les catégories */
+
+  align-items: center;
+
+  gap: 12px;
+
   padding: 10px 0;
 }
 
 .vehicle-progress-section {
   padding: 10px;
+
   border-radius: 6px;
+
   margin-bottom: 15px;
 }
+
 .rp-cost-display {
   font-size: 0.9em;
-  color: #ddd;
+
+  color: var(--text-secondary);
 }
 
+
+/* =========================================================
+   CATEGORIES
+   ========================================================= */
+
 .modification-category {
-  background: #f8f9fa;
-  border: 2px solid #e9ecef;
+  background: var(--bg-secondary);
+
+  border: 1px solid var(--border);
+
   border-radius: 10px;
+
   padding: 20px;
+
   min-height: 200px;
+
   display: flex;
+
   flex-direction: column;
-  width: fit-content; /* ← la catégorie épouse la largeur de son contenu (la grille) */
+
+  width: fit-content;
 }
 
 .category-title {
   margin: 0 0 15px 0;
-  color: #495057;
+
+  color: var(--text);
+
   font-size: 1.3em;
+
   font-weight: 600;
+
   padding-bottom: 8px;
-  border-bottom: 2px solid #dee2e6;
+
+  border-bottom: 1px solid var(--border);
 }
 
 .category-grid {
   display: flex;
+
   flex-direction: column;
-  gap: 10px; /* Espacement augmenté */
-  flex: 1; /* Prend l'espace disponible */
-  min-height: 0; /* Permet le rétrécissement */
+
+  gap: 10px;
+
+  flex: 1;
+
+  min-height: 0;
 }
 
 .mod-row {
   display: flex;
-  gap: 10px; /* Espacement augmenté */
-  justify-content: flex-start; /* Alignement à gauche */
-  flex: 1; /* Chaque rangée prend une part égale */
+
+  gap: 10px;
+
+  justify-content: flex-start;
+
+  flex: 1;
+
   min-height: 0;
 }
 
+
+/* =========================================================
+   CELLULE MODIFICATION
+   ========================================================= */
+
 .mod-cell {
-  min-width: 200px; /* Largeur minimale */
-  max-width: 140px; /* Largeur maximale */
-  height: auto; /* Hauteur automatique */
-  min-height: 120px; /* Hauteur minimale */
-  aspect-ratio: 1 / 1.1; /* Ratio largeur/hauteur cohérent */
-  border: 2px solid #dee2e6;
+  min-width: 120px;
+
+  max-width: 140px;
+
+  height: auto;
+
+  min-height: 120px;
+
+  aspect-ratio: 1 / 1.1;
+
+  border: 1px solid var(--border);
+
   border-radius: 8px;
-  background: white;
+
+  background: var(--bg-card);
+
+  color: var(--text);
+
   display: flex;
+
   flex-direction: column;
+
   padding: 8px;
+
   position: relative;
+
   cursor: pointer;
-  transition: all 0.3s ease;
+
+  transition: all 0.25s ease;
+
+  box-sizing: border-box;
 }
 
 .mod-cell:hover {
-  border-color: #007bff;
+  border-color: var(--accent);
+
+  background: var(--bg-card-hover);
+
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  box-shadow: var(--shadow-hover);
 }
 
 .mod-cell.researchable {
-  border-color: #28a745;
-  background: #f8fff9;
+  border-color: var(--success);
+
+  background: rgba(54, 182, 107, 0.08);
+    opacity: 0.5;
 }
 
 .mod-cell.researchable:hover {
-  border-color: #218838;
-  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+  border-color: var(--success-light);
+
+  box-shadow: 0 4px 12px rgba(54, 182, 107, 0.2);
 }
 
 .mod-cell.researched {
-  border-color: #6c757d;
-  background: #f8f9fa;
+  border-color: #56616d;
+
+  background: #202731;
+
   opacity: 0.8;
 }
 
 .mod-cell.empty {
   border: none;
+
   background: transparent;
+
   cursor: default;
 }
 
 .mod-cell.empty:hover {
   transform: none;
+
   box-shadow: none;
 }
 
 .mod-cell.error {
-  border-color: #dc3545;
-  background: #f8d7da;
+  border-color: var(--danger);
+
+  background: rgba(217, 83, 79, 0.12);
 }
 
-.error-message {
-  color: #dc3545;
-  font-size: 0.7em;
-  text-align: center;
-  font-weight: 600;
-}
+
+/* =========================================================
+   INFORMATIONS MODIFICATION
+   ========================================================= */
 
 .mod-image {
-  width: 45px; /* Taille augmentée */
-  height: 45px; /* Taille augmentée */
+  width: 45px;
+  height: 45px;
+
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
@@ -823,160 +1306,226 @@
 .mod-image img {
   width: 100%;
   height: 100%;
+
   object-fit: contain;
 }
 
 .mod-info {
   display: flex;
+
   justify-content: space-between;
+
   align-items: center;
+
   margin-bottom: 5px;
 }
 
 .mod-name {
   margin: 0;
-  font-size: 0.95em; /* Taille de police augmentée */
+
+  font-size: 0.95em;
+
   font-weight: 600;
-  color: #333;
+
+  color: var(--text);
+
   flex: 1;
 }
 
 .mod-cost {
   font-weight: bold;
-  color: #e74c3c;
-  font-size: 0.85em; /* Taille de police augmentée */
+
+  color: var(--danger);
+
+  font-size: 0.85em;
+
   margin-left: 5px;
 }
 
-.progress-container {
+
+/* =========================================================
+   PROGRESSION MODIFICATIONS
+   ========================================================= */
+
+.mod-cell .progress-container {
   width: 100%;
+
   margin-top: 2px;
 }
 
-.progress-bar {
+.mod-cell .progress-bar {
   width: 100%;
-  height: 8px; /* Hauteur augmentée */
-  background: #e9ecef;
+
+  height: 8px;
+
+  background: #303945;
+
   border-radius: 4px;
+
   overflow: hidden;
+
   margin-bottom: 3px;
 }
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #28a745, #20c997);
+
+  background: linear-gradient(
+    90deg,
+    var(--success),
+    var(--success-light)
+  );
+
   border-radius: 4px;
+
   transition: width 0.3s ease;
 }
 
 .mod-cell.researched .progress-fill {
-  background: linear-gradient(90deg, #6c757d, #adb5bd);
+  background: linear-gradient(
+    90deg,
+    #687481,
+    #9aa5af
+  );
 }
 
-.progress-text {
-  font-size: 0.75em; /* Taille de police augmentée */
-  color: #6c757d;
+.mod-cell .progress-text {
+  font-size: 0.75em;
+
+  color: var(--text-secondary);
+
   font-weight: 600;
 }
 
-/* Thèmes avec transparence (couleurs douces) */
-.grid-cell.theme-premium,
-.child-cell.theme-premium {
-  background-color: rgba(255, 215, 0, 0.2); /* jaune doré transparent */
-  border-color: rgba(184, 134, 11, 0.5);
-}
-.grid-cell.theme-premium:hover,
-.child-cell.theme-premium:hover {
-  background-color: rgba(255, 215, 0, 0.35);
-}
 
-.grid-cell.theme-squadron,
-.child-cell.theme-squadron {
-  background-color: rgba(46, 139, 87, 0.25); /* vert transparent */
-  border-color: rgba(30, 107, 40, 0.5);
-}
-.grid-cell.theme-squadron:hover,
-.child-cell.theme-squadron:hover {
-  background-color: rgba(46, 139, 87, 0.4);
-}
-
-.grid-cell.theme-normal,
-.child-cell.theme-normal {
-  background-color: rgba(33, 113, 181, 0.2); /* bleu transparent */
-  border-color: rgba(24, 90, 140, 0.5);
-}
-.grid-cell.theme-normal:hover,
-.child-cell.theme-normal:hover {
-  background-color: rgba(33, 113, 181, 0.35);
-}
-
-/* Thème des groupes (enfants repliés) */
-.grid-cell.theme-group {
-  background-color: rgba(173, 216, 230, 0.15); /* bleu très pâle */
-  border-color: rgba(135, 206, 250, 0.4);
-}
-.grid-cell.theme-group:hover {
-  background-color: rgba(173, 216, 230, 0.25);
-}
-
-/* Supprimer l'ancien fond orange au survol des groupes si présent */
-.grid-cell.has-children:hover {
-  background-color: inherit; /* réinitialisé par la classe theme-group */
-}
-
-/* Optionnel : survol discret */
-.grid-cell.theme-premium:hover,
-.child-cell.theme-premium:hover {
-  filter: brightness(1.05);
-}
+/* =========================================================
+   ANIMATION
+   ========================================================= */
 
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.7; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-/* Disposition horizontale pour les catégories avec peu d'éléments */
-.modification-category:has(.mod-row:only-child) .category-grid {
+
+/* =========================================================
+   CATEGORIES AVEC PEU D'ELEMENTS
+   ========================================================= */
+
+.modification-category:has(.mod-row:only-child)
+  .category-grid {
   flex-direction: row;
+
   flex-wrap: wrap;
 }
 
-/* Styles pour les écrans très larges */
+
+/* =========================================================
+   GRAND ECRAN
+   ========================================================= */
+
 @media (min-width: 1600px) {
   .vehicle-modifications-container {
     max-width: 1600px;
   }
-  
-  .modifications-content {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  }
-  
+
   .mod-cell {
     width: 170px;
-    height: 90px;
+
+    height: 150px;
   }
 }
 
-/* Responsive pour tablettes */
+
+/* =========================================================
+   TABLETTES
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .grid-cell {
+    width: 130px;
+    height: 150px;
+  }
+}
+
 @media (max-width: 1024px) {
   .vehicle-modifications-container {
     width: 90vw;
+
     max-width: none;
   }
-  
-  .modifications-content {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  }
-  
+
   .mod-cell {
     width: 140px;
+
     height: 130px;
   }
 }
 
-/* Responsive pour mobiles */
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 768px) {
+  .progress-tree {
+    padding: 12px;
+  }
+
+  .tree-header {
+    padding: 20px;
+  }
+
+  .tree-header h2 {
+    font-size: 1.7em;
+  }
+
+  .tree-stats {
+    flex-wrap: wrap;
+  }
+
+  .grid-cell {
+    width: 110px;
+    height: 130px;
+  }
+
+  .vehicle-image {
+    width: 60px;
+    height: 40px;
+  }
+
+  .children-container {
+    flex-direction: column;
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    max-width: 90vw;
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    background: rgba(21, 28, 37, 0.98);
+  }
+
+  .child-cell {
+    width: 100px;
+    height: 120px;
+  }
+
   .vehicle-modifications-container {
     padding: 20px;
     max-height: 90vh;
@@ -990,7 +1539,8 @@
   }
 
   .modifications-content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .category-grid {
@@ -1008,26 +1558,48 @@
   }
 }
 
-/* Pour les très petits écrans */
+
+/* =========================================================
+   PETITS MOBILES
+   ========================================================= */
+
 @media (max-width: 480px) {
+  .progress-tree {
+    padding: 8px;
+  }
+
+  .grid-cell {
+    width: 100px;
+    height: 120px;
+  }
+
+  .rank-container {
+    padding: 15px;
+  }
+
+  .rank-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .vehicle-modifications-container {
     padding: 15px;
   }
-  
+
   .modifications-content {
     gap: 15px;
   }
-  
+
   .modification-category {
     padding: 15px;
   }
-  
+
   .mod-cell {
     width: 120px;
     height: 80px;
     padding: 8px;
   }
-  
+
   .mod-image {
     width: 35px;
     height: 35px;

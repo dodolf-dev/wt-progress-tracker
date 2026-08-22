@@ -431060,5 +431060,769 @@
       "total_ge": 0
     },
     "fetched_at": "2026-08-21T12:03:01.197Z"
+  },
+  {
+    "vehicule_id": "saab_ajs37_early",
+    "vehicule_name": "AJS37 (Early)",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/saab_ajs37_early.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/saab_ajs37_early.png",
+    "vehicule_premium": 1,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "11.0",
+      "rb": "11.0",
+      "sb": "11.3"
+    },
+    "rank": "VII",
+    "economy": {
+      "crew_training_sl": "10000",
+      "experts_sl": "1170000",
+      "aces_ge": "3200",
+      "research_aces_rp": "2420000"
+    },
+    "modifications_by_group": {
+      "Flight performance": [
+        {
+          "name": "Compressor",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png"
+        },
+        {
+          "name": "Fuselage repair",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png"
+        },
+        {
+          "name": "New boosters",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png"
+        },
+        {
+          "name": "Airframe",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png"
+        },
+        {
+          "name": "Wings repair",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png"
+        },
+        {
+          "name": "Engine",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png"
+        },
+        {
+          "name": "Cover",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png"
+        }
+      ],
+      "Survivability": [
+        {
+          "name": "Flares/Chaff",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png"
+        },
+        {
+          "name": "G-suit",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png"
+        }
+      ],
+      "Weaponry": [
+        {
+          "name": "m/71",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png"
+        },
+        {
+          "name": "Offensive 30 mm belts",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "RB24J",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png"
+        },
+        {
+          "name": "m/70",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png"
+        },
+        {
+          "name": "Rb05A",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_missile.png"
+        },
+        {
+          "name": "New 30 mm cannons",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png"
+        },
+        {
+          "name": "RB 74",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png"
+        },
+        {
+          "name": "RB75",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png"
+        },
+        {
+          "name": "RB 75T",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 0,
+      "total_sl": 0,
+      "total_ge": 0
+    },
+    "fetched_at": "2026-08-22T01:19:27.966Z"
+  },
+  {
+    "vehicule_id": "saab_jas39e",
+    "vehicule_name": "JAS39E",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/saab_jas39e.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/saab_jas39e.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "14.3",
+      "rb": "14.3",
+      "sb": "14.3"
+    },
+    "rank": "IX",
+    "purchase": {
+      "research_cost_rp": "400000",
+      "purchase_cost_sl": "1080000",
+      "talisman_cost_ge": "3500"
+    },
+    "economy": {
+      "crew_training_sl": "310000",
+      "experts_sl": "1080000",
+      "aces_ge": "3800",
+      "research_aces_rp": "1400000"
+    },
+    "modifications_by_group": {
+      "Flight performance": [
+        {
+          "name": "Compressor",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png"
+        },
+        {
+          "name": "Fuselage repair",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png"
+        },
+        {
+          "name": "New boosters",
+          "rp_cost": "9900",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png"
+        },
+        {
+          "name": "Airframe",
+          "rp_cost": "9900",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png"
+        },
+        {
+          "name": "Wings repair",
+          "rp_cost": "13000",
+          "sl_cost": "20000",
+          "ge_cost": "550",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png"
+        },
+        {
+          "name": "Cover",
+          "rp_cost": "13000",
+          "sl_cost": "20000",
+          "ge_cost": "550",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png"
+        },
+        {
+          "name": "Engine",
+          "rp_cost": "20000",
+          "sl_cost": "31000",
+          "ge_cost": "850",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png"
+        }
+      ],
+      "Survivability": [
+        {
+          "name": "Flares/Chaff",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png"
+        },
+        {
+          "name": "Flares/Chaff BOL",
+          "rp_cost": "9900",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png"
+        },
+        {
+          "name": "G-suit",
+          "rp_cost": "13000",
+          "sl_cost": "20000",
+          "ge_cost": "550",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png"
+        },
+        {
+          "name": "EFS",
+          "rp_cost": "20000",
+          "sl_cost": "31000",
+          "ge_cost": "850",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png"
+        }
+      ],
+      "Weaponry": [
+        {
+          "name": "Offensive 27 mm belts",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "JDAM",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png"
+        },
+        {
+          "name": "LITENING III",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png"
+        },
+        {
+          "name": "New 27 mm cannons",
+          "rp_cost": "9900",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png"
+        },
+        {
+          "name": "RB 75T",
+          "rp_cost": "9900",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png"
+        },
+        {
+          "name": "LGBU",
+          "rp_cost": "9900",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png"
+        },
+        {
+          "name": "RB 74(M)",
+          "rp_cost": "9900",
+          "sl_cost": "15000",
+          "ge_cost": "420",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png"
+        },
+        {
+          "name": "AGM-65G",
+          "rp_cost": "13000",
+          "sl_cost": "20000",
+          "ge_cost": "550",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png"
+        },
+        {
+          "name": "Brimstone (SAL)",
+          "rp_cost": "13000",
+          "sl_cost": "20000",
+          "ge_cost": "550",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png"
+        },
+        {
+          "name": "RB 99",
+          "rp_cost": "13000",
+          "sl_cost": "20000",
+          "ge_cost": "550",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png"
+        },
+        {
+          "name": "GBU-39",
+          "rp_cost": "20000",
+          "sl_cost": "31000",
+          "ge_cost": "850",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png"
+        },
+        {
+          "name": "SPICE 250/1000",
+          "rp_cost": "20000",
+          "sl_cost": "31000",
+          "ge_cost": "850",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png"
+        },
+        {
+          "name": "AIM-120C",
+          "rp_cost": "20000",
+          "sl_cost": "31000",
+          "ge_cost": "850",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_type_b_midrange_missile.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 307300,
+      "total_sl": 470000,
+      "total_ge": 13010
+    },
+    "fetched_at": "2026-08-22T01:26:54.225Z"
+  },
+  {
+    "vehicule_id": "f_16a_block_10_norway",
+    "vehicule_name": "◢F-16A",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/f_16a_block_10_norway.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/f_16a_block_10_norway.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "12.3",
+      "rb": "12.3",
+      "sb": "12.7"
+    },
+    "rank": "VIII",
+    "purchase": {
+      "research_cost_rp": "290000",
+      "purchase_cost_sl": "780000",
+      "talisman_cost_ge": "3100"
+    },
+    "economy": {
+      "crew_training_sl": "220000",
+      "experts_sl": "780000",
+      "aces_ge": "3400",
+      "research_aces_rp": "1280000"
+    },
+    "modifications_by_group": {
+      "Flight performance": [
+        {
+          "name": "Compressor",
+          "rp_cost": "6900",
+          "sl_cost": "11000",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png"
+        },
+        {
+          "name": "Fuselage repair",
+          "rp_cost": "6900",
+          "sl_cost": "11000",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png"
+        },
+        {
+          "name": "New boosters",
+          "rp_cost": "9000",
+          "sl_cost": "14000",
+          "ge_cost": "380",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png"
+        },
+        {
+          "name": "Airframe",
+          "rp_cost": "9000",
+          "sl_cost": "14000",
+          "ge_cost": "380",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png"
+        },
+        {
+          "name": "Wings repair",
+          "rp_cost": "15000",
+          "sl_cost": "23000",
+          "ge_cost": "640",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png"
+        },
+        {
+          "name": "Cover",
+          "rp_cost": "15000",
+          "sl_cost": "23000",
+          "ge_cost": "640",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png"
+        },
+        {
+          "name": "Engine",
+          "rp_cost": "26000",
+          "sl_cost": "40000",
+          "ge_cost": "1100",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png"
+        }
+      ],
+      "Survivability": [
+        {
+          "name": "Flares/Chaff",
+          "rp_cost": "6900",
+          "sl_cost": "11000",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png"
+        },
+        {
+          "name": "G-suit",
+          "rp_cost": "9000",
+          "sl_cost": "14000",
+          "ge_cost": "380",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png"
+        }
+      ],
+      "Weaponry": [
+        {
+          "name": "Offensive 20 mm belts",
+          "rp_cost": "6900",
+          "sl_cost": "11000",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "BLU-27/B",
+          "rp_cost": "6900",
+          "sl_cost": "11000",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/napalm_fire_bomb.png"
+        },
+        {
+          "name": "AGM-119A Penguin",
+          "rp_cost": "6900",
+          "sl_cost": "11000",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_missile.png"
+        },
+        {
+          "name": "AIM-9P",
+          "rp_cost": "6900",
+          "sl_cost": "11000",
+          "ge_cost": "290",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png"
+        },
+        {
+          "name": "Mk82",
+          "rp_cost": "9000",
+          "sl_cost": "14000",
+          "ge_cost": "380",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png"
+        },
+        {
+          "name": "LAU-3/A",
+          "rp_cost": "9000",
+          "sl_cost": "14000",
+          "ge_cost": "380",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png"
+        },
+        {
+          "name": "AIM-9L",
+          "rp_cost": "9000",
+          "sl_cost": "14000",
+          "ge_cost": "380",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png"
+        },
+        {
+          "name": "New 20 mm cannons",
+          "rp_cost": "15000",
+          "sl_cost": "23000",
+          "ge_cost": "640",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png"
+        },
+        {
+          "name": "Mk84",
+          "rp_cost": "15000",
+          "sl_cost": "23000",
+          "ge_cost": "640",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_bomb.png"
+        },
+        {
+          "name": "GBU-8",
+          "rp_cost": "26000",
+          "sl_cost": "40000",
+          "ge_cost": "1100",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png"
+        },
+        {
+          "name": "AGM-65B",
+          "rp_cost": "26000",
+          "sl_cost": "40000",
+          "ge_cost": "1100",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 240300,
+      "total_sl": 373000,
+      "total_ge": 10170
+    },
+    "fetched_at": "2026-08-22T01:26:56.243Z"
+  },
+  {
+    "vehicule_group_id": "saab_jas39_group",
+    "vehicule_group_icon": "https://static.encyclopedia.warthunder.com/slots/saab_jas39_group.png",
+    "fetched_at": "2026-08-22T01:26:57.558Z"
+  },
+  {
+    "vehicule_id": "saab_jas39d",
+    "vehicule_name": "JAS39D",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/saab_jas39d.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/saab_jas39d.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 1,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "13.7",
+      "rb": "13.7",
+      "sb": "13.7"
+    },
+    "rank": "VIII",
+    "purchase": {
+      "research_cost_rp_squadron": "600000",
+      "purchase_cost_sl": "990000",
+      "talisman_cost_ge": "3300"
+    },
+    "economy": {
+      "crew_training_sl": "270000",
+      "experts_sl": "940000",
+      "aces_ge": "3700",
+      "research_aces_rp": "1380000"
+    },
+    "modifications_by_group": {
+      "Flight performance": [
+        {
+          "name": "Compressor",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "360",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png"
+        },
+        {
+          "name": "Fuselage repair",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "360",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png"
+        },
+        {
+          "name": "New boosters",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "610",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/booster.png"
+        },
+        {
+          "name": "Airframe",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "610",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png"
+        },
+        {
+          "name": "Wings repair",
+          "rp_cost": "15000",
+          "sl_cost": "23000",
+          "ge_cost": "530",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png"
+        },
+        {
+          "name": "Cover",
+          "rp_cost": "15000",
+          "sl_cost": "23000",
+          "ge_cost": "530",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png"
+        },
+        {
+          "name": "Engine",
+          "rp_cost": "19000",
+          "sl_cost": "29000",
+          "ge_cost": "680",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png"
+        }
+      ],
+      "Survivability": [
+        {
+          "name": "Flares/Chaff",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "360",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png"
+        },
+        {
+          "name": "Flares/Chaff BOL",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "610",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png"
+        },
+        {
+          "name": "G-suit",
+          "rp_cost": "15000",
+          "sl_cost": "23000",
+          "ge_cost": "530",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/g_suit.png"
+        },
+        {
+          "name": "EFS",
+          "rp_cost": "19000",
+          "sl_cost": "29000",
+          "ge_cost": "680",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png"
+        }
+      ],
+      "Weaponry": [
+        {
+          "name": "JDAM",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "360",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/bomb_jdam_01.png"
+        },
+        {
+          "name": "RB 74",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "360",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png"
+        },
+        {
+          "name": "LITENING II",
+          "rp_cost": "10000",
+          "sl_cost": "15000",
+          "ge_cost": "360",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png"
+        },
+        {
+          "name": "LGBU",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "610",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/laser_guided_bomb.png"
+        },
+        {
+          "name": "RB 75T",
+          "rp_cost": "15000",
+          "sl_cost": "23000",
+          "ge_cost": "530",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png"
+        },
+        {
+          "name": "RB 74(M)",
+          "rp_cost": "15000",
+          "sl_cost": "23000",
+          "ge_cost": "530",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png"
+        },
+        {
+          "name": "AGM-65G",
+          "rp_cost": "19000",
+          "sl_cost": "29000",
+          "ge_cost": "680",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/agm_middle_missile.png"
+        },
+        {
+          "name": "RB 99",
+          "rp_cost": "19000",
+          "sl_cost": "29000",
+          "ge_cost": "680",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_midrange_missile.png"
+        },
+        {
+          "name": "GBU-39",
+          "rp_cost": "19000",
+          "sl_cost": "29000",
+          "ge_cost": "680",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/optical_guided_bomb.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 298000,
+      "total_sl": 454000,
+      "total_ge": 10650
+    },
+    "fetched_at": "2026-08-22T01:26:59.086Z"
+  },
+  {
+    "vehicule_id": "mosquito_j30_sweden",
+    "vehicule_name": "Mosquito J30",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/mosquito_j30_sweden.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/mosquito_j30_sweden.png",
+    "vehicule_premium": 1,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "3.7",
+      "rb": "3.7",
+      "sb": "3.7"
+    },
+    "rank": "III",
+    "economy": {
+      "crew_training_sl": "10000",
+      "experts_sl": "165000",
+      "aces_ge": "590",
+      "research_aces_rp": "710000"
+    },
+    "modifications_by_group": {
+      "Flight performance": [
+        {
+          "name": "Fuselage repair",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_fuse.png"
+        },
+        {
+          "name": "Radiator",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/radiator.png"
+        },
+        {
+          "name": "Airframe",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_frame.png"
+        },
+        {
+          "name": "Compressor",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/compressor.png"
+        },
+        {
+          "name": "Wings repair",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/aerodinamic_wing.png"
+        },
+        {
+          "name": "Engine",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_engine.png"
+        },
+        {
+          "name": "Cover",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png"
+        },
+        {
+          "name": "Engine injection",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/metanol.png"
+        }
+      ],
+      "Survivability": [
+        {
+          "name": "EFS",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/engine_extinguisher.png"
+        }
+      ],
+      "Weaponry": [
+        {
+          "name": "Offensive 20 mm belts",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png"
+        },
+        {
+          "name": "Mk.II year 1943",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/gun_camora_mod.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 0,
+      "total_sl": 0,
+      "total_ge": 0
+    },
+    "fetched_at": "2026-08-22T01:42:00.743Z"
   }
 ]
