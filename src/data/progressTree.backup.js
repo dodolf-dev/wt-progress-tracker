@@ -13161,7 +13161,7 @@ export const progressTree = {
     ]
   },
 
-  "Suede_Helico": { //ok
+  "Sweden_Helico": { //ok
     name: "Helicoptère Suédois",
     ranks: [
       {
@@ -13660,7 +13660,7 @@ export const progressTree = {
                 }
               }
             }},
-          11: {id:"sw_vickers_mk_e_45", name: "", image: "", progress:"",
+          11: {id:"sw_t_28", name: "", image: "", progress:"",
             "modifications":
             {"categories": {
                 "Mobility": {
@@ -13681,15 +13681,15 @@ export const progressTree = {
                 },
                 "Firepower": {
                   "grid": [
-                    [1,1],
                     [1,0],
+                    [1,1],
                     [1,0],
                     [1,0]
                   ],
                 }
               }
             }},
-          12: {id:"sw_t_28", name: "", image: "", progress:"",
+          12: {id:"sw_vickers_mk_e_45", name: "", image: "", progress:"",
             "modifications":
             {"categories": {
                 "Mobility": {
@@ -13710,8 +13710,8 @@ export const progressTree = {
                 },
                 "Firepower": {
                   "grid": [
-                    [1,0],
                     [1,1],
+                    [1,0],
                     [1,0],
                     [1,0]
                   ],
@@ -13931,7 +13931,7 @@ export const progressTree = {
                 }
               }
             }},
-          7: {id:"sw_pvkv_III", name:"", image:"", progress:"",
+          7: {id:"sw_pvkv_iii", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Mobility": {
@@ -14144,7 +14144,7 @@ export const progressTree = {
                 }
               }
             }},
-          3: {id:"sw_l_62_anti_II", name:"", image:"", progress:"",
+          3: {id:"sw_l_62_anti_ii", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Mobility": {
@@ -14355,7 +14355,7 @@ export const progressTree = {
                 }
               }
             }},
-          8: {id:"sw_pvkv_II", name:"", image:"", progress:"",
+          8: {id:"sw_pvkv_ii", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Mobility": {
@@ -17432,6 +17432,271 @@ export const progressTree = {
                     ],
                   }
                 }
+            }},
+        }
+      },
+    ]
+  },
+
+  "Israel_Helico": { //ok
+    name: "Helicoptère Israelien",
+    ranks: [
+      {
+        name: "V",
+        grid: [
+          [1,0,0],
+          [0,1,0],
+        ],
+        vehicles: {
+          1: {id: "ah_1g_iaf", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,0,0],
+                    [0,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "md_500_tow_late", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      {
+        name: "VI",
+        grid: [
+          [1,0,1],
+          [1,0,0],
+          [1,0,0],
+        ],
+        vehicles: {
+          1: {id: "ah_1q_iaf", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,0,0],
+                    [0,1,0],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "ah_64a_peten_iaf", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          3: {id: "ah_1f_iaf", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [0,0,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id: "ah_64a_iaf", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [0,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      {
+        name: "VII",
+        grid: [
+          [1,1,0],
+        ],
+        vehicles: {
+          1: {id: "ah_64d_i_saraph", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,0,0],
+                    [0,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "ah_60_iaf", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,1],
+                    [0,1,1,1],
+                    [1,1,1,1],
+                    [0,1,0,0]
+                  ],
+                }
+              }
             }},
         }
       },

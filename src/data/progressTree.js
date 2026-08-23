@@ -93967,7 +93967,7 @@ export const progressTree = {
       }
     ]
   },
-  "Suede_Helico": {
+  "Sweden_Helico": {
     "name": "Helicoptère Suédois",
     "ranks": [
       {
@@ -97020,201 +97020,6 @@ export const progressTree = {
             "research_aces_rp": 110000
           },
           "11": {
-            "id": "sw_vickers_mk_e_45",
-            "name": "▄T-26E",
-            "image": "https://static.encyclopedia.warthunder.com/slots/sw_vickers_mk_e_45.png",
-            "progress": "",
-            "modifications": {
-              "categories": {
-                "Mobility": {
-                  "grid": [
-                    [
-                      1,
-                      0
-                    ],
-                    [
-                      1,
-                      1
-                    ],
-                    [
-                      1,
-                      0
-                    ],
-                    [
-                      1,
-                      1
-                    ]
-                  ],
-                  "mods": {
-                    "1": {
-                      "id": "mod_Mobility_1",
-                      "name": "Tracks",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_traks.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "2": {
-                      "id": "mod_Mobility_2",
-                      "name": "Suspension",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_suspension.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "3": {
-                      "id": "mod_Mobility_3",
-                      "name": "Brake System",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "4": {
-                      "id": "mod_Mobility_4",
-                      "name": "Filters",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "5": {
-                      "id": "mod_Mobility_5",
-                      "name": "Transmission",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "6": {
-                      "id": "mod_Mobility_6",
-                      "name": "Engine",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    }
-                  }
-                },
-                "Protection": {
-                  "grid": [
-                    [
-                      1
-                    ],
-                    [
-                      1
-                    ],
-                    [
-                      1
-                    ],
-                    [
-                      0
-                    ]
-                  ],
-                  "mods": {
-                    "1": {
-                      "id": "mod_Protection_1",
-                      "name": "Improved Parts",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "2": {
-                      "id": "mod_Protection_2",
-                      "name": "Improved FPE",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "3": {
-                      "id": "mod_Protection_3",
-                      "name": "Crew Replenishment",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    }
-                  }
-                },
-                "Firepower": {
-                  "grid": [
-                    [
-                      1,
-                      1
-                    ],
-                    [
-                      1,
-                      0
-                    ],
-                    [
-                      1,
-                      0
-                    ],
-                    [
-                      1,
-                      0
-                    ]
-                  ],
-                  "mods": {
-                    "1": {
-                      "id": "mod_Firepower_1",
-                      "name": "Horizontal Drive",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_horizontal_aiming.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "2": {
-                      "id": "mod_Firepower_2",
-                      "name": "BR-240SP",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "3": {
-                      "id": "mod_Firepower_3",
-                      "name": "Adjustment of Fire",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_cannon.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "4": {
-                      "id": "mod_Firepower_4",
-                      "name": "Elevation Mechanism",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_vertical_aiming.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    },
-                    "5": {
-                      "id": "mod_Firepower_5",
-                      "name": "Artillery Support",
-                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/art_support.png",
-                      "rp_cost": 0,
-                      "sl_cost": 0,
-                      "progress": 0
-                    }
-                  }
-                }
-              },
-              "availableRP": 0,
-              "researchedMods": []
-            },
-            "premium": true,
-            "squadron": false,
-            "event": false,
-            "ge_cost": 400,
-            "talisman_cost_ge": 0,
-            "crew_training_sl": 450,
-            "experts_sl": 3000,
-            "aces_ge": 45,
-            "research_aces_rp": 220000
-          },
-          "12": {
             "id": "sw_t_28",
             "name": "▄T-28",
             "image": "https://static.encyclopedia.warthunder.com/slots/sw_t_28.png",
@@ -97409,6 +97214,201 @@ export const progressTree = {
             "experts_sl": 2100,
             "aces_ge": 45,
             "research_aces_rp": 110000
+          },
+          "12": {
+            "id": "sw_vickers_mk_e_45",
+            "name": "▄T-26E",
+            "image": "https://static.encyclopedia.warthunder.com/slots/sw_vickers_mk_e_45.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Mobility": {
+                  "grid": [
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Mobility_1",
+                      "name": "Tracks",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_traks.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Mobility_2",
+                      "name": "Suspension",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_suspension.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Mobility_3",
+                      "name": "Brake System",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Mobility_4",
+                      "name": "Filters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Mobility_5",
+                      "name": "Transmission",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Mobility_6",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Protection": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Protection_1",
+                      "name": "Improved Parts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Protection_2",
+                      "name": "Improved FPE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Protection_3",
+                      "name": "Crew Replenishment",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Firepower": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Horizontal Drive",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_horizontal_aiming.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "BR-240SP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Adjustment of Fire",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_cannon.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Elevation Mechanism",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_vertical_aiming.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/art_support.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 400,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 450,
+            "experts_sl": 3000,
+            "aces_ge": 45,
+            "research_aces_rp": 220000
           },
           "13": {
             "id": "sw_pbil_m40",
@@ -98678,8 +98678,8 @@ export const progressTree = {
           },
           "6": {
             "id": "sw_t_50_fin",
-            "name": "",
-            "image": "",
+            "name": "▄T-50",
+            "image": "https://static.encyclopedia.warthunder.com/slots/sw_t_50_fin.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -98701,7 +98701,57 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Mobility_1",
+                      "name": "Tracks",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_traks.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Mobility_2",
+                      "name": "Suspension",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_suspension.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Mobility_3",
+                      "name": "Brake System",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Mobility_4",
+                      "name": "Filters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Mobility_5",
+                      "name": "Transmission",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Mobility_6",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Protection": {
                   "grid": [
@@ -98717,7 +98767,33 @@ export const progressTree = {
                     [
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Protection_1",
+                      "name": "Improved Parts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Protection_2",
+                      "name": "Improved FPE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Protection_3",
+                      "name": "Crew Replenishment",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Firepower": {
                   "grid": [
@@ -98741,15 +98817,92 @@ export const progressTree = {
                       1,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "BR-240SP",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Horizontal Drive",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_horizontal_aiming.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Adjustment of Fire",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_cannon.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Airstrike",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/airstrike.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "BR-240P",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Elevation Mechanism",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_vertical_aiming.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Firepower_7",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/art_support.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Firepower_8",
+                      "name": "Improved optics",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/scouting.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 1000,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 4800,
+            "experts_sl": 32000,
+            "aces_ge": 210,
+            "research_aces_rp": 440000
           },
           "7": {
-            "id": "sw_pvkv_III",
-            "name": "",
-            "image": "",
+            "id": "sw_pvkv_iii",
+            "name": "Pvkv III",
+            "image": "https://static.encyclopedia.warthunder.com/slots/sw_pvkv_iii.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -98771,7 +98924,57 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Mobility_1",
+                      "name": "Tracks",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_traks.png",
+                      "rp_cost": 920,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Mobility_2",
+                      "name": "Suspension",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_suspension.png",
+                      "rp_cost": 780,
+                      "sl_cost": 1100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Mobility_3",
+                      "name": "Brake System",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png",
+                      "rp_cost": 780,
+                      "sl_cost": 1100,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Mobility_4",
+                      "name": "Filters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png",
+                      "rp_cost": 870,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Mobility_5",
+                      "name": "Transmission",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png",
+                      "rp_cost": 2300,
+                      "sl_cost": 3300,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Mobility_6",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png",
+                      "rp_cost": 2300,
+                      "sl_cost": 3300,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Protection": {
                   "grid": [
@@ -98787,7 +98990,33 @@ export const progressTree = {
                     [
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Protection_1",
+                      "name": "Improved Parts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png",
+                      "rp_cost": 920,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Protection_2",
+                      "name": "Improved FPE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png",
+                      "rp_cost": 780,
+                      "sl_cost": 1100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Protection_3",
+                      "name": "Crew Replenishment",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png",
+                      "rp_cost": 870,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Firepower": {
                   "grid": [
@@ -98807,10 +99036,56 @@ export const progressTree = {
                       0,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Horizontal Drive",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_horizontal_aiming.png",
+                      "rp_cost": 920,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Adjustment of Fire",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_cannon.png",
+                      "rp_cost": 780,
+                      "sl_cost": 1100,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Elevation Mechanism",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_vertical_aiming.png",
+                      "rp_cost": 870,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "slpgr m/43",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 870,
+                      "sl_cost": 1300,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 14000,
+            "sl_cost": 32000,
+            "talisman_cost_ge": 860,
+            "crew_training_sl": 9200,
+            "experts_sl": 32000,
+            "aces_ge": 270,
+            "research_aces_rp": 250000
           },
           "8": {
             "id": "sw_strv_m42_eh",
@@ -100080,9 +100355,9 @@ export const progressTree = {
             "research_aces_rp": 280000
           },
           "3": {
-            "id": "sw_l_62_anti_II",
-            "name": "",
-            "image": "",
+            "id": "sw_l_62_anti_ii",
+            "name": "L-62 ANTI II",
+            "image": "https://static.encyclopedia.warthunder.com/slots/sw_l_62_anti_ii.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -100104,7 +100379,57 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Mobility_1",
+                      "name": "Tracks",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_traks.png",
+                      "rp_cost": 990,
+                      "sl_cost": 1600,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Mobility_2",
+                      "name": "Suspension",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_suspension.png",
+                      "rp_cost": 890,
+                      "sl_cost": 1500,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Mobility_3",
+                      "name": "Brake System",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png",
+                      "rp_cost": 890,
+                      "sl_cost": 1500,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Mobility_4",
+                      "name": "Filters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 2800,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Mobility_5",
+                      "name": "Transmission",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png",
+                      "rp_cost": 2100,
+                      "sl_cost": 3400,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Mobility_6",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png",
+                      "rp_cost": 2100,
+                      "sl_cost": 3400,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Protection": {
                   "grid": [
@@ -100120,7 +100445,33 @@ export const progressTree = {
                     [
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Protection_1",
+                      "name": "Improved Parts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png",
+                      "rp_cost": 990,
+                      "sl_cost": 1600,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Protection_2",
+                      "name": "Improved FPE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png",
+                      "rp_cost": 890,
+                      "sl_cost": 1500,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Protection_3",
+                      "name": "Crew Replenishment",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 2800,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Firepower": {
                   "grid": [
@@ -100140,10 +100491,72 @@ export const progressTree = {
                       1,
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Horizontal Drive",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_horizontal_aiming.png",
+                      "rp_cost": 990,
+                      "sl_cost": 1600,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "slsgr m/36C",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 990,
+                      "sl_cost": 1600,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Adjustment of Fire",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_cannon.png",
+                      "rp_cost": 890,
+                      "sl_cost": 1500,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "slhpgr m/43",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 890,
+                      "sl_cost": 1500,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Elevation Mechanism",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_vertical_aiming.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 2800,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Firepower_6",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/art_support.png",
+                      "rp_cost": 2100,
+                      "sl_cost": 3400,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 18000,
+            "sl_cost": 47000,
+            "talisman_cost_ge": 980,
+            "crew_training_sl": 13000,
+            "experts_sl": 47000,
+            "aces_ge": 330,
+            "research_aces_rp": 280000
           },
           "4": {
             "id": "sw_pvkv_ikv_group",
@@ -101221,9 +101634,9 @@ export const progressTree = {
             "research_aces_rp": 870000
           },
           "8": {
-            "id": "sw_pvkv_II",
-            "name": "",
-            "image": "",
+            "id": "sw_pvkv_ii",
+            "name": "Pvkv II",
+            "image": "https://static.encyclopedia.warthunder.com/slots/sw_pvkv_ii.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -101245,7 +101658,57 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Mobility_1",
+                      "name": "Tracks",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_traks.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3100,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Mobility_2",
+                      "name": "Suspension",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_suspension.png",
+                      "rp_cost": 1400,
+                      "sl_cost": 2500,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Mobility_3",
+                      "name": "Brake System",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png",
+                      "rp_cost": 1400,
+                      "sl_cost": 2500,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Mobility_4",
+                      "name": "Filters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png",
+                      "rp_cost": 2100,
+                      "sl_cost": 3800,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Mobility_5",
+                      "name": "Transmission",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png",
+                      "rp_cost": 2700,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Mobility_6",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png",
+                      "rp_cost": 2700,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Protection": {
                   "grid": [
@@ -101261,7 +101724,33 @@ export const progressTree = {
                     [
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Protection_1",
+                      "name": "Improved Parts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3100,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Protection_2",
+                      "name": "Improved FPE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png",
+                      "rp_cost": 1400,
+                      "sl_cost": 2500,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Protection_3",
+                      "name": "Crew Replenishment",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png",
+                      "rp_cost": 2100,
+                      "sl_cost": 3800,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Firepower": {
                   "grid": [
@@ -101277,10 +101766,56 @@ export const progressTree = {
                     [
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Horizontal Drive",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_horizontal_aiming.png",
+                      "rp_cost": 1700,
+                      "sl_cost": 3100,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Adjustment of Fire",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_cannon.png",
+                      "rp_cost": 1400,
+                      "sl_cost": 2500,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "Elevation Mechanism",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_vertical_aiming.png",
+                      "rp_cost": 2100,
+                      "sl_cost": 3800,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "slpgr m/43",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 2700,
+                      "sl_cost": 4900,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 26000,
+            "sl_cost": 76000,
+            "talisman_cost_ge": 1100,
+            "crew_training_sl": 22000,
+            "experts_sl": 76000,
+            "aces_ge": 400,
+            "research_aces_rp": 320000
           },
           "9": {
             "id": "sw_strv_m42_delat_torn",
@@ -114581,7 +115116,7 @@ export const progressTree = {
           "8": {
             "id": "sw_eldenhet_nomads_group",
             "name": "Sw Eldenhet Nomads",
-            "image": "",
+            "image": "https://static.encyclopedia.warthunder.com/slots/sw_eldenhet_nomads_group.png",
             "progress": "",
             "children": [
               {
@@ -114774,8 +115309,8 @@ export const progressTree = {
               },
               {
                 "id": "sw_nomads",
-                "name": "",
-                "image": "",
+                "name": "NOMADS",
+                "image": "https://static.encyclopedia.warthunder.com/slots/sw_nomads.png",
                 "progress": "",
                 "modifications": {
                   "categories": {
@@ -114797,7 +115332,57 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Mobility_1",
+                          "name": "Tracks",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_traks.png",
+                          "rp_cost": 22000,
+                          "sl_cost": 34000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Mobility_2",
+                          "name": "Suspension",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_suspension.png",
+                          "rp_cost": 18000,
+                          "sl_cost": 27000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Mobility_3",
+                          "name": "Brake System",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png",
+                          "rp_cost": 18000,
+                          "sl_cost": 27000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Mobility_4",
+                          "name": "Filters",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png",
+                          "rp_cost": 40000,
+                          "sl_cost": 61000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Mobility_5",
+                          "name": "Transmission",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        },
+                        "6": {
+                          "id": "mod_Mobility_6",
+                          "name": "Engine",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Protection": {
                       "grid": [
@@ -114813,7 +115398,41 @@ export const progressTree = {
                         [
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Protection_1",
+                          "name": "Improved Parts",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png",
+                          "rp_cost": 6600,
+                          "sl_cost": 34000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Protection_2",
+                          "name": "Improved FPE",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png",
+                          "rp_cost": 5400,
+                          "sl_cost": 27000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Protection_3",
+                          "name": "Crew Replenishment",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png",
+                          "rp_cost": 40000,
+                          "sl_cost": 61000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Protection_4",
+                          "name": "Smoke grenade",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/smoke_screen.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        }
+                      }
                     },
                     "Firepower": {
                       "grid": [
@@ -114837,17 +115456,71 @@ export const progressTree = {
                           1,
                           1
                         ]
-                      ]
+                      ],
+                      "mods": {
+                        "1": {
+                          "id": "mod_Firepower_1",
+                          "name": "NVD",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                          "rp_cost": 22000,
+                          "sl_cost": 34000,
+                          "progress": 0
+                        },
+                        "2": {
+                          "id": "mod_Firepower_2",
+                          "name": "Airstrike",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/airstrike.png",
+                          "rp_cost": 18000,
+                          "sl_cost": 27000,
+                          "progress": 0
+                        },
+                        "3": {
+                          "id": "mod_Firepower_3",
+                          "name": "Artillery Support",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/art_support.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        },
+                        "4": {
+                          "id": "mod_Firepower_4",
+                          "name": "Improved optics",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/scouting.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        },
+                        "5": {
+                          "id": "mod_Firepower_5",
+                          "name": "Laser rangefinder",
+                          "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_laser_rangefinder.png",
+                          "rp_cost": 17000,
+                          "sl_cost": 26000,
+                          "progress": 0
+                        }
+                      }
                     }
-                  }
-                }
+                  },
+                  "availableRP": 0,
+                  "researchedMods": []
+                },
+                "premium": false,
+                "squadron": false,
+                "event": false,
+                "rp_cost": 210000,
+                "sl_cost": 1120000,
+                "talisman_cost_ge": 3300,
+                "crew_training_sl": 320000,
+                "experts_sl": 1120000,
+                "aces_ge": 2300,
+                "research_aces_rp": 1430000
               }
             ]
           },
           "9": {
             "id": "sw_nasams_fcs",
-            "name": "",
-            "image": "",
+            "name": "NASAMS 3 (TADS)",
+            "image": "https://static.encyclopedia.warthunder.com/slots/sw_nasams_fcs.png",
             "progress": "",
             "modifications": {
               "categories": {
@@ -114869,7 +115542,57 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Mobility_1",
+                      "name": "Tires",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_wheels.png",
+                      "rp_cost": 22000,
+                      "sl_cost": 34000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Mobility_2",
+                      "name": "Suspension",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_car_suspension.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Mobility_3",
+                      "name": "Brake System",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Mobility_4",
+                      "name": "Filters",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png",
+                      "rp_cost": 27000,
+                      "sl_cost": 41000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Mobility_5",
+                      "name": "Transmission",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Mobility_6",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Protection": {
                   "grid": [
@@ -114885,7 +115608,33 @@ export const progressTree = {
                     [
                       0
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Protection_1",
+                      "name": "Improved Parts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png",
+                      "rp_cost": 6600,
+                      "sl_cost": 34000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Protection_2",
+                      "name": "Improved FPE",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png",
+                      "rp_cost": 5400,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Protection_3",
+                      "name": "Crew Replenishment",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png",
+                      "rp_cost": 27000,
+                      "sl_cost": 41000,
+                      "progress": 0
+                    }
+                  }
                 },
                 "Firepower": {
                   "grid": [
@@ -114905,10 +115654,64 @@ export const progressTree = {
                       1,
                       1
                     ]
-                  ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Firepower_1",
+                      "name": "Horizontal Drive",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_horizontal_aiming.png",
+                      "rp_cost": 22000,
+                      "sl_cost": 34000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Firepower_2",
+                      "name": "Airstrike",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/airstrike.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Firepower_3",
+                      "name": "AMRAAM-ER",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png",
+                      "rp_cost": 27000,
+                      "sl_cost": 41000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Firepower_4",
+                      "name": "Artillery Support",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/art_support.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Firepower_5",
+                      "name": "Improved optics",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/scouting.png",
+                      "rp_cost": 26000,
+                      "sl_cost": 40000,
+                      "progress": 0
+                    }
+                  }
                 }
-              }
-            }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 420000,
+            "sl_cost": 1120000,
+            "talisman_cost_ge": 3300,
+            "crew_training_sl": 320000,
+            "experts_sl": 1120000,
+            "aces_ge": 2300,
+            "research_aces_rp": 1430000
           }
         }
       }
@@ -124223,6 +125026,1565 @@ export const progressTree = {
             "experts_sl": 860000,
             "aces_ge": 3600,
             "research_aces_rp": 1350000
+          }
+        }
+      }
+    ]
+  },
+  "Israel_Helico": {
+    "name": "Helicoptère Israelien",
+    "ranks": [
+      {
+        "name": "V",
+        "grid": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "ah_1g_iaf",
+            "name": "Tzefa A",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_1g_iaf.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 4600,
+                      "sl_cost": 8500,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 8500,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 4600,
+                      "sl_cost": 8500,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 8500,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "New 7.62 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 4600,
+                      "sl_cost": 8500,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "M18A1 gun pod",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                      "rp_cost": 4600,
+                      "sl_cost": 8500,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "M200A1",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 4600,
+                      "sl_cost": 8500,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "M129",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cannon.png",
+                      "rp_cost": 8500,
+                      "sl_cost": 16000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "XM-35 gun pod",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 26000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "New 40 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 390000,
+            "sl_cost": 390000,
+            "talisman_cost_ge": 2100,
+            "crew_training_sl": 110000,
+            "experts_sl": 390000,
+            "aces_ge": 1700,
+            "research_aces_rp": 720000
+          },
+          "2": {
+            "id": "md_500_tow_late",
+            "name": "Lahatut",
+            "image": "https://static.encyclopedia.warthunder.com/slots/md_500_tow_late.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 30000,
+                      "sl_cost": 47000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 33000,
+                      "sl_cost": 52000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 30000,
+                      "sl_cost": 47000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 87000,
+                      "sl_cost": 135000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      0
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "TOW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 150000,
+            "sl_cost": 490000,
+            "talisman_cost_ge": 2200,
+            "crew_training_sl": 140000,
+            "experts_sl": 490000,
+            "aces_ge": 1800,
+            "research_aces_rp": 780000
+          }
+        }
+      },
+      {
+        "name": "VI",
+        "grid": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "ah_1q_iaf",
+            "name": "Tzefa B",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_1q_iaf.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 69000,
+                      "sl_cost": 105000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 30000,
+                      "sl_cost": 46000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "New 7.62 mm MGs",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "M200A1",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "M18A1 gun pod",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/gunpods.png",
+                      "rp_cost": 11000,
+                      "sl_cost": 17000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "M129",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cannon.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "TOW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 16000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "New 40 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 30000,
+                      "sl_cost": 46000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 360000,
+            "sl_cost": 980000,
+            "talisman_cost_ge": 2300,
+            "crew_training_sl": 280000,
+            "experts_sl": 980000,
+            "aces_ge": 2000,
+            "research_aces_rp": 830000
+          },
+          "2": {
+            "id": "ah_64a_peten_iaf",
+            "name": "AH-64A Peten",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_64a_peten_iaf.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "New 30 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "AGM-114",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "IRCM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/countermeasures.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "AGM-114 2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "AIM-92 Stinger",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 0,
+                      "sl_cost": 0,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": true,
+            "squadron": false,
+            "event": false,
+            "ge_cost": 9270,
+            "talisman_cost_ge": 0,
+            "crew_training_sl": 10000,
+            "experts_sl": 1670000,
+            "aces_ge": 2800,
+            "research_aces_rp": 2150000
+          },
+          "3": {
+            "id": "ah_1f_iaf",
+            "name": "Tzefa D/E",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_1f_iaf.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 32000,
+                      "sl_cost": 47000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "M261 LWL",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "IRCM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/countermeasures.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "TOW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "TOW-2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 18000,
+                      "sl_cost": 27000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 380000,
+            "sl_cost": 1000000,
+            "talisman_cost_ge": 2600,
+            "crew_training_sl": 290000,
+            "experts_sl": 1000000,
+            "aces_ge": 2400,
+            "research_aces_rp": 950000
+          },
+          "4": {
+            "id": "ah_64a_iaf",
+            "name": "Peten",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_64a_iaf.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 19000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 19000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "New 30 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "AGM-114",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "IRCM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/countermeasures.png",
+                      "rp_cost": 17000,
+                      "sl_cost": 25000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 19000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "AIM-92 Stinger",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 19000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "AGM-114 2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 390000,
+            "sl_cost": 1010000,
+            "talisman_cost_ge": 2700,
+            "crew_training_sl": 290000,
+            "experts_sl": 1010000,
+            "aces_ge": 2600,
+            "research_aces_rp": 1010000
+          }
+        }
+      },
+      {
+        "name": "VII",
+        "grid": [
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "vehicles": {
+          "1": {
+            "id": "ah_64d_i_saraph",
+            "name": "Saraph",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_64d_i_saraph.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 34000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 19000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 34000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 19000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "New 30 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "Flares/Chaff",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 15000,
+                      "sl_cost": 22000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "AGM-114",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 23000,
+                      "sl_cost": 34000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 19000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "AIM-92 Stinger",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 19000,
+                      "sl_cost": 28000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "AGM-114 2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1020000,
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 290000,
+            "experts_sl": 1020000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
+          },
+          "2": {
+            "id": "ah_60_iaf",
+            "name": "AH-60",
+            "image": "https://static.encyclopedia.warthunder.com/slots/ah_60_iaf.png",
+            "progress": "",
+            "modifications": {
+              "categories": {
+                "Flight performance": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Flight_performance_1",
+                      "name": "Compressor",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_compressor.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Flight_performance_2",
+                      "name": "Replacing helicopter blades",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/cd_98_main_rotor.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Flight_performance_3",
+                      "name": "Engine",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Survivability": {
+                  "grid": [
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ],
+                    [
+                      1
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Survivability_1",
+                      "name": "Flak jacket",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_flak_jacket.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Survivability_2",
+                      "name": "Helicopter frame",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_structure.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Survivability_3",
+                      "name": "EFS",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/jet_engine_extinguisher.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Survivability_4",
+                      "name": "Cover",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/armor_cover.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
+                },
+                "Weaponry": {
+                  "grid": [
+                    [
+                      1,
+                      1,
+                      0,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    [
+                      0,
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "mods": {
+                    "1": {
+                      "id": "mod_Weaponry_1",
+                      "name": "Offensive 20 mm belts",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/ammo.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "2": {
+                      "id": "mod_Weaponry_2",
+                      "name": "AGM-114",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "3": {
+                      "id": "mod_Weaponry_3",
+                      "name": "MAW",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/heli_false_thermal_targets.png",
+                      "rp_cost": 12000,
+                      "sl_cost": 18000,
+                      "progress": 0
+                    },
+                    "4": {
+                      "id": "mod_Weaponry_4",
+                      "name": "AGM-114 2",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "5": {
+                      "id": "mod_Weaponry_5",
+                      "name": "GATR",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/pilon_block_rocket.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "6": {
+                      "id": "mod_Weaponry_6",
+                      "name": "IRCM",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/countermeasures.png",
+                      "rp_cost": 14000,
+                      "sl_cost": 21000,
+                      "progress": 0
+                    },
+                    "7": {
+                      "id": "mod_Weaponry_7",
+                      "name": "New 20 mm cannons",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/weapon.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "8": {
+                      "id": "mod_Weaponry_8",
+                      "name": "Spike ER",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "9": {
+                      "id": "mod_Weaponry_9",
+                      "name": "AIM-92 Stinger",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/air_to_air_missile.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "10": {
+                      "id": "mod_Weaponry_10",
+                      "name": "NVD",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png",
+                      "rp_cost": 13000,
+                      "sl_cost": 19000,
+                      "progress": 0
+                    },
+                    "11": {
+                      "id": "mod_Weaponry_11",
+                      "name": "Spike ER /4",
+                      "image": "https://static.encyclopedia.warthunder.com/gui_skin/atgm_heli_preset.png",
+                      "rp_cost": 49000,
+                      "sl_cost": 72000,
+                      "progress": 0
+                    }
+                  }
+                }
+              },
+              "availableRP": 0,
+              "researchedMods": []
+            },
+            "premium": false,
+            "squadron": false,
+            "event": false,
+            "rp_cost": 400000,
+            "sl_cost": 1020000,
+            "talisman_cost_ge": 2800,
+            "crew_training_sl": 290000,
+            "experts_sl": 1020000,
+            "aces_ge": 2800,
+            "research_aces_rp": 1080000
           }
         }
       }

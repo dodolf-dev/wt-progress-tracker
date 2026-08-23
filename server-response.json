@@ -431829,5 +431829,402 @@
       "total_ge": 0
     },
     "fetched_at": "2026-08-22T01:42:00.743Z"
+  },
+  {
+    "vehicule_id": "sw_t_50_fin",
+    "vehicule_name": "▄T-50",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/sw_t_50_fin.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/sw_t_50_fin.png",
+    "vehicule_premium": 1,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "3.0",
+      "rb": "3.0",
+      "sb": "3.0"
+    },
+    "rank": "II",
+    "purchase": {
+      "purchase_cost_ge": "1000"
+    },
+    "economy": {
+      "crew_training_sl": "4800",
+      "experts_sl": "32000",
+      "aces_ge": "210",
+      "research_aces_rp": "440000"
+    },
+    "modifications_by_group": {
+      "Mobility": [
+        {
+          "name": "Tracks",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_traks.png"
+        },
+        {
+          "name": "Suspension",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_suspension.png"
+        },
+        {
+          "name": "Brake System",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png"
+        },
+        {
+          "name": "Filters",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png"
+        },
+        {
+          "name": "Transmission",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png"
+        },
+        {
+          "name": "Engine",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png"
+        }
+      ],
+      "Protection": [
+        {
+          "name": "Improved Parts",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png"
+        },
+        {
+          "name": "Improved FPE",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png"
+        },
+        {
+          "name": "Crew Replenishment",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png"
+        }
+      ],
+      "Firepower": [
+        {
+          "name": "BR-240SP",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "Horizontal Drive",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_horizontal_aiming.png"
+        },
+        {
+          "name": "Adjustment of Fire",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_cannon.png"
+        },
+        {
+          "name": "Airstrike",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/airstrike.png"
+        },
+        {
+          "name": "BR-240P",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "Elevation Mechanism",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_vertical_aiming.png"
+        },
+        {
+          "name": "Artillery Support",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/art_support.png"
+        },
+        {
+          "name": "Improved optics",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/scouting.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 0,
+      "total_sl": 0,
+      "total_ge": 0
+    },
+    "fetched_at": "2026-08-22T20:28:22.779Z"
+  },
+  {
+    "vehicule_id": "sw_nasams_fcs",
+    "vehicule_name": "NASAMS 3 (TADS)",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/sw_nasams_fcs.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/sw_nasams_fcs.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "12.7",
+      "rb": "12.7",
+      "sb": "12.7"
+    },
+    "rank": "VIII",
+    "purchase": {
+      "research_cost_rp": "420000",
+      "purchase_cost_sl": "1120000",
+      "talisman_cost_ge": "3300"
+    },
+    "economy": {
+      "crew_training_sl": "320000",
+      "experts_sl": "1120000",
+      "aces_ge": "2300",
+      "research_aces_rp": "1430000"
+    },
+    "modifications_by_group": {
+      "Mobility": [
+        {
+          "name": "Tires",
+          "rp_cost": "22000",
+          "sl_cost": "34000",
+          "ge_cost": "360",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_wheels.png"
+        },
+        {
+          "name": "Suspension",
+          "rp_cost": "18000",
+          "sl_cost": "27000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_car_suspension.png"
+        },
+        {
+          "name": "Brake System",
+          "rp_cost": "18000",
+          "sl_cost": "27000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png"
+        },
+        {
+          "name": "Filters",
+          "rp_cost": "27000",
+          "sl_cost": "41000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png"
+        },
+        {
+          "name": "Transmission",
+          "rp_cost": "26000",
+          "sl_cost": "40000",
+          "ge_cost": "430",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png"
+        },
+        {
+          "name": "Engine",
+          "rp_cost": "26000",
+          "sl_cost": "40000",
+          "ge_cost": "430",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png"
+        }
+      ],
+      "Protection": [
+        {
+          "name": "Improved Parts",
+          "rp_cost": "6600",
+          "sl_cost": "34000",
+          "ge_cost": "360",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png"
+        },
+        {
+          "name": "Improved FPE",
+          "rp_cost": "5400",
+          "sl_cost": "27000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png"
+        },
+        {
+          "name": "Crew Replenishment",
+          "rp_cost": "27000",
+          "sl_cost": "41000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png"
+        }
+      ],
+      "Firepower": [
+        {
+          "name": "Horizontal Drive",
+          "rp_cost": "22000",
+          "sl_cost": "34000",
+          "ge_cost": "360",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_horizontal_aiming.png"
+        },
+        {
+          "name": "Airstrike",
+          "rp_cost": "18000",
+          "sl_cost": "27000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/airstrike.png"
+        },
+        {
+          "name": "AMRAAM-ER",
+          "rp_cost": "27000",
+          "sl_cost": "41000",
+          "ge_cost": "450",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_ammo.png"
+        },
+        {
+          "name": "Artillery Support",
+          "rp_cost": "26000",
+          "sl_cost": "40000",
+          "ge_cost": "430",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/art_support.png"
+        },
+        {
+          "name": "Improved optics",
+          "rp_cost": "26000",
+          "sl_cost": "40000",
+          "ge_cost": "430",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/scouting.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 295000,
+      "total_sl": 493000,
+      "total_ge": 5350
+    },
+    "fetched_at": "2026-08-22T21:18:54.036Z"
+  },
+  {
+    "vehicule_id": "sw_nomads",
+    "vehicule_name": "NOMADS",
+    "vehicule_icone": "https://static.encyclopedia.warthunder.com/slots/sw_nomads.png",
+    "vehicule_image": "https://static.encyclopedia.warthunder.com/images/sw_nomads.png",
+    "vehicule_premium": 0,
+    "squadron_vehicule": 0,
+    "reserve_vehicule": 0,
+    "event_vehicule": 0,
+    "battle_rating": {
+      "ab": "12.0",
+      "rb": "12.0",
+      "sb": "12.0"
+    },
+    "rank": "VIII",
+    "purchase": {
+      "research_cost_rp": "210000",
+      "purchase_cost_sl": "1120000",
+      "talisman_cost_ge": "3300"
+    },
+    "economy": {
+      "crew_training_sl": "320000",
+      "experts_sl": "1120000",
+      "aces_ge": "2300",
+      "research_aces_rp": "1430000"
+    },
+    "modifications_by_group": {
+      "Mobility": [
+        {
+          "name": "Tracks",
+          "rp_cost": "22000",
+          "sl_cost": "34000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_traks.png"
+        },
+        {
+          "name": "Suspension",
+          "rp_cost": "18000",
+          "sl_cost": "27000",
+          "ge_cost": "320",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_suspension.png"
+        },
+        {
+          "name": "Brake System",
+          "rp_cost": "18000",
+          "sl_cost": "27000",
+          "ge_cost": "320",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_break.png"
+        },
+        {
+          "name": "Filters",
+          "rp_cost": "40000",
+          "sl_cost": "61000",
+          "ge_cost": "710",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_filter.png"
+        },
+        {
+          "name": "Transmission",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_transmission.png"
+        },
+        {
+          "name": "Engine",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/new_tank_engine.png"
+        }
+      ],
+      "Protection": [
+        {
+          "name": "Improved Parts",
+          "rp_cost": "6600",
+          "sl_cost": "34000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_tool_kit.png"
+        },
+        {
+          "name": "Improved FPE",
+          "rp_cost": "5400",
+          "sl_cost": "27000",
+          "ge_cost": "320",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/extinguisher.png"
+        },
+        {
+          "name": "Crew Replenishment",
+          "rp_cost": "40000",
+          "sl_cost": "61000",
+          "ge_cost": "710",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_reinforcement_sw.png"
+        },
+        {
+          "name": "Smoke grenade",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/smoke_screen.png"
+        }
+      ],
+      "Firepower": [
+        {
+          "name": "NVD",
+          "rp_cost": "22000",
+          "sl_cost": "34000",
+          "ge_cost": "390",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/thermal_sight.png"
+        },
+        {
+          "name": "Airstrike",
+          "rp_cost": "18000",
+          "sl_cost": "27000",
+          "ge_cost": "320",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/airstrike.png"
+        },
+        {
+          "name": "Artillery Support",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/art_support.png"
+        },
+        {
+          "name": "Improved optics",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/scouting.png"
+        },
+        {
+          "name": "Laser rangefinder",
+          "rp_cost": "17000",
+          "sl_cost": "26000",
+          "ge_cost": "300",
+          "image_url": "https://static.encyclopedia.warthunder.com/gui_skin/tank_laser_rangefinder.png"
+        }
+      ]
+    },
+    "modifications_total_cost": {
+      "total_rp": 292000,
+      "total_sl": 488000,
+      "total_ge": 5670
+    },
+    "fetched_at": "2026-08-22T21:20:00.173Z"
+  },
+  {
+    "vehicule_group_id": "sw_eldenhet_nomads_group",
+    "vehicule_group_icon": "https://static.encyclopedia.warthunder.com/slots/sw_eldenhet_nomads_group.png",
+    "fetched_at": "2026-08-22T21:21:05.607Z"
   }
 ]
