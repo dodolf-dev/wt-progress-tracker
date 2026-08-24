@@ -4,6 +4,7 @@ import VehicleModifications from '../VehicleModification/VehicleModification';
 
 const STORAGE_KEY = 'wt-progress-tracker-progress';
 const SESSION_KEY = 'wt-progress-tracker-session';
+const RESEARCHING_SESSION_KEY = 'wt-progress-tracker-researching';
 
 const areAllModsCompleted = (vehicleData, progressEntry) => {
   const categories = vehicleData?.modifications?.categories;
@@ -76,6 +77,19 @@ const ProgressTree = ({ country, vehicle }) => {
   });
 
   const [selectedVehicle, setSelectedVehicle] = useState(null);
+
+  const [researchingVehicles, setResearchingVehicles] = useState(() => {
+    try {
+      const saved = JSON.parse(
+        sessionStorage.getItem(RESEARCHING_SESSION_KEY)
+      );
+
+      return saved || {};
+    } catch {
+      return {};
+    }
+  });
+
   const [vehicleProgress, setVehicleProgress] = useState(buildInitialProgress);
 
   // ========== SAUVEGARDE AUTOMATIQUE (FUSION AVEC EXISTANT) ==========
@@ -99,6 +113,18 @@ const ProgressTree = ({ country, vehicle }) => {
       console.warn('Impossible de sauvegarder dans sessionStorage');
     }
   }, [expandedCells, collapsedRanks]);
+  useEffect(() => {
+  try {
+    sessionStorage.setItem(
+      RESEARCHING_SESSION_KEY,
+      JSON.stringify(researchingVehicles)
+    );
+  } catch (e) {
+    console.warn(
+      'Impossible de sauvegarder les véhicules recherchés dans sessionStorage'
+    );
+  }
+}, [researchingVehicles]);
 
   // ========== HANDLERS ==========
   const updateVehicleProgress = useCallback((vehicleId, updates) => {
@@ -605,30 +631,47 @@ const ProgressTree = ({ country, vehicle }) => {
       )}
 
       {selectedVehicle && (
-        <VehicleModifications
-          vehicle={{
-            ...selectedVehicle,
-            rp_researched: vehicleProgress[selectedVehicle.id]?.rpResearched ?? 0,
-            purchased: vehicleProgress[selectedVehicle.id]?.purchased ?? false,
-            talisman_purchased: vehicleProgress[selectedVehicle.id]?.talisman_purchased ?? false,
-            crewPurchased: vehicleProgress[selectedVehicle.id]?.crewPurchased ?? 0,
-            acesRpResearched: vehicleProgress[selectedVehicle.id]?.acesRpResearched ?? 0,
-            modRpValues: vehicleProgress[selectedVehicle.id]?.modRpValues || {},
-            researchedMods: vehicleProgress[selectedVehicle.id]?.researchedMods || [],
-          }}
-          onRpResearchedChange={(val) => handleRpResearchedChange(selectedVehicle.id, val)}
-          onVehiclePurchase={() => handleVehiclePurchase(selectedVehicle.id)}
-          onTalismanPurchase={() => handleTalismanPurchase(selectedVehicle.id)}
-          onCrewPurchasedChange={(val) => handleCrewPurchasedChange(selectedVehicle.id, val)}
-          onAcesRpResearchedChange={(val) => handleAcesRpResearchedChange(selectedVehicle.id, val)}
-          onAutoCompleteAll={() => handleAutoCompleteAll(selectedVehicle.id)}
-          onResetAllMods={() => handleResetAllMods(selectedVehicle.id)}
-          onModRpChange={(modId, val) => handleModRpChange(selectedVehicle.id, modId, val)}
-          onModPurchase={(modId) => handleModPurchase(selectedVehicle.id, modId)}
-          onModReset={(modId) => handleModReset(selectedVehicle.id, modId)}
-          onVehicleReset={() => handleVehicleReset(selectedVehicle.id)}
-          onClose={() => setSelectedVehicle(null)}
-        />
+      <VehicleModifications
+        vehicle={{
+          ...selectedVehicle,
+          rp_researched: vehicleProgress[selectedVehicle.id]?.rpResearched ?? 0,
+          purchased: vehicleProgress[selectedVehicle.id]?.purchased ?? false,
+          talisman_purchased: vehicleProgress[selectedVehicle.id]?.talisman_purchased ?? false,
+          crewPurchased: vehicleProgress[selectedVehicle.id]?.crewPurchased ?? 0,
+          acesRpResearched: vehicleProgress[selectedVehicle.id]?.acesRpResearched ?? 0,
+          modRpValues: vehicleProgress[selectedVehicle.id]?.modRpValues || {},
+          researchedMods: vehicleProgress[selectedVehicle.id]?.researchedMods || [],
+        }}
+        onRpResearchedChange={(val) => handleRpResearchedChange(selectedVehicle.id, val)}
+        onVehiclePurchase={() => handleVehiclePurchase(selectedVehicle.id)}
+        onTalismanPurchase={() => handleTalismanPurchase(selectedVehicle.id)}
+        onCrewPurchasedChange={(val) => handleCrewPurchasedChange(selectedVehicle.id, val)}
+        onAcesRpResearchedChange={(val) => handleAcesRpResearchedChange(selectedVehicle.id, val)}
+        onAutoCompleteAll={() => handleAutoCompleteAll(selectedVehicle.id)}
+        onResetAllMods={() => handleResetAllMods(selectedVehicle.id)}
+        onModRpChange={(modId, val) => handleModRpChange(selectedVehicle.id, modId, val)}
+        onModPurchase={(modId) => handleModPurchase(selectedVehicle.id, modId)}
+        onModReset={(modId) => handleModReset(selectedVehicle.id, modId)}
+        onVehicleReset={() => handleVehicleReset(selectedVehicle.id)}
+        onClose={() => setSelectedVehicle(null)}
+
+        isResearching={researchingVehicles[treeKey] === selectedVehicle.id}
+
+        onSetResearching={() => {
+          setResearchingVehicles(prev => ({
+            ...prev,
+            [treeKey]: selectedVehicle.id,
+          }));
+        }}
+
+        onStopResearching={() => {
+          setResearchingVehicles(prev => {
+            const next = { ...prev };
+            delete next[treeKey];
+            return next;
+          });
+        }}
+      />
       )}
     </div>
   );

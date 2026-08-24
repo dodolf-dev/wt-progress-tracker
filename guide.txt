@@ -105,3 +105,5 @@ Nouvelle liste des choses a faire:
 ->si le systeme d'avancement automatique est ajouter, penser a faire une page avec des graphiques de progression par bataille.
 ->mettre en place supabase pour les comptes personnel
 ->faire fonctionner les véhicules d'escadron avec leur progression détaillé
+->faire le css pour le bouton recherche du véhicule
+->mettre en surbrillance le véhicule rechercher

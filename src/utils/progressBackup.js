@@ -1,4 +1,5 @@
 const STORAGE_KEY = 'wt-progress-tracker-progress';
+const RESEARCHING_SESSION_KEY = 'wt-progress-tracker-researching';
 const BACKUP_VERSION = 1;
 const BACKUP_PREFIX = 'wt-progress-backup';
 
@@ -17,14 +18,45 @@ export const getStoredProgress = () => {
   }
 };
 
+export const getStoredResearchingVehicles = () => {
+  try {
+    const raw = sessionStorage.getItem(RESEARCHING_SESSION_KEY);
+
+    if (!raw) {
+      return {};
+    }
+
+    const parsed = JSON.parse(raw);
+
+    if (
+      !parsed ||
+      typeof parsed !== 'object' ||
+      Array.isArray(parsed)
+    ) {
+      return {};
+    }
+
+    return parsed;
+  } catch (error) {
+    console.warn(
+      'Impossible de lire les véhicules actuellement recherchés depuis sessionStorage.',
+      error
+    );
+
+    return {};
+  }
+};
+
 export const exportProgress = () => {
   const progress = getStoredProgress();
+  const researchingVehicles = getStoredResearchingVehicles();
 
   const backup = {
     app: 'wt-progress-tracker',
     version: BACKUP_VERSION,
     exportedAt: new Date().toISOString(),
     progress,
+    researchingVehicles,
   };
 
   const json = JSON.stringify(backup, null, 2);
@@ -74,6 +106,21 @@ const validateBackup = (backup) => {
     throw new Error('La progression contenue dans la sauvegarde est invalide.');
   }
 
+  // Compatible avec les anciennes sauvegardes qui ne possèdent
+  // pas encore la propriété researchingVehicles.
+  if (
+    backup.researchingVehicles !== undefined &&
+    (
+      !backup.researchingVehicles ||
+      typeof backup.researchingVehicles !== 'object' ||
+      Array.isArray(backup.researchingVehicles)
+    )
+  ) {
+    throw new Error(
+      'Les véhicules actuellement recherchés contenus dans la sauvegarde sont invalides.'
+    );
+  }
+
   return true;
 };
 
@@ -117,12 +164,14 @@ export const importProgress = (file) => {
 
 export const createSafetyBackup = () => {
   const progress = getStoredProgress();
+  const researchingVehicles = getStoredResearchingVehicles();
 
   const backup = {
     app: 'wt-progress-tracker',
     version: BACKUP_VERSION,
     exportedAt: new Date().toISOString(),
     progress,
+    researchingVehicles,
   };
 
   localStorage.setItem(
@@ -133,12 +182,44 @@ export const createSafetyBackup = () => {
   return backup;
 };
 
-export const restoreProgress = (progress) => {
-  if (!progress || typeof progress !== 'object' || Array.isArray(progress)) {
+export const restoreProgress = (
+  progress,
+  researchingVehicles = {}
+) => {
+  if (
+    !progress ||
+    typeof progress !== 'object' ||
+    Array.isArray(progress)
+  ) {
     throw new Error('Les données de progression sont invalides.');
   }
 
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+  if (
+    !researchingVehicles ||
+    typeof researchingVehicles !== 'object' ||
+    Array.isArray(researchingVehicles)
+  ) {
+    throw new Error(
+      'Les données des véhicules actuellement recherchés sont invalides.'
+    );
+  }
+
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify(progress)
+  );
+
+  try {
+    sessionStorage.setItem(
+      RESEARCHING_SESSION_KEY,
+      JSON.stringify(researchingVehicles)
+    );
+  } catch (error) {
+    console.warn(
+      'Impossible de restaurer les véhicules actuellement recherchés dans sessionStorage.',
+      error
+    );
+  }
 };
 
-export { STORAGE_KEY }; 
+export { STORAGE_KEY };

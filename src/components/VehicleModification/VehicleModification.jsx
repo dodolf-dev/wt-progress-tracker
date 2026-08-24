@@ -120,7 +120,10 @@ const VehicleModifications = ({
   onTalismanPurchase,
   onCrewPurchasedChange,
   onAutoCompleteAll,
-  onAcesRpResearchedChange
+  onAcesRpResearchedChange,
+  isResearching,
+  onStopResearching,
+  onSetResearching
 }) => {
   const isPremium = !!vehicle?.premium;
   const geCost = vehicle?.ge_cost ?? null;
@@ -275,6 +278,17 @@ const VehicleModifications = ({
         <div className="modifications-header">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <h2>{vehicle.name}</h2>
+                <div className="research-section">
+                  {isResearching ? (
+                    <button onClick={onStopResearching}>
+                      ✓ Recherche en cours
+                    </button>
+                  ) : (
+                    <button onClick={onSetResearching}>
+                      🔎 Rechercher ce véhicule
+                    </button>
+                  )}
+                </div>
             {!isAllModsComplete && (
               <button
                 onClick={handleMainButtonClick}
