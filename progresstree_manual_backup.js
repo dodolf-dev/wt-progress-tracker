@@ -5732,226 +5732,6 @@ export const progressTree = {
     ]
   },
 
-  "USA_Tank": {
-    name: "Chars USA",
-    ranks: [
-      {
-        name: "I",
-        grid: [
-          [1,1,1,1,1,1,1],
-          [1,0,1,1,1,1,1],
-          [1,0,0,0,1,1,0],
-        ],
-        vehicles: {
-          1: {id:"", name:"", image:"", progress:""},
-          2: {id:"", name:"", image:"", progress:""},
-          3: {id:"", name:"", image:"", progress:""},
-          4: {id:"", name:"", image:"", progress:""},
-          5: {id:"", name:"", image:"", progress:""},
-          6: {id:"", name:"", image:"", progress:""},
-          7: {id:"", name:"", image:"", progress:""},
-          8: {id:"", name:"", image:"", progress:""},
-          9: {id:"", name:"", image:"", progress:""},
-          10: {id:"", name:"", image:"", progress:""},
-          11: {id:"", name:"", image:"", progress:""},
-          12: {id:"", name:"", image:"", progress:""},
-          13: {id:"", name:"", image:"", progress:""},
-          14: {id:"", name:"", image:"", progress:""},
-          15: {id:"", name:"", image:"", progress:""},
-          16: {id:"", name:"", image:"", progress:""},
-        }
-      },
-      {
-        name: "II",
-        grid: [
-          [1,1,0,1,1,1,1],
-          [1,1,0,1,1,1,1],
-          [0,0,0,0,0,1,1],
-          [0,0,0,0,0,1,1],
-          [0,0,0,0,0,1,0],
-          [0,0,0,0,0,1,0],
-        ],
-        vehicles: {
-          1: {id:"", name:"", image:"", progress:""},
-          2: {id:"", name:"", image:"", progress:""},
-          3: {id:"", name:"", image:"", progress:""},
-          4: {id:"", name:"", image:"", progress:""},
-          5: {id:"", name:"", image:"", progress:""},
-          6: {id:"", name:"", image:"", progress:""},
-          7: {id:"", name:"", image:"", progress:""},
-          8: {id:"", name:"", image:"", progress:""},
-          9: {id:"", name:"", image:"", progress:""},
-          10: {id:"", name:"", image:"", progress:""},
-          11: {id:"", name:"", image:"", progress:""},
-          12: {id:"", name:"", image:"", progress:""},
-          13: {id:"", name:"", image:"", progress:""},
-          14: {id:"", name:"", image:"", progress:""},
-          15: {id:"", name:"", image:"", progress:""},
-          16: {id:"", name:"", image:"", progress:""},
-          17: {id:"", name:"", image:"", progress:""},
-          18: {id:"", name:"", image:"", progress:""},
-        }
-      },
-      {
-        name: "III",
-        grid: [
-          [1,1,1,1,1,1,1],
-          [0,1,1,0,1,1,1],
-          [0,0,1,0,0,1,1],
-          [0,0,0,0,0,0,1],
-        ],
-        vehicles: {
-          1: {id:"", name:"", image:"", progress:""},
-          2: {id:"", name:"", image:"", progress:""},
-          3: {id:"", name:"", image:"", progress:""},
-          4: {id:"", name:"", image:"", progress:""},
-          5: {id:"", name:"", image:"", progress:""},
-          6: {id:"", name:"", image:"", progress:""},
-          7: {id:"", name:"", image:"", progress:""},
-          8: {id:"", name:"", image:"", progress:""},
-          9: {id:"", name:"", image:"", progress:""},
-          10: {id:"", name:"", image:"", progress:""},
-          11: {id:"", name:"", image:"", progress:""},
-          12: {id:"", name:"", image:"", progress:""},
-          13: {id:"", name:"", image:"", progress:""},
-          14: {id:"", name:"", image:"", progress:""},
-          15: {id:"", name:"", image:"", progress:""},
-          16: {id:"", name:"", image:"", progress:""},
-        }
-      },
-      {
-        name: "IV",
-        grid: [
-          [1,1,0,1,1,1,1],
-          [1,1,0,1,1,1,1],
-          [0,0,0,0,0,1,1],
-          [0,0,0,0,0,1,1],
-          [0,0,0,0,0,1,0],
-          [0,0,0,0,0,1,0],
-        ],
-        vehicles: {
-          1: {id:"", name:"", image:"", progress:""},
-          2: {id:"", name:"", image:"", progress:""},
-          3: {id:"", name:"", image:"", progress:""},
-          4: {id:"", name:"", image:"", progress:""},
-          5: {id:"", name:"", image:"", progress:""},
-          6: {id:"", name:"", image:"", progress:""},
-          7: {id:"", name:"", image:"", progress:""},
-          8: {id:"", name:"", image:"", progress:""},
-          9: {id:"", name:"", image:"", progress:""},
-          10: {id:"", name:"", image:"", progress:""},
-          11: {id:"", name:"", image:"", progress:""},
-          12: {id:"", name:"", image:"", progress:""},
-          13: {id:"", name:"", image:"", progress:""},
-          14: {id:"", name:"", image:"", progress:""},
-          15: {id:"", name:"", image:"", progress:""},
-          16: {id:"", name:"", image:"", progress:""},
-          17: {id:"", name:"", image:"", progress:""},
-          18: {id:"", name:"", image:"", progress:""},
-        }
-      },
-      {
-        name: "V",
-        grid: [
-          [1,1,1,1,1,1,1],
-          [0,1,1,0,0,1,1],
-          [0,0,0,0,0,1,0],
-          [0,0,0,0,0,1,0],
-        ],
-        vehicles: {
-          1: {id:"", name:"", image:"", progress:""},
-          2: {id:"", name:"", image:"", progress:""},
-          3: {id:"", name:"", image:"", progress:""},
-          4: {id:"", name:"", image:"", progress:""},
-          5: {id:"", name:"", image:"", progress:""},
-          6: {id:"", name:"", image:"", progress:""},
-          7: {id:"", name:"", image:"", progress:""},
-          8: {id:"", name:"", image:"", progress:""},
-          9: {id:"", name:"", image:"", progress:""},
-          10: {id:"", name:"", image:"", progress:""},
-          11: {id:"", name:"", image:"", progress:""},
-          12: {id:"", name:"", image:"", progress:""},
-          13: {id:"", name:"", image:"", progress:""},
-        }
-      },
-      {
-        name: "VI",
-        grid: [
-          [1,1,1,1,1,1,1],
-          [1,1,1,1,0,1,1],
-          [1,0,0,0,0,1,1],
-          [0,0,0,0,0,0,1],
-        ],
-        vehicles: {
-          1: {id:"", name:"", image:"", progress:""},
-          2: {id:"", name:"", image:"", progress:""},
-          3: {id:"", name:"", image:"", progress:""},
-          4: {id:"", name:"", image:"", progress:""},
-          5: {id:"", name:"", image:"", progress:""},
-          6: {id:"", name:"", image:"", progress:""},
-          7: {id:"", name:"", image:"", progress:""},
-          8: {id:"", name:"", image:"", progress:""},
-          9: {id:"", name:"", image:"", progress:""},
-          10: {id:"", name:"", image:"", progress:""},
-          11: {id:"", name:"", image:"", progress:""},
-          12: {id:"", name:"", image:"", progress:""},
-          13: {id:"", name:"", image:"", progress:""},
-          14: {id:"", name:"", image:"", progress:""},
-          15: {id:"", name:"", image:"", progress:""},
-          16: {id:"", name:"", image:"", progress:""},
-          17: {id:"", name:"", image:"", progress:""},
-        }
-      },
-      {
-        name: "VII",
-        grid: [
-          [1,1,1,1,1,1,1],
-          [1,1,0,1,0,1,1],
-          [0,0,0,0,0,1,1],
-          [0,0,0,0,0,1,1],
-          [0,0,0,0,0,1,1],
-          [0,0,0,0,0,1,0],
-          [0,0,0,0,0,1,0],
-        ],
-        vehicles: {
-          1: {id:"", name:"", image:"", progress:""},
-          2: {id:"", name:"", image:"", progress:""},
-          3: {id:"", name:"", image:"", progress:""},
-          4: {id:"", name:"", image:"", progress:""},
-          5: {id:"", name:"", image:"", progress:""},
-          6: {id:"", name:"", image:"", progress:""},
-          7: {id:"", name:"", image:"", progress:""},
-          8: {id:"", name:"", image:"", progress:""},
-          9: {id:"", name:"", image:"", progress:""},
-          10: {id:"", name:"", image:"", progress:""},
-          11: {id:"", name:"", image:"", progress:""},
-          12: {id:"", name:"", image:"", progress:""},
-          13: {id:"", name:"", image:"", progress:""},
-          14: {id:"", name:"", image:"", progress:""},
-          15: {id:"", name:"", image:"", progress:""},
-          16: {id:"", name:"", image:"", progress:""},
-          17: {id:"", name:"", image:"", progress:""},
-          18: {id:"", name:"", image:"", progress:""},
-          19: {id:"", name:"", image:"", progress:""},
-          20: {id:"", name:"", image:"", progress:""},
-        }
-      },
-      {
-        name: "VIII",
-        grid: [
-          [0,0,1,1,0,0,0],
-          [0,0,1,1,0,0,0],
-        ],
-        vehicles: {
-          1: {id:"", name:"", image:"", progress:""},
-          2: {id:"", name:"", image:"", progress:""},
-          3: {id:"", name:"", image:"", progress:""},
-          4: {id:"", name:"", image:"", progress:""},
-        }
-      },
-    ]
-  },
-
   "USA_Helico": { //ok
     name: "Helicoptère USA",
     ranks: [
@@ -9257,7 +9037,7 @@ export const progressTree = {
   },
 
   // Allemagne
-  "Germany_Avion": {
+  "Germany_Avion": { //ok
     name: "Aviation Allemande",
     ranks: [
       //Rank I (ok)
@@ -13052,6 +12832,5456 @@ export const progressTree = {
             }},
         }
       },
+      // Rank V (ok)
+      {
+        name: "V",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [1, 1, 0, 0, 1, 1, 1],
+          [0, 0, 0, 0, 0, 1, 0],
+        ],
+        vehicles: {
+          1: {id:"me-262c_group", name:"", image:"", progress:"",
+            children: [
+              {id:"me-262a-1a", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1],
+                    [1,0],
+                    [0,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"me-262c-1a", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+              {id:"me-262c-2b", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          2: {id:"he-162a-2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          3: {id:"go229_v3", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"me-262a-1a_early", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,0],
+                    [1,0,1],
+                    [0,1,1],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }},
+          5: {id:"arado_234_group", name:"", image:"", progress:"",
+              children: [
+                {id:"arado-234", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+                {id:"arado-234c-3", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1],
+                    [1,0],
+                    [0,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+              ]
+          },
+          6: {id:"me-262a1_u1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          7: {id:"he-162a-1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          8: {id:"me-163_group", name:"", image:"", progress:"",
+            children: [
+              {id:"me-163b", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+              {id:"f-86f-25", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          9: {id:"mig-15bis_nr23_german", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          10: {id:"il_28_german", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          11: {id:"sea_hawk_mk100", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,1],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          12: {id:"me-262a-2a", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          13: {id:"fiat_g91_r4_german", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,1],
+                    [1,1,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      //Rank VI (ok)
+      {
+        name: "VI",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [1, 1, 1, 1, 0, 1, 1],
+        ],
+        vehicles: {
+          1: {id:"f-86_german_group", name:"", image:"", progress:"",
+            children: [
+              {id:"f-86_canadair_german", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+              {id:"f-86_cl_13b_mk6", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          2: {id:"mig-17p_lim_5p", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"fiat_g91_r3", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [0,1,1,1],
+                    [1,0,0,1],
+                    [0,0,0,1]
+                  ],
+                }
+              }
+            }},
+          4: {id:"f-84f_germany", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,1],
+                    [1,0,1],
+                    [0,1,1]
+                  ],
+                }
+              }
+            }},
+          5: {id:"hunter_f58a_1971_switzerland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [0,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,1],
+                    [1,1,1],
+                    [0,1,1]
+                  ],
+                }
+              }
+            }},
+          6: {id:"hunter_f58_switzerland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [0,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,0],
+                    [1,1,1],
+                    [0,1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id:"alpha_jet_a_jabog41", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,0],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          8: {id:"f-86k_late_german", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          9: {id:"mig-19s", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          10: {id:"alpha_jet_a", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,0],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          11: {id:"mig_23bn", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          12: {id:"mig-21_sps_k", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [0,1,0,1],
+                    [1,0,1,1],
+                    [1,1,0,1]
+                  ],
+                }
+              }
+            }},
+          13: {id:"ffa_p16", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [0,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      //Rank VII (ok)
+      {
+        name: "VII",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [1, 1, 0, 1, 1, 1, 1],
+          [0, 0, 0, 0, 0, 1, 0],
+        ],
+        vehicles: {
+          1: {id:"f-104g", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [0,1,1,0,1],
+                    [1,1,1,0,1],
+                    [0,1,1,1,0]
+                  ],
+                }
+              }
+            }},
+          2: {id:"mig-21_mf", name:"", image:"", progress:"",
+            children: [
+              {id:"mig-21_mf", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,0],
+                    [0,1,1,1],
+                    [1,1,1,0],
+                    [1,0,1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"mig-21_bis_sau", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,1],
+                    [1,0,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          3: {id:"tornado_ids_de_assta1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [0,1,1],
+                    [1,1,0],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"su_22um3k", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [1,1,1,1,1],
+                    [1,0,1,1,1],
+                    [1,0,1,1,1]
+                  ],
+                }
+              }
+            }},
+          5: {id:"mirage_3s_c70_switzerland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [0,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          6: {id:"mig-21_bis_lazur", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,0,1],
+                    [0,1,1,1],
+                    [1,1,1,1],
+                    [1,0,1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id:"f-4f", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,0],
+                    [1,1,0,1],
+                    [1,1,1,1],
+                    [0,1,1,1]
+                  ],
+                }
+              }
+            }},
+          8: {id:"f-4f_late", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,0],
+                    [1,1,0,0,1],
+                    [1,1,0,1,1],
+                    [0,1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          9: {id:"mig_23mla", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [1,1,1,1,0],
+                    [1,1,1,1,1],
+                    [1,1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          10: {id:"su_22m4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [0,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          11: {id:"f-5e_switzerland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [0,1,1,0],
+                    [0,1,1,0],
+                    [0,1,1,1]
+                  ],
+                }
+              }
+            }},
+          12: {id:"tornado_ids_de_wtd61", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,0],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          13: {id:"mig_23mf_germany", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [0,0,1,1,1],
+                    [1,0,1,1,1],
+                    [1,1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          14: {id:"su_22m4_de_wtd61", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [0,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      //Rank VIII (ok)
+      {
+        name: "VIII",
+        grid: [
+          [1, 1, 1, 0, 1, 1, 0],
+          [0, 1, 0, 0, 0, 1, 0],
+        ],
+        vehicles: {
+          1: {id:"f-4f_kws_lv", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,0],
+                    [1,1,1,1],
+                    [1,1,1,0],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"mig_29_9_12_germany", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,0,1],
+                    [1,0,1,1],
+                    [0,1,0,1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"tornado_ids_de_assta3_sle", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"fa_18c_late_switzerland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [0,1,1,1,1],
+                    [1,1,1,1,1],
+                    [1,1,0,1,1]
+                  ],
+                }
+              }
+            }},
+          5: {id:"tornado_ids_de_mfg", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          6: {id:"mig_29_9_12g", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,1],
+                    [0,1,0,1],
+                    [1,1,1,1],
+                    [0,1,1,1]
+                  ],
+                }
+              }
+            }},
+          7: {id:"fa_18c_switzerland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [0,0,1],
+                    [0,0,1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      //Rank IX (ok)
+      {
+        name: "IX",
+        grid: [
+          [1, 0, 0, 0, 0, 0, 0],
+          [1, 0, 0, 0, 0, 0, 0],
+        ],
+        vehicles: {
+          1: {id:"ef_2000_block_10", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"ef_2000_aesa", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,0],
+                    [1,1,1,0],
+                    [1,1,1,1],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+    ]
+  },
+
+  "Germany_Helico": { //ok
+    name: "Helicoptère Allemand",
+    ranks: [
+      {
+        name: "V",
+        grid: [
+          [0,1,1],
+          [1,1,0],
+        ],
+        vehicles: {
+          1: {id: "sa_313b", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [0],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "bo_105cb2", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1],
+                    [1,0],
+                    [0,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          3: {id: "uh_1d", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,0,0],
+                    [0,0,0],
+                    [0,0,0]
+                  ],
+                }
+              }
+            }},
+          4: {id: "mi_8tb", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,0],
+                    [1,1,0],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      {
+        name: "VI",
+        grid: [
+          [1,1,1],
+          [1,1,0],
+        ],
+        vehicles: {
+          1: {id: "bo_105pah1", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1],
+                    [1,0],
+                    [0,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "mi_24d_german", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          3: {id: "mi_24p_german_hfs80", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,1,0],
+                    [1,1,1,1,0],
+                    [1,1,1,1,1],
+                    [1,1,1,0,0]
+                  ],
+                }
+              }
+            }},
+          4: {id: "bo_105pah1_a1", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1],
+                    [1,0],
+                    [0,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          5: {id: "mi_24p_german", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,1,0],
+                    [1,1,1,1,0],
+                    [1,1,1,1,1],
+                    [1,1,1,0,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      {
+        name: "VII",
+        grid: [
+          [1,0,1],
+        ],
+        vehicles: {
+          1: {id: "tiger_uht", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,0,1],
+                    [1,0,1,0],
+                    [0,1,1,1],
+                    [1,0,1,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "tiger_had_spain", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [0,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+    ]
+  },
+
+  //Japon
+  "Japan_Avion": {
+    name: "Aviation Japonaise",
+    ranks: [
+      //Rank I (ok)
+      {
+        name: "I",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 0],
+          [1, 1, 1, 1, 1, 1, 0],
+          [0, 1, 1, 1, 1, 0, 0],
+        ],
+        vehicles: {
+          1: {id:"f1m2", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [0,0],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          2: {id:"ki-10_group", name: "", image: "", progress:"",
+            children: [
+              {id: "ki_10_1", name: "", image: "", progress: ""
+                ,
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+              {id: "ki_10_2", name: "", image: "", progress: ""
+                ,
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+              {id: "ki_10_1_commander", name: "", image: "", progress: ""
+                ,
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+              {id: "ki_10_2_commander", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+            ]},
+          3: {id:"ki-45_eraly_group", name: "", image: "", progress:"",
+            children: [
+              {id: "ki-45_tei", name: "", image: "", progress: ""
+                ,
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,0],
+                    [0,1,1,1],
+                    [1,0,1,1],
+                    [0,0,0,0]
+                  ],
+                }
+              }
+            }},
+              {id: "ki-45_otsu", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          4: {id:"b5n2", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          5: {id:"ki_32", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          6: {id:"a5m4_hagiri", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          7: {id:"a5m4", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          8: {id:"ki-27_otsu", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          9: {id:"ki-45_group", name: "", image: "", progress:"",
+            children: [
+              {id: "ki-45_ko", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+              {id: "ki-45_hei", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,0,1],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          10: {id:"d3a1", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          11: {id:"ki_21_1ko", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          12: {id:"ki-27_otsu_ep", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          13: {id:"ki-43_group", name: "", image: "", progress:"",
+            children: [
+              {id: "ki_43_1", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+              {id: "ki_43_2", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [0,1],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          14: {id:"ki_109", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          15: {id:"b6n1", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1],
+                    [0,1,1],
+                    [1,0,1],
+                    [0,1,1]
+                  ],
+                }
+              }
+            }},
+          16: {id:"h6k4", name: "", image: "", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      //rank II
+      {
+        name: "II",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [1, 1, 1, 1, 1, 1, 1],
+          [0, 0, 0, 1, 1, 1, 1],
+          [0, 0, 0, 0, 0, 1, 1],
+          [0, 0, 0, 0, 0, 1, 0],
+        ],
+        vehicles: {
+          1: {id:"a6m2_n1k1_group", name:"", image:"", progress:"",
+            children: [
+              {id:"a6m2_n_zero", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"n1k1_kyuofu", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+            ]},
+          2: {id:"he_112b_0", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"ju-88c-6", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          4: {id:"a6m2_n1k1_group", name:"", image:"", progress:"",
+            children: [
+              {id:"hs-129b-3", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+              {id:"hs-129b-2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]},
+          5: {id:"fw_200c_1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1],
+                    [1,0],
+                    [0,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          6: {id:"he_112b_1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          7: {id:"fw_189c_0", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          8: {id:"bf-109e_group", name:"", image:"", progress:"",
+            children: [
+              {id:"bf-109e-3", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"bf-109e-4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]},
+          9: {id:"c_3604", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          10: {id:"do_217n_group", name:"", image:"", progress:"",
+            children: [
+              {id:"do_217n_1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"do_217n_2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          11: {id:"ju-87d_group", name:"", image:"", progress:"",
+            children: [
+              {id:"ju-87d-3", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"ju-87d-5", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,1,1],
+                    [1,1,1,1],
+                    [0,1,1,1],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          12: {id:"ju-88a_group", name:"", image:"", progress:"",
+            children: [
+              {id:"ju-88a-1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"ju-88a-4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          13: {id:"il_2_1942_luftwaffe", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          14: {id:"wellington_mk1c_luftwaffe", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          15: {id:"bf-109f_early_group", name:"", image:"", progress:"",
+            children: [
+              {id:"bf-109f-1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,0],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+              {id:"bf-109f-2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,0],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          16: {id:"fw-190a-1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          17: {id:"bf_110cf_group", name:"", image:"", progress:"",
+            children: [
+              {id:"bf-110c-4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1,1],
+                    [1,1,1,1],
+                    [1,0,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"bf-110f-2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          18: {id:"me-410a-1_group", name:"", image:"", progress:"",
+            children: [
+              {id:"me_210a_1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }},
+              {id:"me-410a-1_u4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"me-410b-2_u4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+            ]},
+          19: {id:"he-111h_group", name:"", image:"", progress:"",
+            children: [
+              {id:"he-111h-6", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,0],
+                    [1,1,0],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"he-111h-16_winter", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [0,1,1],
+                    [1,1,1],
+                    [0,1,1]
+                  ],
+                }
+              }
+            }},
+            ]},
+          20: {id:"bf_109t_2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,0],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+          21: {id:"he_112b_2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          22: {id:"yak-1b_luftwaffe", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          23: {id:"h-75a-2_finland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          24: {id:"bv-238", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          25: {id:"bf-109e-7", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          26: {id:"bf-110c-6", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          27: {id:"sm-79_group", name:"", image:"", progress:"",
+            children: [
+              {id:"sm_79_1936", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,0],
+                    [1,0,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"sm_79_1939", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,0],
+                    [1,0,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"sm_79_1941", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,1],
+                    [1,0,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"sm_79_1943", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"sm_79_iar", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"sm_79_1937", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,0],
+                    [1,0,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"sm_79_1942", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1],
+                    [1,1,1],
+                    [1,0,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+            ]},
+        }
+      },
+      // Rank III
+      {
+        name: "III",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [0, 1, 1, 1, 1, 1, 1],
+          [0, 0, 0, 0, 0, 1, 1],
+          [0, 0, 0, 0, 0, 1, 1]
+        ],
+        vehicles: {
+          1: {id:"bf-109f_group", name:"", image:"", progress:"",
+            children: [
+              {id:"bf-109f-4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,0,1],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }},
+              {id:"bf-109f-4_trop", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,0,1],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          2: {id:"fw-190a-5_group", name:"", image:"", progress:"",
+            children: [
+              {id:"fw-190a-4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"fw-190a-5_u2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,1],
+                    [1,1,1],
+                    [0,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          3: {id:"bf_110g_group", name:"", image:"", progress:"",
+            children: [
+              {id:"bf-110g-2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"bf_110g_4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,0],
+                    [1,1,1,1],
+                    [1,1,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          4: {id:"me-410a_group", name:"", image:"", progress:"",
+            children: [
+              {id:"me-410a-1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }},
+              {id:"me-410b-1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,0],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          5: {id:"me_264", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1],
+                    [0,1,1],
+                    [1,0,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          6: {id:"p-47d_16_re_germany", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          7: {id:"hs-129b-2_romania", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          8: {id:"fw-190d-9", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          9: {id:"me-410a_group", name:"", image:"", progress:"",
+            children: [
+              {id:"me-410a-1_u2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"me-410b-1_u2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+            ]},
+          10: {id:"do_335_group", name:"", image:"", progress:"",
+            children: [
+              {id:"do_335a_1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,0],
+                    [1,0,1],
+                    [0,1,0],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }},
+              {id:"do_335a_0", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,1],
+                    [1,0,0],
+                    [0,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+            ]},
+          11: {id:"do_217e_group", name:"", image:"", progress:"",
+            children: [
+              {id:"do_217e_2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,1],
+                    [1,0,1,1],
+                    [1,1,1,0],
+                    [1,0,1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"do_217e_4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,1],
+                    [1,1,1,1],
+                    [1,1,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]},
+          12: {id:"ta_154a_1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          13: {id:"p-47d_luftwaffe", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          14: {id:"fw_190a_5_u14", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          15: {id:"la-5fn_luftwaffe", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          16: {id:"bf-109g-2_romania", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          17: {id:"bv-155b-1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      // Rank IV
+      {
+        name: "IV",
+        grid: [
+          [1, 1, 1, 1, 1, 1, 1],
+          [1, 1, 0, 1, 1, 1, 1],
+          [1, 1, 0, 0, 1, 1, 1],
+          [0, 0, 0, 0, 0, 1, 1],
+          [0, 0, 0, 0, 0, 1, 1],
+        ],
+        vehicles: {
+          1: {id:"bf-109g_2_group", name:"", image:"", progress:"",
+            children: [
+              {id:"bf-109g-2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,0,0],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"bf-109g-6", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,1,0],
+                    [1,1,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          2: {id:"fw-190a-5_group", name:"", image:"", progress:"",
+            children: [
+              {id:"fw-190a-4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"fw-190a-5_u2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,1],
+                    [1,1,1],
+                    [0,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          3: {id:"me-410b-6_r3", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          4: {id:"fw-190f-8", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0,1],
+                    [1,0,1,1],
+                    [1,1,0,0],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          5: {id:"do_217k_group", name:"", image:"", progress:"",
+            children: [
+              {id:"do_217k_1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"do_217m_1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          6: {id:"he_219a_7", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          7: {id:"ia_58a_pucara", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+          8: {id:"bf-109g_group", name:"", image:"", progress:"",
+            children: [
+              {id:"bf-109g-14", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+              {id:"bf-109g-10", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          9: {id:"fw-190d_group", name:"", image:"", progress:"",
+            children: [
+              {id:"fw-190a-5", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+              {id:"fw-190d-12", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          10: {id:"me-262a-1a_u4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          11: {id:"ju-188a-2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1,1],
+                    [1,1,1,1],
+                    [1,0,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+          12: {id:"do_335b_2", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,0],
+                    [1,0,1],
+                    [0,1,0],
+                    [1,0,1]
+                  ],
+                }
+              }
+            }},
+          13: {id:"bf-109z", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          14: {id:"bf-109k-4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,0],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          15: {id:"ta-152_group", name:"", image:"", progress:"",
+            children: [
+              {id:"ta-152h-1", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+              {id:"ta-152c", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,0],
+                    [1,1],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          16: {id:"he-177a-5", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,0,1],
+                    [1,1,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+          17: {id:"tempest_mkv_luftwaffe", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          18: {id:"ju-388j", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          19: {id:"ju-288c", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0,1,1],
+                    [0,1,1,1],
+                    [1,0,1,0],
+                    [0,1,1,1]
+                  ],
+                }
+              }
+            }},
+          20: {id:"fw-190c", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          21: {id:"he-177a-3", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,0,1],
+                    [1,1,1,0],
+                    [1,1,1,0]
+                  ],
+                }
+              }
+            }},
+          22: {id:"fw-190d-13", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [0,1,1],
+                    [1,1,1],
+                    [0,1,0],
+                    [1,1,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
       // Rank V
       {
         name: "V",
@@ -13343,17 +18573,17 @@ export const progressTree = {
                 }
               }
             }},
-          8: {id:"", name:"", image:"", progress:"",
+          8: {id:"me-163_group", name:"", image:"", progress:"",
             children: [
-              {id:"f-86a-5", name:"", image:"", progress:"",
+              {id:"me-163b", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
                   "grid": [
-                    [1,1],
-                    [1,0],
-                    [1,1],
-                    [1,0]
+                    [1],
+                    [0],
+                    [1],
+                    [1]
                   ],
                 },
                 "Survivability": {
@@ -13366,10 +18596,10 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,0],
-                    [0,1],
-                    [1,0],
-                    [0,1]
+                    [1],
+                    [0],
+                    [1],
+                    [0]
                   ],
                 }
               }
@@ -13379,10 +18609,10 @@ export const progressTree = {
             {"categories": {
                 "Flight performance": {
                   "grid": [
-                    [1,1],
-                    [1,0],
-                    [1,1],
-                    [1,0]
+                    [1],
+                    [0],
+                    [1],
+                    [1]
                   ],
                 },
                 "Survivability": {
@@ -13395,27 +18625,25 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,0],
-                    [0,1],
-                    [1,1],
-                    [0,1]
+                    [1],
+                    [0],
+                    [1],
+                    [0]
                   ],
                 }
               }
             }},
             ]
           },
-          9: {id:"", name:"", image:"", progress:"",
-            children: [
-              {id:"f-86a-5", name:"", image:"", progress:"",
+          9: {id:"mig-15bis_nr23_german", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
                   "grid": [
                     [1,1],
                     [1,0],
-                    [1,1],
-                    [1,0]
+                    [1,0],
+                    [1,1]
                   ],
                 },
                 "Survivability": {
@@ -13428,137 +18656,15 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,0],
-                    [0,1],
-                    [1,0],
-                    [0,1]
-                  ],
-                }
-              }
-            }},
-              {id:"f-86f-25", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,0],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,0],
-                    [0,1],
-                    [1,1],
-                    [0,1]
-                  ],
-                }
-              }
-            }},
-            ]
-          },
-          10: {id:"", name:"", image:"", progress:"",
-            children: [
-              {id:"f9f-2", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,0],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [0,1,0],
-                    [1,0,1],
-                    [0,0,1],
-                    [1,1,0]
-                  ],
-                }
-              }
-            }},
-              {id:"f9f-5", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,0],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,0],
-                    [1,1],
-                    [0,1],
-                    [1,0]
-                  ],
-                }
-              }
-            }},
-              {id:"f9f-8", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,0],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [0,1,0],
-                    [1,1,1],
                     [1,0,0],
-                    [0,0,1]
+                    [1,1,0],
+                    [1,1,1],
+                    [1,1,1]
                   ],
                 }
               }
             }},
-            ]
-          },
-          11: {id:"", name:"", image:"", progress:"",
+          10: {id:"il_28_german", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -13572,8 +18678,37 @@ export const progressTree = {
                 "Survivability": {
                   "grid": [
                     [0],
-                    [1],
                     [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                }
+              }
+            }},
+          11: {id:"sea_hawk_mk100", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
                     [1]
                   ],
                 },
@@ -13581,13 +18716,13 @@ export const progressTree = {
                   "grid": [
                     [1,1,1],
                     [0,1,1],
-                    [1,0,1],
-                    [0,1,1]
+                    [1,1,1],
+                    [1,1,1]
                   ],
                 }
               }
             }},
-          12: {id:"", name:"", image:"", progress:"",
+          12: {id:"me-262a-2a", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -13608,39 +18743,39 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [0],
-                    [0],
-                    [0],
-                    [1]
+                    [1,0],
+                    [0,1],
+                    [1,1],
+                    [0,1]
                   ],
                 }
               }
             }},
-          13: {id:"", name:"", image:"", progress:"",
+          13: {id:"fiat_g91_r4_german", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
                   "grid": [
                     [1,1],
-                    [1,0],
                     [1,1],
-                    [1,0]
+                    [1,0],
+                    [1,1]
                   ],
                 },
                 "Survivability": {
                   "grid": [
                     [0],
-                    [1],
                     [0],
-                    [1]
+                    [1],
+                    [0]
                   ],
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,0],
-                    [0,1],
-                    [1,1],
-                    [0,1]
+                    [1,1,1],
+                    [0,1,1],
+                    [1,1,1],
+                    [0,1,0]
                   ],
                 }
               }
@@ -13652,72 +18787,12 @@ export const progressTree = {
         name: "VI",
         grid: [
           [1, 1, 1, 1, 1, 1, 1],
-          [0, 1, 1, 1, 0, 1, 1],
+          [1, 1, 1, 1, 0, 1, 1],
         ],
         vehicles: {
-          1: {id:"f-104_group", name:"", image:"", progress:"",
+          1: {id:"f-86_german_group", name:"", image:"", progress:"",
             children: [
-              {id:"f-104a", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,0],
-                    [0,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1],
-                    [0,0],
-                    [1,0],
-                    [0,0]
-                  ],
-                }
-              }
-            }},
-              {id:"f-104c", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,0],
-                    [0,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1],
-                    [0,1,0],
-                    [1,0,0],
-                    [0,1,0]
-                  ],
-                }
-              }
-            }},
-            ]
-          },
-          2: {id:"f-86f-2", name:"", image:"", progress:"",
+              {id:"f-86_canadair_german", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -13746,7 +18821,67 @@ export const progressTree = {
                 }
               }
             }},
-          3: {id:"f3h-2", name:"", image:"", progress:"",
+              {id:"f-86_cl_13b_mk6", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+            ]
+          },
+          2: {id:"mig-17p_lim_5p", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"fiat_g91_r3", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -13769,15 +18904,13 @@ export const progressTree = {
                   "grid": [
                     [1,1,1,1],
                     [0,1,1,1],
-                    [1,1,1,1],
-                    [0,1,0,1]
+                    [1,0,0,1],
+                    [0,0,0,1]
                   ],
                 }
               }
             }},
-          4: {id:"a_4b_group", name:"", image:"", progress:"",
-            children: [
-              {id:"a_4b", name:"", image:"", progress:"",
+          4: {id:"f-84f_germany", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -13798,110 +18931,29 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,0],
-                    [1,1,1,0]
-                  ],
-                }
-              }
-            }},
-              {id:"fj_4b", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
-                    [0],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,0],
-                    [0,1,1],
                     [1,1,1],
-                    [1,1,0]
+                    [0,1,1],
+                    [1,0,1],
+                    [0,1,1]
                   ],
                 }
               }
             }},
-            ]
-          },
-          5: {id:"b_66b", name:"", image:"", progress:"",
+          5: {id:"hunter_f58a_1971_switzerland", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
                   "grid": [
-                    [1,0],
                     [1,1],
                     [1,1],
-                    [1,0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,0],
                     [0,1],
-                    [1,0],
-                    [0,0]
-                  ],
-                }
-              }
-            }},
-          6: {id:"a_4e_early", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [0,1,1,1]
-                  ],
-                }
-              }
-            }},
-          7: {id:"fj_4b_agm_12b", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
+                    [1,1]
                   ],
                 },
                 "Survivability": {
                   "grid": [
                     [0],
-                    [0],
+                    [1],
                     [0],
                     [1]
                   ],
@@ -13916,157 +18968,36 @@ export const progressTree = {
                 }
               }
             }},
-          8: {id:"f-100d", name:"", image:"", progress:"",
+          6: {id:"hunter_f58_switzerland", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
                   "grid": [
                     [1,1],
                     [1,1],
-                    [1,0],
+                    [0,1],
                     [1,1]
                   ],
                 },
                 "Survivability": {
                   "grid": [
-                    [0],
-                    [0],
+                    [1],
+                    [1],
                     [0],
                     [1]
                   ],
                 },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [0,1,1,1],
-                    [1,1,1,1]
-                  ],
-                }
-              }
-            }},
-          9: {id:"f8u-2", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,1]
-                  ],
-                }?
                 "Weaponry": {
                   "grid": [
                     [1,1,1],
                     [0,1,0],
-                    [1,0,1],
-                    [0,1,0]
+                    [1,1,1],
+                    [0,1,1]
                   ],
                 }
               }
             }},
-          10: {id:"av_8c", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [0,1,1,1],
-                    [1,1,0,1],
-                    [1,0,0,1]
-                  ],
-                }
-              }
-            }},
-          11: {id:"f_117", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
-                    [1],
-                    [0],
-                    [0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1],
-                    [0,1],
-                    [1,1],
-                    [0,0]
-                  ],
-                }
-              }
-            }},
-          12: {id:"b_52h", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,0],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1],
-                    [0,1],
-                    [1,1],
-                    [0,0]
-                  ],
-                }
-              }
-            }},
-          13: {id:"av_8a", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [0,1,1,1],
-                    [1,1,1,0],
-                    [1,1,0,0]
-                  ],
-                }
-              }
-            }},
-          14: {id:"f11f_1_late", name:"", image:"", progress:"",
+          7: {id:"alpha_jet_a_jabog41", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -14079,96 +19010,9 @@ export const progressTree = {
                 },
                 "Survivability": {
                   "grid": [
-                    [0],
-                    [0],
-                    [1],
-                    [0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,0,1],
-                    [0,1,1],
-                    [1,0,1],
-                    [0,1,0]
-                  ],
-                }
-              }
-            }},
-          15: {id:"a_10a_early", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,0,1],
-                    [0,1,1,1],
-                    [1,1,1,1],
-                    [0,1,1,1]
-                  ],
-                }
-              }
-            }},
-          16: {id:"f4d_1", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,0],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
                     [1],
                     [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,0,0],
-                    [0,1,0],
-                    [1,0,1],
-                    [0,1,0]
-                  ],
-                }
-              }
-            }},
-          17: {id:"f_106a_1972", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,0],
-                    [1,1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [0],
                     [1],
-                    [0],
                     [0]
                   ],
                 },
@@ -14177,7 +19021,181 @@ export const progressTree = {
                     [1,1],
                     [0,0],
                     [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          8: {id:"f-86k_late_german", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,0],
                     [0,0]
+                  ],
+                }
+              }
+            }},
+          9: {id:"mig-19s", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [0,1],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          10: {id:"alpha_jet_a", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,0],
+                    [1,1],
+                    [0,1]
+                  ],
+                }
+              }
+            }},
+          11: {id:"mig_23bn", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1]
+                  ],
+                }
+              }
+            }},
+          12: {id:"mig-21_sps_k", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [0,1,0,1],
+                    [1,0,1,1],
+                    [1,1,0,1]
+                  ],
+                }
+              }
+            }},
+          13: {id:"ffa_p16", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [0,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [0],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,0],
+                    [1,0,0]
                   ],
                 }
               }
@@ -14189,214 +19207,11 @@ export const progressTree = {
         name: "VII",
         grid: [
           [1, 1, 1, 1, 1, 1, 1],
-          [0, 1, 1, 1, 1, 1, 1],
-          [0, 0, 0, 1, 1, 1, 1],
+          [1, 1, 0, 1, 1, 1, 1],
+          [0, 0, 0, 0, 0, 1, 0],
         ],
         vehicles: {
-          1: {id:"f-5e", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,0],
-                    [1,1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,0],
-                    [1,1,1,0],
-                    [1,1,1,1]
-                  ],
-                }
-              }
-            }},
-          2: {id:"f-4c", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,0],
-                    [1,1,1,1]
-                  ],
-                }
-              }
-            }},
-          3: {id:"f-8e", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [0,1,1,1]
-                  ],
-                }
-              }
-            }},
-          4: {id:"a_10a_late", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1],
-                    [0,1,1],
-                    [1,0,0],
-                    [1,1,1]
-                  ],
-                }
-              }
-            }},
-          5: {id:"f-105d", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [0,1,1,1],
-                    [1,1,1,1],
-                    [0,1,1,1]
-                  ],
-                }
-              }
-            }},
-          6: {id:"f-5c", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,0],
-                    [1,1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1],
-                    [0,1,1],
-                    [1,1,1],
-                    [0,1,1]
-                  ],
-                }
-              }
-            }},
-          7: {id:"f-5a", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,0],
-                    [1,1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1],
-                    [0,1,1],
-                    [1,1,1],
-                    [0,1,1]
-                  ],
-                }
-              }
-            }},
-          8: {id:"f-4e", name:"", image:"", progress:"",
+          1: {id:"f-104g", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -14418,45 +19233,16 @@ export const progressTree = {
                 "Weaponry": {
                   "grid": [
                     [1,1,1,1,1],
-                    [1,1,1,1,0],
-                    [1,1,1,1,0],
-                    [1,0,1,1,1]
+                    [0,1,1,0,1],
+                    [1,1,1,0,1],
+                    [0,1,1,1,0]
                   ],
                 }
               }
             }},
-          9: {id:"f-4j", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [0,1,1,1],
-                    [1,1,0,1],
-                    [0,1,1,1]
-                  ],
-                }
-              }
-            }},
-          10: {id:"a_7_group", name:"", image:"", progress:"",
+          2: {id:"mig-21_mf", name:"", image:"", progress:"",
             children: [
-              {id:"a_7d", name:"", image:"", progress:"",
+              {id:"mig-21_mf", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -14477,46 +19263,46 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,1,0,1],
-                    [1,1,1,1,0],
-                    [1,1,1,0,1],
-                    [0,1,1,1,1]
+                    [1,1,1,0],
+                    [0,1,1,1],
+                    [1,1,1,0],
+                    [1,0,1,0]
                   ],
                 }
               }
             }},
-              {id:"a_7e", name:"", image:"", progress:"",
+              {id:"mig-21_bis_sau", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
                   "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
+                    [1,1],
+                    [1,0],
+                    [1,0],
+                    [1,1]
                   ],
                 },
                 "Survivability": {
                   "grid": [
+                    [0],
                     [1],
-                    [1],
-                    [1],
+                    [0],
                     [1]
                   ],
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,1,0,1],
-                    [1,1,1,1,1],
-                    [1,1,1,0,1],
-                    [0,1,1,0,1]
+                    [1,1,0,1],
+                    [1,0,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1]
                   ],
                 }
               }
             }},
             ]
           },
-          11: {id:"f_111a", name:"", image:"", progress:"",
+          3: {id:"tornado_ids_de_assta1", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -14537,15 +19323,73 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,1],
-                    [1,1,1],
-                    [1,1,1],
-                    [1,1,1]
+                    [1,1,0],
+                    [0,1,1],
+                    [1,1,0],
+                    [0,1,0]
                   ],
                 }
               }
             }},
-          12: {id:"av_8b_na", name:"", image:"", progress:"",
+          4: {id:"su_22um3k", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [1,1,1,1,1],
+                    [1,0,1,1,1],
+                    [1,0,1,1,1]
+                  ],
+                }
+              }
+            }},
+          5: {id:"mirage_3s_c70_switzerland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,0],
+                    [1,1],
+                    [0,1],
+                    [1,0]
+                  ],
+                }
+              }
+            }},
+          6: {id:"mig-21_bis_lazur", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -14561,136 +19405,49 @@ export const progressTree = {
                     [1],
                     [1],
                     [0],
-                    [0]
+                    [1]
                   ],
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [0,1,1,0]
-                  ],
-                }
-              }
-            }},
-          13: {id:"a_6e_tram", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
+                    [0,1,0,1],
                     [0,1,1,1],
-                    [1,1,1,1]
+                    [1,1,1,1],
+                    [1,0,1,1]
                   ],
                 }
               }
             }},
-          14: {id:"a_10c", name:"", image:"", progress:"",
+          7: {id:"f-4f", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
                   "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
+                    [1],
+                    [1],
+                    [1],
+                    [1]
                   ],
                 },
                 "Survivability": {
                   "grid": [
                     [1],
                     [1],
-                    [0],
+                    [1],
                     [1]
                   ],
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
                     [1,1,1,0],
-                    [1,1,1,1]
-                  ],
-                }
-              }
-            }},
-          15: {id:"f_111f", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [0,1,1,1],
-                    [1,1,1,0],
-                    [0,1,1,1],
-                    [1,1,1,1]
-                  ],
-                }
-              }
-            }},
-          16: {id:"f-4s", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,0,0],
-                    [0,1,1,1],
-                    [1,1,0,0],
+                    [1,1,0,1],
+                    [1,1,1,1],
                     [0,1,1,1]
                   ],
                 }
               }
             }},
-          17: {id:"a_7k", name:"", image:"", progress:"",
+          8: {id:"f-4f_late", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -14711,10 +19468,184 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,1,0,1],
                     [1,1,1,1,0],
-                    [1,1,1,0,1],
+                    [1,1,0,0,1],
+                    [1,1,0,1,1],
                     [0,1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          9: {id:"mig_23mla", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [1,1,1,1,0],
+                    [1,1,1,1,1],
+                    [1,1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          10: {id:"su_22m4", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [0,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          11: {id:"f-5e_switzerland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,0],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [0]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [0,1,1,0],
+                    [0,1,1,0],
+                    [0,1,1,1]
+                  ],
+                }
+              }
+            }},
+          12: {id:"tornado_ids_de_wtd61", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [0,0],
+                    [1,0],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          13: {id:"mig_23mf_germany", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [0,0,1,1,1],
+                    [1,0,1,1,1],
+                    [1,1,1,1,1]
+                  ],
+                }
+              }
+            }},
+          14: {id:"su_22m4_de_wtd61", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [0,1],
+                    [0,1],
+                    [1,1]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1]
                   ],
                 }
               }
@@ -14725,42 +19656,40 @@ export const progressTree = {
       {
         name: "VIII",
         grid: [
-          [1, 1, 1, 1, 1, 1, 1],
-          [1, 1, 1, 0, 0, 1, 0],
+          [1, 1, 1, 0, 1, 1, 0],
+          [0, 1, 0, 0, 0, 1, 0],
         ],
         vehicles: {
-          1: {id:"f_16_group", name:"", image:"", progress:"",
-            children: [
-              {id:"f_16a_block_10", name:"", image:"", progress:"",
+          1: {id:"f-4f_kws_lv", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
                   "grid": [
                     [1,1],
                     [1,1],
-                    [1,1],
-                    [1,0]
+                    [1,0],
+                    [1,1]
                   ],
                 },
                 "Survivability": {
                   "grid": [
                     [1],
-                    [1],
                     [0],
+                    [1],
                     [0]
                   ],
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,0,1],
-                    [0,1,1,1],
-                    [1,1,0,0],
-                    [0,1,1,0]
+                    [1,1,1,0],
+                    [1,1,1,1],
+                    [1,1,1,0],
+                    [1,1,1,1]
                   ],
                 }
               }
             }},
-              {id:"f_16a_block_15_adf", name:"", image:"", progress:"",
+          2: {id:"mig_29_9_12_germany", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -14776,7 +19705,86 @@ export const progressTree = {
                     [1],
                     [1],
                     [0],
-                    [0]
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,0,1],
+                    [1,0,1,1],
+                    [0,1,0,1]
+                  ],
+                }
+              }
+            }},
+          3: {id:"tornado_ids_de_assta3_sle", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,0],
+                    [1,1,1],
+                    [1,0,1],
+                    [0,1,0]
+                  ],
+                }
+              }
+            }},
+          4: {id:"fa_18c_late_switzerland", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,1],
+                    [0,1,1,1,1],
+                    [1,1,1,1,1],
+                    [1,1,0,1,1]
+                  ],
+                }
+              }
+            }},
+          5: {id:"tornado_ids_de_mfg", name:"", image:"", progress:"",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,1],
+                    [1,1],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [0],
+                    [1]
                   ],
                 },
                 "Weaponry": {
@@ -14784,14 +19792,12 @@ export const progressTree = {
                     [1,1],
                     [0,1],
                     [1,0],
-                    [0,1]
+                    [0,0]
                   ],
                 }
               }
             }},
-            ]
-          },
-          2: {id:"f_15a", name:"", image:"", progress:"",
+          6: {id:"mig_29_9_12g", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -14812,313 +19818,15 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,1],
-                    [0,1,1],
-                    [1,1,0],
-                    [0,1,1]
-                  ],
-                }
-              }
-            }},
-          3: {id:"f_18_group", name:"", image:"", progress:"",
-            children: [
-              {id:"fa_18a", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [0,1]
-                  ],
-                }
-              }
-            }},
-              {id:"fa_18c_late", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,1]
-                  ],
-                }
-              }
-            }},
-            ]
-          },
-          4: {id:"av_8b_plus", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,0,1,1],
-                    [0,1,1,1],
-                    [0,1,1,0]
-                  ],
-                }
-              }
-            }},
-          5: {id:"f_15e", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,1]
-                  ],
-                }
-              }
-            }},
-          6: {id:"f_20a", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,0,1,1],
-                    [1,1,1,1]
-                  ],
-                }
-              }
-            }},
-          7: {id:"f_14a_iriaf", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,0,1,0],
-                    [1,0,1,1,1],
-                    [1,1,1,0,1],
-                    [1,0,1,1,1]
-                  ],
-                }
-              }
-            }},
-          8: {id:"f_16c_block_50", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [0]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,0,0,1]
-                  ],
-                }
-              }
-            }},
-          9: {id:"f_15c_msip2", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1],
-                    [0,1,1],
-                    [1,1,1],
-                    [0,1,1]
-                  ],
-                }
-              }
-            }},
-          10: {id:"f_14_group", name:"", image:"", progress:"",
-            children: [
-              {id:"f_14a_early", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,1,0],
-                    [1,1,1,1],
                     [1,1,0,1],
-                    [1,1,0,1]
+                    [0,1,0,1],
+                    [1,1,1,1],
+                    [0,1,1,1]
                   ],
                 }
               }
             }},
-              {id:"f_14b", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [1],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [0,1,1,0],
-                    [1,1,1,1],
-                    [1,1,1,1],
-                    [1,1,0,1]
-                  ],
-                }
-              }
-            }},
-            ]
-          },
-          11: {id:"fa_18c_early", name:"", image:"", progress:"",
+          7: {id:"fa_18c_switzerland", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -15139,10 +19847,10 @@ export const progressTree = {
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,0,1],
                     [1,1,1],
-                    [1,0,1],
-                    [0,1,1]
+                    [1,1,1],
+                    [0,0,1],
+                    [0,0,1]
                   ],
                 }
               }
@@ -15153,11 +19861,10 @@ export const progressTree = {
       {
         name: "IX",
         grid: [
-          [1, 0, 0, 0, 0, 0, 0],
-          [1, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 1, 0, 0],
         ],
         vehicles: {
-          1: {id:"ef_2000_block_10", name:"", image:"", progress:"",
+          1: {id:"su_30mkm", name:"", image:"", progress:"",
             "modifications":
             {"categories": {
                 "Flight performance": {
@@ -15165,52 +19872,15 @@ export const progressTree = {
                     [1,1],
                     [1,1],
                     [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [1]
+                    [1,1]
                   ],
                 },
                 "Weaponry": {
                   "grid": [
-                    [1,1,0],
-                    [1,1,1],
-                    [1,1,1],
-                    [1,1,1]
-                  ],
-                }
-              }
-            }},
-          2: {id:"ef_2000_aesa", name:"", image:"", progress:"",
-            "modifications":
-            {"categories": {
-                "Flight performance": {
-                  "grid": [
-                    [1,1],
-                    [1,1],
-                    [1,1],
-                    [1,0]
-                  ],
-                },
-                "Survivability": {
-                  "grid": [
-                    [1],
-                    [1],
-                    [0],
-                    [1]
-                  ],
-                },
-                "Weaponry": {
-                  "grid": [
-                    [1,1,0,0],
-                    [1,1,1,0],
-                    [1,1,1,1],
-                    [1,1,1,0]
+                    [1,1,1,1,1],
+                    [1,1,1,1,1],
+                    [1,1,1,1,0],
+                    [1,1,1,1,0]
                   ],
                 }
               }
@@ -15623,6 +20293,302 @@ export const progressTree = {
                     [0,1,1,0],
                     [1,1,1,1],
                     [1,1,1,1]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+    ]
+  },
+
+  //Italie
+  "Italy_Helico": { //ok
+    name: "Helicoptère Allemand",
+    ranks: [
+      {
+        name: "V",
+        grid: [
+          [1,0],
+          [1,0],
+        ],
+        vehicles: {
+          1: {id: "ab_205a_1", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [1],
+                    [0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "mi_24d_hungary", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1],
+                    [1,1,1],
+                    [1,1,1],
+                    [1,0,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      {
+        name: "VI",
+        grid: [
+          [1,1],
+          [1,1],
+          [0,1]
+        ],
+        vehicles: {
+          1: {id: "a_109_eoa2", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1],
+                    [1,0],
+                    [0,1],
+                    [0,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "t_129_atak", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,0],
+                    [0,0,1,1],
+                    [1,1,1,0],
+                    [0,1,0,0]
+                  ],
+                }
+              }
+            }},
+          3: {id: "mi_24v_hungary", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,0,1],
+                    [1,0,1,1,1],
+                    [1,1,1,1,1],
+                    [1,0,1,0,0]
+                  ],
+                }
+              }
+            }},
+          4: {id: "mi_24p_hungary", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,0,1],
+                    [1,0,1,1,1],
+                    [1,1,1,1,1],
+                    [1,0,1,1,0]
+                  ],
+                }
+              }
+            }},
+          5: {id: "a_129_a", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,0],
+                    [0,1,0,1],
+                    [1,1,1,1],
+                    [0,0,0,0]
+                  ],
+                }
+              }
+            }},
+        }
+      },
+      {
+        name: "VII",
+        grid: [
+          [1,0],
+          [1,0]
+        ],
+        vehicles: {
+          1: {id: "a_129_cbt", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [1],
+                    [1],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1,0],
+                    [1,1,1,1,1],
+                    [1,1,1,1,1],
+                    [1,0,0,0,0]
+                  ],
+                }
+              }
+            }},
+          2: {id: "a_129_d", name: "", image: "", progress: "",
+            "modifications":
+            {"categories": {
+                "Flight performance": {
+                  "grid": [
+                    [1,0],
+                    [1,0],
+                    [1,1],
+                    [1,0]
+                  ],
+                },
+                "Survivability": {
+                  "grid": [
+                    [1],
+                    [0],
+                    [0],
+                    [1]
+                  ],
+                },
+                "Weaponry": {
+                  "grid": [
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,1],
+                    [1,1,1,0]
                   ],
                 }
               }

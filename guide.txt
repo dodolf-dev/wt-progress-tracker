@@ -107,3 +107,6 @@ Nouvelle liste des choses a faire:
 ->faire fonctionner les véhicules d'escadron avec leur progression détaillé
 ->faire le css pour le bouton recherche du véhicule
 ->mettre en surbrillance le véhicule rechercher
+
+-> véhicule a ajouter dans la databse:
+he-51_group,fw_189c_0,sm-79_group,ia_58a_pucara,alpha_jet_a_jabog41,ef_2000_aesa
