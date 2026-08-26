@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/wt-progress-tracker/static/js/main.b9e5d2cf.js",
+    "main.js": "/wt-progress-tracker/static/js/main.fd718ddf.js",
     "index.html": "/wt-progress-tracker/index.html",
-    "main.b9e5d2cf.js.map": "/wt-progress-tracker/static/js/main.b9e5d2cf.js.map"
+    "main.fd718ddf.js.map": "/wt-progress-tracker/static/js/main.fd718ddf.js.map"
   },
   "entrypoints": [
-    "static/js/main.b9e5d2cf.js"
+    "static/js/main.fd718ddf.js"
   ]
 }
