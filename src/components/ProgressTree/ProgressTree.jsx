@@ -103,13 +103,19 @@ useEffect(() => {
       }
     }
 
-    if (targetVehicle) break;
+    if (targetVehicle) {
+      break;
+    }
   }
 
   if (targetVehicle) {
     setSelectedVehicle(targetVehicle);
+  } else {
+    console.warn(
+      `Véhicule avec l'id "${initialVehicleId}" introuvable dans ${treeKey}`
+    );
   }
-}, [initialVehicleId, treeData]);
+}, [initialVehicleId, treeData, treeKey]);
 
 
   const [researchingVehicles, setResearchingVehicles] = useState(() => {

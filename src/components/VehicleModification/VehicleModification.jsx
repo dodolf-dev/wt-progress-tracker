@@ -149,10 +149,6 @@ const VehicleModifications = ({
   const [isEditingRp, setIsEditingRp] = useState(false);
   const [inputValue, setInputValue] = useState('');
 
-  // ---- ÉQUIPAGE : entièrement piloté par les props (source de vérité = le parent) ----
-  // On ne garde plus de state local "de secours" : un tel state se réinitialise
-  // à chaque démontage du composant (fermeture de la modale), ce qui provoquait
-  // la perte du niveau d'équipage à la réouverture.
   const effectiveCrewLevel = normalizeCrewLevel(vehicle?.crewPurchased);
 
   // ---- RP "as" (aces) : idem, directement dérivé du véhicule fourni par le parent ----

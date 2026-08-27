@@ -18,8 +18,8 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/progress" element={<Progress />} />
         <Route path="/stat" element={<Stat />} />
-        <Route path="*" element={<Error404 />} />
         <Route path="/tracking" element={<Tracking />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

@@ -148,7 +148,7 @@ function VehicleCard({
     >
       <div className="tracking-card-image-container">
         <img
-          src={vehicle.image}
+            src={`https://static.encyclopedia.warthunder.com/images/${vehicle.id}.png`}
           alt={vehicle.name}
           className="tracking-card-image"
           onError={(e) => {
@@ -161,6 +161,12 @@ function VehicleCard({
         {status === 'researching' && (
           <div className="tracking-status-badge researching-badge">
             🔎 EN RECHERCHE
+          </div>
+        )}
+
+        {status === 'available' && (
+          <div className="tracking-status-badge available-badge">
+            📘 DISPONIBLE
           </div>
         )}
 
@@ -230,6 +236,15 @@ function VehicleCard({
               {rpResearched.toLocaleString()} /{' '}
               {rpCost.toLocaleString()} RP
             </div>
+          </div>
+        )}
+
+        {status === 'available' && rpCost > 1 && (
+          <div className="tracking-purchase-info">
+            <span>Recherche</span>
+            <strong>
+              {rpCost.toLocaleString()} RP
+            </strong>
           </div>
         )}
 
@@ -333,56 +348,70 @@ export default function Tracking() {
     []
   );
 
-  const vehiclesWithStatus = useMemo(() => {
-    return allVehicles.map((vehicle) => {
-      const vehicleProgress = getVehicleProgress(
-        progress,
-        vehicle
-      );
+const vehiclesWithStatus = useMemo(() => {
+  return allVehicles.map((vehicle) => {
+    const vehicleProgress = getVehicleProgress(progress, vehicle);
 
-      const isResearching =
-        researchingVehicles[vehicle.treeKey] ===
-        vehicle.id;
+    const rpCost = Number(vehicle.rp_cost) || 0;
+    const rpResearched = Number(vehicleProgress.rpResearched) || 0;
+    const isPurchased = !!vehicleProgress.purchased;
 
-      const rpCost = Number(vehicle.rp_cost) || 0;
-      const rpResearched =
-        Number(vehicleProgress.rpResearched) || 0;
+    // Véhicule actuellement sélectionné pour la recherche
+    const isResearching =
+      researchingVehicles[vehicle.treeKey] === vehicle.id;
 
-      const isPurchased =
-        !!vehicleProgress.purchased ||
-        (Number(vehicle.sl_cost) === 0 && rpCost === 0);
+    const rpComplete =
+      rpCost > 0 &&
+      rpResearched >= rpCost;
 
-      const rpComplete =
-        rpCost > 0 &&
-        rpResearched >= rpCost &&
-        !vehicleProgress.purchased;
+    const allModsDone = areAllModsCompleted(
+      vehicle,
+      vehicleProgress
+    );
 
-      const allModsDone = areAllModsCompleted(
-        vehicle,
-        vehicleProgress
-      );
+    let status = null;
 
-      let status = null;
+    // 🔎 EN RECHERCHE
+    // - soit le véhicule est actuellement sélectionné
+    // - soit la recherche a déjà commencé (> 0 RP)
+    if (
+      !isPurchased &&
+      !rpComplete &&
+      (
+        isResearching ||
+        rpResearched > 0
+      )
+    ) {
+      status = 'researching';
+    }
 
-      if (isResearching) {
-        status = 'researching';
-      } else if (rpComplete) {
-        status = 'purchase';
-      } else if (isPurchased && !allModsDone) {
-        status = 'unspaded';
-      }
+    // 💰 À ACHETER
+    else if (
+      !isPurchased &&
+      rpComplete
+    ) {
+      status = 'purchase';
+    }
 
-      return {
-        ...vehicle,
-        progress: vehicleProgress,
-        status,
-      };
-    });
-  }, [
-    allVehicles,
-    progress,
-    researchingVehicles,
-  ]);
+    // ⭐ NON SPADÉ
+    else if (
+      isPurchased &&
+      !allModsDone
+    ) {
+      status = 'unspaded';
+    }
+
+    return {
+      ...vehicle,
+      progress: vehicleProgress,
+      status,
+    };
+  });
+}, [
+  allVehicles,
+  progress,
+  researchingVehicles,
+]);
 
   const countries = useMemo(() => {
     return [
@@ -415,13 +444,9 @@ export default function Tracking() {
   }, [allVehicles]);
 
   const filteredVehicles = useMemo(() => {
-    const normalizedSearch = search
-      .trim()
-      .toLowerCase();
+    const normalizedSearch = search.trim().toLowerCase();
 
     return vehiclesWithStatus.filter((vehicle) => {
-      if (!vehicle.status) return false;
-
       if (
         countryFilter !== 'all' &&
         vehicle.country !== countryFilter
@@ -445,9 +470,7 @@ export default function Tracking() {
 
       if (
         normalizedSearch &&
-        !vehicle.name
-          ?.toLowerCase()
-          .includes(normalizedSearch)
+        !vehicle.name?.toLowerCase().includes(normalizedSearch)
       ) {
         return false;
       }
@@ -462,17 +485,20 @@ export default function Tracking() {
     search,
   ]);
 
-  const researching = filteredVehicles.filter(
-    (vehicle) => vehicle.status === 'researching'
-  );
+// RECHERCHE : tous les véhicules avec un coût RP > 1
+const researching = filteredVehicles.filter(
+  (vehicle) => vehicle.status === 'researching'
+);
 
-  const purchase = filteredVehicles.filter(
-    (vehicle) => vehicle.status === 'purchase'
-  );
+// À ACHETER : recherche terminée mais véhicule pas encore acheté
+const purchase = filteredVehicles.filter(
+  (vehicle) => vehicle.status === 'purchase'
+);
 
-  const unspaded = filteredVehicles.filter(
-    (vehicle) => vehicle.status === 'unspaded'
-  );
+// NON SPADÉS : véhicule acheté + modifications restantes
+const unspaded = filteredVehicles.filter(
+  (vehicle) => vehicle.status === 'unspaded'
+);
 
   const allResearching = vehiclesWithStatus.filter(
     (vehicle) => vehicle.status === 'researching'
@@ -483,7 +509,9 @@ export default function Tracking() {
   );
 
   const allUnspaded = vehiclesWithStatus.filter(
-    (vehicle) => vehicle.status === 'unspaded'
+  (vehicle) =>
+    vehicle.status === 'unspaded' &&
+    vehicle.progress?.purchased === true
   );
 
 const openVehicle = (vehicle) => {
