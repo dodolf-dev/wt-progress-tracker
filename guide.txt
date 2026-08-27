@@ -93,7 +93,7 @@ Nouvelle liste des choses a faire:
 ->changer l'icone talisman et équipage dans la page stat
 ->changer l'icone des modifications et des véhicules dans la page des stats
 -> mettre correctement les icones d'équipages et talisman dans les bloc de véhicule
-->faire fonctionner les logos (crew/spade/talisman) pour les children
+faire fonctionner les logos (crew/spade/talisman) pour les children
 ->ajoute un moyen de naviguer entre les differents types de véhicules d'une nation
 -rendre le fond des children opaque
 ->rendre le site utilisable sur mobile
@@ -106,7 +106,7 @@ Nouvelle liste des choses a faire:
 ->mettre en place supabase pour les comptes personnel
 ->faire fonctionner les véhicules d'escadron avec leur progression détaillé
 ->faire le css pour le bouton recherche du véhicule
-->mettre en surbrillance le véhicule rechercher
+mettre en surbrillance le véhicule rechercher
 
 -> véhicule a ajouter dans la databse:
 he-51_group,fw_189c_0,sm-79_group,ia_58a_pucara,alpha_jet_a_jabog41,ef_2000_aesa

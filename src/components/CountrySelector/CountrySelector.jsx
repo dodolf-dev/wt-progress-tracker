@@ -1,9 +1,12 @@
 // src/components/CountrySelector/CountrySelector.jsx
-import React, { useState } from 'react';
+
+import React, { useEffect, useState } from 'react';
 import ProgressTree from '../ProgressTree/ProgressTree';
 import { progressTree } from '../../data/progressTree';
 
 const asset = (path) => `${process.env.PUBLIC_URL}${path}`;
+
+const OPEN_VEHICLE_KEY = 'wt-progress-tracker-open-vehicle';
 
 const countries = [
   { name: "USA", flag: asset("/assets/img/flag/country_usa.svg") },
@@ -31,13 +34,70 @@ const CountryVehicleSelector = () => {
   const [selectedVehicle, setSelectedVehicle] = useState(null);
   const [isValidated, setIsValidated] = useState(false);
 
+  // Véhicule à ouvrir automatiquement dans ProgressTree
+  const [initialVehicleId, setInitialVehicleId] = useState(null);
+
+  /*
+   * Vérifie si la page /tracking nous a demandé
+   * d'ouvrir un véhicule précis.
+   */
+  useEffect(() => {
+    try {
+      const savedTarget = sessionStorage.getItem(OPEN_VEHICLE_KEY);
+
+      if (!savedTarget) {
+        return;
+      }
+
+      const target = JSON.parse(savedTarget);
+
+      if (!target?.country || !target?.type || !target?.vehicleId) {
+        sessionStorage.removeItem(OPEN_VEHICLE_KEY);
+        return;
+      }
+
+      const country = countries.find(
+        (c) => c.name === target.country
+      );
+
+      const vehicle = allVehicleTypes.find(
+        (v) => v.type === target.type
+      );
+
+      if (country && vehicle) {
+        setSelectedCountry(country);
+        setSelectedVehicle(vehicle);
+        setInitialVehicleId(target.vehicleId);
+        setIsValidated(true);
+      }
+
+      /*
+       * Très important :
+       * on supprime la demande après l'avoir récupérée.
+       * Sinon elle pourrait rouvrir le même véhicule
+       * à chaque retour sur /progress.
+       */
+      sessionStorage.removeItem(OPEN_VEHICLE_KEY);
+
+    } catch (error) {
+      console.warn(
+        'Impossible de récupérer le véhicule à ouvrir :',
+        error
+      );
+
+      sessionStorage.removeItem(OPEN_VEHICLE_KEY);
+    }
+  }, []);
+
   const handleCountrySelect = (country) => {
     setSelectedCountry(country);
     setSelectedVehicle(null);
+    setInitialVehicleId(null);
   };
 
   const handleVehicleSelect = (vehicle) => {
     setSelectedVehicle(vehicle);
+    setInitialVehicleId(null);
   };
 
   const handleValidate = () => {
@@ -50,16 +110,26 @@ const CountryVehicleSelector = () => {
     setIsValidated(false);
     setSelectedCountry(null);
     setSelectedVehicle(null);
+    setInitialVehicleId(null);
   };
 
   const availableTypes = selectedCountry
-    ? allVehicleTypes.filter(v => progressTree[`${selectedCountry.name}_${v.type}`])
+    ? allVehicleTypes.filter(
+        (v) =>
+          progressTree[
+            `${selectedCountry.name}_${v.type}`
+          ]
+      )
     : [];
 
   if (isValidated) {
     return (
       <div className="validated-container">
-        <ProgressTree country={selectedCountry} vehicle={selectedVehicle} />
+        <ProgressTree
+          country={selectedCountry}
+          vehicle={selectedVehicle}
+          initialVehicleId={initialVehicleId}
+        />
 
         {/* Bouton sticky en bas à gauche */}
         <div
@@ -99,15 +169,25 @@ const CountryVehicleSelector = () => {
 
   return (
     <div className="selector-container">
+
       <div className="section">
         <div className="countries-grid">
           {countries.map((country, index) => (
             <button
               key={index}
-              className={`country-button ${selectedCountry?.name === country.name ? 'selected' : ''}`}
+              className={`country-button ${
+                selectedCountry?.name === country.name
+                  ? 'selected'
+                  : ''
+              }`}
               onClick={() => handleCountrySelect(country)}
             >
-              <img src={country.flag} alt={country.name} className="country-flag" />
+              <img
+                src={country.flag}
+                alt={country.name}
+                className="country-flag"
+              />
+
               <span>{country.name}</span>
             </button>
           ))}
@@ -120,15 +200,24 @@ const CountryVehicleSelector = () => {
             {availableTypes.map((vehicle, index) => (
               <button
                 key={index}
-                className={`vehicle-button ${selectedVehicle?.type === vehicle.type ? 'selected' : ''}`}
+                className={`vehicle-button ${
+                  selectedVehicle?.type === vehicle.type
+                    ? 'selected'
+                    : ''
+                }`}
                 onClick={() => handleVehicleSelect(vehicle)}
               >
                 <img
                   src={vehicle.icon}
                   alt={vehicle.type}
                   className="vehicle-icon"
-                  style={{ width: '30px', height: '30px', objectFit: 'contain' }}
+                  style={{
+                    width: '30px',
+                    height: '30px',
+                    objectFit: 'contain'
+                  }}
                 />
+
                 <span>{vehicle.type}</span>
               </button>
             ))}
@@ -138,11 +227,15 @@ const CountryVehicleSelector = () => {
 
       {selectedCountry && selectedVehicle && (
         <div className="validation-section">
-          <button className="validate-button" onClick={handleValidate}>
+          <button
+            className="validate-button"
+            onClick={handleValidate}
+          >
             ✅ Voir l'arbre de progression
           </button>
         </div>
       )}
+
     </div>
   );
 };

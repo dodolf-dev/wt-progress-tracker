@@ -337,6 +337,10 @@ const Header = () => {
             <NavLink to="/progress" style={linkStyle}>
               Progression
             </NavLink>
+
+            <NavLink to="/tracking" style={linkStyle}>
+              Suivi
+            </NavLink>
           </nav>
 
           {/* ========================================================

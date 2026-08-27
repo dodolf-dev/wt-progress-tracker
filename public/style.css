@@ -1584,3 +1584,31 @@ body {
     height: 35px;
   }
 }
+
+.grid-cell.researching-vehicle,
+.child-cell.researching-vehicle {
+  border-color: #ffb300 !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 179, 0, 0.35),
+    rgba(255, 102, 0, 0.25)
+  ) !important;
+  box-shadow:
+    0 0 8px rgba(255, 179, 0, 0.8),
+    0 0 18px rgba(255, 102, 0, 0.45) !important;
+  animation: researchingVehiclePulse 2s ease-in-out infinite;
+}
+
+@keyframes researchingVehiclePulse {
+  0%, 100% {
+    box-shadow:
+      0 0 8px rgba(255, 179, 0, 0.7),
+      0 0 18px rgba(255, 102, 0, 0.35);
+  }
+
+  50% {
+    box-shadow:
+      0 0 14px rgba(255, 179, 0, 1),
+      0 0 28px rgba(255, 102, 0, 0.65);
+  }
+}

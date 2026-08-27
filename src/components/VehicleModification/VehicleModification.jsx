@@ -126,11 +126,19 @@ const VehicleModifications = ({
   onSetResearching
 }) => {
   const isPremium = !!vehicle?.premium;
+  const isSquadron = !!vehicle?.squadron;
+  const isEvent = !!vehicle?.event;
   const geCost = vehicle?.ge_cost ?? null;
   const rpResearched = Number(vehicle?.rp_researched) || 0;
   const vehiclePurchased = vehicle?.purchased || false;
   const vehicleRpCost = Number(vehicle?.rp_cost) || 0;
   const vehicleSlCost = Number(vehicle?.sl_cost) || 0;
+  const canResearchVehicle =
+  !isPremium &&
+  !isSquadron &&
+  !isEvent &&
+  vehicleRpCost > 0 &&
+  rpResearched < vehicleRpCost;
   const talismanCostGe = Number(vehicle?.talisman_cost_ge) || 0;
   const talismanPurchased = vehicle?.talisman_purchased || false;
   const crewTrainingSl = Number(vehicle?.crew_training_sl) || 0;
@@ -278,17 +286,19 @@ const VehicleModifications = ({
         <div className="modifications-header">
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <h2>{vehicle.name}</h2>
-                <div className="research-section">
-                  {isResearching ? (
-                    <button onClick={onStopResearching}>
-                      ✓ Recherche en cours
-                    </button>
-                  ) : (
-                    <button onClick={onSetResearching}>
-                      🔎 Rechercher ce véhicule
-                    </button>
-                  )}
-                </div>
+                {canResearchVehicle && (
+                  <div className="research-section">
+                    {isResearching ? (
+                      <button onClick={onStopResearching}>
+                        ✓ Recherche en cours
+                      </button>
+                    ) : (
+                      <button onClick={onSetResearching}>
+                        🔎 Rechercher ce véhicule
+                      </button>
+                    )}
+                  </div>
+                )}
             {!isAllModsComplete && (
               <button
                 onClick={handleMainButtonClick}

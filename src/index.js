@@ -6,6 +6,7 @@ import Error404 from './pages/Error404/Error404';
 import Progress from './pages/Progress/Progress';
 import Stat from './pages/Stat/Stat';
 import Header from './components/Header/Header';
+import Tracking from './pages/Tracking/Tracking';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -18,6 +19,7 @@ root.render(
         <Route path="/progress" element={<Progress />} />
         <Route path="/stat" element={<Stat />} />
         <Route path="*" element={<Error404 />} />
+        <Route path="/tracking" element={<Tracking />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

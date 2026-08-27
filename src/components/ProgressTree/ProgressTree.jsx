@@ -23,7 +23,7 @@ const RpIcon = () => <img src={asset("/assets/img/icons/rp_icon.svg")} alt="RP" 
 const SlIcon = () => <img src={asset("/assets/img/icons/sl_icon.svg")} alt="SL" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '2px' }} />;
 const GeIcon = () => <img src={asset("/assets/img/icons/ge_icon.svg")} alt="GE" style={{ height: '1em', verticalAlign: 'middle', marginLeft: '4px' }} />;
 
-const ProgressTree = ({ country, vehicle }) => {
+const ProgressTree = ({ country, vehicle, initialVehicleId }) => {
   const treeKey = `${country.name}_${vehicle.type}`;
   const treeData = progressTree[treeKey] || progressTree.default;
   const containerRef = useRef(null);
@@ -42,7 +42,7 @@ const ProgressTree = ({ country, vehicle }) => {
       if (!v.id) return;
       const savedEntry = saved?.[v.id] || {};
       initial[v.id] = {
-        rpResearched: savedEntry.rp_researched ?? v.rp_researched ?? 0,
+        rpResearched: savedEntry.rpResearched ?? savedEntry.rp_researched ?? v.rp_researched ?? 0,
         purchased: savedEntry.purchased ?? v.purchased ?? false,
         talisman_purchased: savedEntry.talisman_purchased ?? v.talisman_purchased ?? false,
         crewPurchased: Number.isInteger(savedEntry.crewPurchased) ? savedEntry.crewPurchased : (v.crewPurchased || 0),
@@ -77,6 +77,40 @@ const ProgressTree = ({ country, vehicle }) => {
   });
 
   const [selectedVehicle, setSelectedVehicle] = useState(null);
+
+useEffect(() => {
+  if (!initialVehicleId) return;
+
+  let targetVehicle = null;
+
+  for (const rank of treeData.ranks || []) {
+    for (const vehicle of Object.values(rank.vehicles || {})) {
+
+      // Véhicule normal
+      if (vehicle.id === initialVehicleId) {
+        targetVehicle = vehicle;
+        break;
+      }
+
+      // Véhicule enfant
+      const child = (vehicle.children || []).find(
+        (child) => child.id === initialVehicleId
+      );
+
+      if (child) {
+        targetVehicle = child;
+        break;
+      }
+    }
+
+    if (targetVehicle) break;
+  }
+
+  if (targetVehicle) {
+    setSelectedVehicle(targetVehicle);
+  }
+}, [initialVehicleId, treeData]);
+
 
   const [researchingVehicles, setResearchingVehicles] = useState(() => {
     try {
@@ -200,7 +234,7 @@ const ProgressTree = ({ country, vehicle }) => {
       [vehicleId]: {
         ...prev[vehicleId],
         purchased: true,
-        rp_researched: Number(vData.rp_cost) || 0,
+        rpResearched: Number(vData.rp_cost) || 0,
         crewPurchased: 1,
         acesRpResearched: 0,
         modRpValues,
@@ -273,7 +307,7 @@ const ProgressTree = ({ country, vehicle }) => {
     const vehicleData = rank.vehicles[rankIndex];
     const cellKey = `${rank.name}_${rowIndex}_${colIndex}`;
     const isExpanded = expandedCells[cellKey];
-
+    const isResearchingVehicle = researchingVehicles[treeKey] === vehicleData?.id;
     if (!vehicleData) {
       return (
         <div key={`cell-${rowIndex}-${colIndex}`} className="grid-cell error">
@@ -373,8 +407,7 @@ const ProgressTree = ({ country, vehicle }) => {
     return (
       <div
         key={`cell-${rowIndex}-${colIndex}`}
-        className={`grid-cell ${hasChildren ? 'has-children' : ''} ${isExpanded ? 'expanded' : ''} ${themeClass}`}
-        style={cellStyle}
+        className={`grid-cell ${hasChildren ? 'has-children' : ''} ${isExpanded ? 'expanded' : ''} ${themeClass} ${isResearchingVehicle ? 'researching-vehicle' : ''}`}        style={cellStyle}
         onClick={(e) => {
           if (hasChildren) {
             toggleCellExpansion(e, rank.name, rowIndex, colIndex);
@@ -397,7 +430,7 @@ const ProgressTree = ({ country, vehicle }) => {
               style={{
                 position: 'absolute',
                 top: '-10px',
-                left: '-10px',
+                left: '-20px',
                 width: '24px',
                 height: '24px',
                 zIndex: 2,
@@ -438,6 +471,7 @@ const ProgressTree = ({ country, vehicle }) => {
           <div className="children-container" onClick={(e) => e.stopPropagation()}>
             {vehicleData.children.map((child, childIndex) => {
               const childProg = vehicleProgress[child.id] || {};
+              const isResearchingChild = researchingVehicles[treeKey] === child.id;
               const childRp = childProg.rpResearched || 0;
               const childPurchased = childProg.purchased || false;
               const childRpCost = Number(child.rp_cost) || 0;
@@ -449,9 +483,9 @@ const ProgressTree = ({ country, vehicle }) => {
 
               const childCrewLevel = Number(childProg.crewPurchased) || 0;
               let childCrewIcon = null;
-              if (childCrewLevel === 1) childCrewIcon = '/assets/img/icons/base_crew.png';
-              else if (childCrewLevel === 2) childCrewIcon = '/assets/img/icons/expert_crew.png';
-              else if (childCrewLevel === 3) childCrewIcon = '/assets/img/icons/ace_crew.png';
+              if (childCrewLevel === 1) childCrewIcon = asset('/assets/img/icons/base_crew.png');
+              else if (childCrewLevel === 2) childCrewIcon = asset('/assets/img/icons/expert_crew.png');
+              else if (childCrewLevel === 3) childCrewIcon = asset('/assets/img/icons/ace_crew.png');
 
               const childEffectivelyPurchased = childPurchased || childSlCost === 0;
               const childRpComplete = childRpCost > 0 && childRp >= childRpCost && !childPurchased;
@@ -479,7 +513,7 @@ const ProgressTree = ({ country, vehicle }) => {
               return (
                 <div
                   key={`child-${childIndex}`}
-                  className={`child-cell ${childTheme}`}
+                  className={`child-cell ${childTheme} ${isResearchingChild ? 'researching-vehicle' : ''}`}
                   style={childCellStyle}
                   onClick={(e) => {
                     e.stopPropagation();
@@ -488,7 +522,7 @@ const ProgressTree = ({ country, vehicle }) => {
                 >
                   <div style={{ position: 'relative', display: 'inline-block' }}>
                     {childAllModsDone && (
-                      <img src="/assets/img/icons/spade_icon.svg" alt="" style={{
+                      <img src={asset('/assets/img/icons/spade_icon.svg')} alt="" style={{
                         position: 'absolute',
                         top: '65%',
                         left: '50%',
@@ -501,10 +535,10 @@ const ProgressTree = ({ country, vehicle }) => {
                       }} />
                     )}
                     {childTalismanActive && (
-                      <img src="/assets/img/icons/talisman_icon.svg" alt="Talisman" style={{ position: 'absolute', top: '-10px', right: '-10px', width: '28px', height: '28px', zIndex: 2 }} />
+                      <img src={asset('/assets/img/icons/talisman_icon.svg')} alt="Talisman" style={{ position: 'absolute', top: '-5px', right: '-30px', width: '28px', height: '28px', zIndex: 2 }} />
                     )}
                     {childCrewIcon && (
-                      <img src={childCrewIcon} alt="Niveau équipage" style={{ position: 'absolute', top: '-10px', left: '-10px', width: '24px', height: '24px', zIndex: 2 }} />
+                      <img src={childCrewIcon} alt="Niveau équipage" style={{ position: 'absolute', top: '-5px', left: '-30px', width: '24px', height: '24px', zIndex: 2 }} />
                     )}
                     <img className="vehicle-image" src={child.image} alt={child.name} style={{ position: 'relative', zIndex: 1 }} onError={(e) => { e.target.src = '/assets/vehicles/default.png'; }} />
                   </div>
