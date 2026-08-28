@@ -1299,7 +1299,16 @@ const Stat = () => {
                 marginBottom: '5px',
               }}
             >
-              💎 Talismans
+            <img
+              src={asset('/assets/img/icons/talisman_icon.svg')}
+              alt="Talismans"
+              style={{
+                width: '26px',
+                height: '26px',
+                objectFit: 'contain',
+                marginRight: '8px',
+              }}
+            />
             </div>
 
             <div

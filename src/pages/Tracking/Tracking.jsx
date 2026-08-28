@@ -101,6 +101,7 @@ function VehicleCard({
   status,
   onOpenProgress,
 }) {
+  const crewTrainingCost = Number(vehicle.crew_training_sl) || 0;
   const rpCost = Number(vehicle.rp_cost) || 0;
   const rpResearched = Number(progress.rpResearched) || 0;
   const slCost = Number(vehicle.sl_cost) || 0;
@@ -158,29 +159,6 @@ function VehicleCard({
           }}
         />
 
-        {status === 'researching' && (
-          <div className="tracking-status-badge researching-badge">
-            🔎 EN RECHERCHE
-          </div>
-        )}
-
-        {status === 'available' && (
-          <div className="tracking-status-badge available-badge">
-            📘 DISPONIBLE
-          </div>
-        )}
-
-        {status === 'purchase' && (
-          <div className="tracking-status-badge purchase-badge">
-            💰 À ACHETER
-          </div>
-        )}
-
-        {status === 'unspaded' && (
-          <div className="tracking-status-badge unspaded-badge">
-            ⭐ NON SPADÉ
-          </div>
-        )}
       </div>
 
       <div className="tracking-card-content">
@@ -193,8 +171,25 @@ function VehicleCard({
         </div>
 
         <div className="tracking-card-meta">
-          <span>{vehicle.country}</span>
-          <span>{vehicle.type}</span>
+          <div className="tracking-card-meta-left">
+            <span>{vehicle.country}</span>
+            <span>{vehicle.type}</span>
+          </div>
+
+          {status === 'purchase' &&
+            (slCost > 0 || crewTrainingCost > 0) && (
+              <strong className="tracking-total-cost">
+                {(slCost + crewTrainingCost).toLocaleString()}
+                <img
+                  src={asset('/assets/img/icons/sl_icon.svg')}
+                  alt="SL"
+                  style={{
+                    verticalAlign: 'middle',
+                    marginLeft: '4px',
+                  }}
+                />
+              </strong>
+            )}
         </div>
 
         {(isPremium || isSquadron || isEvent) && (
@@ -234,7 +229,17 @@ function VehicleCard({
 
             <div className="tracking-progress-detail">
               {rpResearched.toLocaleString()} /{' '}
-              {rpCost.toLocaleString()} RP
+              {rpCost.toLocaleString()}
+              <img
+                src={asset('/assets/img/icons/rp_icon.svg')}
+                alt="RP"
+                style={{
+                  height: '20px',
+                  width: '20px',
+                  verticalAlign: 'middle',
+                  marginLeft: '4px',
+                }}
+              />
             </div>
           </div>
         )}
@@ -250,13 +255,25 @@ function VehicleCard({
 
         {status === 'purchase' && (
           <div className="tracking-purchase-info">
-            <span>✓ Recherche terminée</span>
-
-            {slCost > 0 && (
-              <strong>
-                {slCost.toLocaleString()} SL
-              </strong>
-            )}
+            <strong>
+              {slCost.toLocaleString()}
+              <img
+                src={asset('/assets/img/icons/sl_icon.svg')}
+                alt="SL"
+                style={{
+                  verticalAlign: 'middle',
+                }}
+              />
+              {' + '}
+              {crewTrainingCost.toLocaleString()}
+              <img
+                src={asset('/assets/img/icons/sl_icon.svg')}
+                alt="SL"
+                style={{
+                  verticalAlign: 'middle',
+                }}
+              />
+            </strong>
           </div>
         )}
 
@@ -508,6 +525,16 @@ const unspaded = filteredVehicles.filter(
     (vehicle) => vehicle.status === 'purchase'
   );
 
+const totalVehicleCost = purchase.reduce((total, vehicle) => {
+  return total + (Number(vehicle.sl_cost) || 0);
+}, 0);
+
+const totalCrewCost = purchase.reduce((total, vehicle) => {
+  return total + (Number(vehicle.crew_training_sl) || 0);
+}, 0);
+
+const totalPurchaseCost = totalVehicleCost + totalCrewCost;
+
   const allUnspaded = vehiclesWithStatus.filter(
   (vehicle) =>
     vehicle.status === 'unspaded' &&
@@ -700,11 +727,38 @@ const openVehicle = (vehicle) => {
 
             {activeSection === 'purchase' && (
               <>
-                <h2>💰 Véhicules à acheter</h2>
-                <p>
-                  Recherche RP terminée, mais véhicule
-                  pas encore acheté.
-                </p>
+                <h2 className="tracking-purchase-title">
+                  <span>💰 Véhicules à acheter</span>
+
+                  <span className="tracking-purchase-total">
+                    {totalPurchaseCost.toLocaleString()}
+                    <img
+                      src={asset('/assets/img/icons/sl_icon.svg')}
+                      alt="SL"
+                      style={{
+                        verticalAlign: 'middle',
+                      }}
+                    />
+                    {' = '}
+                    {totalVehicleCost.toLocaleString()}
+                    <img
+                      src={asset('/assets/img/icons/sl_icon.svg')}
+                      alt="SL"
+                      style={{
+                        verticalAlign: 'middle',
+                      }}
+                    />
+                    {' + '}
+                    {totalCrewCost.toLocaleString()}
+                    <img
+                      src={asset('/assets/img/icons/sl_icon.svg')}
+                      alt="SL"
+                      style={{
+                        verticalAlign: 'middle',
+                      }}
+                    />
+                  </span>
+                </h2>
               </>
             )}
 

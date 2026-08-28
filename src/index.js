@@ -7,6 +7,7 @@ import Progress from './pages/Progress/Progress';
 import Stat from './pages/Stat/Stat';
 import Header from './components/Header/Header';
 import Tracking from './pages/Tracking/Tracking';
+import FeedbackButton from './components/FeedbackButton/FeedbackButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -14,6 +15,7 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Header />
+      <FeedbackButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/progress" element={<Progress />} />

@@ -92,7 +92,7 @@ Nouvelle liste des choses a faire:
 ->finir les ârbres de recherches, c'est long mais nécessaire urgemment
 ->changer l'icone talisman et équipage dans la page stat
 ->changer l'icone des modifications et des véhicules dans la page des stats
--> mettre correctement les icones d'équipages et talisman dans les bloc de véhicule
+mettre correctement les icones d'équipages et talisman dans les bloc de véhicule
 faire fonctionner les logos (crew/spade/talisman) pour les children
 ->ajoute un moyen de naviguer entre les differents types de véhicules d'une nation
 -rendre le fond des children opaque
@@ -100,13 +100,10 @@ faire fonctionner les logos (crew/spade/talisman) pour les children
 ->faire une barre de recherche pour être directement rediriger sur le véhicule souhaiter
 ->ajouter un systeme de véhicule en cours de recherche, en incluant les mods
 ->faire un systeme d'avancement automatique en copiant les résultats d'une bataille dans le site
-->faire une zone pour voir: les véhicules a acheter, les véhicules en cours de recherche, les véhicules non spade.
+faire une zone pour voir: les véhicules a acheter, les véhicules en cours de recherche, les véhicules non spade.
 ->refaire le css des modifications
 ->si le systeme d'avancement automatique est ajouter, penser a faire une page avec des graphiques de progression par bataille.
 ->mettre en place supabase pour les comptes personnel
 ->faire fonctionner les véhicules d'escadron avec leur progression détaillé
 ->faire le css pour le bouton recherche du véhicule
 mettre en surbrillance le véhicule rechercher
-
--> véhicule a ajouter dans la databse:
-he-51_group,fw_189c_0,sm-79_group,ia_58a_pucara,alpha_jet_a_jabog41,ef_2000_aesa
