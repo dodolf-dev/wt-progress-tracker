@@ -56,6 +56,51 @@ function cleanCostValue(value, defaultValue = null) {
     return defaultValue;
 }
 
+function extractModificationGrids($) {
+    const categories = {};
+
+    $('table.game-unit_mods-table').each((i, table) => {
+        const $table = $(table);
+
+        const groupHeader =
+            $table.find('thead th').first().text().trim() ||
+            'Unknown';
+
+        const grid = [];
+
+        // Chaque <tr> correspond à une ligne de la grille
+        $table.find('tbody tr').each((rowIndex, tr) => {
+            const row = [];
+
+            // Chaque <td> correspond à une case
+            $(tr).find('td').each((colIndex, td) => {
+                const $td = $(td);
+
+                // Une modification existe dans cette case
+                const hasModification =
+                    $td.find('button.game-unit_mod').length > 0;
+
+                row.push(hasModification ? 1 : 0);
+            });
+
+            // On évite d'ajouter les lignes complètement vides
+            if (row.length > 0) {
+                grid.push(row);
+            }
+        });
+
+        if (grid.length > 0) {
+            categories[groupHeader] = {
+                grid: grid
+            };
+        }
+    });
+
+    return {
+        categories
+    };
+}
+
 async function fetchVehicleData(id = DEFAULT_VEHICULE_ID) {
     const url = `https://wiki.warthunder.com/unit/${id}`;
     let browser;
@@ -488,62 +533,86 @@ async function fetchVehicleData(id = DEFAULT_VEHICULE_ID) {
             }
         }
 
-        let modifications = {};
-        try {
-            $('table.game-unit_mods-table').each((i, table) => {
-                const groupHeader = $(table).find('thead th').first().text().trim() || 'Unknown';
-                
-                if (!modifications[groupHeader]) {
-                    modifications[groupHeader] = [];
-                }
-                
-                $(table).find('button.game-unit_mod').each((j, btn) => {
-                    const $btn = $(btn);
-                    const modName = $btn.find('span').first().text().trim();
-                    const modImage = $btn.find('img').attr('src') || '';
-                    const popoverHtml = $btn.attr('data-feature-popover');
-                    
-                    if (modName && popoverHtml) {
-                        let rp_cost = null;
-                        let sl_cost = null;
-                        let ge_cost = null;
-                        
-                        const $popover = cheerio.load(popoverHtml);
-                        
-                        $popover('.game-unit_mod-char-line').each((k, line) => {
-                            const text = $popover(line).text().trim();
-                            
-                            if (text.includes('Research')) {
-                                const match = text.match(/(\d+,?\d*)/);
-                                if (match) rp_cost = match[1].replace(/,/g, '');
-                            }
-                            if (text.includes('Purchase')) {
-                                const match = text.match(/(\d+,?\d*)/);
-                                if (match) sl_cost = match[1].replace(/,/g, '');
-                            }
-                            if (text.includes('or ')) {
-                                const match = text.match(/or\s+(\d+,?\d*)/);
-                                if (match) ge_cost = match[1].replace(/,/g, '');
-                            }
-                        });
-                        
-                        modifications[groupHeader].push({
-                            name: modName,
-                            rp_cost: rp_cost,
-                            sl_cost: sl_cost,
-                            ge_cost: ge_cost,
-                            image_url: modImage
-                        });
-                    }
-                });
-            });
-        } catch (e) {
-            console.warn(`Could not extract modifications for ${id}:`, e.message);
-            modifications = {};
+let modifications = {};
+
+try {
+    $('table.game-unit_mods-table').each((i, table) => {
+        const groupHeader =
+            $(table).find('thead th').first().text().trim() || 'Unknown';
+
+        if (!modifications[groupHeader]) {
+            modifications[groupHeader] = [];
         }
 
-        const assets = vehiculeAssetsFor(id);
-        const modsCost = calculateModificationsCost(modifications);
+        $(table).find('button.game-unit_mod').each((j, btn) => {
+            const $btn = $(btn);
+
+            const modName = $btn.find('span').first().text().trim();
+            const modImage = $btn.find('img').attr('src') || '';
+            const popoverHtml = $btn.attr('data-feature-popover');
+
+            if (modName && popoverHtml) {
+                let rp_cost = null;
+                let sl_cost = null;
+                let ge_cost = null;
+
+                const $popover = cheerio.load(popoverHtml);
+
+                $popover('.game-unit_mod-char-line').each((k, line) => {
+                    const text = $popover(line).text().trim();
+
+                    if (text.includes('Research')) {
+                        const match = text.match(/(\d+,?\d*)/);
+                        if (match) {
+                            rp_cost = match[1].replace(/,/g, '');
+                        }
+                    }
+
+                    if (text.includes('Purchase')) {
+                        const match = text.match(/(\d+,?\d*)/);
+                        if (match) {
+                            sl_cost = match[1].replace(/,/g, '');
+                        }
+                    }
+
+                    if (text.includes('or ')) {
+                        const match = text.match(/or\s+(\d+,?\d*)/);
+                        if (match) {
+                            ge_cost = match[1].replace(/,/g, '');
+                        }
+                    }
+                });
+
+                modifications[groupHeader].push({
+                    name: modName,
+                    rp_cost: rp_cost,
+                    sl_cost: sl_cost,
+                    ge_cost: ge_cost,
+                    image_url: modImage
+                });
+            }
+        });
+    });
+
+} catch (e) {
+    console.warn(`Could not extract modifications for ${id}:`, e.message);
+    modifications = {};
+}
+
+// Nouvelle structure de grille
+let modificationGrids = {};
+
+try {
+    modificationGrids = extractModificationGrids($);
+} catch (e) {
+    console.warn(`Could not extract modification grids for ${id}:`, e.message);
+    modificationGrids = {
+        categories: {}
+    };
+}
+
+const assets = vehiculeAssetsFor(id);
+const modsCost = calculateModificationsCost(modifications);
 
         let battle_rating_ab = null;
         let battle_rating_rb = null;
@@ -603,6 +672,7 @@ async function fetchVehicleData(id = DEFAULT_VEHICULE_ID) {
                 research_aces_rp: research_aces_rp
             },
             modifications_by_group: modifications,
+            modifications: modificationGrids,
             modifications_total_cost: {
                 total_rp: modsCost.total_rp,
                 total_sl: modsCost.total_sl,
@@ -694,6 +764,13 @@ app.get('/api', async (req, res) => {
 app.listen(2222, () => {
     console.log('Server running on port 2222');
 });
+
+const VEHICLE_LIST = [
+    'p26_group',
+    'vehicle_id_2',
+    'vehicle_id_3',
+    'vehicle_id_4'
+];
 
 (async () => {
     const NO_STARTUP_FETCH = process.env.NO_STARTUP_FETCH === '1' || process.env.NO_STARTUP_FETCH === 'true';

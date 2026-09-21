@@ -86,6 +86,7 @@ t'as finis, copie le dans src\data\progressTree.js et éxcecute la commande.
 -$env:VEHICLE_LIST = 'vehicule_id1,vehicule_id2'; node D:\wt-progress-tracker\server.js  (cette commande met a jour/ajoute les véhicules dans le fichier server-response.js)
 important: il écrit sur le fichier extérieur, il ne faut pas oublier de le copier dans src\data\server-response.json
             N'oublie pas aussi d'ajouter le nouveau id de véhicule dans véhicule-list.sql
+pour mettre a jour le fichier server-response.js, excécuter node server.js
 
 
 Nouvelle liste des choses a faire:

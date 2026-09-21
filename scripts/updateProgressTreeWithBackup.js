@@ -120,88 +120,168 @@ class ProgressTreeUpdater {
     return grid;
   }
 
-  buildModifications(apiVehicleData, existingModifications = null) {
-    const apiGroups = apiVehicleData.modifications_by_group;
-    if (!apiGroups) return null;
+buildModifications(apiVehicleData, existingModifications = null) {
+  const apiGroups = apiVehicleData.modifications_by_group;
 
-    const existingCategories = existingModifications?.categories || {};
-    const newCategories = {};
+  if (!apiGroups) {
+    return existingModifications || null;
+  }
 
-    for (const [categoryName, existingCat] of Object.entries(existingCategories)) {
-      const apiModsArray = apiGroups[categoryName] ?? null;
-      if (!apiModsArray || apiModsArray.length === 0) {
-        newCategories[categoryName] = existingCat;
-        continue;
+  const existingCategories = existingModifications?.categories || {};
+  // NOUVEAU : grilles fournies par le serveur (source de vérité)
+  const serverCategories = apiVehicleData.modifications?.categories || {};
+  const newCategories = {};
+
+  for (const [categoryName, apiModsArray] of Object.entries(apiGroups)) {
+    if (!Array.isArray(apiModsArray) || apiModsArray.length === 0) {
+      if (existingCategories[categoryName]) {
+        newCategories[categoryName] = existingCategories[categoryName];
       }
-
-      let grid, mods;
-      if (typeof existingCat === 'object' && existingCat !== null && Array.isArray(existingCat.grid)) {
-        grid = existingCat.grid;
-        if (grid.length === 0) {
-          grid = this.generateDefaultGrid(apiModsArray.length);
-        }
-        mods = existingCat.mods || {};
-      } else {
-        grid = this.generateDefaultGrid(apiModsArray.length);
-        mods = {};
-      }
-
-      let apiIndex = 0;
-      const newMods = {};
-
-      for (let row = 0; row < grid.length; row++) {
-        for (let col = 0; col < grid[row].length; col++) {
-          if (grid[row][col] === 1) {
-            const modKey = String(apiIndex + 1);
-            if (apiIndex < apiModsArray.length) {
-              const apiMod = apiModsArray[apiIndex];
-              newMods[modKey] = {
-                id: mods[modKey]?.id || `mod_${categoryName.replace(/\s+/g, '_')}_${apiIndex + 1}`,
-                name: apiMod.name,
-                image: apiMod.image_url || '',
-                rp_cost: parseInt(apiMod.rp_cost, 10) || 0,
-                sl_cost: parseInt(apiMod.sl_cost, 10) || 0,
-                progress: mods[modKey]?.progress ?? 0
-              };
-            } else {
-              if (mods[modKey]) {
-                newMods[modKey] = mods[modKey];
-              }
-            }
-            apiIndex++;
-          }
-        }
-      }
-
-      newCategories[categoryName] = { grid, mods: newMods };
+      continue;
     }
 
-    for (const [groupName, modsArray] of Object.entries(apiGroups)) {
-      if (!(groupName in newCategories) && modsArray.length > 0) {
-        const grid = this.generateDefaultGrid(modsArray.length);
-        const mods = {};
-        modsArray.forEach((apiMod, idx) => {
-          const modKey = String(idx + 1);
-          mods[modKey] = {
-            id: `mod_${groupName.replace(/\s+/g, '_')}_${idx + 1}`,
-            name: apiMod.name,
-            image: apiMod.image_url || '',
-            rp_cost: parseInt(apiMod.rp_cost, 10) || 0,
-            sl_cost: parseInt(apiMod.sl_cost, 10) || 0,
-            progress: 0
-          };
-        });
-        newCategories[groupName] = { grid, mods };
-        console.log(`🆕 Nouvelle catégorie "${groupName}" ajoutée`);
+    const existingCat = existingCategories[categoryName];
+    const serverCat = serverCategories[categoryName];
+
+    // -----------------------------------------
+    // Récupération de la grille
+    // Priorité : grille serveur > grille existante > grille par défaut
+    // -----------------------------------------
+
+    let grid;
+
+    if (
+      serverCat &&
+      typeof serverCat === 'object' &&
+      Array.isArray(serverCat.grid) &&
+      serverCat.grid.length > 0
+    ) {
+      // La grille vient du server-response : c'est la référence.
+      grid = serverCat.grid.map(row => [...row]);
+    } else if (
+      existingCat &&
+      typeof existingCat === 'object' &&
+      Array.isArray(existingCat.grid) &&
+      existingCat.grid.length > 0
+    ) {
+      // Pas de grille côté serveur : on conserve celle
+      // déjà définie dans progressTree.js.
+      grid = existingCat.grid.map(row => [...row]);
+    } else {
+      // Ni serveur, ni existant : grille par défaut.
+      grid = this.generateDefaultGrid(apiModsArray.length);
+    }
+
+    // -----------------------------------------
+    // Vérifie que la grille possède
+    // suffisamment de cases
+    // -----------------------------------------
+
+    let gridSlots = 0;
+
+    for (const row of grid) {
+      for (const cell of row) {
+        if (cell === 1) {
+          gridSlots++;
+        }
       }
     }
 
-    return {
-      categories: newCategories,
-      availableRP: existingModifications?.availableRP ?? 0,
-      researchedMods: existingModifications?.researchedMods ?? []
+    if (gridSlots < apiModsArray.length) {
+      const COLS = 2;
+
+      while (gridSlots < apiModsArray.length) {
+        let lastRow = grid[grid.length - 1];
+
+        if (!lastRow || lastRow.length >= COLS) {
+          lastRow = [];
+          grid.push(lastRow);
+        }
+
+        while (
+          lastRow.length < COLS &&
+          gridSlots < apiModsArray.length
+        ) {
+          lastRow.push(1);
+          gridSlots++;
+        }
+      }
+    }
+
+    // -----------------------------------------
+    // Modifications déjà présentes
+    // -----------------------------------------
+
+    const existingMods =
+      existingCat &&
+      typeof existingCat === 'object' &&
+      existingCat.mods &&
+      typeof existingCat.mods === 'object'
+        ? existingCat.mods
+        : {};
+
+    const newMods = {};
+
+    // -----------------------------------------
+    // Création / mise à jour des modifications
+    // -----------------------------------------
+
+    let apiIndex = 0;
+
+    for (let row = 0; row < grid.length; row++) {
+      for (let col = 0; col < grid[row].length; col++) {
+
+        if (grid[row][col] !== 1) {
+          continue;
+        }
+
+        if (apiIndex >= apiModsArray.length) {
+          break;
+        }
+
+        const apiMod = apiModsArray[apiIndex];
+        const modKey = String(apiIndex + 1);
+        const existingMod = existingMods[modKey];
+
+        newMods[modKey] = {
+          id:
+            existingMod?.id ||
+            `mod_${categoryName.replace(/\s+/g, '_')}_${apiIndex + 1}`,
+
+          name: apiMod.name || '',
+          image: apiMod.image_url || '',
+
+          rp_cost: parseInt(apiMod.rp_cost, 10) || 0,
+          sl_cost: parseInt(apiMod.sl_cost, 10) || 0,
+          ge_cost: parseInt(apiMod.ge_cost, 10) || 0,
+
+          progress: existingMod?.progress ?? 0
+        };
+
+        apiIndex++;
+      }
+    }
+
+    newCategories[categoryName] = {
+      grid,
+      mods: newMods
     };
   }
+
+  for (const [categoryName, existingCategory] of Object.entries(
+    existingCategories
+  )) {
+    if (!(categoryName in newCategories)) {
+      newCategories[categoryName] = existingCategory;
+    }
+  }
+
+  return {
+    categories: newCategories,
+    availableRP: existingModifications?.availableRP ?? 0,
+    researchedMods: existingModifications?.researchedMods ?? []
+  };
+}
 
   updateVehicleGroup(vehicles, vehicleMap, groupMap) {
     let updated = 0, missing = 0, groups = 0;
