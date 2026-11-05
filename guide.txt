@@ -1,31 +1,3 @@
-id box:
-class:
-
-tank = ta
-plane = pl
-helicopter = he
-bluewater ship = bs
-coastal fleet = cf
-
-nation:
-
-usa = usa
-Germany = ger
-ussr= uss 
-great Britain = gbr
-japan = jap
-china = chi
-Italy = ita
-France = fra
-Sweden = swe
-Israel = isr
-
-rank: rk(I-II-III-etc)
-if 1 box contain 2
-then (box number-x)
-
-ex: id = "usa_pl_rkI_1"
-
 ABABABABABABABAAB A FAIRE:
 l'idée ce serait pour chaque box d'imiter l'image(sans la bande jaune)
 si tu peux me config les dimensions de l'image, du texte, et de la barre de progression ce serait parfait
@@ -108,3 +80,4 @@ faire une zone pour voir: les véhicules a acheter, les véhicules en cours de r
 ->faire fonctionner les véhicules d'escadron avec leur progression détaillé
 ->faire le css pour le bouton recherche du véhicule
 mettre en surbrillance le véhicule rechercher
+->régler le problème des couts rp des premiers helico
