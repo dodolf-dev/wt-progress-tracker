@@ -68,6 +68,10 @@ const FORCED_COMMON_VEHICLES = [
   // "vehicle_id_2",
 ];
 
+const FORCED_EVENT_VEHICLES = [
+  "meteor_frmk9_iaf",
+];
+
 const RpIcon = ({ size = '1em' }) => (
   <img
     src={asset('/assets/img/icons/rp_icon.svg')}
@@ -126,7 +130,6 @@ const getFilterButtonStyle = (active) => ({
 });
 
 const getHeatmapStyle = (percentage) => {
-  // Aucun véhicule disponible
   if (percentage === null) {
     return {
       backgroundColor: '#2a3340',
@@ -223,13 +226,18 @@ const getRankVehicles = (rank) => {
  * Les véhicules dans FORCED_COMMON_VEHICLES sont toujours considérés comme communs
  */
 const getVehicleCategory = (vehicle) => {
-  // Vérifier si le véhicule est forcé comme commun
+  // Forcer en commun
   if (FORCED_COMMON_VEHICLES.includes(vehicle.id)) {
     return 'common';
   }
 
+  // Forcer en Event (non commun)
+  if (FORCED_EVENT_VEHICLES.includes(vehicle.id)) {
+    return 'non-common';
+  }
+
   const isSpecial = vehicle.premium || vehicle.squadron || vehicle.event;
-  
+
   return isSpecial ? 'non-common' : 'common';
 };
 
